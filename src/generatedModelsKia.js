@@ -1,0 +1,245 @@
+const request = require("request-promise");
+const cheerio = require("cheerio");
+const fs = require("fs");
+const {featureCategory, vehicleCatalog} = require('./../src/enum/catalog')
+
+
+var HashMap = require("hashmap");
+
+
+
+const writeStream = fs.createWriteStream("2021.csv");
+
+var modelos2021 = [
+  "rio-hatchback",
+  "rio-sedan",
+  "forte-sedan",
+  "sportage",
+  "forte-hatchback",
+];
+
+let structurByModel = [];
+let mapImages = new HashMap();
+
+scrapiKia = async function scrapiKIA() {
+    console.log(vehicleCatalog);
+    console.log(featureCategory);
+
+    structurByModel = [];
+  mapImages = new HashMap();
+
+  modelos2021.forEach((model) => {
+    getImagesPagePrincipal(model);
+  });
+  return structurByModel;
+};
+
+/**
+ * Genera una estructura de imagenes para la pagina pricipal
+ * @param {modelo del vehiculo} model
+ */
+async function getImagesPagePrincipal(model) {
+  try {
+    const $ = await request({
+      uri: `https://www.kia.com/mx/showroom/${model}.html`,
+      transform: (body) => cheerio.load(body),
+    });
+    $("picture source").each((i, el) => {
+      let data = "";
+      if ($(el).attr("srcset")) {
+        data = $(el).attr("srcset");
+      } else {
+        data = $(el).attr("data-srcset");
+      }
+      //|| data.includes('_m.jpg')
+      let url = `https://www.kia.com${data}`;
+
+      let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg/;
+
+      if (
+        (regex.test(data.toLowerCase()) || isAllow(data)) &&
+        !isNotAllow(data)
+      ) {
+        let name = findName($(el));
+        //console.log(name);
+        let description = findDescription($(el));
+        let category = getCategoria(url.toLowerCase());
+        let isCover = getCover(url);
+        const year = "2021";
+        if (!mapImages.get(url)) {
+          //console.log(data)
+          structurByModel.push({
+            model,
+            url,
+            name,
+            description,
+            category,
+            year,
+            isCover
+          });
+          mapImages.set(url, url);
+          writeStream.write(`${url}\n`);
+        }
+      } else {
+        writeStream.write(
+          `                                              Descartado --> ${url}\n`
+        );
+      }
+    });
+    console.log(structurByModel.length);
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+function isAllow(image) {
+  let images = ["configura_tu_kia_forte_GT_auto_perfil.png"];
+  var resp = false;
+  for (var i in images) {
+    if (image.includes(images[i])) {
+      resp = true;
+      break;
+    }
+  }
+  return resp;
+}
+
+function isNotAllow(image) {
+  let images = [
+    "2019/6_Desempeno/kia_sportage_auto_desempeno_1_w.jpg",
+    "2019/7_USP_desempeno/kia_sportage_auto_des_3_w.jpg",
+  ];
+  var resp = false;
+  for (var i in images) {
+    if (image.includes(images[i])) {
+      resp = true;
+      break;
+    }
+  }
+  return resp;
+}
+
+/**
+ * Permite obtener una clasificacion para el tipo de imagen
+ * @param {*} urlImage
+ */
+function getCategoria(urlImage) {
+  if (urlImage.includes("exterior")) {
+    return "EX";
+  } else if (urlImage.includes("interior")) {
+    return "IN";
+  } else if (urlImage.includes("safety") || urlImage.includes("seguridad")) {
+    return "SA";
+  } else if (urlImage.includes("performance") || urlImage.includes("desempenio")) {
+    return "PE";
+  } else {
+    return "S/C";
+  }
+}
+
+function getCover(urlImage) {
+    let covers = [
+        "Forte-HB/2-exterior/kia_showroom-big-image-forte-3-w-02.jpg",
+        "img_RioHB_exterior1_w.jpg",
+        "img_RIO_SD_exterior1_w.jpg",
+        "Img_ForteSd_Exterior1_w.jpg",
+        "kia_showroom-big-image-sportage-3-w.jpg",
+      ];
+      var resp = false;
+      for (var i in covers) {
+        if (urlImage.includes(covers[i])) {
+          resp = true;
+          break;
+        }
+      }
+      return resp;
+  }
+
+
+function findName(elem) {
+    let name = elem.parent().parent().find(".imgListTit").text();
+
+    if (!name) {
+        name = elem.parent().parent().parent().find(".imgListTit").text();
+      }
+        if (!name) {
+          name = elem.parent().parent().parent().parent().find(".btmTextTit").text();
+        }
+        if (!name) {
+            name = elem.parent().parent().parent().find(".btmTextTit").text();
+        }
+        if (!name) {
+          name = elem.parent().parent().parent().parent().find(".shadowBlack").first().text();
+        }
+        if (!name) {
+          name = elem.parent().parent().parent().parent().find(".subTxt").text();
+        }
+        if (!name) {
+          name = elem.parent().parent().parent().parent().find("videoTit").first().text();
+        }
+        if (!name) {
+          name = elem.parent().parent().parent().parent().parent().parent().find('h3.shadowBlack').text()
+        } 
+        name=name.replace("Manéjalo y lo entenderás.","");
+        name=name.replace("Manéjalo y lo.","");
+        name=name.replace("Más que tu auto.","");
+        name=name.replace("Prepárate para conectar con algo más grande.","");
+        return name;
+}
+
+function findDescription(elem) {
+  let description = elem.parent().parent().find(".description").text();
+  if (!description) {
+    description = elem
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .find(".btmTextTxt")
+      .text();
+  }
+  //Para imagenes principales
+  if (!description) {
+    description = elem
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .find(".subTxt")
+      .text();
+  }
+  //Para imagenes principales
+  if (!description) {
+    description = elem
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .find(".imgDesc")
+      .text();
+  }
+  if (!description) {
+    description = elem
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .find(".videoTxt")
+      .text();
+  }
+  if (!description) {
+    description = elem
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .find(".shadowBlack")
+      .next()
+      .text();
+  }
+  description = description.replace("Apártalo aquí", "");
+  return description;
+}
+
+//scrapiKia();
+module.exports = scrapiKia;

@@ -1,0 +1,57 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">New Image</div>
+        <div class="card-body">
+            <form action="/images/new-image" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Name" autofocus>
+                </div>                
+                <div class="form-group">
+                    <textarea name="description" class="form-control" placeholder="Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="url" class="form-control" placeholder="Url">
+                </div>     
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="category">Category</label>
+                        </div>
+                        <select class="custom-select" name="category">
+                            {{#each featureCategory}}
+                                <option value="{{this.code}}">{{this.name}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>     
+              <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="category">Year</label>
+                        </div>
+                       <select class="custom-select" name="year">
+                            {{#each yearCatalog}}
+                                     <option value="{{this.codeHtml}}">{{this.name}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>    
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="category">Model</label>
+                        </div>
+                       <select class="custom-select" name="model">
+                            {{#each vehicleCatalog}}
+                                     <option value="{{this.codeHtml}}" {{isSelected this.codeHtml ../image.model}}   >{{this.name}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>     
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Save</button>
+                </div>                
+            </form>
+        </div>
+    </div>
+</div>
