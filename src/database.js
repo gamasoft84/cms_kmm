@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 require("dotenv").config({ path: ".env" });
-//const BBDD = process.env.BBDD;
-const BBDD = 'mongodb+srv://Gamasoft:Gamasoft@clustercms.gbsxk.mongodb.net/cmsKMM?retryWrites=true&w=majority';
+const BBDD = process.env.BBDD;
 
 mongoose.connect(BBDD,{
     useCreateIndex:true,
