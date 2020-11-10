@@ -1,0 +1,290 @@
+[
+	{
+		"modlNameHtml": "forte-hatchback",
+		"modlName": "Nuevo Forte Hatchback",
+		"modlCd": "DJS6",
+		"trimNm": "EX",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "E7",
+		"desc": "New Forte 2.0L EX M/T HB"
+	},
+	{
+		"modlNameHtml": "forte-hatchback",
+		"modlName": "Nuevo Forte Hatchback",
+		"modlCd": "DJS6",
+		"trimNm": "EX",
+		"tmName": "CVT",
+		"tmCd": "EV",
+		"desc": "New Forte 2.0L EX IVT HB"
+	},
+	{
+		"modlNameHtml": "forte-hatchback",
+		"modlName": "Nuevo Forte Hatchback",
+		"modlCd": "DJS6",
+		"trimNm": "GT-line",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "I7",
+		"desc": "New Forte 2.0L GT-line M/T HB 2021"
+	},
+	{
+		"modlNameHtml": "forte-hatchback",
+		"modlName": "Nuevo Forte Hatchback",
+		"modlCd": "DJS6",
+		"trimNm": "GT-line",
+		"tmName": "CVT",
+		"tmCd": "IV",
+		"desc": "New Forte 2.0L GT-line IVT HB 2021"
+	},
+	{
+		"modlNameHtml": "forte-hatchback",
+		"modlName": "Nuevo Forte Hatchback",
+		"modlCd": "DJS6",
+		"trimNm": "GT",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "G7",
+		"desc": "New Forte 1.6L Turbo GT M/T HB 2021"
+	},
+	{
+		"modlNameHtml": "forte-hatchback",
+		"modlName": "Nuevo Forte Hatchback",
+		"modlCd": "DJS6",
+		"trimNm": "GT",
+		"tmName": "DCT 7 VELOCIDADES FWD",
+		"tmCd": "GU",
+		"desc": "New Forte 1.6L Turbo GT DCT HB 2021"
+	},
+	{
+		"modlNameHtml": "forte-sedan",
+		"modlName": "Nuevo Forte",
+		"modlCd": "DLS4",
+		"trimNm": "L",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "B7",
+		"desc": "New Forte 2.0L L M/T Sedan"
+	},
+	{
+		"modlNameHtml": "forte-sedan",
+		"modlName": "Nuevo Forte",
+		"modlCd": "DLS4",
+		"trimNm": "L",
+		"tmName": "CVT",
+		"tmCd": "BV",
+		"desc": "New Forte 2.0L L IVT Sedan"
+	},
+	{
+		"modlNameHtml": "forte-sedan",
+		"modlName": "Nuevo Forte",
+		"modlCd": "DLS4",
+		"trimNm": "LX",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "L7",
+		"desc": "New Forte 2.0L LX M/T Sedan"
+	},
+	{
+		"modlNameHtml": "forte-sedan",
+		"modlName": "Nuevo Forte",
+		"modlCd": "DLS4",
+		"trimNm": "LX",
+		"tmName": "CVT",
+		"tmCd": "LV",
+		"desc": "New Forte 2.0L LX IVT Sedan"
+	},
+	{
+		"modlNameHtml": "forte-sedan",
+		"modlName": "Nuevo Forte",
+		"modlCd": "DLS4",
+		"trimNm": "EX",
+		"tmName": "CVT",
+		"tmCd": "EV",
+		"desc": "New Forte 2.0L EX IVT Sedan"
+	},
+	{
+		"modlNameHtml": "forte-sedan",
+		"modlName": "Nuevo Forte",
+		"modlCd": "DLS4",
+		"trimNm": "SX",
+		"tmName": "CVT",
+		"tmCd": "SV",
+		"desc": "New Forte 2.0L GT-line IVT Sedan"
+	},
+	{
+		"modlNameHtml": "forte-sedan",
+		"modlName": "Nuevo Forte",
+		"modlCd": "DLS4",
+		"trimNm": "SXL",
+		"tmName": "DCT 7 VELOCIDADES FWD",
+		"tmCd": "XU",
+		"desc": "New Forte 1.6L Turbo GT DCT Sedan"
+	},
+	{
+		"modlNameHtml": "rio-hatchback",
+		"modlName": "Kia Rio Hatchback",
+		"modlCd": "H9S6",
+		"trimNm": "LX",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "L7",
+		"desc": "New KIA Rio PE 1.6L LX M/T HB"
+	},
+	{
+		"modlNameHtml": "rio-hatchback",
+		"modlName": "Kia Rio Hatchback",
+		"modlCd": "H9S6",
+		"trimNm": "LX",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "LF",
+		"desc": "New KIA Rio PE 1.6L LX A/T HB"
+	},
+	{
+		"modlNameHtml": "rio-hatchback",
+		"modlName": "Kia Rio Hatchback",
+		"modlCd": "H9S6",
+		"trimNm": "EX",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "E7",
+		"desc": "New KIA Rio PE 1.6L EX M/T HB"
+	},
+	{
+		"modlNameHtml": "rio-hatchback",
+		"modlName": "Kia Rio Hatchback",
+		"modlCd": "H9S6",
+		"trimNm": "EX",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "EF",
+		"desc": "New KIA Rio PE 1.6L EX A/T HB"
+	},
+	{
+		"modlNameHtml": "rio-hatchback",
+		"modlName": "Kia Rio Hatchback",
+		"modlCd": "H9S6",
+		"trimNm": "EX PACK",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "PF",
+		"desc": "New KIA Rio PE 1.6L EX PACK A/T HB"
+	},
+	{
+		"modlNameHtml": "rio-hatchback",
+		"modlName": "Kia Rio Hatchback",
+		"modlCd": "H9S6",
+		"trimNm": "S PACK",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "57",
+		"desc": "New KIA Rio PE 1.6L S PACK M/T HB"
+	},
+	{
+		"modlNameHtml": "rio-sedan",
+		"modlName": "Kia Rio Sedan",
+		"modlCd": "H9S4",
+		"trimNm": "L",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "B7",
+		"desc": "New KIA Rio PE 1.6L L M/T Sedan"
+	},
+	{
+		"modlNameHtml": "rio-sedan",
+		"modlName": "Kia Rio Sedan",
+		"modlCd": "H9S4",
+		"trimNm": "L",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "BF",
+		"desc": "New KIA Rio PE 1.6L L A/T Sedan"
+	},
+	{
+		"modlNameHtml": "rio-sedan",
+		"modlName": "Kia Rio Sedan",
+		"modlCd": "H9S4",
+		"trimNm": "S PACK",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "5F",
+		"desc": "New KIA Rio PE 1.6L S PACK A/T Sedan"
+	},
+	{
+		"modlNameHtml": "rio-sedan",
+		"modlName": "Kia Rio Sedan",
+		"modlCd": "H9S4",
+		"trimNm": "LX",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "L7",
+		"desc": "New KIA Rio PE 1.6L LX M/T Sedan"
+	},
+	{
+		"modlNameHtml": "rio-sedan",
+		"modlName": "Kia Rio Sedan",
+		"modlCd": "H9S4",
+		"trimNm": "EX",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "EF",
+		"desc": "New KIA Rio PE 1.6L EX A/T Sedan"
+	},
+	{
+		"modlNameHtml": "rio-sedan",
+		"modlName": "Kia Rio Sedan",
+		"modlCd": "H9S4",
+		"trimNm": "LX",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "LF",
+		"desc": "New KIA Rio PE 1.6L LX A/T Sedan"
+	},
+	{
+		"modlNameHtml": "soul-2020",
+		"modlName": "Nuevo Soul",
+		"modlCd": "SKW5",
+		"trimNm": "EX",
+		"tmName": "CVT",
+		"tmCd": "EV",
+		"desc": "New Soul 2.0L EX IVT"
+	},
+	{
+		"modlNameHtml": "soul-2020",
+		"modlName": "Nuevo Soul",
+		"modlCd": "SKW5",
+		"trimNm": "LX",
+		"tmName": "T/M 6 VELOCIDADES FWD",
+		"tmCd": "L7",
+		"desc": "New Soul 1.6L LX M/T"
+	},
+	{
+		"modlNameHtml": "soul-2020",
+		"modlName": "Nuevo Soul",
+		"modlCd": "SKW5",
+		"trimNm": "LX",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "LF",
+		"desc": "New Soul 1.6L LX A/T"
+	},
+	{
+		"modlNameHtml": "sportage",
+		"modlName": "Sportage Slovakia",
+		"modlCd": "F1W5",
+		"trimNm": "EX",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "EF",
+		"desc": "New Sportage PE 2.0L EX A/T"
+	},
+	{
+		"modlNameHtml": "sportage",
+		"modlName": "Sportage",
+		"modlCd": "D9W5",
+		"trimNm": "EX PACK",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "PF",
+		"desc": "New Sportage PE 2.4L EX PACK A/T(Beige)"
+	},
+	{
+		"modlNameHtml": "sportage",
+		"modlName": "Sportage",
+		"modlCd": "D9W5",
+		"trimNm": "SXL",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "XF",
+		"desc": "New Sportage PE 2.4L SXL A/T(Beige)"
+	},
+	{
+		"modlNameHtml": "sportage",
+		"modlName": "Sportage Slovakia",
+		"modlCd": "F1W5",
+		"trimNm": "LX",
+		"tmName": "T/A 6 VELOCIDADES FWD",
+		"tmCd": "LF",
+		"desc": "New Sportage PE 2.0L LX A/T"
+	}
+]

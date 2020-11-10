@@ -32,6 +32,9 @@ app.engine(
       },
       isSelected: function (value,  selectedValue) {
         return value === selectedValue ? 'selected' : '';
+      },
+      checked: function (value) {
+        return value === true ? 'checked' : '';
       }
     },
   })

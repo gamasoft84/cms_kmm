@@ -32,8 +32,21 @@
                                             <i class="far fa-trash-alt"></i>
                                         </button>
                                     </form>
-
                                 </div>
+                                </br>
+                                <div class="d-flex justify-content-center">
+                                    <div class="d-flex justify-content-center">
+                                            {{#each this.versions}}
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}>
+                                                    <label class="custom-control-label" for="switch_{{this.code}}_{{../this._id}}">{{desc}}</label>
+                                                </div>
+                                            {{/each}}
+                                    </div>                                    
+                                </div>
+
+
+
                             </div>
                         </div>
                     </div>

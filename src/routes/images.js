@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const Image = require('../models/Image');
+const Version = require('../models/Version');
+
 const {isAuthenticated} = require('../helpers/auth');
 var scrapiKia = require('./../generatedModelsKia');
 const requestPromise = require('request-promise');
@@ -73,10 +75,9 @@ const featureCategory = [
     },
   ];
 
-router.get('/images/add',isAuthenticated, (req,res) =>{
+router.get('/images/add',isAuthenticated, async (req,res) =>{
     //console.log(vehicleCatalog);
     //console.log(featureCategory);
-
     res.render('images/new-image',{featureCategory,yearCatalog,vehicleCatalog});
 });
 
@@ -84,15 +85,41 @@ router.get('/images/load_from_kia',isAuthenticated, async (req,res) =>{
     let resp = await scrapiKia();    
     setTimeout(function() {
         saveImages(resp);
-    }, 3000);
+    }, 5000);
     req.flash('success_msg', 'Load Images successfully !')
     res.render('images/load-image');
 });
 
+
+
+
 const saveImages = async function(resp){
+  let allVersion = await Version.find();
+  allVersion.forEach(element =>{
+    element.tmName = element.tmName.replace(" 6 VELOCIDADES FWD","").replace(" 7 VELOCIDADES FWD","").replace(" 7 VELOCIDADES FWD","");
+  })
+  //var versions =allVersion.map((version) => version.tmCd);
+ // console.log(versions);
+
     resp.forEach( async (element) => {
-        const {name,description,url,category,year,model,isCover} = element;
-        const image = new Image({name,description,url,category,year,model,isCover});        
+      const {name,description,url,category,year,model,isCover} = element;
+      var versions = allVersion.filter((version) => version.modlNameHtml === model)
+        .map(function(version){
+          let actv = false;
+          if(name.includes('TRANSMISIÓN MANUAL') && version.tmName.includes('T/M')){
+            actv = true;
+          }
+          if(name.includes('TRANSMISIÓN AUTOMÁTICA') && version.tmName.includes('T/A')){
+            actv = true;
+          }
+
+          return{
+            code : version.tmCd, 
+            desc : version.trimNm + ' ' + version.tmName,
+            actv: actv
+          }
+        });
+        const image = new Image({name,description,url,category,year,model,isCover,versions});        
         await image.save();
     });
 }

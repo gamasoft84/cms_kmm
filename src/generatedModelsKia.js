@@ -3,7 +3,6 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 const {featureCategory, vehicleCatalog} = require('./../src/enum/catalog')
 
-
 var HashMap = require("hashmap");
 
 
@@ -11,10 +10,10 @@ var HashMap = require("hashmap");
 const writeStream = fs.createWriteStream("2021.csv");
 
 var modelos2021 = [
-  "rio-hatchback",
-  "rio-sedan",
-  "forte-sedan",
-  "sportage",
+ "rio-hatchback",
+ "rio-sedan",
+ "forte-sedan",
+ "sportage",
   "forte-hatchback",
 ];
 
@@ -22,9 +21,6 @@ let structurByModel = [];
 let mapImages = new HashMap();
 
 scrapiKia = async function scrapiKIA() {
-    console.log(vehicleCatalog);
-    console.log(featureCategory);
-
     structurByModel = [];
   mapImages = new HashMap();
 
@@ -56,15 +52,12 @@ async function getImagesPagePrincipal(model) {
 
       let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg/;
 
-      if (
-        (regex.test(data.toLowerCase()) || isAllow(data)) &&
-        !isNotAllow(data)
-      ) {
+      if ((regex.test(data.toLowerCase()) || isAllow(data)) && !isNotAllow(data) && !getCoverSecondary(data)) {
         let name = findName($(el));
         //console.log(name);
         let description = findDescription($(el));
-        let category = getCategoria(url.toLowerCase());
-        let isCover = getCover(url);
+        let category = getCategoria(url.toLowerCase(),name.toLowerCase());
+        let isCover = getCoverPrincipal(url);
         const year = "2021";
         if (!mapImages.get(url)) {
           //console.log(data)
@@ -108,6 +101,8 @@ function isNotAllow(image) {
   let images = [
     "2019/6_Desempeno/kia_sportage_auto_desempeno_1_w.jpg",
     "2019/7_USP_desempeno/kia_sportage_auto_des_3_w.jpg",
+    "Kia_ForteHb_Auto_Desempeno_1_w.jpg",
+    "configura_tu_kia_forte_GT_auto_perfil.png"
   ];
   var resp = false;
   for (var i in images) {
@@ -123,27 +118,65 @@ function isNotAllow(image) {
  * Permite obtener una clasificacion para el tipo de imagen
  * @param {*} urlImage
  */
-function getCategoria(urlImage) {
-  if (urlImage.includes("exterior")) {
-    return "EX";
-  } else if (urlImage.includes("interior")) {
-    return "IN";
-  } else if (urlImage.includes("safety") || urlImage.includes("seguridad")) {
-    return "SA";
-  } else if (urlImage.includes("performance") || urlImage.includes("desempenio")) {
-    return "PE";
-  } else {
-    return "S/C";
+function getCategoria(urlImage , title) {
+  let category = "";
+
+  if(title.includes("modos de manejo") || title.includes("cargador")  || title.includes("pantalla") || title.includes("paleta") || title.includes("aire acond") || 
+    title.includes("navegaci") || title.includes("punto ciego") || title.includes("sensores") || title.includes("cajuela intell") || title.includes("camara") || 
+    title.includes("de encendido") || title.includes("controles al volante")){    
+    category = "TE";
   }
+
+  if(title.includes("motor") || title.includes("transmisi")){    
+    category = "PE";
+  }
+
+  if(!category){
+    if (urlImage.includes("exterior")) {
+      category = "EX";
+    } else if (urlImage.includes("interior")) {
+      category = "IN";
+    } else if (urlImage.includes("safety") || urlImage.includes("seguridad")) {
+      category = "SA";
+    } else if (urlImage.includes("performance") || urlImage.includes("desempenio")) {
+      category = "PE";
+    } else {
+      category = "S/C";
+    }
+  }
+
+  
+  return category;
 }
 
-function getCover(urlImage) {
+function getCoverPrincipal(urlImage) {
     let covers = [
         "Forte-HB/2-exterior/kia_showroom-big-image-forte-3-w-02.jpg",
         "img_RioHB_exterior1_w.jpg",
         "img_RIO_SD_exterior1_w.jpg",
         "Img_ForteSd_Exterior1_w.jpg",
+        "kia-showroom-key-visual-sportage-w.jpg",
+      ];
+      var resp = false;
+      for (var i in covers) {
+        if (urlImage.includes(covers[i])) {
+          resp = true;
+          break;
+        }
+      }
+      return resp;
+  }
+
+  function getCoverSecondary(urlImage) {
+    let covers = [
+        "kia-showroom-key-visual-forteGT-w.jpg",
+        "bg_Pc_RioHB_overview1_w.jpg",
+        "kia-showroom-key-visual-RioSedan_w.jpg",
+        "kia-showroom-key-visual-forte-W.jpg",
         "kia_showroom-big-image-sportage-3-w.jpg",
+
+        //"img_RioHB_exterior2_w.jpg",
+        //"img_RioHB_exterior3_w.jpg"
       ];
       var resp = false;
       for (var i in covers) {
