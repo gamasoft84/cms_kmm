@@ -5,6 +5,7 @@ const methodOverride = require("method-override");
 const session = require("cookie-session");
 const flash = require("connect-flash");
 const passport = require("passport");
+const bodyParser = require('body-parser');
 const { log } = require("console");
 
 //Inicializations
@@ -41,6 +42,7 @@ app.engine(
 );
 app.set("view engine", ".hbs");
 
+app.use(bodyParser.json());//Permite recibir peticiones desde un cliente Rest
 //Middleware (Todas las funciones que van a ser ejecutadas antes de llegar al servidor o cuando llegan antes de pasarselas a las rutas)
 app.use(express.urlencoded({ extended: false })); //Un formulario envia datos y se pueda entender y no aceptar imagenes solo datos.
 app.use(methodOverride("_method")); //Envia put y delete en el metodo oculto _method
