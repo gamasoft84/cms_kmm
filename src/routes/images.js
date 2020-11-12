@@ -105,10 +105,52 @@ const saveImages = async function(resp) {
         var versions = allVersion.filter((version) => version.modlNameHtml === model)
             .map(function(version) {
                 let actv = true;
-                if (name.includes('TRANSMISIÓN MANUAL') && version.tmName.includes('T/A')) {
+                //T/M, T/A, CVT, DCT
+                if (name.includes('TRANSMISIÓN MANUAL') && !version.tmName.includes('T/M')) {
                     actv = false;
                 }
-                if (name.includes('TRANSMISIÓN AUTOMÁTICA') && version.tmName.includes('T/M')) {
+                if ((name.includes('TRANSMISIÓN AUTOMÁTICA') || name.includes('IVT')) &&
+                    version.tmName.includes('T/M')) {
+                    actv = false;
+                }
+
+                if (name.includes('MOTOR 1.6 L ') &&
+                    !version.tmName.includes('DCT') && !version.modlNameHtml.includes('rio-hatchback')) {
+                    actv = false;
+                }
+
+                if (name.includes('ATKINSON') && version.tmName.includes('DCT')) {
+                    actv = false;
+                }
+
+                //T/M, T/A, CVT, DCT
+                if (name.includes('TRANSMISIÓN MANUAL') && !version.tmName.includes('T/M')) {
+                    actv = false;
+                }
+                if ((name.includes('TRANSMISIÓN AUTOMÁTICA') || name.includes('IVT')) &&
+                    version.tmName.includes('T/M')) {
+                    actv = false;
+                }
+
+                if (name.includes('MOTOR 1.6 L ') &&
+                    !version.tmName.includes('DCT') && !version.modlNameHtml.includes('rio-hatchback')) {
+                    actv = false;
+                }
+
+                if (name.includes('ATKINSON') && version.tmName.includes('DCT')) {
+                    actv = false;
+                }
+
+                if (name.includes('MOTOR 2.0') && version.modlNameHtml.includes('sportage') && (version.trimNm.includes('EX PACK') || version.trimNm.includes('SXL'))) {
+
+                    console.log(version.trimNm);
+                    console.log(version.modlNameHtml);
+                    actv = false;
+                }
+
+                if (name.includes('THETA 2.4') && version.modlNameHtml.includes('sportage') && !(version.trimNm.includes('EX PACK') || version.trimNm.includes('SXL'))) {
+                    console.log('b', version.trimNm);
+                    console.log('b', version.modlNameHtml);
                     actv = false;
                 }
 
