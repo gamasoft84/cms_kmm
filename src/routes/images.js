@@ -247,8 +247,10 @@ router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, 
     } else {
         if (category === 'allcategory') {
             content = await Image.find({ model });
-        } else {
+        } else if (model === 'allmodels') {
             content = await Image.find({ category });
+        } else {
+            content = await Image.find({ model, category });
         }
     }
 
@@ -262,7 +264,7 @@ router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, 
     }
 
     if (iscode === 'true') {
-        req.flash('success_msg', 'Images code generated successfully!');
+        //req.flash('success_msg', 'Images code generated successfully!');
         res.send(data);
     } else {
         await request.post({
