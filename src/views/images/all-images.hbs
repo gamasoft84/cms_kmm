@@ -1,12 +1,17 @@
 <div class="row justify-content-end">
-    <a href="/images/json/{{this.model}}/allcategory" title="Sent images '{{this.modelName}}' to MySales" class="sync"><i class="fas fa-sync" aria-hidden="true"></i></a>
+    <a href="/images/json/{{this.model}}/allcategory/true" title="Code images '{{this.modelName}}'" class="sync" target="_blank"><i class="fas fa-code" aria-hidden="true"></i></a>
+    <a href="/images/json/{{this.model}}/allcategory/false" title="Sent images '{{this.modelName}}' to MySales" class="sync"><i class="fas fa-paper-plane" aria-hidden="true"></i></a>
 </div>
 
 {{#each featureCategory}}
 <div class="jumbotron">
     <div class="row justify-content-between">
         <h1 class="display-6 txtFeature">{{this.name}} : {{../this.modelName}}</h1>
-        <a href="/images/json/{{../this.model}}/{{this.code}}"  title="Sent images '{{this.name}}' to MySales"><i class="far fa-paper-plane"></i></a>
+        <div>
+            <a href="/images/json/{{../this.model}}/{{this.code}}/true" title="Code images '{{this.name}}'" target="_blank"><i class="fas fa-code" aria-hidden="true"></i></a>
+            &nbsp;
+            <a href="/images/json/{{../this.model}}/{{this.code}}"  title="Sent images '{{this.name}}' to MySales"><i class="far fa-paper-plane"></i></a>
+        </div>        
     </div>
 
 
@@ -53,9 +58,6 @@
                                             {{/each}}
                                     </div>                                    
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>

@@ -170,7 +170,6 @@ router.get('/images/covers', isAuthenticated, async(req, res) => {
 });
 
 router.get('/images', isAuthenticated, async(req, res) => {
-    console.log('All KIA models log')
     const images = await Image.find({ isCover: false });
     let model = "allmodels";
     res.render('images/all-images', { images, featureCategory, model });
@@ -237,9 +236,10 @@ router.put('/images/edit-versions_image/:id', isAuthenticated, async(req, res) =
 });
 
 
-router.get('/images/json/:model/:category', isAuthenticated, async(req, res) => {
+router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, res) => {
     let model = req.params.model;
     let category = req.params.category;
+    let iscode = req.params.iscode;
     let content = null;
 
     if (category === 'allcategory' && model === 'allmodels') {
@@ -248,7 +248,7 @@ router.get('/images/json/:model/:category', isAuthenticated, async(req, res) => 
         if (category === 'allcategory') {
             content = await Image.find({ model });
         } else {
-            content = await Image.find({ model, category });
+            content = await Image.find({ category });
         }
     }
 
@@ -261,31 +261,33 @@ router.get('/images/json/:model/:category', isAuthenticated, async(req, res) => 
         content
     }
 
-    await request.post({
-            url: 'http://localhost:8080/DP/submitImageToAzure',
-            json: data,
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        },
-        function(error, response, body) {
+    if (iscode === 'true') {
+        req.flash('success_msg', 'Images code generated successfully!');
+        res.send(data);
+    } else {
+        await request.post({
+                url: 'http://localhost:8080/DP/submitImageToAzure',
+                json: data,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            },
+            function(error, response, body) {
+                // console.log(error);
+                // console.log(response);
+                console.log('------');
+                console.log(body.resultCode);
+                console.log('body:', body);
+                if (body.errorManagement) {
+                    console.log(body.errorManagement.errorDescription);
+                }
+                console.log(body);
+                console.log('------');
+            });
+        req.flash('success_msg', 'Images Sent successfully!');
+        res.redirect('/images/' + (model != null && model != 'allmodels' ? model : ''));
 
-            // console.log(error);
-            // console.log(response);
-            console.log('------');
-            console.log(body.resultCode);
-            console.log('body:', body);
-            if (body.errorManagement) {
-                console.log(body.errorManagement.errorDescription);
-            }
-            console.log(body);
-            console.log('------');
-        });
-
-
-    req.flash('success_msg', 'Images Sent successfully!');
-    res.send(data);
-    //res.redirect('/images/' + (model != null && model != 'allmodels' ? model : ''));
+    }
 });
 
 
