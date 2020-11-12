@@ -1,6 +1,15 @@
+<div class="row justify-content-end">
+    <a href="/images/json/{{this.model}}/allcategory" title="Sent images '{{this.modelName}}' to MySales" class="sync"><i class="fas fa-sync" aria-hidden="true"></i></a>
+</div>
+
 {{#each featureCategory}}
 <div class="jumbotron">
-    <h1 class="display-6 txtFeature">{{this.name}}</h1>
+    <div class="row justify-content-between">
+        <h1 class="display-6 txtFeature">{{this.name}} : {{../this.modelName}}</h1>
+        <a href="/images/json/{{../this.model}}/{{this.code}}"  title="Sent images '{{this.name}}' to MySales"><i class="far fa-paper-plane"></i></a>
+    </div>
+
+
     <hr class="my-4 txtFeature">
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -25,7 +34,7 @@
                                         <i class="fas fa-edit"></i>
                                     </a>
                                     &nbsp;
-                                    <form action="/images/delete/{{_id}}/{{this.model}}?_method=DELETE&model={{this.name}}"
+                                    <form action="/images/delete/{{_id}}/{{this.model}}?_method=DELETE"
                                         method="POST">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <button class="btn btn-primary" type="submit">
@@ -37,8 +46,8 @@
                                 <div class="d-flex justify-content-center">
                                     <div class="d-flex justify-content-center">
                                             {{#each this.versions}}
-                                                <div class="custom-control custom-switch">
-                                                    <input type="checkbox" class="custom-control-input" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}>
+                                                <div class="custom-control custom-switch" title="{{code}}">
+                                                    <input type="checkbox" class="custom-control-input" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}">
                                                     <label class="custom-control-label" for="switch_{{this.code}}_{{../this._id}}">{{desc}}</label>
                                                 </div>
                                             {{/each}}

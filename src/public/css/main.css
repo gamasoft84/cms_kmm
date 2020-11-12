@@ -1,46 +1,49 @@
-body{
-    background: #1488CC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+    background: #1488CC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.logo{
+.logo {
     height: 60%;
-    width:  60%;
+    width: 60%;
 }
 
-.txt_cms{
+.txt_cms {
     color: #E00E27;
     font: bold;
     font-size: 18px;
     margin-top: -40px;
 }
 
-.img{
+.img {
     width: 180px;
     height: 180px;
     background-size: cover;
 }
 
-.jumbotron2{
-    background: url("../img/logo-kia.png")  no-repeat center center fixed;
+.jumbotron2 {
+    background: url("../img/logo-kia.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-.card{
+.card {
     margin-top: 15px;
 }
 
-.txtFeature{
+.txtFeature {
     color: #BD012A;
-    border-top-color:#BD012A;
+    border-top-color: #BD012A;
     font: bold;
 }
 
-.backgroundFeature{
+.backgroundFeature {
     color: #FFFFFF;
     font: bold;
 }
@@ -48,8 +51,13 @@ body{
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     background-color: #22b24c;
-    border-color:#22b24c;
+    border-color: #22b24c;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
- }
+}
+
+.sync {
+    padding-right: 20px;
+    padding-bottom: 8px;
+}
