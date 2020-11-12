@@ -13,7 +13,7 @@ body {
 }
 
 .txt_cms {
-    color: #E00E27;
+    color: #BD012A;
     font: bold;
     font-size: 18px;
     margin-top: -40px;
@@ -60,4 +60,16 @@ body {
 .sync {
     padding-right: 20px;
     padding-bottom: 8px;
+}
+
+.go-up {
+	display:none;
+	padding:20px;
+	background:#BD012A;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
 }
