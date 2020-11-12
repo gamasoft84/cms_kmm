@@ -9,7 +9,7 @@ CREATE VIEW view_versions
                 WHEN 'Nuevo Forte Hatchback' THEN 'forte-hatchback'
                 WHEN 'Sportage' THEN 'sportage'
                 WHEN 'Sportage Slovakia' THEN 'sportage'
-                WHEN 'Nuevo Soul' THEN 'soul-2020'
+                WHEN 'Nuevo Soul' THEN 'soul'
                 ELSE 'No such model'END as modlNameHtml,
             B.MODL_DISPLAY_NM as modlName,
             A.MODL_CD+A.BODY_TYPE_CD as modlCd,

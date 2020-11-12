@@ -62,6 +62,10 @@ const vehicleCatalog = [{
         name: "KIA Sportage",
         codeHtml: "sportage",
     },
+    {
+        name: "KIA Soul",
+        codeHtml: "soul",
+    },
 ];
 
 const yearCatalog = [{
@@ -105,7 +109,8 @@ const saveImages = async function(resp) {
         var versions = allVersion.filter((version) => version.modlNameHtml === model)
             .map(function(version) {
                 let actv = true;
-                //T/M, T/A, CVT, DCT
+                //T/M, T/A, CVT, DCT   tmName
+                //LX EX GT GT-LINE     trimNm
                 if (name.includes('TRANSMISIÓN MANUAL') && !version.tmName.includes('T/M')) {
                     actv = false;
                 }
@@ -114,43 +119,34 @@ const saveImages = async function(resp) {
                     actv = false;
                 }
 
-                if (name.includes('MOTOR 1.6 L ') &&
-                    !version.tmName.includes('DCT') && !version.modlNameHtml.includes('rio-hatchback')) {
-                    actv = false;
+                if (name.includes('MOTOR 1.6 L ')) {
+                    if (version.modlNameHtml.includes('soul') && !version.trimNm.includes('LX')) {
+                        actv = false;
+                    }
+                    if (version.modlNameHtml.includes('forte-sedan') && !version.tmName.includes('DCT')) {
+                        actv = false;
+                    }
+                    if (version.modlNameHtml.includes('forte-hatchback') && !version.tmName.includes('DCT')) {
+                        //console.log(version.modlNameHtml, version.tmName);
+                        actv = false;
+                    }
+
                 }
 
                 if (name.includes('ATKINSON') && version.tmName.includes('DCT')) {
                     actv = false;
                 }
 
-                //T/M, T/A, CVT, DCT
-                if (name.includes('TRANSMISIÓN MANUAL') && !version.tmName.includes('T/M')) {
-                    actv = false;
-                }
-                if ((name.includes('TRANSMISIÓN AUTOMÁTICA') || name.includes('IVT')) &&
-                    version.tmName.includes('T/M')) {
-                    actv = false;
-                }
-
-                if (name.includes('MOTOR 1.6 L ') &&
-                    !version.tmName.includes('DCT') && !version.modlNameHtml.includes('rio-hatchback')) {
-                    actv = false;
-                }
-
-                if (name.includes('ATKINSON') && version.tmName.includes('DCT')) {
-                    actv = false;
-                }
-
-                if (name.includes('MOTOR 2.0') && version.modlNameHtml.includes('sportage') && (version.trimNm.includes('EX PACK') || version.trimNm.includes('SXL'))) {
-
-                    console.log(version.trimNm);
-                    console.log(version.modlNameHtml);
-                    actv = false;
+                if (name.includes('MOTOR 2.0')) {
+                    if (version.modlNameHtml.includes('sportage') && (version.trimNm.includes('EX PACK') || version.trimNm.includes('SXL'))) {
+                        actv = false;
+                    }
+                    if (version.modlNameHtml.includes('soul') && !version.trimNm.includes('EX')) {
+                        actv = false;
+                    }
                 }
 
                 if (name.includes('THETA 2.4') && version.modlNameHtml.includes('sportage') && !(version.trimNm.includes('EX PACK') || version.trimNm.includes('SXL'))) {
-                    console.log('b', version.trimNm);
-                    console.log('b', version.modlNameHtml);
                     actv = false;
                 }
 

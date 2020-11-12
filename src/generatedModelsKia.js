@@ -1,7 +1,7 @@
 const request = require("request-promise");
 const cheerio = require("cheerio");
 const fs = require("fs");
-const {featureCategory, vehicleCatalog} = require('./../src/enum/catalog')
+const { featureCategory, vehicleCatalog } = require('./../src/enum/catalog')
 
 var HashMap = require("hashmap");
 
@@ -10,11 +10,12 @@ var HashMap = require("hashmap");
 const writeStream = fs.createWriteStream("2021.csv");
 
 var modelos2021 = [
- "rio-hatchback",
- "rio-sedan",
- "forte-sedan",
- "sportage",
-  "forte-hatchback",
+    "soul",
+    "rio-hatchback",
+    "rio-sedan",
+    "forte-sedan",
+    "sportage",
+    "forte-hatchback",
 ];
 
 let structurByModel = [];
@@ -22,12 +23,12 @@ let mapImages = new HashMap();
 
 scrapiKia = async function scrapiKIA() {
     structurByModel = [];
-  mapImages = new HashMap();
+    mapImages = new HashMap();
 
-  modelos2021.forEach((model) => {
-    getImagesPagePrincipal(model);
-  });
-  return structurByModel;
+    modelos2021.forEach((model) => {
+        getImagesPagePrincipal(model);
+    });
+    return structurByModel;
 };
 
 /**
@@ -35,118 +36,119 @@ scrapiKia = async function scrapiKIA() {
  * @param {modelo del vehiculo} model
  */
 async function getImagesPagePrincipal(model) {
-  try {
-    const $ = await request({
-      uri: `https://www.kia.com/mx/showroom/${model}.html`,
-      transform: (body) => cheerio.load(body),
-    });
-    $("picture source").each((i, el) => {
-      let data = "";
-      if ($(el).attr("srcset")) {
-        data = $(el).attr("srcset");
-      } else {
-        data = $(el).attr("data-srcset");
-      }
-      //|| data.includes('_m.jpg')
-      let url = `https://www.kia.com${data}`;
+    try {
+        const $ = await request({
+            uri: `https://www.kia.com/mx/showroom/${model}.html`,
+            transform: (body) => cheerio.load(body),
+        });
+        $("picture source").each((i, el) => {
+            let data = "";
+            if ($(el).attr("srcset")) {
+                data = $(el).attr("srcset");
+            } else {
+                data = $(el).attr("data-srcset");
+            }
+            //|| data.includes('_m.jpg')
+            let url = `https://www.kia.com${data}`;
 
-      let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg/;
+            let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg/;
 
-      if ((regex.test(data.toLowerCase()) || isAllow(data)) && !isNotAllow(data) && !getCoverSecondary(data)) {
-        let name = findName($(el));
-        //console.log(name);
-        let description = findDescription($(el));
-        let category = getCategoria(url.toLowerCase(),name.toLowerCase());
-        let isCover = getCoverPrincipal(url);
-        const year = "2021";
-        if (!mapImages.get(url)) {
-          //console.log(data)
-          structurByModel.push({
-            model,
-            url,
-            name,
-            description,
-            category,
-            year,
-            isCover
-          });
-          mapImages.set(url, url);
-          writeStream.write(`${url}\n`);
-        }
-      } else {
-        writeStream.write(
-          `                                              Descartado --> ${url}\n`
-        );
-      }
-    });
-    console.log(structurByModel.length);
-  } catch (e) {
-    console.log(e);
-  }
+            if ((regex.test(data.toLowerCase()) || isAllow(data)) && !isNotAllow(data) && !getCoverSecondary(data)) {
+                let name = findName($(el));
+                //console.log(name);
+                let description = findDescription($(el));
+                let category = getCategoria(url.toLowerCase(), name.toLowerCase());
+                let isCover = getCoverPrincipal(url);
+                const year = "2021";
+                if (!mapImages.get(url)) {
+                    //console.log(data)
+                    structurByModel.push({
+                        model,
+                        url,
+                        name,
+                        description,
+                        category,
+                        year,
+                        isCover
+                    });
+                    mapImages.set(url, url);
+                    writeStream.write(`${url}\n`);
+                }
+            } else {
+                writeStream.write(
+                    `                                              Descartado --> ${url}\n`
+                );
+            }
+        });
+        console.log(structurByModel.length);
+    } catch (e) {
+        console.log(e);
+    }
 }
 
 function isAllow(image) {
-  let images = ["configura_tu_kia_forte_GT_auto_perfil.png"];
-  var resp = false;
-  for (var i in images) {
-    if (image.includes(images[i])) {
-      resp = true;
-      break;
+    let images = ["configura_tu_kia_forte_GT_auto_perfil.png"];
+    var resp = false;
+    for (var i in images) {
+        if (image.includes(images[i])) {
+            resp = true;
+            break;
+        }
     }
-  }
-  return resp;
+    return resp;
 }
 
 function isNotAllow(image) {
-  let images = [
-    "2019/6_Desempeno/kia_sportage_auto_desempeno_1_w.jpg",
-    "2019/7_USP_desempeno/kia_sportage_auto_des_3_w.jpg",
-    "Kia_ForteHb_Auto_Desempeno_1_w.jpg",
-    "configura_tu_kia_forte_GT_auto_perfil.png"
-  ];
-  var resp = false;
-  for (var i in images) {
-    if (image.includes(images[i])) {
-      resp = true;
-      break;
+    let images = [
+        "2019/6_Desempeno/kia_sportage_auto_desempeno_1_w.jpg",
+        "2019/7_USP_desempeno/kia_sportage_auto_des_3_w.jpg",
+        "Kia_ForteHb_Auto_Desempeno_1_w.jpg",
+        "configura_tu_kia_forte_GT_auto_perfil.png",
+        "7_USP_desempeno/img_Soul_performance3_w.jpg"
+    ];
+    var resp = false;
+    for (var i in images) {
+        if (image.includes(images[i])) {
+            resp = true;
+            break;
+        }
     }
-  }
-  return resp;
+    return resp;
 }
 
 /**
  * Permite obtener una clasificacion para el tipo de imagen
  * @param {*} urlImage
  */
-function getCategoria(urlImage , title) {
-  let category = "";
+function getCategoria(urlImage, title) {
+    let category = "";
 
-  if(title.includes("modos de manejo") || title.includes("cargador")  || title.includes("pantalla") || title.includes("paleta") || title.includes("aire acond") || 
-    title.includes("navegaci") || title.includes("punto ciego") || title.includes("sensores") || title.includes("cajuela intell") || title.includes("camara") || 
-    title.includes("de encendido") || title.includes("controles al volante")){    
-    category = "TE";
-  }
-
-  if(title.includes("motor") || title.includes("transmisi")){    
-    category = "PE";
-  }
-
-  if(!category){
-    if (urlImage.includes("exterior")) {
-      category = "EX";
-    } else if (urlImage.includes("interior")) {
-      category = "IN";
-    } else if (urlImage.includes("safety") || urlImage.includes("seguridad")) {
-      category = "SA";
-    } else if (urlImage.includes("performance") || urlImage.includes("desempenio")) {
-      category = "PE";
-    } else {
-      category = "S/C";
+    if (title.includes("modos de manejo") || title.includes("cargador") || title.includes("pantalla") || title.includes("paleta") || title.includes("aire acond") ||
+        title.includes("navegaci") || title.includes("punto ciego") || title.includes("sensores") || title.includes("cajuela intell") || title.includes("camara") ||
+        title.includes("de encendido") || title.includes("controles al volante")) {
+        category = "TE";
     }
-  }
 
-  
-  return category;
+    if (title.includes("motor") || title.includes("transmisi")) {
+        category = "PE";
+    }
+
+    if (!category) {
+        if (urlImage.includes("exterior")) {
+            category = "EX";
+        } else if (urlImage.includes("interior")) {
+            category = "IN";
+        } else if (urlImage.includes("safety") || urlImage.includes("seguridad")) {
+            category = "SA";
+        } else if (urlImage.includes("performance") || urlImage.includes("desempenio")) {
+            category = "PE";
+        } else {
+            category = "S/C";
+        }
+    }
+
+
+    return category;
 }
 
 function getCoverPrincipal(urlImage) {
@@ -156,18 +158,19 @@ function getCoverPrincipal(urlImage) {
         "img_RIO_SD_exterior1_w.jpg",
         "Img_ForteSd_Exterior1_w.jpg",
         "kia-showroom-key-visual-sportage-w.jpg",
-      ];
-      var resp = false;
-      for (var i in covers) {
+        "img_Soul_exterior1_w.jpg"
+    ];
+    var resp = false;
+    for (var i in covers) {
         if (urlImage.includes(covers[i])) {
-          resp = true;
-          break;
+            resp = true;
+            break;
         }
-      }
-      return resp;
-  }
+    }
+    return resp;
+}
 
-  function getCoverSecondary(urlImage) {
+function getCoverSecondary(urlImage) {
     let covers = [
         "kia-showroom-key-visual-forteGT-w.jpg",
         "bg_Pc_RioHB_overview1_w.jpg",
@@ -177,16 +180,16 @@ function getCoverPrincipal(urlImage) {
 
         //"img_RioHB_exterior2_w.jpg",
         //"img_RioHB_exterior3_w.jpg"
-      ];
-      var resp = false;
-      for (var i in covers) {
+    ];
+    var resp = false;
+    for (var i in covers) {
         if (urlImage.includes(covers[i])) {
-          resp = true;
-          break;
+            resp = true;
+            break;
         }
-      }
-      return resp;
-  }
+    }
+    return resp;
+}
 
 
 function findName(elem) {
@@ -194,84 +197,84 @@ function findName(elem) {
 
     if (!name) {
         name = elem.parent().parent().parent().find(".imgListTit").text();
-      }
-        if (!name) {
-          name = elem.parent().parent().parent().parent().find(".btmTextTit").text();
-        }
-        if (!name) {
-            name = elem.parent().parent().parent().find(".btmTextTit").text();
-        }
-        if (!name) {
-          name = elem.parent().parent().parent().parent().find(".shadowBlack").first().text();
-        }
-        if (!name) {
-          name = elem.parent().parent().parent().parent().find(".subTxt").text();
-        }
-        if (!name) {
-          name = elem.parent().parent().parent().parent().find("videoTit").first().text();
-        }
-        if (!name) {
-          name = elem.parent().parent().parent().parent().parent().parent().find('h3.shadowBlack').text()
-        } 
-        name=name.replace("Manéjalo y lo entenderás.","");
-        name=name.replace("Manéjalo y lo.","");
-        name=name.replace("Más que tu auto.","");
-        name=name.replace("Prepárate para conectar con algo más grande.","");
-        return name;
+    }
+    if (!name) {
+        name = elem.parent().parent().parent().parent().find(".btmTextTit").text();
+    }
+    if (!name) {
+        name = elem.parent().parent().parent().find(".btmTextTit").text();
+    }
+    if (!name) {
+        name = elem.parent().parent().parent().parent().find(".shadowBlack").first().text();
+    }
+    if (!name) {
+        name = elem.parent().parent().parent().parent().find(".subTxt").text();
+    }
+    if (!name) {
+        name = elem.parent().parent().parent().parent().find("videoTit").first().text();
+    }
+    if (!name) {
+        name = elem.parent().parent().parent().parent().parent().parent().find('h3.shadowBlack').text()
+    }
+    name = name.replace("Manéjalo y lo entenderás.", "");
+    name = name.replace("Manéjalo y lo.", "");
+    name = name.replace("Más que tu auto.", "");
+    name = name.replace("Prepárate para conectar con algo más grande.", "");
+    return name;
 }
 
 function findDescription(elem) {
-  let description = elem.parent().parent().find(".description").text();
-  if (!description) {
-    description = elem
-      .parent()
-      .parent()
-      .parent()
-      .parent()
-      .find(".btmTextTxt")
-      .text();
-  }
-  //Para imagenes principales
-  if (!description) {
-    description = elem
-      .parent()
-      .parent()
-      .parent()
-      .parent()
-      .find(".subTxt")
-      .text();
-  }
-  //Para imagenes principales
-  if (!description) {
-    description = elem
-      .parent()
-      .parent()
-      .parent()
-      .parent()
-      .find(".imgDesc")
-      .text();
-  }
-  if (!description) {
-    description = elem
-      .parent()
-      .parent()
-      .parent()
-      .parent()
-      .find(".videoTxt")
-      .text();
-  }
-  if (!description) {
-    description = elem
-      .parent()
-      .parent()
-      .parent()
-      .parent()
-      .find(".shadowBlack")
-      .next()
-      .text();
-  }
-  description = description.replace("Apártalo aquí", "");
-  return description;
+    let description = elem.parent().parent().find(".description").text();
+    if (!description) {
+        description = elem
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .find(".btmTextTxt")
+            .text();
+    }
+    //Para imagenes principales
+    if (!description) {
+        description = elem
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .find(".subTxt")
+            .text();
+    }
+    //Para imagenes principales
+    if (!description) {
+        description = elem
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .find(".imgDesc")
+            .text();
+    }
+    if (!description) {
+        description = elem
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .find(".videoTxt")
+            .text();
+    }
+    if (!description) {
+        description = elem
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .find(".shadowBlack")
+            .next()
+            .text();
+    }
+    description = description.replace("Apártalo aquí", "");
+    return description;
 }
 
 //scrapiKia();
