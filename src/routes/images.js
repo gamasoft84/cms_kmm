@@ -280,17 +280,24 @@ router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, 
     let iscode = req.params.iscode;
     let content = null;
 
-    if (category === 'allcategory' && model === 'allmodels') {
-        content = await Image.find();
+    //all covers
+    if (category === 'allcategory' && model === 'allcovers') {
+        content = await Image.find({ isCover: true });
     } else {
-        if (category === 'allcategory') {
-            content = await Image.find({ model });
-        } else if (model === 'allmodels') {
-            content = await Image.find({ category });
+        //all models and all categorys
+        if (category === 'allcategory' && model === 'allmodels') {
+            content = await Image.find();
         } else {
-            content = await Image.find({ model, category });
+            if (category === 'allcategory') {
+                content = await Image.find({ model });
+            } else if (model === 'allmodels') {
+                content = await Image.find({ category });
+            } else {
+                content = await Image.find({ model, category });
+            }
         }
     }
+
 
     let messageId = "MS_Configurator001";
     let transactionId = "TS_Configurator001"
