@@ -51,6 +51,24 @@
                         </select>
                     </div>
                 </div>  
+                </br>
+                <div class="form-group">
+                        <div class="d-flex justify-content-center">
+                            <select class="custom-select" name="versionsFront" multiple>
+                                {{#each image.versions}}
+                                        <option value="{{this.code}}" {{selected this.actv}} >{{desc}}</option>
+                                {{/each}}
+                            </select>
+                               <!-- {{#each image.versions}}
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" name="switch_{{this.code}}" id="switch_{{this.code}}" {{checked this.actv}}>
+                                        <label class="custom-control-label" for="switch_{{this.code}}">{{desc}}</label>
+                                    </div>
+                                {{/each}}-->
+                        </div> 
+                </div>
+                
+                
                 <div class="form-group">
                      <button class="btn btn-primary btn-block" type="submit">
                          Actualizar

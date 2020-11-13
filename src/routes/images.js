@@ -228,9 +228,20 @@ router.get('/images/:model', isAuthenticated, async(req, res) => {
 });
 
 router.put('/images/edit-image/:id', isAuthenticated, async(req, res) => {
-    const { name, description, url, category, year, model } = req.body;
-    console.log({ name, description, url, category, year, model });
-    await Image.findByIdAndUpdate(req.params.id, { name, description, url, category, year, model });
+    const { name, description, url, category, year, model, versionsFront } = req.body;
+    console.log(versionsFront);
+
+    let image = await Image.findByIdAndUpdate(req.params.id);
+    let versions = image.versions;
+    image.versions.forEach(function(v) {
+
+        if (versionsFront.includes(v.code)) {
+            v.actv = true;
+        } else {
+            v.actv = false;
+        }
+    });
+    await Image.findByIdAndUpdate(req.params.id, { name, description, url, category, year, model, versions });
     req.flash('success_msg', 'Image Updated successfully!');
     res.redirect('/images/' + model);
 });
@@ -251,7 +262,7 @@ router.get('/images/delete_all', isAuthenticated, async(req, res) => {
 
 
 router.put('/images/edit-versions_image/:id', isAuthenticated, async(req, res) => {
-    console.log(req.body)
+    console.log(req.body) //particular
     let { code, actv } = req.body;
     if (!code) {
         code = "E7";
@@ -259,7 +270,6 @@ router.put('/images/edit-versions_image/:id', isAuthenticated, async(req, res) =
     }
 
     let image = await Image.findByIdAndUpdate(req.params.id);
-    Image.findByIdAndUpdate()
     let versions = image.versions;
 
     image.versions.forEach(function(v) {
