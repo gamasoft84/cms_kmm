@@ -73,3 +73,7 @@ body {
 	bottom:20px;
 	right:20px;
 }
+
+.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: #449007;
+}

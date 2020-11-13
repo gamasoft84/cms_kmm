@@ -5,24 +5,26 @@
         </div>
         <div class="card-body">
             <form action="/images/edit-image/{{image._id}}?_method=PUT" method="POST">
-            <input type="hidden" name="_method" value="PUT">
+                <input type="hidden" name="_method" value="PUT">
                 <div class="form-group">
                     <input type="text" name="name" value="{{image.name}}" placeholder="Name" class="form-control">
                 </div>
                 <div class="form-group">
-                    <textarea name="description" class="form-control" placeholder="Description">{{image.description}}</textarea>
+                    <textarea name="description" class="form-control"
+                        placeholder="Description">{{image.description}}</textarea>
                 </div>
                 <div class="form-group">
                     <input type="url" name="url" value="{{image.url}}" class="form-control" placeholder="Url">
-                </div>           
+                </div>
                 <div class="form-group">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="category">Category</label>
                         </div>
-                       <select class="custom-select" name="category">
+                        <select class="custom-select" name="category">
                             {{#each featureCategory}}
-                                     <option value="{{this.code}}" {{isSelected this.code ../image.category}}   >{{this.name}}</option>
+                            <option value="{{this.code}}" {{isSelected this.code ../image.category}}>{{this.name}}
+                            </option>
                             {{/each}}
                         </select>
                     </div>
@@ -32,47 +34,43 @@
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="category">Year</label>
                         </div>
-                       <select class="custom-select" name="year">
+                        <select class="custom-select" name="year">
                             {{#each yearCatalog}}
-                                     <option value="{{this.codeHtml}}" {{isSelected this.codeHtml ../image.year}}   >{{this.name}}</option>
+                            <option value="{{this.codeHtml}}" {{isSelected this.codeHtml ../image.year}}>{{this.name}}
+                            </option>
                             {{/each}}
                         </select>
                     </div>
-                </div>  
+                </div>
                 <div class="form-group">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="category">Model</label>
                         </div>
-                       <select class="custom-select" name="model">
+                        <select class="custom-select" name="model">
                             {{#each vehicleCatalog}}
-                                     <option value="{{this.codeHtml}}" {{isSelected this.codeHtml ../image.model}}   >{{this.name}}</option>
+                            <option value="{{this.codeHtml}}" {{isSelected this.codeHtml ../image.model}}>{{this.name}}
+                            </option>
                             {{/each}}
                         </select>
                     </div>
-                </div>  
-                </br>
-                <div class="form-group">
-                        <div class="d-flex justify-content-center">
-                            <select class="custom-select" name="versionsFront" multiple>
-                                {{#each image.versions}}
-                                        <option value="{{this.code}}" {{selected this.actv}} >{{desc}}</option>
-                                {{/each}}
-                            </select>
-                               <!-- {{#each image.versions}}
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" name="switch_{{this.code}}" id="switch_{{this.code}}" {{checked this.actv}}>
-                                        <label class="custom-control-label" for="switch_{{this.code}}">{{desc}}</label>
-                                    </div>
-                                {{/each}}-->
-                        </div> 
                 </div>
-                
-                
                 <div class="form-group">
-                     <button class="btn btn-primary btn-block" type="submit">
-                         Actualizar
-                     </button>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="versionsFront">Versions</label>
+                        </div>
+                        <select class="selectpicker" name="versionsFront" multiple>
+                            {{#each image.versions}}
+                                 <option value="{{this.code}}" {{selected this.actv}}>{{desc}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>              
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">
+                        Actualizar
+                    </button>
                 </div>
             </form>
 

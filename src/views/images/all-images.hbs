@@ -52,7 +52,7 @@
                                     <div class="d-flex justify-content-center">
                                             {{#each this.versions}}
                                                 <div class="custom-control custom-switch">
-                                                    <input type="checkbox" class="custom-control-input" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}>
+                                                    <input type="checkbox" class="custom-control-input" disabled="true" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}>
                                                     <label class="custom-control-label" for="switch_{{this.code}}_{{../this._id}}">{{desc}}</label>
                                                 </div>
                                             {{/each}}
