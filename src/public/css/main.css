@@ -77,3 +77,10 @@ body {
 .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
     background-color: #449007;
 }
+
+
+.card-footer{
+    color:#fff;
+    border-color: #BD012A;
+}
+
