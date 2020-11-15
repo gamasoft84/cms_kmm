@@ -49,15 +49,17 @@
                                 </div>
                                 </br>
                             </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-center">
-                                    {{#each this.versions}}
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input" disabled="true" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}>
-                                            <label class="custom-control-label" for="switch_{{this.code}}_{{../this._id}}">{{desc}}</label>
-                                        </div>
-                                    {{/each}}   
-                                </div>                                
+                            <div class="d-none d-sm-block">
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-center">
+                                        {{#each this.versions}}
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" disabled="true" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}>
+                                                <label class="custom-control-label" for="switch_{{this.code}}_{{../this._id}}">{{desc}}</label>
+                                            </div>
+                                        {{/each}}   
+                                    </div>                                
+                                </div>
                             </div>
                         </div>
                     </div>
