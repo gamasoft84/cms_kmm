@@ -7,6 +7,7 @@ const { isAuthenticated } = require('../helpers/auth');
 var scrapiKia = require('./../generatedModelsKia');
 const requestPromise = require('request-promise');
 var request = require('request');
+var HashMap = require("hashmap");
 
 //const {featureCategory,vehicleCatalog} = require('./../enum/catalog')
 
@@ -77,6 +78,35 @@ const yearCatalog = [{
         codeHtml: "2020",
     },
 ];
+
+let mapVersions = new HashMap();
+mapVersions.set("L T/M", 1);
+mapVersions.set("L CVT", 2);
+mapVersions.set("L T/A", 3);
+mapVersions.set("LX T/M", 4);
+mapVersions.set("LX T/A", 5);
+mapVersions.set("LX CVT", 6);
+mapVersions.set("EX T/M", 7);
+mapVersions.set("EX T/A", 8);
+mapVersions.set("EX CVT", 9);
+mapVersions.set("EX DCT", 10);
+mapVersions.set("EX PACK T/A", 11);
+mapVersions.set("EX PACK CVT", 12);
+mapVersions.set("S PACK T/M", 13);
+mapVersions.set("S PACK T/A", 14);
+mapVersions.set("GT T/M", 15);
+mapVersions.set("GT DCT", 16);
+mapVersions.set("GT-line T/M", 17);
+mapVersions.set("GT-line CVT", 18);
+mapVersions.set("SX T/M", 19);
+mapVersions.set("SX T/A", 20);
+mapVersions.set("SX CVT", 21);
+mapVersions.set("SX DCT", 22);
+mapVersions.set("SXL T/M", 23);
+mapVersions.set("SXL T/A", 24);
+mapVersions.set("SXL DCT", 25);
+
+
 
 router.get('/images/add', isAuthenticated, async(req, res) => {
     //console.log(vehicleCatalog);
@@ -197,6 +227,7 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
 //only for redirect 
 router.get('/images/edit/:id', isAuthenticated, async(req, res) => {
     const image = await Image.findById(req.params.id);
+    image.versions.sort(compare);
     res.render('images/edit-image', { image, featureCategory, yearCatalog, vehicleCatalog });
 });
 
@@ -224,8 +255,25 @@ router.get('/images/:model', isAuthenticated, async(req, res) => {
         modelName = 'All KIA models'
     }
     console.log(model, modelName)
+        //order models
+    images.forEach(function(img) {
+        img.versions = img.versions.sort(compare);
+    });
     res.render('images/all-images', { images, featureCategory, model, modelName });
 });
+
+function compare(a, b) {
+    let ad = mapVersions.get(a.desc);
+    let bd = mapVersions.get(b.desc);
+    if (ad < bd) {
+        return -1;
+    }
+    if (ad > bd) {
+        return 1;
+    }
+    return 0;
+}
+
 
 router.put('/images/edit-image/:id', isAuthenticated, async(req, res) => {
     const { name, description, url, category, year, model, versionsFront } = req.body;
