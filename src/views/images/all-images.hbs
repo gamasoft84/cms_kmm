@@ -21,7 +21,7 @@
             <div class="row">
                 {{#each ../images}}
                 {{#if_equal this.category ../this.code}}
-                    <div class="col-md-3">
+                    <div class="col-lg-6 col-xl-4">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title d-flex justify-content-between align-items-center">
@@ -48,15 +48,17 @@
                                     </form>
                                 </div>
                                 </br>
-                                <div class="d-flex justify-content-center">
+                            </div>
+                            <div class="d-none d-sm-block">
+                                <div class="card-footer">
                                     <div class="d-flex justify-content-center">
-                                            {{#each this.versions}}
-                                                <div class="custom-control custom-switch">
-                                                    <input type="checkbox" class="custom-control-input" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}>
-                                                    <label class="custom-control-label" for="switch_{{this.code}}_{{../this._id}}">{{desc}}</label>
-                                                </div>
-                                            {{/each}}
-                                    </div>                                    
+                                        {{#each this.versions}}
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" disabled="true" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}>
+                                                <label class="custom-control-label" for="switch_{{this.code}}_{{../this._id}}">{{desc}}</label>
+                                            </div>
+                                        {{/each}}   
+                                    </div>                                
                                 </div>
                             </div>
                         </div>

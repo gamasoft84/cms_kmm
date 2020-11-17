@@ -203,7 +203,7 @@ router.get('/images/edit/:id', isAuthenticated, async(req, res) => {
 
 
 router.get('/images/covers', isAuthenticated, async(req, res) => {
-    const images = await Image.find({ isCover: true });
+    const images = await Image.find({ isCover: true }).sort({model:1});
     res.render('images/cover-images', { images, vehicleCatalog });
 });
 

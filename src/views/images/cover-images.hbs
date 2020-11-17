@@ -6,12 +6,11 @@
 <div class="col-md-12">
     <div class="row">
         {{#each images}}
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
                 <div class="card-body">
                     {{#each ../vehicleCatalog}}
                         {{#if_equal this.codeHtml ../this.model}}
-
                         <h4 class="card-title d-flex justify-content-between align-items-center">
                             {{this.name}}
                         </h4>
