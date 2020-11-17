@@ -1,0 +1,952 @@
+{
+	"messageId": "MS_Configurator001",
+	"transactionId": "TS_Configurator001",
+	"content": [
+		{
+			"isCover": true,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ee6",
+			"name": "MÁS DEPORTIVO, MÁS QUE TU AUTO",
+			"description": "Diseño renovado por dentro y por fuera, manéjalo y vive la gran experiencia.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/exterior/img_RioHB_exterior1_w.jpg ",
+			"category": "EX",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": false
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": false
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": false
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": false
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": false
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ee9",
+			"name": "KIT AERODINÁMICO S PACK",
+			"description": "La versiones S PACK revelan el lado más emocionante del nuevo KIA RIO 2021. Cuentan con un kit aerodinámico que además de darle un toque deportivo único, mejora la aerodinámica del vehículo, traduciendo esto en un auto más divertido y atractivo.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-exterior/kia_RioHB_auto_exterior_4_w.jpg",
+			"category": "EX",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": false
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": false
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": false
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56eeb",
+			"name": "QUEMACOCOS",
+			"description": "Ya sea para tomar aire, disfrutar del sol o ver las estrellas, el quemacocos del nuevo KIA Rio Hatchback te acercará al exterior.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-exterior/kia_RioHB_auto_exterior_6_w.jpg",
+			"category": "EX",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ee7",
+			"name": "REDESCRUBRE LA EMOCIÓN DE MANEJARLO",
+			"description": "KIA Rio Hatchback da otro significado a estrenar un auto y va mucho más allá.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/exterior/img_RioHB_exterior2_w.jpg ",
+			"category": "EX",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": false
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": false
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": false
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": false
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56eec",
+			"name": "RINES DE 17”",
+			"description": "El diseño único de sus rines de aluminio de 17” le da un aspecto mucho más deportivo.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-exterior/kia_RioHB_auto_exterior_7_w.jpg",
+			"category": "EX",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": false
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": false
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": false
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": false
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56eee",
+			"name": "AIRE ACONDICIONADO AUTOMÁTICO",
+			"description": "Permite programar la temperatura del interior para ajustarla como tú quieras.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-interior/img_RioHB_interior2_w.jpg",
+			"category": "TE",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": false
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": false
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef0",
+			"name": "DISPLAY DE INFORMACIÓN A COLOR DE 4.2\"",
+			"description": "El nuevo display ahora es más grande y a color, proporciona información completa de velocidad promedio, consumo de combustible e información esencial para tu viaje.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-interior/img_RioHB_interior4_w.jpg",
+			"category": "IN",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ee8",
+			"name": "EL KIA QUE MÉXICO PREFIERE",
+			"description": "Se consolida como uno de los consentidos y demuestra por qué KIA Rio Hatchback es más que tu auto.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/exterior/img_RioHB_exterior3_w.jpg",
+			"category": "EX",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": false
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": false
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": false
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef5",
+			"name": "TRANSMISIÓN MANUAL",
+			"description": "Conduce a tu propio ritmo y siente la potencia de sus 6 velocidades.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-desempeno/img_RioHB_performance5_w.jpg ",
+			"category": "PE",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": false
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": false
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef3",
+			"name": "BOTÓN DE ENCENDIDO",
+			"description": "Smart Key, la llave inteligente es la forma más cómoda de acceder y encender el motor del nuevo KIA Rio. ",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-desempeno/img_RioHB_performance3_w.jpg",
+			"category": "TE",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56eed",
+			"name": "MÁS EQUIPAMIENTO, MÁS EMOCIÓN, MÁS QUE TU AUTO ",
+			"description": "Con un diseño renovado el KIA Rio Hatchback brinda mayor espacio y un equipamiento que te sorprenderá desde el primer momento. Manéjalo y vive la experiencia.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/interior/img_RioHB_interior1_w.jpg ",
+			"category": "IN",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": false
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": false
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": false
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": false
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56eea",
+			"name": "LUCES TRASERAS LED ",
+			"description": "Detalles que lo hacen único y sobresalen a simple vista, sus faros traseros LED atraparán todas las miradas.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-exterior/kia_RioHB_auto_exterior_5_w.jpg",
+			"category": "EX",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef1",
+			"name": "MOTOR 1.6 L MPI",
+			"description": "MOTOR 1.6 L MPIRendimiento óptimo en consumo de combustible con Transmisión Manual y Automática de 6 velocidades.Potencia máxima: 121 HP @6,300 RPMTorque máximo: 111 LB-FT @4,850 RPM",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/desempeno/img_RioHB_performance1_w.jpg ",
+			"category": "PE",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef2",
+			"name": "CONTROLES AL VOLANTE",
+			"description": "Mantén la vista en el camino y no te distraigas, controla tus llamadas y dispositivos sin descuidar tu conducción.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/rio_hatchback/rio_HB_2019/7_USP_desempenio/img_RIO_safety2_w_v2.jpg ",
+			"category": "TE",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef6",
+			"name": "EQUIPAMIENTO Y SEGURIDAD SUPERIOR",
+			"description": "Una emocionante apariencia deportiva no lo es todo. La tranquilidad a bordo del nuevo KIA Rio Hatchback es proporcionada por tecnología que lo vuelve seguro e inteligente. ",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/seguridad/img_RioHB_safety1_w.jpg ",
+			"category": "SA",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56efa",
+			"name": "CONTROL ELECTRÓNICO DE ESTABILIDAD (ESC)",
+			"description": "El sistema de control electrónico de estabilidad te permite conducir con confianza en caminos con curvas, brindándote protección y mayor control para ti y tus acompañantes. ",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-seguridad/05-ESC-Pc-Mobile.jpg ",
+			"category": "SA",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef8",
+			"name": "ASISTENTE DE ARRANQUE DE PENDIENTES (HAC)",
+			"description": "Estabiliza el auto mientras cambias del pedal de freno al acelerador: arranca en pendientes sin problema. ",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-seguridad/02-HAC-Mobile.jpg ",
+			"category": "SA",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56eef",
+			"name": "PANTALLA TÁCTIL 8”",
+			"description": "Controla sin cables tu música, Smartphone y la ruta de tu destino a través de la pantalla táctil, gracias a la conectividad inalámbrica Android Auto® y Apple CarPlay®. ",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-interior/img_RioHB_interior3_w.jpg ",
+			"category": "TE",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef7",
+			"name": "SISTEMA DE GESTIÓN DE ESTABILIDAD DEL VEHÍCULO (VSM)",
+			"description": "Con este sistema, tu auto monitorea constantemente las condiciones del camino y protege tu seguridad mejorando la estabilidad del vehículo y controlando la potencia del frenado.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-seguridad/01-VSM-Pc-Mobile.jpg ",
+			"category": "SA",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": false
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": false
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": false
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef4",
+			"name": "TRANSMISIÓN AUTOMÁTICA",
+			"description": "Transmisión de 6 velocidades que te brinda un gran performance y optimiza el combustible.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-desempeno/img_RioHB_performance4_w.jpg ",
+			"category": "PE",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": false
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": false
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56efb",
+			"name": "SENSORES DE ESTACIONAMIENTO TRASEROS",
+			"description": "Estaciónate con confianza y seguridad con los sensores traseros, envían alertas audibles y visuales para tu tranquilidad",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-seguridad/06-SENSORES-MOBILE.jpg",
+			"category": "TE",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		},
+		{
+			"isCover": false,
+			"versions": [
+				{
+					"code": "L7",
+					"desc": "LX T/M",
+					"actv": true
+				},
+				{
+					"code": "LF",
+					"desc": "LX T/A",
+					"actv": true
+				},
+				{
+					"code": "E7",
+					"desc": "EX T/M",
+					"actv": true
+				},
+				{
+					"code": "EF",
+					"desc": "EX T/A",
+					"actv": true
+				},
+				{
+					"code": "PF",
+					"desc": "EX PACK T/A",
+					"actv": true
+				},
+				{
+					"code": "57",
+					"desc": "S PACK T/M",
+					"actv": true
+				}
+			],
+			"_id": "5fb3e0d1690dab0017e56ef9",
+			"name": "FRENOS ABS",
+			"description": "Evita el bloqueo de las ruedas en una situación de frenado brusco y en condiciones difíciles. El sistema aplica los frenos en pequeños pulsos para evitar el bloqueo repentino.",
+			"url": "https://www.kia.com/content/dam/kwcms/mx/es/images/showroom/2021/rio-hb/usps-seguridad/04-ABS-Mobile.jpg ",
+			"category": "SA",
+			"year": "2021",
+			"model": "rio-hatchback",
+			"__v": 0
+		}
+	]
+}
