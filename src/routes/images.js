@@ -94,10 +94,10 @@ mapVersions.set("EX PACK T/A", 11);
 mapVersions.set("EX PACK CVT", 12);
 mapVersions.set("S PACK T/M", 13);
 mapVersions.set("S PACK T/A", 14);
-mapVersions.set("GT T/M", 15);
-mapVersions.set("GT DCT", 16);
-mapVersions.set("GT-line T/M", 17);
-mapVersions.set("GT-line CVT", 18);
+mapVersions.set("GT-line T/M", 15);
+mapVersions.set("GT-line CVT", 16);
+mapVersions.set("GT T/M", 17);
+mapVersions.set("GT DCT", 18);
 mapVersions.set("SX T/M", 19);
 mapVersions.set("SX T/A", 20);
 mapVersions.set("SX CVT", 21);
@@ -234,7 +234,7 @@ router.get('/images/edit/:id', isAuthenticated, async(req, res) => {
 
 
 router.get('/images/covers', isAuthenticated, async(req, res) => {
-    const images = await Image.find({ isCover: true }).sort({model:1});
+    const images = await Image.find({ isCover: true }).sort({ model: 1 });
     res.render('images/cover-images', { images, vehicleCatalog });
 });
 
