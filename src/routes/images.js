@@ -126,17 +126,13 @@ router.get('/images/load_from_kia', isAuthenticated, async(req, res) => {
 
 
 
-const saveImages = async function(resp) {
+const saveImages = async function(respScrapi) {
     let allVersion = await Version.find();
-    allVersion.forEach(element => {
-            element.tmName = element.tmName.replace(" 6 VELOCIDADES FWD", "").replace(" 7 VELOCIDADES FWD", "").replace(" 7 VELOCIDADES FWD", "");
-        })
-        //var versions =allVersion.map((version) => version.tmCd);
-        // console.log(versions);
-
-    resp.forEach(async(element) => {
-        const { name, description, url, category, year, model, isCover } = element;
-        var versions = allVersion.filter((version) => version.modlNameHtml === model)
+    respScrapi.forEach(async(elementScrapi) => {
+        const { name, description, url, category, year, model, isCover } = elementScrapi;
+        var versions = allVersion
+            .filter((version) => version.modlNameHtml === model)
+            .filter((version) => version.year === year)
             .map(function(version) {
                 let actv = true;
                 //T/M, T/A, CVT, DCT   tmName
@@ -182,10 +178,11 @@ const saveImages = async function(resp) {
 
                 return {
                     code: version.tmCd,
-                    desc: version.trimNm + ' ' + version.tmName,
+                    desc: version.version,
                     actv: actv
                 }
             });
+        versions.sort(compare);
         const image = new Image({ name, description, url, category, year, model, isCover, versions });
         await image.save();
     });
@@ -227,7 +224,6 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
 //only for redirect 
 router.get('/images/edit/:id', isAuthenticated, async(req, res) => {
     const image = await Image.findById(req.params.id);
-    image.versions.sort(compare);
     res.render('images/edit-image', { image, featureCategory, yearCatalog, vehicleCatalog });
 });
 
@@ -254,11 +250,6 @@ router.get('/images/:model', isAuthenticated, async(req, res) => {
     } else {
         modelName = 'All KIA models'
     }
-    console.log(model, modelName)
-        //order models
-    images.forEach(function(img) {
-        img.versions = img.versions.sort(compare);
-    });
     res.render('images/all-images', { images, featureCategory, model, modelName });
 });
 
