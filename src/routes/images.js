@@ -347,6 +347,9 @@ router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, 
         }
     }
 
+    content.forEach(function(img) {
+        img.versions = img.versions.filter((v) => v.actv === true);
+    })
 
     let messageId = "MS_Configurator001";
     let transactionId = "TS_Configurator001"
