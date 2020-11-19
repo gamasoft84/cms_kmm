@@ -158,7 +158,7 @@ function getCoverPrincipal(urlImage) {
         "img_RIO_SD_exterior1_w.jpg",
         "Img_ForteSd_Exterior1_w.jpg",
         "kia-showroom-key-visual-sportage-w.jpg",
-        "img_Soul_exterior1_w.jpg"
+        "bg_Pc_soul_overview1_w.jpg"
     ];
     var resp = false;
     for (var i in covers) {
@@ -177,6 +177,7 @@ function getCoverSecondary(urlImage) {
         "kia-showroom-key-visual-RioSedan_w.jpg",
         "kia-showroom-key-visual-forte-W.jpg",
         "kia_showroom-big-image-sportage-3-w.jpg",
+        "img_Soul_exterior1_w.jpg"
 
         //"img_RioHB_exterior2_w.jpg",
         //"img_RioHB_exterior3_w.jpg"
