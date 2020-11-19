@@ -1,7 +1,7 @@
 const helpers = {};
 
 helpers.isAuthenticated = (req, res, next) => {
-  if (true) {
+  if (req.isAuthenticated()) {
     return next();
   }
   req.flash('error_msg', 'Not Authorized.');
