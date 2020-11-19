@@ -213,7 +213,18 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
             category
         })
     } else {
-        const image = new Image({ name, description, url, category, year, model });
+
+        let versions = await Version.find({ modlNameHtml: model, year });
+        versions = versions.map(function(version) {
+            return {
+                code: version.tmCd,
+                desc: version.version,
+                actv: true
+            }
+        });
+        versions.sort(compare);
+
+        const image = new Image({ name, description, url, category, year, model, versions });
         image.user = req.user.id;
         await image.save();
         req.flash('success_msg', 'Image Add successfully !')
@@ -268,8 +279,6 @@ function compare(a, b) {
 
 router.put('/images/edit-image/:id', isAuthenticated, async(req, res) => {
     const { name, description, url, category, year, model, versionsFront } = req.body;
-    console.log(versionsFront);
-
     let image = await Image.findByIdAndUpdate(req.params.id);
     let versions = image.versions;
     image.versions.forEach(function(v) {
