@@ -105,7 +105,8 @@ function isNotAllow(image) {
         "Kia_ForteHb_Auto_Desempeno_1_w.jpg",
         "configura_tu_kia_forte_GT_auto_perfil.png",
         "7_USP_desempeno/img_Soul_performance3_w.jpg",
-        "img_Soul_safety1_w.jpg"
+        "img_Soul_safety1_w.jpg",
+        "kia_forte_auto_desempeno_4_w.jpg"
     ];
     var resp = false;
     for (var i in images) {
