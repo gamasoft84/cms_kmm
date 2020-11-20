@@ -312,24 +312,18 @@ router.get('/images/delete_all', isAuthenticated, async(req, res) => {
 
 
 router.put('/images/edit-versions_image/:id', isAuthenticated, async(req, res) => {
-    console.log(req.body) //particular
-    let { code, actv } = req.body;
-    if (!code) {
-        code = "E7";
-        actv = true;
-    }
-
+    let { code, value } = req.body;
     let image = await Image.findByIdAndUpdate(req.params.id);
     let versions = image.versions;
-
-    image.versions.forEach(function(v) {
+    console.log(req.body)
+        //console.log(versions);
+    versions.forEach(function(v) {
         if (v.code === code) {
-            v.actv = actv;
+            v.actv = value;
         }
     });
 
     await Image.findByIdAndUpdate(req.params.id, { versions });
-    req.flash('success_msg', 'Image Updated successfully!');
     res.send('OK');
 });
 

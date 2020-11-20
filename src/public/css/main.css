@@ -25,14 +25,6 @@ body {
     background-size: cover;
 }
 
-.jumbotron2 {
-    background: url("../img/logo-kia.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 .card {
     margin-top: 15px;
 }
@@ -48,13 +40,45 @@ body {
     font: bold;
 }
 
+
+/* when the button is toggled off  
+it is still in focus and a gray border will appear */
+
+.custom-control-input:focus~.custom-control-label::before {
+    border-color: #ADB5BD !important;
+    box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
+}
+
+
+/*sets the background color of 
+switch to green when it is checked*/
+
 .custom-control-input:checked~.custom-control-label::before {
-    color: #fff;
-    background-color: #22b24c;
-    border-color: #22b24c;
-    outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    border-color: #22b24c !important;
+    background-color: #22b24c !important;
+}
+
+
+/*sets the background color of 
+switch to violet when it is active*/
+
+.custom-control-input:active~.custom-control-label::before {
+    background-color: #22b24c !important;
+    border-color: #22b24c !important;
+}
+
+
+/*sets the border color of switch 
+to violet when it is not checked*/
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #ADB5BD !important;
+}
+
+.custom-control-label {
+    color: #BD012A;
+    font-size: 14px;
+    padding-right: 20px;
 }
 
 .sync {
@@ -63,24 +87,22 @@ body {
 }
 
 .go-up {
-	display:none;
-	padding:20px;
-	background:#BD012A;
-	font-size:20px;
-	color:#fff;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
+    display: none;
+    padding: 20px;
+    background: #BD012A;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
-.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+.custom-switch .custom-control-input:disabled:checked~.custom-control-label::before {
     background-color: #449007;
 }
 
-
-.card-footer{
-    color:#fff;
+.card-footer {
+    color: #fff;
     border-color: #BD012A;
 }
-
