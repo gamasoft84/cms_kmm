@@ -5,9 +5,11 @@
         "trimNm": "EX",
         "tmName": "CVT",
         "tmCd": "EV",
+        "modlCdTmCd": "DJS6EV",
         "desc": "New Forte 2.0L EX IVT HB",
         "year": "2020",
-        "version": "EX CVT"
+        "version": "EX CVT",
+        "localSalesCd": "DJS62G61VE01"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -16,9 +18,11 @@
         "trimNm": "SX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "S7",
+        "modlCdTmCd": "DJS6S7",
         "desc": "New Forte 2.0L GT-line M/T HB",
         "year": "2020",
-        "version": "SX T/M "
+        "version": "SX T/M",
+        "localSalesCd": "DJS62G617S01"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -27,9 +31,11 @@
         "trimNm": "SX",
         "tmName": "CVT",
         "tmCd": "SV",
+        "modlCdTmCd": "DJS6SV",
         "desc": "New Forte 2.0L GT-line IVT HB",
         "year": "2020",
-        "version": "SX CVT"
+        "version": "SX CVT",
+        "localSalesCd": "DJS62G61VS01"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -38,9 +44,11 @@
         "trimNm": "SXL",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "X7",
+        "modlCdTmCd": "DJS6X7",
         "desc": "New Forte 1.6L Turbo GT M/T HB",
         "year": "2020",
-        "version": "SXL T/M "
+        "version": "SXL T/M",
+        "localSalesCd": "DJS6D2G17X01"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -49,9 +57,11 @@
         "trimNm": "EX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "E7",
+        "modlCdTmCd": "DJS6E7",
         "desc": "New Forte 2.0L EX M/T HB",
         "year": "2020",
-        "version": "EX T/M "
+        "version": "EX T/M",
+        "localSalesCd": "DJS62G617E01"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -60,9 +70,11 @@
         "trimNm": "SXL",
         "tmName": "DCT 7 VELOCIDADES FWD",
         "tmCd": "XU",
+        "modlCdTmCd": "DJS6XU",
         "desc": "New Forte 1.6L Turbo GT DCT HB",
         "year": "2020",
-        "version": "SXL DCT "
+        "version": "SXL DCT",
+        "localSalesCd": "DJS6D2G1UX01"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -71,9 +83,11 @@
         "trimNm": "EX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "E7",
+        "modlCdTmCd": "DJS6E7",
         "desc": "New Forte 2.0L EX M/T HB",
         "year": "2021",
-        "version": "EX T/M "
+        "version": "EX T/M",
+        "localSalesCd": "DJS62G617E02"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -82,9 +96,11 @@
         "trimNm": "EX",
         "tmName": "CVT",
         "tmCd": "EV",
+        "modlCdTmCd": "DJS6EV",
         "desc": "New Forte 2.0L EX IVT HB",
         "year": "2021",
-        "version": "EX CVT"
+        "version": "EX CVT",
+        "localSalesCd": "DJS62G61VE02"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -93,9 +109,11 @@
         "trimNm": "GT-line",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "I7",
+        "modlCdTmCd": "DJS6I7",
         "desc": "New Forte 2.0L GT-line M/T HB 2021",
         "year": "2021",
-        "version": "GT-line T/M "
+        "version": "GT-line T/M",
+        "localSalesCd": "DJS62G617I01"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -104,9 +122,11 @@
         "trimNm": "GT-line",
         "tmName": "CVT",
         "tmCd": "IV",
+        "modlCdTmCd": "DJS6IV",
         "desc": "New Forte 2.0L GT-line IVT HB 2021",
         "year": "2021",
-        "version": "GT-line CVT"
+        "version": "GT-line CVT",
+        "localSalesCd": "DJS62G61VI01"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -115,9 +135,11 @@
         "trimNm": "GT",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "G7",
+        "modlCdTmCd": "DJS6G7",
         "desc": "New Forte 1.6L Turbo GT M/T HB 2021",
         "year": "2021",
-        "version": "GT T/M "
+        "version": "GT T/M",
+        "localSalesCd": "DJS6D2G17G01"
     },
     {
         "modlNameHtml": "forte-hatchback",
@@ -126,9 +148,11 @@
         "trimNm": "GT",
         "tmName": "DCT 7 VELOCIDADES FWD",
         "tmCd": "GU",
+        "modlCdTmCd": "DJS6GU",
         "desc": "New Forte 1.6L Turbo GT DCT HB 2021",
         "year": "2021",
-        "version": "GT DCT "
+        "version": "GT DCT",
+        "localSalesCd": "DJS6D2G1UG01"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -137,9 +161,11 @@
         "trimNm": "SX",
         "tmName": "CVT",
         "tmCd": "SV",
+        "modlCdTmCd": "DLS4SV",
         "desc": "New Forte 2.0L GT-line IVT Sedan",
         "year": "2020",
-        "version": "SX CVT"
+        "version": "SX CVT",
+        "localSalesCd": "DLS42G61VS03"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -148,9 +174,11 @@
         "trimNm": "SXL",
         "tmName": "DCT 7 VELOCIDADES FWD",
         "tmCd": "XU",
+        "modlCdTmCd": "DLS4XU",
         "desc": "New Forte 1.6L Turbo GT DCT Sedan",
         "year": "2020",
-        "version": "SXL DCT "
+        "version": "SXL DCT",
+        "localSalesCd": "DLS4D2G1UX01"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -159,9 +187,11 @@
         "trimNm": "L",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "B7",
+        "modlCdTmCd": "DLS4B7",
         "desc": "New Forte 2.0L L M/T Sedan",
         "year": "2021",
-        "version": "L T/M "
+        "version": "L T/M",
+        "localSalesCd": "DLS42G617B01"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -170,9 +200,11 @@
         "trimNm": "L",
         "tmName": "CVT",
         "tmCd": "BV",
+        "modlCdTmCd": "DLS4BV",
         "desc": "New Forte 2.0L L IVT Sedan",
         "year": "2021",
-        "version": "L CVT"
+        "version": "L CVT",
+        "localSalesCd": "DLS42G61VB01"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -181,9 +213,11 @@
         "trimNm": "LX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "L7",
+        "modlCdTmCd": "DLS4L7",
         "desc": "New Forte 2.0L LX M/T Sedan",
         "year": "2021",
-        "version": "LX T/M "
+        "version": "LX T/M",
+        "localSalesCd": "DLS42G617L02"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -192,9 +226,11 @@
         "trimNm": "LX",
         "tmName": "CVT",
         "tmCd": "LV",
+        "modlCdTmCd": "DLS4LV",
         "desc": "New Forte 2.0L LX IVT Sedan",
         "year": "2021",
-        "version": "LX CVT"
+        "version": "LX CVT",
+        "localSalesCd": "DLS42G61VL02"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -203,9 +239,11 @@
         "trimNm": "EX",
         "tmName": "CVT",
         "tmCd": "EV",
+        "modlCdTmCd": "DLS4EV",
         "desc": "New Forte 2.0L EX IVT Sedan",
         "year": "2021",
-        "version": "EX CVT"
+        "version": "EX CVT",
+        "localSalesCd": "DLS42G61VE02"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -214,9 +252,11 @@
         "trimNm": "SX",
         "tmName": "CVT",
         "tmCd": "SV",
+        "modlCdTmCd": "DLS4SV",
         "desc": "New Forte 2.0L GT-line IVT Sedan",
         "year": "2021",
-        "version": "SX CVT"
+        "version": "SX CVT",
+        "localSalesCd": "DLS42G61VS04"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -225,9 +265,11 @@
         "trimNm": "SXL",
         "tmName": "DCT 7 VELOCIDADES FWD",
         "tmCd": "XU",
+        "modlCdTmCd": "DLS4XU",
         "desc": "New Forte 1.6L Turbo GT DCT Sedan",
         "year": "2021",
-        "version": "SXL DCT "
+        "version": "SXL DCT",
+        "localSalesCd": "DLS4D2G1UX02"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -236,9 +278,11 @@
         "trimNm": "L",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "B7",
+        "modlCdTmCd": "DLS4B7",
         "desc": "New Forte 2.0L L M/T Sedan",
         "year": "2020",
-        "version": "L T/M "
+        "version": "L T/M",
+        "localSalesCd": "DLS42G617B01"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -247,9 +291,11 @@
         "trimNm": "LX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "L7",
+        "modlCdTmCd": "DLS4L7",
         "desc": "New Forte 2.0L LX M/T Sedan",
         "year": "2020",
-        "version": "LX T/M "
+        "version": "LX T/M",
+        "localSalesCd": "DLS42G617L01"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -258,9 +304,11 @@
         "trimNm": "L",
         "tmName": "CVT",
         "tmCd": "BV",
+        "modlCdTmCd": "DLS4BV",
         "desc": "New Forte 2.0L L IVT Sedan",
         "year": "2020",
-        "version": "L CVT"
+        "version": "L CVT",
+        "localSalesCd": "DLS42G61VB01"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -269,9 +317,11 @@
         "trimNm": "EX",
         "tmName": "CVT",
         "tmCd": "EV",
+        "modlCdTmCd": "DLS4EV",
         "desc": "New Forte 2.0L EX IVT Sedan",
         "year": "2020",
-        "version": "EX CVT"
+        "version": "EX CVT",
+        "localSalesCd": "DLS42G61VE01"
     },
     {
         "modlNameHtml": "forte-sedan",
@@ -280,9 +330,11 @@
         "trimNm": "LX",
         "tmName": "CVT",
         "tmCd": "LV",
+        "modlCdTmCd": "DLS4LV",
         "desc": "New Forte 2.0L LX IVT Sedan",
         "year": "2020",
-        "version": "LX CVT"
+        "version": "LX CVT",
+        "localSalesCd": "DLS42G61VL01"
     },
     {
         "modlNameHtml": "kia-optima",
@@ -291,9 +343,11 @@
         "trimNm": "SXL",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "XF",
+        "modlCdTmCd": "D5S4XF",
         "desc": "KIA Optima PE 2.0L Turbo SXL A/T",
         "year": "2020",
-        "version": "SXL T/A "
+        "version": "SXL T/A",
+        "localSalesCd": "D5S4L5G1FX09"
     },
     {
         "modlNameHtml": "kia-sedona",
@@ -302,9 +356,11 @@
         "trimNm": "EX PACK",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "PF",
+        "modlCdTmCd": "A9B8PF",
         "desc": "Sedona PE 3.3L EX PACK A/T - 8P",
         "year": "2020",
-        "version": "EX PACK T/A "
+        "version": "EX PACK T/A",
+        "localSalesCd": "A9B8J561FP02"
     },
     {
         "modlNameHtml": "kia-sedona",
@@ -313,9 +369,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "A9B8LF",
         "desc": "Sedona PE 3.3L LX A/T - 8P",
         "year": "2020",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "A9B8J561FL03"
     },
     {
         "modlNameHtml": "kia-sedona",
@@ -324,9 +382,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "A9B8EF",
         "desc": "Sedona PE 3.3L EX A/T - 8P",
         "year": "2020",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "A9B8J561FE03"
     },
     {
         "modlNameHtml": "kia-sedona",
@@ -335,9 +395,11 @@
         "trimNm": "SXL",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "XF",
+        "modlCdTmCd": "A9B7XF",
         "desc": "Sedona PE 3.3L SXL A/T - 7P",
         "year": "2020",
-        "version": "SXL T/A "
+        "version": "SXL T/A",
+        "localSalesCd": "A9B7J561FX02"
     },
     {
         "modlNameHtml": "niro",
@@ -346,9 +408,11 @@
         "trimNm": "EX",
         "tmName": "DCT 6 VELOCIDADES FWD",
         "tmCd": "ET",
+        "modlCdTmCd": "G5W5ET",
         "desc": "Niro PE 1.6L EX DCT Hybrid",
         "year": "2020",
-        "version": "EX DCT "
+        "version": "EX DCT",
+        "localSalesCd": "G5W5K6A1TE04"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -357,9 +421,11 @@
         "trimNm": "EX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "E7",
+        "modlCdTmCd": "H9S6E7",
         "desc": "New KIA Rio 1.6L EX M/T HB",
         "year": "2020",
-        "version": "EX T/M "
+        "version": "EX T/M",
+        "localSalesCd": "H9S6D2617E02"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -368,9 +434,11 @@
         "trimNm": "LX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "L7",
+        "modlCdTmCd": "H9S6L7",
         "desc": "New KIA Rio 1.6L LX M/T HB",
         "year": "2020",
-        "version": "LX T/M "
+        "version": "LX T/M",
+        "localSalesCd": "H9S6D2617L03"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -379,9 +447,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "H9S6EF",
         "desc": "New KIA Rio 1.6L EX A/T HB",
         "year": "2020",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "H9S6D261FE02"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -390,9 +460,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "H9S6LF",
         "desc": "New KIA Rio 1.6L LX A/T HB",
         "year": "2020",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "H9S6D261FL03"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -401,9 +473,11 @@
         "trimNm": "EX PACK",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "PF",
+        "modlCdTmCd": "H9S6PF",
         "desc": "New KIA Rio 1.6L EX PACK A/T HB",
         "year": "2020",
-        "version": "EX PACK T/A "
+        "version": "EX PACK T/A",
+        "localSalesCd": "H9S6D261FP02"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -412,9 +486,11 @@
         "trimNm": "LX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "L7",
+        "modlCdTmCd": "H9S6L7",
         "desc": "New KIA Rio PE 1.6L LX M/T HB",
         "year": "2021",
-        "version": "LX T/M "
+        "version": "LX T/M",
+        "localSalesCd": "H9S6D2617L04"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -423,9 +499,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "H9S6LF",
         "desc": "New KIA Rio PE 1.6L LX A/T HB",
         "year": "2021",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "H9S6D261FL04"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -434,9 +512,11 @@
         "trimNm": "EX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "E7",
+        "modlCdTmCd": "H9S6E7",
         "desc": "New KIA Rio PE 1.6L EX M/T HB",
         "year": "2021",
-        "version": "EX T/M "
+        "version": "EX T/M",
+        "localSalesCd": "H9S6D2617E03"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -445,9 +525,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "H9S6EF",
         "desc": "New KIA Rio PE 1.6L EX A/T HB",
         "year": "2021",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "H9S6D261FE03"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -456,9 +538,11 @@
         "trimNm": "EX PACK",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "PF",
+        "modlCdTmCd": "H9S6PF",
         "desc": "New KIA Rio PE 1.6L EX PACK A/T HB",
         "year": "2021",
-        "version": "EX PACK T/A "
+        "version": "EX PACK T/A",
+        "localSalesCd": "H9S6D261FP04"
     },
     {
         "modlNameHtml": "rio-hatchback",
@@ -467,9 +551,11 @@
         "trimNm": "S PACK",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "57",
+        "modlCdTmCd": "H9S657",
         "desc": "New KIA Rio PE 1.6L S PACK M/T HB",
         "year": "2021",
-        "version": "S PACK T/M "
+        "version": "S PACK T/M",
+        "localSalesCd": "H9S6D2617501"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -478,9 +564,11 @@
         "trimNm": "L",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "B7",
+        "modlCdTmCd": "H9S4B7",
         "desc": "New KIA Rio PE 1.6L L M/T Sedan",
         "year": "2021",
-        "version": "L T/M "
+        "version": "L T/M",
+        "localSalesCd": "H9S4D2617B03"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -489,9 +577,11 @@
         "trimNm": "L",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "BF",
+        "modlCdTmCd": "H9S4BF",
         "desc": "New KIA Rio PE 1.6L L A/T Sedan",
         "year": "2021",
-        "version": "L T/A "
+        "version": "L T/A",
+        "localSalesCd": "H9S4D261FB03"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -500,9 +590,11 @@
         "trimNm": "S PACK",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "5F",
+        "modlCdTmCd": "H9S45F",
         "desc": "New KIA Rio PE 1.6L S PACK A/T Sedan",
         "year": "2021",
-        "version": "S PACK T/A "
+        "version": "S PACK T/A",
+        "localSalesCd": "H9S4D261F501"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -511,9 +603,11 @@
         "trimNm": "LX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "L7",
+        "modlCdTmCd": "H9S4L7",
         "desc": "New KIA Rio PE 1.6L LX M/T Sedan",
         "year": "2021",
-        "version": "LX T/M "
+        "version": "LX T/M",
+        "localSalesCd": "H9S4D2617L05"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -522,9 +616,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "H9S4EF",
         "desc": "New KIA Rio PE 1.6L EX A/T Sedan",
         "year": "2021",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "H9S4D261FE04"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -533,9 +629,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "H9S4LF",
         "desc": "New KIA Rio PE 1.6L LX A/T Sedan",
         "year": "2021",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "H9S4D261FL05"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -544,9 +642,11 @@
         "trimNm": "L",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "B7",
+        "modlCdTmCd": "H9S4B7",
         "desc": "New KIA Rio 1.6L L M/T Sedan",
         "year": "2020",
-        "version": "L T/M "
+        "version": "L T/M",
+        "localSalesCd": "H9S4D2617B02"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -555,9 +655,11 @@
         "trimNm": "LX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "L7",
+        "modlCdTmCd": "H9S4L7",
         "desc": "New KIA Rio 1.6L LX M/T Sedan",
         "year": "2020",
-        "version": "LX T/M "
+        "version": "LX T/M",
+        "localSalesCd": "H9S4D2617L03"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -566,9 +668,11 @@
         "trimNm": "L",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "BF",
+        "modlCdTmCd": "H9S4BF",
         "desc": "New KIA Rio 1.6L L A/T Sedan",
         "year": "2020",
-        "version": "L T/A "
+        "version": "L T/A",
+        "localSalesCd": "H9S4D261FB02"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -577,9 +681,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "H9S4EF",
         "desc": "New KIA Rio 1.6L EX A/T Sedan(Red)",
         "year": "2020",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "H9S4D261FE02"
     },
     {
         "modlNameHtml": "rio-sedan",
@@ -588,9 +694,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "H9S4LF",
         "desc": "New KIA Rio 1.6L LX A/T Sedan",
         "year": "2020",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "H9S4D261FL03"
     },
     {
         "modlNameHtml": "seltos",
@@ -599,9 +707,11 @@
         "trimNm": "EX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "E7",
+        "modlCdTmCd": "TIW5E7",
         "desc": "Seltos 1.6L EX M/T",
         "year": "2020",
-        "version": "EX T/M "
+        "version": "EX T/M",
+        "localSalesCd": "TIW5D2617E01"
     },
     {
         "modlNameHtml": "seltos",
@@ -610,9 +720,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "TIW5EF",
         "desc": "Seltos 1.6L EX A/T",
         "year": "2020",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "TIW5D261FE01"
     },
     {
         "modlNameHtml": "seltos",
@@ -621,9 +733,11 @@
         "trimNm": "EX PACK",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "PF",
+        "modlCdTmCd": "TIW5PF",
         "desc": "Seltos 1.6L EX PACK A/T",
         "year": "2020",
-        "version": "EX PACK T/A "
+        "version": "EX PACK T/A",
+        "localSalesCd": "TIW5D261FP01"
     },
     {
         "modlNameHtml": "seltos",
@@ -632,9 +746,11 @@
         "trimNm": "SX",
         "tmName": "DCT 7 VELOCIDADES FWD",
         "tmCd": "SU",
+        "modlCdTmCd": "TIW5SU",
         "desc": "Seltos 1.4L Turbo GT-line DCT",
         "year": "2020",
-        "version": "SX DCT "
+        "version": "SX DCT",
+        "localSalesCd": "TIW5K4G1US01"
     },
     {
         "modlNameHtml": "seltos",
@@ -643,9 +759,11 @@
         "trimNm": "GT-line",
         "tmName": "DCT 7 VELOCIDADES FWD",
         "tmCd": "IU",
+        "modlCdTmCd": "TIW5IU",
         "desc": "Seltos 1.4L Turbo GT-line DCT 2021",
         "year": "2021",
-        "version": "GT-line DCT "
+        "version": "GT-line DCT",
+        "localSalesCd": "TIW5K4G1UI01"
     },
     {
         "modlNameHtml": "seltos",
@@ -654,9 +772,11 @@
         "trimNm": "EX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "E7",
+        "modlCdTmCd": "TIW5E7",
         "desc": "Seltos 1.6L EX M/T",
         "year": "2021",
-        "version": "EX T/M "
+        "version": "EX T/M",
+        "localSalesCd": "TIW5D2617E02"
     },
     {
         "modlNameHtml": "seltos",
@@ -665,9 +785,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "TIW5EF",
         "desc": "Seltos 1.6L EX A/T",
         "year": "2021",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "TIW5D261FE02"
     },
     {
         "modlNameHtml": "seltos",
@@ -676,9 +798,11 @@
         "trimNm": "EX PACK",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "PF",
+        "modlCdTmCd": "TIW5PF",
         "desc": "Seltos 1.6L EX PACK A/T",
         "year": "2021",
-        "version": "EX PACK T/A "
+        "version": "EX PACK T/A",
+        "localSalesCd": "TIW5D261FP02"
     },
     {
         "modlNameHtml": "seltos",
@@ -687,9 +811,11 @@
         "trimNm": "SX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "SF",
+        "modlCdTmCd": "TIW5SF",
         "desc": "Seltos 1.6L SX A/T",
         "year": "2021",
-        "version": "SX T/A "
+        "version": "SX T/A",
+        "localSalesCd": "TIW5D261FS01"
     },
     {
         "modlNameHtml": "sorento",
@@ -698,9 +824,11 @@
         "trimNm": "EX PACK",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "PF",
+        "modlCdTmCd": "C6W7PF",
         "desc": "Sorento PE 2.4L EX PACK A/T - 7P",
         "year": "2020",
-        "version": "EX PACK T/A "
+        "version": "EX PACK T/A",
+        "localSalesCd": "C6W7L6A1FP01"
     },
     {
         "modlNameHtml": "sorento",
@@ -709,9 +837,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "C6W7LF",
         "desc": "Sorento PE 2.4L LX A/T - 7P",
         "year": "2020",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "C6W7L6A1FL04"
     },
     {
         "modlNameHtml": "sorento",
@@ -720,9 +850,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "C6W7EF",
         "desc": "Sorento PE 2.4L EX A/T - 7P",
         "year": "2020",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "C6W7L6A1FE01"
     },
     {
         "modlNameHtml": "sorento",
@@ -731,9 +863,24 @@
         "trimNm": "SX",
         "tmName": "T/A 8 VELOCIDADES 2WD",
         "tmCd": "SJ",
+        "modlCdTmCd": "C6W7SJ",
         "desc": "Sorento PE 3.3L SX A/T - 7P",
         "year": "2020",
-        "version": "SX T/A "
+        "version": "SX T/A",
+        "localSalesCd": "C6W7J5A1JS01"
+    },
+    {
+        "modlNameHtml": "sorento",
+        "modlName": "Sorento",
+        "modlCd": "C6W7",
+        "trimNm": "SX",
+        "tmName": "T/A 8 VELOCIDADES 2WD",
+        "tmCd": "SJ",
+        "modlCdTmCd": "C6W7SJ",
+        "desc": "Sorento PE 3.3L SX A/T - 7P",
+        "year": "2020",
+        "version": "SX T/A",
+        "localSalesCd": "C6W7J5A1JS01"
     },
     {
         "modlNameHtml": "soul",
@@ -742,9 +889,11 @@
         "trimNm": "LX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "L7",
+        "modlCdTmCd": "SKW5L7",
         "desc": "New Soul 1.6L LX M/T",
         "year": "2020",
-        "version": "LX T/M "
+        "version": "LX T/M",
+        "localSalesCd": "SKW5D2617L01"
     },
     {
         "modlNameHtml": "soul",
@@ -753,9 +902,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "SKW5LF",
         "desc": "New Soul 1.6L LX A/T",
         "year": "2020",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "SKW5D261FL01"
     },
     {
         "modlNameHtml": "soul",
@@ -764,9 +915,11 @@
         "trimNm": "EX",
         "tmName": "CVT",
         "tmCd": "EV",
+        "modlCdTmCd": "SKW5EV",
         "desc": "New Soul 2.0L EX IVT",
         "year": "2020",
-        "version": "EX CVT"
+        "version": "EX CVT",
+        "localSalesCd": "SKW52G61VE01"
     },
     {
         "modlNameHtml": "soul",
@@ -775,9 +928,24 @@
         "trimNm": "EX PACK",
         "tmName": "CVT",
         "tmCd": "PV",
+        "modlCdTmCd": "SKW5PV",
         "desc": "New Soul 2.0L EX PACK IVT",
         "year": "2020",
-        "version": "EX PACK CVT"
+        "version": "EX PACK CVT",
+        "localSalesCd": "SKW52G61VP01"
+    },
+    {
+        "modlNameHtml": "soul",
+        "modlName": "Nuevo Soul",
+        "modlCd": "SKW5",
+        "trimNm": "EX PACK",
+        "tmName": "CVT",
+        "tmCd": "PV",
+        "modlCdTmCd": "SKW5PV",
+        "desc": "New Soul 2.0L EX PACK IVT",
+        "year": "2020",
+        "version": "EX PACK CVT",
+        "localSalesCd": "SKW52G61VP02"
     },
     {
         "modlNameHtml": "soul",
@@ -786,9 +954,11 @@
         "trimNm": "EX",
         "tmName": "CVT",
         "tmCd": "EV",
+        "modlCdTmCd": "SKW5EV",
         "desc": "New Soul 2.0L EX IVT",
         "year": "2021",
-        "version": "EX CVT"
+        "version": "EX CVT",
+        "localSalesCd": "SKW52G61VE02"
     },
     {
         "modlNameHtml": "soul",
@@ -797,9 +967,11 @@
         "trimNm": "LX",
         "tmName": "T/M 6 VELOCIDADES FWD",
         "tmCd": "L7",
+        "modlCdTmCd": "SKW5L7",
         "desc": "New Soul 1.6L LX M/T",
         "year": "2021",
-        "version": "LX T/M "
+        "version": "LX T/M",
+        "localSalesCd": "SKW5D2617L02"
     },
     {
         "modlNameHtml": "soul",
@@ -808,9 +980,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "SKW5LF",
         "desc": "New Soul 1.6L LX A/T",
         "year": "2021",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "SKW5D261FL02"
     },
     {
         "modlNameHtml": "sportage",
@@ -819,9 +993,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "F1W5EF",
         "desc": "New Sportage PE 2.0L EX A/T",
         "year": "2021",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "F1W52G61FE04"
     },
     {
         "modlNameHtml": "sportage",
@@ -830,9 +1006,11 @@
         "trimNm": "EX PACK",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "PF",
+        "modlCdTmCd": "D9W5PF",
         "desc": "New Sportage PE 2.4L EX PACK A/T 2021",
         "year": "2021",
-        "version": "EX PACK T/A "
+        "version": "EX PACK T/A",
+        "localSalesCd": "D9W5L6A1FP02"
     },
     {
         "modlNameHtml": "sportage",
@@ -841,9 +1019,11 @@
         "trimNm": "SXL",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "XF",
+        "modlCdTmCd": "D9W5XF",
         "desc": "New Sportage PE 2.4L SXL A/T&#40;Beige&#41;",
         "year": "2021",
-        "version": "SXL T/A "
+        "version": "SXL T/A",
+        "localSalesCd": "D9W5L6A1FX08"
     },
     {
         "modlNameHtml": "sportage",
@@ -852,9 +1032,11 @@
         "trimNm": "SX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "SF",
+        "modlCdTmCd": "D9W5SF",
         "desc": "New Sportage PE 2.4L SX A/T&#40;Beige&#41;",
         "year": "2020",
-        "version": "SX T/A "
+        "version": "SX T/A",
+        "localSalesCd": "D9W5L6A1FS01"
     },
     {
         "modlNameHtml": "sportage",
@@ -863,9 +1045,11 @@
         "trimNm": "SXL",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "XF",
+        "modlCdTmCd": "D9W5XF",
         "desc": "New Sportage PE 2.4L SXL A/T&#40;Beige&#41;",
         "year": "2020",
-        "version": "SXL T/A "
+        "version": "SXL T/A",
+        "localSalesCd": "D9W5L6A1FX05"
     },
     {
         "modlNameHtml": "sportage",
@@ -874,9 +1058,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "F1W5LF",
         "desc": "New Sportage PE 2.0L LX A/T",
         "year": "2021",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "F1W52G61FL03"
     },
     {
         "modlNameHtml": "sportage",
@@ -885,9 +1071,11 @@
         "trimNm": "EX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "EF",
+        "modlCdTmCd": "F1W5EF",
         "desc": "New Sportage PE 2.0L EX A/T",
         "year": "2020",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "F1W52G61FE03"
     },
     {
         "modlNameHtml": "sportage",
@@ -896,9 +1084,11 @@
         "trimNm": "LX",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "LF",
+        "modlCdTmCd": "F1W5LF",
         "desc": "New Sportage PE 2.0L LX A/T",
         "year": "2020",
-        "version": "LX T/A "
+        "version": "LX T/A",
+        "localSalesCd": "F1W52G61FL02"
     },
     {
         "modlNameHtml": "sportage",
@@ -907,9 +1097,11 @@
         "trimNm": "EX PACK",
         "tmName": "T/A 6 VELOCIDADES FWD",
         "tmCd": "PF",
+        "modlCdTmCd": "F1W5PF",
         "desc": "New Sportage PE 2.0L EX PACK A/T",
         "year": "2020",
-        "version": "EX PACK T/A "
+        "version": "EX PACK T/A",
+        "localSalesCd": "F1W52G61FP02"
     },
     {
         "modlNameHtml": "Stinger",
@@ -918,9 +1110,11 @@
         "trimNm": "EX",
         "tmName": "T/A 8 VELOCIDADES 2WD",
         "tmCd": "EJ",
+        "modlCdTmCd": "J5S6EJ",
         "desc": "KIA Stinger 2.0L Turbo EX A/T",
         "year": "2020",
-        "version": "EX T/A "
+        "version": "EX T/A",
+        "localSalesCd": "J5S6L8G1JE02"
     },
     {
         "modlNameHtml": "Stinger",
@@ -929,8 +1123,10 @@
         "trimNm": "SX",
         "tmName": "T/A 8 VELOCIDADES 2WD",
         "tmCd": "SJ",
+        "modlCdTmCd": "J5S6SJ",
         "desc": "KIA Stinger 3.3L Turbo GT A/T&#40;Black&#41;",
         "year": "2020",
-        "version": "SX T/A "
+        "version": "SX T/A",
+        "localSalesCd": "J5S6J5G1JS05"
     }
 ]

@@ -30,16 +30,20 @@ CREATE VIEW view_versions
             A.TRIM_NM as trimNm,
             A.TM_NM as tmName,
             A.TRIM_CD+A.TM_CD as tmCd,           
+            A.MODL_CD+A.BODY_TYPE_CD +  A.TRIM_CD+A.TM_CD as modlCdTmCd,
             VHCL_DESC as 'desc',
             A.VHCL_YY as year,
             TRIM(REPLACE(
                  REPLACE(
                     REPLACE( CONCAT( A.TRIM_NM,  ' ' , A.TM_NM),'7 VELOCIDADES FWD', ''),
                     '8 VELOCIDADES 2WD', '')
-                        ,'6 VELOCIDADES FWD', '')) as version
+                        ,'6 VELOCIDADES FWD', '')) as version,
+            D.VHCL_LOCAL_SALS_CD AS localSalesCd
         FROM GLB_PRD_VHCL_M A
-          INNER JOIN GLB_PRD_MODL_BODYTYPE_C B
-          ON A.MODL_CD = B.MODL_CD AND A.BODY_TYPE_CD = B.BODY_TYPE_CD AND B.ACTV = 'Y' AND A.ACTV = 'Y'
+          INNER JOIN GLB_PRD_MODL_BODYTYPE_C B ON A.MODL_CD = B.MODL_CD AND A.BODY_TYPE_CD = B.BODY_TYPE_CD AND B.ACTV = 'Y' AND A.ACTV = 'Y'
+          LEFT JOIN GLB_PRD_VHCL_FNC_MAPP D ON D.VHCL_ID = A.VHCL_ID
         WHERE A.VHCL_YY >= 2020
         --order by modlNameHtml
         --FOR JSON PATH
+        
+        
