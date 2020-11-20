@@ -130,6 +130,7 @@ const saveImages = async function(respScrapi) {
     let allVersion = await Version.find();
     respScrapi.forEach(async(elementScrapi) => {
         const { name, description, url, category, year, model, isCover } = elementScrapi;
+        let modelCd = null;
         var versions = allVersion
             .filter((version) => version.modlNameHtml === model)
             .filter((version) => version.year === year)
@@ -175,7 +176,7 @@ const saveImages = async function(respScrapi) {
                 if (name.includes('THETA 2.4') && version.modlNameHtml.includes('sportage') && !(version.trimNm.includes('EX PACK') || version.trimNm.includes('SXL'))) {
                     actv = false;
                 }
-
+                modelCd = version.modlCd;
                 return {
                     code: version.tmCd,
                     desc: version.version,
@@ -183,7 +184,7 @@ const saveImages = async function(respScrapi) {
                 }
             });
         versions.sort(compare);
-        const image = new Image({ name, description, url, category, year, model, isCover, versions });
+        const image = new Image({ name, description, url, category, year, model, modelCd, isCover, versions });
         await image.save();
     });
 }
@@ -215,7 +216,9 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
     } else {
 
         let versions = await Version.find({ modlNameHtml: model, year });
+        let modelCd = null;
         versions = versions.map(function(version) {
+            modelCd = version.modlCd;
             return {
                 code: version.tmCd,
                 desc: version.version,
@@ -223,8 +226,7 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
             }
         });
         versions.sort(compare);
-
-        const image = new Image({ name, description, url, category, year, model, versions });
+        const image = new Image({ name, description, url, category, year, model, modelCd, versions });
         image.user = req.user.id;
         await image.save();
         req.flash('success_msg', 'Image Add successfully !')
