@@ -12,9 +12,11 @@ let mapImages = new HashMap();
 scrapiKia = async function scrapiKIA() {
     vehicleCatalog = await getVehicleCatalog();
 
-    for(var i in vehicleCatalog){
-        await getImagesPagePrincipal(vehicleCatalog[i].codeHtml);
-    }
+    await Promise.all(
+        vehicleCatalog.map(async model => 
+            await getImagesPagePrincipal(model.codeHtml)
+        )
+    ); 
 
     return structurByModel;
 };
