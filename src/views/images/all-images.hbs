@@ -3,6 +3,29 @@
     <a href="/images/json/{{this.model}}/allcategory/false" title="Sent images '{{this.modelName}}' to MySales" class="sync"><i class="fas fa-paper-plane" aria-hidden="true"></i></a>
 </div>
 
+{{#if_equal this.model 'allmodels'}}
+{{#each featureCategory}}
+<div class="jumbotron">
+    <h1 class="display-6 txtFeature">{{this.name}}</h1>
+    <hr class="my-4 txtFeature">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="row">
+                {{#each ../images}}
+                {{#if_equal this.category ../this.code}}
+                <a href="{{this.url}}" data-gallery="C_{{../this.code}}" class="col-sm-4" data-toggle="lightbox"
+                    data-max-width="600" data-type="image" data-title="{{this.name}}"
+                    data-footer="{{this.description}}">
+                    <img src="{{this.url}}" class="img-fluid">
+                </a>
+                {{/if_equal}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+{{else}}
 {{#each featureCategory}}
 <div class="jumbotron">
     <div class="row justify-content-between">
@@ -69,27 +92,5 @@
         </div>
     </div>
 </div>
-{{/each}}
-
-
-{{#each featureCategory}}
-<div class="jumbotron">
-    <h1 class="display-6 txtFeature">{{this.name}}</h1>
-    <hr class="my-4 txtFeature">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="row">
-                {{#each ../images}}
-                {{#if_equal this.category ../this.code}}
-                <a href="{{this.url}}" data-gallery="C_{{../this.code}}" class="col-sm-4" data-toggle="lightbox"
-                    data-max-width="600" data-type="image" data-title="{{this.name}}"
-                    data-footer="{{this.description}}">
-                    <img src="{{this.url}}" class="img-fluid">
-                </a>
-                {{/if_equal}}
-                {{/each}}
-            </div>
-        </div>
-    </div>
-</div>
-{{/each}}
+{{/each}}    
+{{/if_equal}}
