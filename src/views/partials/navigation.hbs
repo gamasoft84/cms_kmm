@@ -22,14 +22,9 @@
             Autos 2021
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/images/rio-hatchback">Rio HB</a>
-            <a class="dropdown-item" href="/images/rio-sedan">Rio Sedan</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/images/forte-hatchback">Forte HB</a>
-            <a class="dropdown-item" href="/images/forte-sedan">Forte Sedan</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/images/sportage">New Sportage</a>
-            <a class="dropdown-item" href="/images/soul">New Soul</a>
+            {{#each vehicleCatalog}}
+              <a class="dropdown-item" href="/images/{{this.codeHtml}}">{{this.name}}<a>
+            {{/each}}
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/images">All</a>
           </div>

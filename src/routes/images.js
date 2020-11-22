@@ -2,116 +2,17 @@ const express = require('express');
 const router = express.Router();
 const Image = require('../models/Image');
 const Version = require('../models/Version');
+var {getVehicleCatalog, yearCatalog, featureCategory, mapVersions} = require('../enum/catalog');
 
 const { isAuthenticated } = require('../helpers/auth');
 var scrapiKia = require('./../generatedModelsKia');
 const requestPromise = require('request-promise');
 var request = require('request');
-var HashMap = require("hashmap");
-
-//const {featureCategory,vehicleCatalog} = require('./../enum/catalog')
-
-const featureCategory = [{
-        name: "Exterior",
-        abbreviation: "GFCFCEX",
-        code: "EX",
-    },
-    {
-        name: "Interior",
-        abbreviation: "GFCFCIN",
-        code: "IN",
-    },
-    {
-        name: "Technology",
-        abbreviation: "GFCFCTE",
-        code: "TE",
-    },
-    {
-        name: "Performance",
-        abbreviation: "GFCFCPE",
-        code: "PE",
-    },
-    {
-        name: "Safety",
-        abbreviation: "GFCFCSA",
-        code: "SA",
-    },
-    {
-        name: "MediaLink",
-        abbreviation: "GFCFCML",
-        code: "ML",
-    },
-];
-
-const vehicleCatalog = [{
-        name: "KIA Rio Sedán",
-        codeHtml: "rio-sedan",
-    },
-    {
-        name: "KIA Rio Hatchback",
-        codeHtml: "rio-hatchback",
-    },
-    {
-        name: "KIA Forte Sedán",
-        codeHtml: "forte-sedan",
-    },
-    {
-        name: "KIA Forte Hatchback",
-        codeHtml: "forte-hatchback",
-    },
-    {
-        name: "KIA Sportage",
-        codeHtml: "sportage",
-    },
-    {
-        name: "KIA Soul",
-        codeHtml: "soul",
-    },
-];
-
-const yearCatalog = [{
-        name: "2021",
-        codeHtml: "2021",
-    },
-    {
-        name: "2020",
-        codeHtml: "2020",
-    },
-];
-
-let mapVersions = new HashMap();
-mapVersions.set("L T/M", 1);
-mapVersions.set("L CVT", 2);
-mapVersions.set("L T/A", 3);
-mapVersions.set("LX T/M", 4);
-mapVersions.set("LX T/A", 5);
-mapVersions.set("LX CVT", 6);
-mapVersions.set("EX T/M", 7);
-mapVersions.set("EX T/A", 8);
-mapVersions.set("EX CVT", 9);
-mapVersions.set("EX DCT", 10);
-mapVersions.set("EX PACK T/A", 11);
-mapVersions.set("EX PACK CVT", 12);
-mapVersions.set("S PACK T/M", 13);
-mapVersions.set("S PACK T/A", 14);
-mapVersions.set("GT-line T/M", 15);
-mapVersions.set("GT-line CVT", 16);
-mapVersions.set("GT T/M", 17);
-mapVersions.set("GT DCT", 18);
-mapVersions.set("SX T/M", 19);
-mapVersions.set("SX T/A", 20);
-mapVersions.set("SX CVT", 21);
-mapVersions.set("SX DCT", 22);
-mapVersions.set("SXL T/M", 23);
-mapVersions.set("SXL T/A", 24);
-mapVersions.set("SXL DCT", 25);
-
 
 
 router.get('/images/add', isAuthenticated, async(req, res) => {
-    //console.log(vehicleCatalog);
-    //console.log(featureCategory);
-    res.render('images/new-image', { featureCategory, yearCatalog, vehicleCatalog });
+    vehicleCatalog = await getCatalogVersions();
+    res.render('images/new-image', { featureCategory, yearCatalog,  vehicleCatalog});
 });
 
 router.get('/images/load_from_kia', isAuthenticated, async(req, res) => {
@@ -235,6 +136,7 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
 //only for redirect 
 router.get('/images/edit/:id', isAuthenticated, async(req, res) => {
     const image = await Image.findById(req.params.id);
+    vehicleCatalog = await getVehicleCatalog();
     res.render('images/edit-image', { image, featureCategory, yearCatalog, vehicleCatalog });
 });
 
@@ -242,7 +144,8 @@ router.get('/images/edit/:id', isAuthenticated, async(req, res) => {
 
 router.get('/images/covers', isAuthenticated, async(req, res) => {
     const images = await Image.find({ isCover: true }).sort({ model: 1 });
-    res.render('images/cover-images', { images, vehicleCatalog });
+    vehicleCatalog = await getVehicleCatalog();
+    res.render('images/cover-images', { images, vehicleCatalog});
 });
 
 router.get('/images', isAuthenticated, async(req, res) => {
@@ -257,6 +160,7 @@ router.get('/images/:model', isAuthenticated, async(req, res) => {
     let modelName = ""
     const images = await Image.find({ model, isCover: false });
     if (model != 'allmodels') {
+        vehicleCatalog = await getVehicleCatalog();
         modelName = (vehicleCatalog.filter((v) => v.codeHtml === model))[0].name;
     } else {
         modelName = 'All KIA models'
