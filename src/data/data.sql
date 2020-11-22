@@ -10,17 +10,17 @@ CREATE VIEW view_versions
         AS  
         SELECT     
               CASE  B.MODL_DISPLAY_NM
-                WHEN 'Kia Rio Hatchback' THEN 'rio-hatchback'
-                WHEN 'Kia Rio Sedan' THEN 'rio-sedan'
+                WHEN 'Rio Hatchback' THEN 'rio-hatchback'
+                WHEN 'Rio Sedan' THEN 'rio-sedan'
                 WHEN 'Nuevo Forte' THEN 'forte-sedan'
                 WHEN 'Nuevo Forte Hatchback' THEN 'forte-hatchback'
                 WHEN 'Sportage' THEN 'sportage'
-                WHEN 'Sportage Slovakia' THEN 'sportage'
+                WHEN 'Sportage' THEN 'sportage'
                 WHEN 'Nuevo Soul' THEN 'soul'
                 WHEN 'Seltos' THEN 'seltos'
-                WHEN 'Sedona (7 Pasajeros)' THEN 'kia-sedona'
-                WHEN 'Sedona (8 Pasajeros)' THEN 'kia-sedona'
-                WHEN 'Kia Optima' THEN 'kia-optima'
+                WHEN 'Sedona' THEN 'kia-sedona'
+                WHEN 'Sedona' THEN 'kia-sedona'
+                WHEN 'Optima' THEN 'kia-optima'
                 WHEN 'Sorento' THEN 'sorento'
                 WHEN 'Niro' THEN 'niro'
                 WHEN 'Stinger' THEN 'Stinger'
