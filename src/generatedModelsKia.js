@@ -2,36 +2,20 @@ const request = require("request-promise");
 const cheerio = require("cheerio");
 const fs = require("fs");
 let { getVehicleCatalog } = require('./enum/catalog');
-
 var HashMap = require("hashmap");
-
-
-
 const writeStream = fs.createWriteStream("2021.csv");
+
 
 let structurByModel = [];
 let mapImages = new HashMap();
 
 scrapiKia = async function scrapiKIA() {
     vehicleCatalog = await getVehicleCatalog();
-    structurByModel = [];
-    mapImages = new HashMap();
 
-    console.log(vehicleCatalog[0].codeHtml);
-    await getImagesPagePrincipal(vehicleCatalog[0].codeHtml);
-    await getImagesPagePrincipal(vehicleCatalog[1].codeHtml);
-    await getImagesPagePrincipal(vehicleCatalog[2].codeHtml);
-    await getImagesPagePrincipal(vehicleCatalog[3].codeHtml);
-    await getImagesPagePrincipal(vehicleCatalog[4].codeHtml);
-    await getImagesPagePrincipal(vehicleCatalog[5].codeHtml);
-    await getImagesPagePrincipal(vehicleCatalog[6].codeHtml);
+    for(var i in vehicleCatalog){
+        await getImagesPagePrincipal(vehicleCatalog[i].codeHtml);
+    }
 
-
-    /*vehicleCatalog.forEach( async (model) => {
-        await getImagesPagePrincipal(model.codeHtml);
-    });*/
-    console.log('termana')
-    console.log('structurByModel',structurByModel.length);
     return structurByModel;
 };
 
@@ -52,20 +36,18 @@ async function getImagesPagePrincipal(model) {
             } else {
                 data = $(el).attr("data-srcset");
             }
-            //|| data.includes('_m.jpg')
             let url = `https://www.kia.com${data}`;
 
             let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg/;
 
             if ((regex.test(data.toLowerCase()) || isAllow(data)) && !isNotAllow(data) && !getCoverSecondary(data)) {
-                let name = findName($(el));
+                let name = findNameImage($(el));
                 //console.log(name);
-                let description = findDescription($(el));
+                let description = findDescriptionImage($(el));
                 let category = getCategoria(url.toLowerCase(), name.toLowerCase());
                 let isCover = getCoverPrincipal(url);
                 const year = "2021";
                 if (!mapImages.get(url)) {
-                    //console.log(data)
                     structurByModel.push({
                         model,
                         url,
@@ -84,7 +66,6 @@ async function getImagesPagePrincipal(model) {
                 );
             }
         });
-        console.log(structurByModel.length);
     } catch (e) {
         console.log(e);
     }
@@ -150,8 +131,6 @@ function getCategoria(urlImage, title) {
             category = "S/C";
         }
     }
-
-
     return category;
 }
 
@@ -181,10 +160,7 @@ function getCoverSecondary(urlImage) {
         "bg_Pc_RioHB_overview1_w.jpg",
         "kia-showroom-key-visual-RioSedan_w.jpg",
         "kia-showroom-key-visual-forte-W.jpg",
-        "kia_showroom-big-image-sportage-3-w.jpg",
-
-        //"img_RioHB_exterior2_w.jpg",
-        //"img_RioHB_exterior3_w.jpg"
+        "kia_showroom-big-image-sportage-3-w.jpg"
     ];
     var resp = false;
     for (var i in covers) {
@@ -197,7 +173,7 @@ function getCoverSecondary(urlImage) {
 }
 
 
-function findName(elem) {
+function findNameImage(elem) {
     let name = elem.parent().parent().find(".imgListTit").text();
 
     if (!name) {
@@ -228,7 +204,7 @@ function findName(elem) {
     return name;
 }
 
-function findDescription(elem) {
+function findDescriptionImage(elem) {
     let description = elem.parent().parent().find(".description").text();
     if (!description) {
         description = elem
