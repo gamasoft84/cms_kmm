@@ -24,8 +24,23 @@ CREATE VIEW view_versions
                 WHEN 'Sorento' THEN 'sorento'
                 WHEN 'Niro' THEN 'niro'
                 WHEN 'Stinger' THEN 'Stinger'
-                ELSE 'No such model'END as modlNameHtml,
-            B.MODL_DISPLAY_NM as modlName,
+                ELSE 'No such modlNameHtml'END as modlNameHtml,
+            CASE  B.MODL_DISPLAY_NM
+                WHEN 'Kia Rio Hatchback' THEN 'Rio Hatchback'
+                WHEN 'Kia Rio Sedan' THEN 'Rio Sedan'
+                WHEN 'Nuevo Forte' THEN 'Forte Sedan'
+                WHEN 'Nuevo Forte Hatchback' THEN 'Forte Hatchback'
+                WHEN 'Sportage' THEN 'Sportage'
+                WHEN 'Sportage Slovakia' THEN 'Sportage'
+                WHEN 'Nuevo Soul' THEN 'Soul'
+                WHEN 'Seltos' THEN 'Seltos'
+                WHEN 'Sedona (7 Pasajeros)' THEN 'Sedona'
+                WHEN 'Sedona (8 Pasajeros)' THEN 'Sedona'
+                WHEN 'Kia Optima' THEN 'Optima'
+                WHEN 'Sorento' THEN 'Sorento'
+                WHEN 'Niro' THEN 'Niro'
+                WHEN 'Stinger' THEN 'Stinger'
+                ELSE 'No such modlName'END as modlName,
             A.MODL_CD+A.BODY_TYPE_CD as modlCd,
             A.TRIM_NM as trimNm,
             A.TM_NM as tmName,
