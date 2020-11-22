@@ -205,10 +205,10 @@ router.delete('/images/delete/:id/:model', isAuthenticated, async(req, res) => {
     res.redirect('/images/' + (req.params.model != null ? req.params.model : ''));
 });
 
-router.get('/images/delete_all', isAuthenticated, async(req, res) => {
+router.get('/images_delete_all', isAuthenticated, async(req, res) => {
     await Image.deleteMany();
     req.flash('success_msg', 'Images Deleted successfully!');
-    res.redirect('/images');
+    res.redirect('/images/covers');
 });
 
 

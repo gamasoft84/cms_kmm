@@ -87,15 +87,15 @@ getVehicleCatalog = async function getCatalogVersions() {
         _id: { codeHtml: "$modlNameHtml", name: "$modlName", year: "$year" },
       },
     },
-    { $sort: { "_id.modlNameHtml": 1 } },
+    { $sort: { "_id.modlName": -1 } },
   ]);
+
+  //console.log(versions);
 
   let catalog = [];
   versions.forEach((e) => {
     catalog.push(e._id);
   });
-  console.log("Entra a getVehicleCatalog");
-
   return catalog;
 };
 
