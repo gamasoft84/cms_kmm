@@ -16,10 +16,10 @@ router.get('/images/add', isAuthenticated, async(req, res) => {
 });
 
 router.get('/images/load_from_kia', isAuthenticated, async(req, res) => {
-    let resp = await scrapiKia();
-    setTimeout(function() {
-        saveImages(resp);
-    }, 5000);
+    
+    let resp = resp = await scrapiKia();
+    console.log('Total Images: ' + resp.length);
+    saveImages(resp);
     req.flash('success_msg', 'Load Images successfully !')
     res.render('images/load-image');
 });

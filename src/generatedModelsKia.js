@@ -1,7 +1,7 @@
 const request = require("request-promise");
 const cheerio = require("cheerio");
 const fs = require("fs");
-const { featureCategory, vehicleCatalog } = require('./../src/enum/catalog')
+let { getVehicleCatalog } = require('./enum/catalog');
 
 var HashMap = require("hashmap");
 
@@ -9,26 +9,29 @@ var HashMap = require("hashmap");
 
 const writeStream = fs.createWriteStream("2021.csv");
 
-var modelos2021 = [
-    "soul",
-    "rio-hatchback",
-    "rio-sedan",
-    "forte-sedan",
-    "sportage",
-    "forte-hatchback",
-    "seltos"
-];
-
 let structurByModel = [];
 let mapImages = new HashMap();
 
 scrapiKia = async function scrapiKIA() {
+    vehicleCatalog = await getVehicleCatalog();
     structurByModel = [];
     mapImages = new HashMap();
 
-    modelos2021.forEach((model) => {
-        getImagesPagePrincipal(model);
-    });
+    console.log(vehicleCatalog[0].codeHtml);
+    await getImagesPagePrincipal(vehicleCatalog[0].codeHtml);
+    await getImagesPagePrincipal(vehicleCatalog[1].codeHtml);
+    await getImagesPagePrincipal(vehicleCatalog[2].codeHtml);
+    await getImagesPagePrincipal(vehicleCatalog[3].codeHtml);
+    await getImagesPagePrincipal(vehicleCatalog[4].codeHtml);
+    await getImagesPagePrincipal(vehicleCatalog[5].codeHtml);
+    await getImagesPagePrincipal(vehicleCatalog[6].codeHtml);
+
+
+    /*vehicleCatalog.forEach( async (model) => {
+        await getImagesPagePrincipal(model.codeHtml);
+    });*/
+    console.log('termana')
+    console.log('structurByModel',structurByModel.length);
     return structurByModel;
 };
 
