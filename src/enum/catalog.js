@@ -3,7 +3,7 @@ var HashMap = require("hashmap");
 
 const featureCategory = [
   {
-    name: "EXTERIOR",
+    name: "Exterior",
     abbreviation: "GFCFCEX",
     code: "EX",
   },
@@ -87,7 +87,7 @@ getVehicleCatalog = async function getCatalogVersions() {
         _id: { codeHtml: "$modlNameHtml", name: "$modlName", year: "$year" },
       },
     },
-    { $sort: { "_id.modlName": -1 } },
+    { $sort: { "_id.name": 1 } },
   ]);
 
   //console.log(versions);
