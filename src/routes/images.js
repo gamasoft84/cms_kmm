@@ -11,7 +11,7 @@ var request = require('request');
 
 
 router.get('/images/add', isAuthenticated, async(req, res) => {
-    vehicleCatalog = await getCatalogVersions();
+    vehicleCatalog = await getVehicleCatalog();
     res.render('images/new-image', { featureCategory, yearCatalog,  vehicleCatalog});
 });
 
