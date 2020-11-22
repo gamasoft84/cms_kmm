@@ -15,12 +15,13 @@ router.get('/images/add', isAuthenticated, async(req, res) => {
     res.render('images/new-image', { featureCategory, yearCatalog,  vehicleCatalog});
 });
 
-router.get('/images/load_from_kia', isAuthenticated, async(req, res) => {    
-    let resp = await scrapiKia();
+router.get('/images/load_from_kia', isAuthenticated, async(req, res) => {
+    vehicleCatalog = await getVehicleCatalog();
+    let resp = await scrapiKia(vehicleCatalog);
     console.log('Total Images: ' + resp.length);
     saveImages(resp);
     req.flash('success_msg', 'Load Images successfully !')
-    res.render('images/load-image');
+    res.redirect('/images/covers');
 });
 
 

@@ -1,7 +1,6 @@
 const request = require("request-promise");
 const cheerio = require("cheerio");
 const fs = require("fs");
-let { getVehicleCatalog } = require('./enum/catalog');
 var HashMap = require("hashmap");
 const writeStream = fs.createWriteStream("2021.csv");
 
@@ -9,15 +8,12 @@ const writeStream = fs.createWriteStream("2021.csv");
 let structurByModel = [];
 let mapImages = new HashMap();
 
-scrapiKia = async function scrapiKIA() {
-    vehicleCatalog = await getVehicleCatalog();
-
+scrapiKia = async function scrapiKIA(vehicleCatalog) {
     await Promise.all(
         vehicleCatalog.map(async model => 
             await getImagesPagePrincipal(model.codeHtml)
         )
     ); 
-
     return structurByModel;
 };
 
@@ -260,5 +256,15 @@ function findDescriptionImage(elem) {
     return description;
 }
 
-//scrapiKia();
+var vehicleCatalog = [
+    {codeHtml: "soul"},
+    {codeHtml: "rio-hatchback"},
+    {codeHtml: "rio-sedan"},
+    {codeHtml: "forte-sedan"},
+    {codeHtml: "sportage"},
+    {codeHtml: "forte-hatchback"},
+    {codeHtml: "seltos"}
+];
+
+scrapiKia(vehicleCatalog);
 module.exports = scrapiKia;
