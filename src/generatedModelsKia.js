@@ -16,6 +16,7 @@ var modelos2021 = [
     "forte-sedan",
     "sportage",
     "forte-hatchback",
+    "seltos"
 ];
 
 let structurByModel = [];
@@ -158,7 +159,8 @@ function getCoverPrincipal(urlImage) {
         "img_RIO_SD_exterior1_w.jpg",
         "Img_ForteSd_Exterior1_w.jpg",
         "kia-showroom-key-visual-sportage-w.jpg",
-        "img_Soul_exterior1_w.jpg"
+        "img_Soul_exterior1_w.jpg",
+        "bg_Pc_seltos_overview1_w.jpg "
     ];
     var resp = false;
     for (var i in covers) {
