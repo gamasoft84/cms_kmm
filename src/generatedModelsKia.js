@@ -6,9 +6,11 @@ const writeStream = fs.createWriteStream("2021.csv");
 
 
 let structurByModel = [];
-let mapImages = new HashMap();
+let mapImages = null;
 
 scrapiKia = async function scrapiKIA(vehicleCatalog) {
+    structurByModel = [];
+    mapImages = new HashMap();
     await Promise.all(
         vehicleCatalog.map(async model => 
             await getImagesPagePrincipal(model.codeHtml)
@@ -266,5 +268,5 @@ var vehicleCatalog = [
     {codeHtml: "seltos"}
 ];
 
-scrapiKia(vehicleCatalog);
+//scrapiKia(vehicleCatalog);
 module.exports = scrapiKia;

@@ -15,18 +15,6 @@ router.get('/images/add', isAuthenticated, async(req, res) => {
     res.render('images/new-image', { featureCategory, yearCatalog,  vehicleCatalog});
 });
 
-router.get('/images/load_from_kia', isAuthenticated, async(req, res) => {
-    vehicleCatalog = await getVehicleCatalog();
-    let resp = await scrapiKia(vehicleCatalog);
-    console.log('Total Images: ' + resp.length);
-    saveImages(resp);
-    req.flash('success_msg', 'Load Images successfully !')
-    res.redirect('/images/covers');
-});
-
-
-
-
 const saveImages = async function(respScrapi) {
     let allVersion = await Version.find();
     respScrapi.forEach(async(elementScrapi) => {
@@ -302,5 +290,23 @@ router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, 
     }
 });
 
+router.get('/images_load', isAuthenticated, async(req, res) => {
+    vehicleCatalog = await getVehicleCatalog();
+    res.render('images/load-image', { vehicleCatalog});
+});
+
+router.post('/images/load-images', isAuthenticated, async(req, res) => {
+    resp = req.body;
+    let vehicleCatalog = [];
+    for (const [key, value] of Object.entries(resp)) {
+        vehicleCatalog.push({codeHtml:key});
+    }  
+    console.log(vehicleCatalog);
+    let scrapi = await scrapiKia(vehicleCatalog);
+    console.log('Total Images: ' + scrapi.length);
+    saveImages(scrapi);
+    req.flash('success_msg', 'Load Images successfully !')
+    res.redirect('/images/covers');    
+});
 
 module.exports = router;
