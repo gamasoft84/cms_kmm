@@ -1,0 +1,6474 @@
+            div.par {
+                clear: both
+            }
+            
+            div.parsys_column {
+                height: 100%;
+                width: 100%;
+                float: left;
+                border: 0;
+                vertical-align: top;
+                padding: 0;
+                margin: 0
+            }
+            
+            div.parsys_column .section {
+                overflow: hidden;
+                width: 100%
+            }
+            
+            div.cq-colctrl-cols {
+                width: 100%;
+                float: left
+            }
+            
+            div.cq-colctrl-default {
+                width: 100%
+            }
+            
+            div.cq-colctrl-lt0-c0 {
+                width: calc(50% - 10px);
+                margin-right: 10px
+            }
+            
+            div.cq-colctrl-lt0-c1 {
+                width: calc(50% - 10px);
+                margin-left: 10px
+            }
+            
+            div.parbase.image {
+                text-align: center
+            }
+            
+            div.parbase.textimage .text {
+                margin-left: 35px;
+                position: relative;
+                top: -38px
+            }
+            
+            body,
+            input,
+            textarea,
+            select,
+            btn,
+            table {
+                font-family: Arial, Helvetica, sans-serif
+            }
+            
+            .fonts-loaded body,
+            input,
+            textarea,
+            select,
+            btn,
+            table {
+                font-family: kiaM, Helvetica
+            }
+            
+            .fonts-loaded strong,
+            th,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "kiaB"
+            }
+            
+            body,
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            ul,
+            ol,
+            li,
+            dl,
+            dt,
+            dd,
+            table,
+            th,
+            td,
+            form,
+            fieldset,
+            input,
+            textarea,
+            btn,
+            select {
+                margin: 0;
+                padding: 0
+            }
+            
+            body,
+            input,
+            textarea,
+            select,
+            btn,
+            table {
+                ;
+                line-height: 18px;
+                font-size: 13px;
+                color: #333
+            }
+            
+            body {
+                -webkit-text-size-adjust: none
+            }
+            
+            strong,
+            th,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: normal
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse
+            }
+            
+            img,
+            fieldset {
+                border: 0;
+                vertical-align: top
+            }
+            
+            ul,
+            ol {
+                list-style: none
+            }
+            
+            em,
+            address {
+                font-style: normal
+            }
+            
+            caption {
+                font-size: 0;
+                line-height: 0;
+                width: 0;
+                height: 0;
+                visibility: hidden;
+                overflow: hidden
+            }
+            
+            button {
+                cursor: pointer;
+                margin: 0;
+                padding: 0;
+                background: 0;
+                border: 0
+            }
+            
+            a {
+                color: #333;
+                text-decoration: none
+            }
+            
+            a:hover,
+            a:active,
+            a:focus {
+                text-decoration: underline
+            }
+            
+            body>img {
+                line-height: 0
+            }
+            
+            ul,
+            ol {
+                zoom: 1
+            }
+            
+            ul:after,
+            ol:after {
+                content: '';
+                clear: both;
+                display: block
+            }
+            
+            .hidden {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 0;
+                line-height: 0;
+                width: 0;
+                height: 0;
+                visibility: hidden;
+                overflow: hidden
+            }
+            
+            .accessbility {
+                position: fixed;
+                left: 0;
+                top: 0;
+                text-align: center;
+                width: 100%;
+                z-index: 10001;
+                font-size: 15px;
+                background: #454545
+            }
+            
+            .accessbility a {
+                display: block;
+                height: 0;
+                width: 0;
+                margin-bottom: -1px;
+                overflow: hidden;
+                text-align: center;
+                color: #fff;
+                white-space: nowrap;
+                color: #fff
+            }
+            
+            .accessbility a:focus,
+            .accessbility a:active {
+                height: auto;
+                width: auto;
+                padding: 7px 0;
+                color: #fff
+            }
+            
+            .dimmed {
+                display: none;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                opacity: .5;
+                filter: alpha(opacity=50);
+                z-index: 1005;
+                position: absolute;
+                top: 0;
+                left: 0
+            }
+            
+            .ess {
+                display: inline-block;
+                font-size: 15px;
+                color: #bb162b
+            }
+            
+            .bar {
+                display: inline-block;
+                font-family: Dotum;
+                color: #c5c5c5;
+                margin: 0 2px
+            }
+            
+            .pointcolor1 {
+                color: #bb162b !important;
+                font-weight: inherit
+            }
+            
+            .pointcolor2 {
+                color: #58595b !important
+            }
+            
+            .vspace {
+                margin-top: 10px
+            }
+            
+            .tumbImg {
+                text-align: center;
+                overflow: hidden
+            }
+            
+            .tumbImg .inImg {
+                text-align: center;
+                margin: 0 -100%
+            }
+            
+            .tumbImg .inImg img {
+                height: 100%
+            }
+            
+            .cmm_spr,
+            .sns_spr,
+            .map_spr,
+            .pg_arrow,
+            .pg_btn,
+            .pg_btn_on,
+            .tool_spr,
+            .kit_spr {
+                display: inline-block;
+                overflow: hidden;
+                background-repeat: no-repeat;
+                white-space: nowrap;
+                color: transparent;
+                vertical-align: top;
+                text-indent: -999px
+            }
+            
+            .cmm_tspr:before,
+            .cmm_tspr:after,
+            .form_spr:before,
+            .form_spr:after,
+            .util_a:before,
+            .dth1_a:after,
+            .tab_tspr:before,
+            [class*=bl_type]:before,
+            [class*=bl_type]:after,
+            .tool_tspr:before,
+            .kit_tspr:before {
+                display: inline-block;
+                overflow: hidden;
+                background-repeat: no-repeat;
+                white-space: nowrap;
+                vertical-align: top
+            }
+            
+            .cmm_spr,
+            .cmm_tspr:before,
+            .cmm_tspr:after,
+            .util_a:before,
+            .dth1_a:after,
+            [class*=bl_type]:before,
+            [class*=bl_type]:after,
+            .pg_arrow,
+            .pg_btn,
+            .pg_btn_on {
+                background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_common.png)
+            }
+            
+            .cmm_home {
+                display: inline-block;
+                color: transparent;
+                text-indent: -999px;
+                background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/ico_home.png)
+            }
+            
+            .sns_spr {
+                background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_sns.png)
+            }
+            
+            .map_spr {
+                background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_map2.png)
+            }
+            
+            .tool_spr,
+            .tool_tspr:before {
+                background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_tool.png)
+            }
+            
+            .kit_spr,
+            .kit_tspr:before {
+                background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_kit.png)
+            }
+            
+            .form_spr:before,
+            .form_spr:after {
+                background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_form.png)
+            }
+            
+            .btnIcon:before,
+            .btnIcon:after {
+                content: '';
+                display: inline-block;
+                background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_button.png);
+                background-repeat: no-repeat;
+                vertical-align: top
+            }
+            
+            .tab_tspr:before {
+                background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_tab.png)
+            }
+            
+            @media screen and (-webkit-min-device-pixel-ratio:1.5) {
+                .cmm_spr,
+                .cmm_tspr:before,
+                .cmm_tspr:after,
+                .util_a:before,
+                .dth1_a:after,
+                [class*=bl_type]:before,
+                .pg_arrow,
+                .pg_btn,
+                .pg_btn_on {
+                    background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_common_x2.png);
+                    background-size: 175px 75px
+                }
+                .sns_spr {
+                    background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_sns_x2.png);
+                    background-size: 175px 50px
+                }
+                .map_spr {
+                    background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_map2_x2.png);
+                    background-size: 37px 29px
+                }
+                .tool_spr,
+                .tool_tspr:before {
+                    background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_tool.png);
+                    background-size: 192px 140px
+                }
+                .kit_spr,
+                .kit_tspr:before {
+                    background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_kit_x2.png);
+                    background-size: 48px 60px
+                }
+                .form_spr:before,
+                .form_spr:after {
+                    background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_form_x2.png);
+                    background-size: 47px 42px
+                }
+                .btnIcon:before,
+                .btnIcon:after {
+                    background-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_button_x2.png);
+                    background-size: 124px 80px
+                }
+                .tab_tspr:before {
+                    backgroud-image: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_tab_x2.png)
+                }
+            }
+            
+            .spr_build:before {
+                content: '';
+                background-position: -25px -41px;
+                width: 20px;
+                height: 19px;
+                margin: 6px 5px 0 0
+            }
+            
+            .spr_warn:before {
+                content: '';
+                background-position: -126px 0;
+                width: 36px;
+                height: 30px
+            }
+            
+            .dth1_a:after {
+                background-position: 0 0;
+                width: 22px;
+                height: 22px
+            }
+            
+            .util_a:before {
+                background-position: -30px -14px;
+                width: 4px;
+                height: 5px
+            }
+            
+            .item_a {
+                background-position: -149px -46px;
+                width: 14px;
+                height: 14px
+            }
+            
+            .on>.item_a {
+                background-position: -149px -31px
+            }
+            
+            .spr_menu {
+                background-position: 0 -46px;
+                width: 18px;
+                height: 14px
+            }
+            
+            .spr_search {
+                background-position: -25px -20px;
+                width: 20px;
+                height: 20px
+            }
+            
+            .spr_search2 {
+                background-position: -45px -17px;
+                width: 14px;
+                height: 14px
+            }
+            
+            .spr_close {
+                background-position: -15px -61px;
+                width: 14px;
+                height: 14px
+            }
+            
+            .spr_close2 {
+                background-position: -30px -61px;
+                width: 14px;
+                height: 14px
+            }
+            
+            .spr_close3 {
+                background-position: 0 -61px;
+                width: 14px;
+                height: 14px
+            }
+            
+            .spr_more {
+                background-position: right -50px;
+                width: 10px;
+                height: 10px
+            }
+            
+            .spr_arrowL {
+                background-position: -127px -31px;
+                width: 10px;
+                height: 20px
+            }
+            
+            .spr_arrowR {
+                background-position: -138px -31px;
+                width: 10px;
+                height: 20px
+            }
+            
+            .spr_calendar {
+                background-position: -83px -57px;
+                width: 19px;
+                height: 18px
+            }
+            
+            .calbtn_l {
+                background-position: -103px -61px;
+                width: 9px;
+                height: 14px
+            }
+            
+            .calbtn_r {
+                background-position: -114px -61px;
+                width: 9px;
+                height: 14px
+            }
+            
+            .calbtn_x {
+                background-position: -124px -59px;
+                width: 16px;
+                height: 16px
+            }
+            
+            .spr_share_t {
+                background-position: 0 -25px;
+                width: 22px;
+                height: 22px
+            }
+            
+            .spr_share_f {
+                background-position: -23px -25px;
+                width: 22px;
+                height: 22px
+            }
+            
+            .spr_share_g {
+                background-position: -46px -25px;
+                width: 22px;
+                height: 22px
+            }
+            
+            .spr_facebook {
+                background-position: 0 0;
+                width: 24px;
+                height: 24px
+            }
+            
+            .spr_twitter {
+                background-position: -25px 0;
+                width: 24px;
+                height: 24px
+            }
+            
+            .spr_google {
+                background-position: -50px 0;
+                width: 24px;
+                height: 24px
+            }
+            
+            .spr_youtube {
+                background-position: -75px 0;
+                width: 24px;
+                height: 24px
+            }
+            
+            .spr_instagram {
+                width: 24px;
+                height: 24px;
+                background-position: -150px 0
+            }
+            
+            .map_pin {
+                background-position: 0 0;
+                width: 28px;
+                height: 25px;
+                padding: 4px 0 0 9px;
+                color: #fff;
+                font-family: kiaB;
+                text-align: left;
+                text-indent: 0
+            }
+            
+            .map_pin.pin_on {
+                background-position: 0 -29px;
+                color: #bb162b
+            }
+            
+            [class*=spr_offer] {
+                width: 33px;
+                height: 33px;
+                border: 1px solid #ebebeb;
+                background: #fefefe url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/spr_map.png)
+            }
+            
+            .offerList {
+                min-width: 117px;
+                margin: -2px;
+                overflow: hidden
+            }
+            
+            .offerList [class*=spr_offer] {
+                margin: 2px
+            }
+            
+            .spr_offer1 {
+                background-position: -61px 0
+            }
+            
+            .spr_offer2 {
+                background-position: -97px 0
+            }
+            
+            .spr_offer3 {
+                background-position: -61px -36px
+            }
+            
+            .spr_offer4 {
+                background-position: -97px -36px
+            }
+            
+            .spr_offer5 {
+                background-position: -61px -72px
+            }
+            
+            .spr_offer6 {
+                background-position: -97px -72px
+            }
+            
+            .spr_offer7 {
+                background-position: -133px 0
+            }
+            
+            .spr_offer8 {
+                background-position: -170px -36px
+            }
+            
+            .spr_email,
+            .spr_email:before {
+                content: '';
+                background-position: 0 0;
+                width: 24px;
+                height: 24px
+            }
+            
+            .spr_docu,
+            .spr_docu:before {
+                content: '';
+                background-position: 0 -26px;
+                width: 24px;
+                height: 24px
+            }
+            
+            .spr_print,
+            .spr_print:before {
+                content: '';
+                background-position: 0 -52px;
+                width: 24px;
+                height: 24px
+            }
+            
+            .spr_desc {
+                background-position: -0 -77px;
+                width: 23px;
+                height: 24px
+            }
+            
+            .spr_tool1:before {
+                content: '';
+                background-position: -26px 0;
+                width: 54px;
+                height: 42px
+            }
+            
+            .spr_tool2:before {
+                content: '';
+                background-position: -82px 0;
+                width: 54px;
+                height: 42px
+            }
+            
+            .spr_tool3:before {
+                content: '';
+                background-position: -138px 0;
+                width: 54px;
+                height: 42px
+            }
+            
+            .spr_tool4:before {
+                content: '';
+                background-position: -26px -44px;
+                width: 54px;
+                height: 42px
+            }
+            
+            .spr_tool5:before {
+                content: '';
+                background-position: -82px -44px;
+                width: 54px;
+                height: 42px
+            }
+            
+            .spr_tool6:before {
+                content: '';
+                background-position: -138px -44px;
+                width: 54px;
+                height: 42px
+            }
+            
+            .spr_tool7:before {
+                content: '';
+                background-position: -26px -88px;
+                width: 54px;
+                height: 42px
+            }
+            
+            .spr_tool8:before {
+                content: '';
+                background-position: -82px -88px;
+                width: 54px;
+                height: 42px
+            }
+            
+            .spr_tool9:before {
+                content: '';
+                background-position: -138px -88px;
+                width: 54px;
+                height: 42px
+            }
+            
+            .color_chip {
+                display: inline-block;
+                width: 52px;
+                height: 52px;
+                overflow: hidden;
+                border-radius: 50% 50%;
+                vertical-align: middle
+            }
+            
+            .color_chip img {
+                width: 100%;
+                height: 100%
+            }
+            
+            .color_bar {
+                display: inline-block;
+                overflow: hidden;
+                width: 62px;
+                height: 20px;
+                vertical-align: middle
+            }
+            
+            .color_bar img {
+                width: 86px;
+                height: 44px;
+                margin: -11px
+            }
+            
+            [class*=btn_area].line {
+                border-top: 1px solid #e3e3e3;
+                margin-top: 30px;
+                padding-top: 20px
+            }
+            
+            [class*=btn_area] .br {
+                display: inline-block
+            }
+            
+            .btn_area {
+                text-align: center;
+                margin-top: 20px
+            }
+            
+            .btn_areaL {
+                text-align: left;
+                margin-top: 15px
+            }
+            
+            .btn_areaR {
+                text-align: right;
+                margin-top: 15px
+            }
+            
+            .btn_areaT {
+                text-align: right;
+                margin-bottom: 12px
+            }
+            
+            .btn_sideT {
+                text-align: right;
+                margin: -34px 0 10px 0
+            }
+            
+            [class*=btnType] {
+                display: inline-block;
+                color: #fff;
+                font-family: kiaB;
+                text-transform: uppercase
+            }
+            
+            .btnType1 {
+                background-color: #bb162b
+            }
+            
+            .btnType2 {
+                background-color: #58595b
+            }
+            
+            .btnType3 {
+                background-color: #7e8083
+            }
+            
+            .btnType4 {
+                background-color: #aeaeae
+            }
+            
+            .btnType5 {
+                background-color: #282828
+            }
+            
+            .btnType6 {
+                background-color: #fff;
+                color: #666
+            }
+            
+            .btnLarge {
+                padding: 0 20px;
+                line-height: 37px;
+                font-size: 18px;
+                border-radius: 19px
+            }
+            
+            .btnLarge .arrow_r:after {
+                background-position: -32px 0;
+                width: 31px;
+                height: 31px;
+                margin: 3px 0 0 -1px;
+                position: relative;
+                right: -17px
+            }
+            
+            .btnLarge .arrow_l:before {
+                background-position: -64px 0;
+                width: 31px;
+                height: 31px;
+                margin: 3px -3px 0 0;
+                position: relative;
+                left: -17px
+            }
+            
+            .btnLarge .arrow_b:before {
+                background-position: 0 0;
+                width: 31px;
+                height: 31px;
+                margin: 3px -3px 0 0;
+                position: relative;
+                left: -17px
+            }
+            
+            .btnMedium {
+                padding: 0 15px;
+                line-height: 30px;
+                font-size: 14px;
+                border-radius: 15px
+            }
+            
+            .btnMedium .arrow_r:after {
+                background-position: -25px -32px;
+                width: 24px;
+                height: 24px;
+                margin: 3px 0 0 -2px;
+                position: relative;
+                right: -12px
+            }
+            
+            .btnMedium .arrow_l:before {
+                background-position: 0 -32px;
+                width: 24px;
+                height: 24px;
+                margin: 3px -2px 0 0;
+                position: relative;
+                left: -12px
+            }
+            
+            .btnMedium .arrow_t:after {
+                background-position: -100px -32px;
+                width: 24px;
+                height: 24px;
+                margin: 3px 0 0 -2px;
+                position: relative;
+                right: -12px
+            }
+            
+            .btnMedium .arrow_b:after {
+                background-position: -75px -32px;
+                width: 24px;
+                height: 24px;
+                margin: 3px 0 0 -2px;
+                position: relative;
+                right: -12px
+            }
+            
+            .btnMedium .play:before {
+                background-position: -50px -32px;
+                width: 24px;
+                height: 24px;
+                margin: 3px -2px 0 0;
+                position: relative;
+                left: -12px
+            }
+            
+            .btnMedium .reflash:before {
+                background-position: -7px -57px;
+                width: 11px;
+                height: 11px;
+                margin: 9px 0 0 0
+            }
+            
+            .btnSmall {
+                padding: 0 12px;
+                line-height: 25px;
+                font-size: 12px;
+                border-radius: 13px
+            }
+            
+            .btnSmall .arrow_r:after {
+                background-position: 0 -57px;
+                width: 6px;
+                height: 9px;
+                margin: 8px 0 0 8px
+            }
+            
+            .btnSmall .reflash:before {
+                background-position: -7px -57px;
+                width: 11px;
+                height: 11px;
+                margin: 7px 5px 0 0
+            }
+            
+            .btnSmall .reflash2:before {
+                background-position: -7px -69px;
+                width: 11px;
+                height: 11px;
+                margin: 7px 5px 0 0
+            }
+            
+            .btnSmall .print:before {
+                background-position: -34px -57px;
+                width: 16px;
+                height: 16px;
+                margin: 5px 6px 0 0
+            }
+            
+            .btnSmall .down:before {
+                background-position: -19px -57px;
+                width: 14px;
+                height: 13px;
+                margin: 5px 6px 0 0
+            }
+            
+            .btnSmall .change:before {
+                background-position: -51px -57px;
+                width: 16px;
+                height: 12px;
+                margin: 6px 6px 0 0
+            }
+            
+            .closeBtn {
+                display: inline-block;
+                padding: 13px 14px;
+                height: 14px
+            }
+            
+            .moreBtn {
+                display: inline-block;
+                padding: 10px;
+                height: 10px
+            }
+            
+            .arrowBtn {
+                display: inline-block;
+                padding: 5px 3px
+            }
+            
+            .tab_type1 {
+                display: inline-block;
+                padding: 3px;
+                background: #fff;
+                height: 30px;
+                line-height: 36px;
+                border: 1px solid #e0e0e0;
+                border-radius: 18px;
+                overflow: hidden
+            }
+            
+            .tab_type1 .tab_link {
+                display: inline-block;
+                color: #999;
+                font-family: kiaB;
+                line-height: 30px;
+                text-transform: uppercase;
+                vertical-align: top;
+                padding: 0 15px;
+                margin-left: -4px
+            }
+            
+            .tab_type1 .tab_link:first-child {
+                margin-left: 0
+            }
+            
+            .tab_type1 .tt1_on {
+                background: #7e8083;
+                color: #fff;
+                border-radius: 15px
+            }
+            
+            .tab_type1 .tt2_on {
+                background: #bb162b;
+                color: #fff;
+                border-radius: 15px
+            }
+            
+            .tab_type2 {
+                clear: both;
+                text-transform: uppercase
+            }
+            
+            .tab_type2 .tab_li {
+                min-width: 133px;
+                float: left;
+                text-align: center;
+                font-family: kiaB;
+                position: relative
+            }
+            
+            .tab_type2 .tab_a {
+                display: block;
+                padding: 12px 20px;
+                min-height: 18px;
+                margin-left: 1px;
+                color: #fff;
+                font-size: 15px;
+                background: #a2a2a2
+            }
+            
+            .tab_type2 .tab_a.lh {
+                padding: 3px 20px
+            }
+            
+            .tab_type2 .tab_li:first-child .tab_a {
+                margin-left: 0
+            }
+            
+            .tab_type2 .tab_on {
+                background: #bb162b
+            }
+            
+            .tab_type3 .input_box {
+                display: none;
+                width: auto
+            }
+            
+            .tab_type3 .tab_li {
+                min-width: 150px;
+                float: left;
+                margin-left: 1px;
+                text-align: center;
+                font-family: kiaB;
+                position: relative;
+                text-transform: uppercase
+            }
+            
+            .tab_type3 .tab_li:first-child {
+                margin-left: 0
+            }
+            
+            .tab_type3 .tab_a {
+                display: block;
+                padding: 12px;
+                height: 21px;
+                color: #fff;
+                font-size: 13px;
+                background: #a2a2a2
+            }
+            
+            .tab_type3 .tab_a.lh {
+                padding: 5px 20px 4px;
+                height: auto
+            }
+            
+            .tab_type3 .tab_map:before {
+                content: '';
+                background-position: 0 0;
+                width: 24px;
+                height: 19px;
+                margin: 0 8px 0 0
+            }
+            
+            .tab_type3 .tab_lst:before {
+                content: '';
+                background-position: -50px 0;
+                width: 21px;
+                height: 21px;
+                margin: -1px 8px 0 0
+            }
+            
+            .tab_type3 .tab_email:before {
+                content: '';
+                background-position: -43px -24px;
+                width: 22px;
+                height: 15px;
+                margin: 2px 8px 0 0
+            }
+            
+            .tab_type3 .tab_own:before {
+                content: '';
+                background-position: 0 -19px;
+                width: 20px;
+                height: 20px;
+                margin: 0 8px 0 0
+            }
+            
+            .tab_type3 .tab_svc1:before {
+                content: '';
+                background-position: 0 -41px;
+                width: 23px;
+                height: 22px;
+                margin: -1px 8px 0 0
+            }
+            
+            .tab_type3 .tab_svc2:before {
+                content: '';
+                background-position: -47px -41px;
+                width: 24px;
+                height: 24px;
+                margin: -2px 8px 0 0
+            }
+            
+            .tab_type3 .tab_svc3:before {
+                content: '';
+                background-position: -49px 0;
+                width: 24px;
+                height: 24px;
+                margin: -2px 8px 0 0
+            }
+            
+            .tab_type3 .tab_on {
+                background: #bb162b
+            }
+            
+            .tab_type3 .tab_on .tab_map:before {
+                background-position: -25px 0
+            }
+            
+            .tab_type3 .tab_on .tab_lst:before {
+                background-position: -73px 0
+            }
+            
+            .tab_type3 .tab_on .tab_email:before {
+                background-position: -66px -24px
+            }
+            
+            .tab_type3 .tab_on .tab_own:before {
+                background-position: -21px -23px
+            }
+            
+            .tab_type3 .tab_on .tab_svc1:before {
+                background-position: -23px -41px
+            }
+            
+            .tab_type3 .tab_on .tab_svc2:before {
+                background-position: -72px -41px
+            }
+            
+            .tab_type3 .tab_on .tab_svc3:before {
+                background-position: -72px 0
+            }
+            
+            .tab_type3 .tab_svc4:before {
+                content: '';
+                background: url("https://www.kia.com/content/dam/kwcms/mx/es/images/shopping-tools/finance/credit.png") no-repeat 0 0;
+                background-size: 57px 18px;
+                width: 27px;
+                height: 22px;
+                margin: -1px 8px 0 0
+            }
+            
+            .tab_type3 .tab_on .tab_svc4:before {
+                background-position: -30px 0
+            }
+            
+            .tab_type3 .tab_svc5:before {
+                content: '';
+                background: url("https://www.kia.com/content/dam/kwcms/mx/es/images/shopping-tools/finance/trust.png") no-repeat 0 0;
+                background-size: 57px 18px;
+                width: 27px;
+                height: 22px;
+                margin: -1px 8px 0 0
+            }
+            
+            .tab_type3 .tab_on .tab_svc5:before {
+                background-position: -30px 0
+            }
+            
+            .tab_type3 .tab_svc6:before {
+                content: '';
+                background: url("https://www.kia.com/content/dam/kwcms/mx/es/images/shopping-tools/finance/lease.png") no-repeat 0 0;
+                background-size: 53px 22px;
+                width: 27px;
+                height: 22px;
+                margin: -1px 8px 0 0
+            }
+            
+            .tab_type3 .tab_on .tab_svc6:before {
+                background-position: -26px 0
+            }
+            
+            .tab_type3 .tab_svc7:before {
+                content: '';
+                background: url("https://www.kia.com/content/dam/kwcms/mx/es/images/shopping-tools/finance/access.png") no-repeat 0 0;
+                background-size: 31px 17px;
+                width: 15px;
+                height: 22px;
+                margin: -1px 8px 0 0
+            }
+            
+            .tab_type3 .tab_on .tab_svc7:before {
+                background-position: -17px 0
+            }
+            
+            .tab_type3 .tab_svc8:before {
+                content: '';
+                background: url("https://www.kia.com/content/dam/kwcms/mx/es/images/shopping-tools/finance/college.png") no-repeat 0 0;
+                background-size: 42px 19px;
+                width: 21px;
+                height: 22px;
+                margin: -1px 8px 0 0
+            }
+            
+            .tab_type3 .tab_on .tab_svc8:before {
+                background-position: -21px 0
+            }
+            
+            .tab_type3 .tab_svc9:before {
+                content: '';
+                background: url("https://www.kia.com/content/dam/kwcms/mx/es/images/shopping-tools/finance/app.png") no-repeat 0 0;
+                background-size: 28px 20px;
+                width: 14px;
+                height: 22px;
+                margin: -1px 8px 0 0
+            }
+            
+            .tab_type3 .tab_on .tab_svc9:before {
+                background-position: -14px 0
+            }
+            
+            .tab_type3 .tab_svc10:before {
+                content: '';
+                background: url("https://www.kia.com/content/dam/kwcms/mx/es/images/shopping-tools/finance/click.png") no-repeat 0 0;
+                background-size: 28px 20px;
+                width: 14px;
+                height: 22px;
+                margin: -1px 8px 0 0
+            }
+            
+            .tab_type3 .tab_on .tab_svc10:before {
+                background-position: -14px 0
+            }
+            
+            .form_wrp input,
+            .form_wrp textarea,
+            .form_sch input,
+            .input_box {
+                color: #999;
+                -webkit-appearance: none
+            }
+            
+            .form_wrp input:focus,
+            .form_wrp textarea:focus,
+            .form_sch input:focus,
+            .input_box:focus {
+                color: #333
+            }
+            
+             :-ms-input-placeholder {
+                color: #999
+            }
+            
+             :-moz-placeholder {
+                color: #999
+            }
+            
+             ::-webkit-input-placeholder {
+                color: #999
+            }
+            
+            .form_wrp {
+                display: block;
+                padding: 0 26px 0 0;
+                position: relative
+            }
+            
+            .form_wrp .input_box {
+                width: 100%;
+                min-height: 18px;
+                border: 1px solid #d6d6d6;
+                background: #fff;
+                padding: 5px 12px;
+                border-radius: 2px
+            }
+            
+            .form_wrp .input_box[disabled] {
+                background: #efefef;
+                color: #999
+            }
+            
+            .form_wrp .input_sch {
+                width: 100%;
+                min-height: 18px;
+                border: 1px solid #d6d6d6;
+                background: #fff;
+                padding: 9px 12px;
+                border-radius: 2px
+            }
+            
+            .form_wrp .sel_box {
+                display: block;
+                width: 100%;
+                padding-right: 24px;
+                position: relative
+            }
+            
+            .form_wrp .sel_box .selected-headline {
+                display: block;
+                width: 100%;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid #e4e4e4;
+                background: #efefef;
+                padding: 0 12px;
+                border-radius: 2px;
+                color: #666;
+                cursor: pointer;
+                overflow: hidden
+            }
+            
+            .form_wrp .sel_box .selected-headline:after {
+                content: '';
+                background-position: 0 -31px;
+                width: 11px;
+                height: 8px;
+                position: absolute;
+                top: 12px;
+                right: 12px
+            }
+            
+            .form_wrp .sel_box .select-list {
+                width: 100%;
+                overflow-y: auto;
+                border: 1px solid #ccc;
+                background: #fff;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 9
+            }
+            
+            .form_wrp .sel_box .select-list .select-list-link {
+                display: block;
+                padding: 5px 12px;
+                color: #333;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden
+            }
+            
+            .form_wrp .sel_box .select-list .select-list-hover,
+            .form_wrp .sel_box .select-list .select-list-selected {
+                background: #bb162b;
+                color: #fff
+            }
+            
+            .form_wrp .sel_box .select-list-selfocus {
+                border: 1px dotted #bb162b !important
+            }
+            
+            .form_wrp .sel_box.inp_sel .selected-headline {
+                background: #fff;
+                border: 1px solid #d0d0d0
+            }
+            
+            .form_wrp .sel_box.sch_sel .selected-headline {
+                height: 36px;
+                line-height: 36px;
+                background: #fff;
+                border: 1px solid #d0d0d0;
+                border-radius: 0;
+                color: #999;
+                padding: 0 12px
+            }
+            
+            .form_wrp .sel_box.sch_sel .selected-headline:after {
+                top: 15px
+            }
+            
+            .form_date {
+                display: block;
+                padding-right: 44px;
+                border: 1px solid #d6d6d6;
+                background: #fff;
+                border-radius: 2px;
+                position: relative
+            }
+            
+            .form_date .input_box {
+                border: 0;
+                padding: 5px 0 5px 12px;
+                width: 100%
+            }
+            
+            .form_date .spr_calendar {
+                position: absolute;
+                top: 5px;
+                right: 6px
+            }
+            
+            .form_chk {
+                display: inline-block;
+                position: relative;
+                vertical-align: middle
+            }
+            
+            .form_chk input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                opacity: 0;
+                filter: alpha(opacity=0)
+            }
+            
+            .form_chk label {
+                cursor: pointer
+            }
+            
+            .form_chk label.focus:before {
+                border: 1px dotted #bb162b;
+                margin: -3px 5px -1px -1px;
+                text-decoration: underline
+            }
+            
+            .form_chk label a {
+                text-decoration: underline
+            }
+            
+            .form_chk.check .check_box:before {
+                margin-right: 0
+            }
+            
+            .form_spr {
+                display: block
+            }
+            
+            .check_box:before {
+                content: '';
+                background-position: 0 -15px;
+                width: 15px;
+                height: 15px;
+                vertical-align: middle;
+                margin: -2px 6px 0 0
+            }
+            
+            .check_box.c_on:before {
+                content: " ";
+                background-position: -32px -15px
+            }
+            
+            .radio_box:before {
+                content: '';
+                background-position: 0 0;
+                width: 14px;
+                height: 14px;
+                vertical-align: middle;
+                margin: -2px 6px 0 0
+            }
+            
+            .radio_box.r_on:before {
+                content: " ";
+                background-position: -32px 0
+            }
+            
+            .form_area {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+                vertical-align: top
+            }
+            
+            .form_area .form_wrp,
+            .form_area .form_sch,
+            .form_area .form_date {
+                display: table-cell;
+                vertical-align: top
+            }
+            
+            .form_area .space {
+                width: 8px;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle
+            }
+            
+            .form_area .hypen {
+                width: 12px;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle
+            }
+            
+            .form_area .at {
+                width: 20px;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                color: #999
+            }
+            
+            .layer_calendar {
+                display: none;
+                position: absolute;
+                top: 30px;
+                right: 0;
+                width: 246px;
+                background: #f5f5f5;
+                box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.05);
+                z-index: 9
+            }
+            
+            .layer_calendar .sel_month {
+                background: #333;
+                padding: 6px;
+                text-align: center
+            }
+            
+            .layer_calendar .sel_month .this {
+                display: inline-block;
+                color: #fff;
+                font-size: 20px;
+                line-height: 28px;
+                font-family: Arial;
+                font-weight: bold;
+                margin: 0 10px
+            }
+            
+            .layer_calendar .sel_month .btn {
+                padding: 5px;
+                position: relative;
+                top: -2px
+            }
+            
+            .layer_calendar .sel_date {
+                border: 1px solid #bcbcbc;
+                border-top: 0;
+                padding: 5px 5px 10px
+            }
+            
+            .layer_calendar .sel_date th,
+            .layer_calendar .sel_date td {
+                text-align: center;
+                padding: 6px 5px;
+                font-size: 12px;
+                font-family: Arial
+            }
+            
+            .layer_calendar .sel_date th {
+                border-bottom: 1px solid #dedede;
+                color: #222
+            }
+            
+            .layer_calendar .sel_date td {
+                color: #222
+            }
+            
+            .layer_calendar .sel_date td.sat,
+            .layer_calendar .sel_date td.sat a {
+                color: #0575dd
+            }
+            
+            .layer_calendar .sel_date td.sun,
+            .layer_calendar .sel_date td.sun a {
+                color: #ea2b2b
+            }
+            
+            .layer_calendar .sel_date td span {
+                color: #aeaeae
+            }
+            
+            .layer_calendar .calbtn_x {
+                position: absolute;
+                top: 5px;
+                right: 5px
+            }
+            
+            .layer_calendar.open {
+                display: block
+            }
+            
+            .form_sch:after {
+                content: '';
+                clear: both;
+                display: block
+            }
+            
+            .form_sch .sch_box {
+                height: 36px;
+                overflow: hidden;
+                border: 1px solid #d0d0d0;
+                padding: 0 58px 0 0;
+                position: relative;
+                background: #fff
+            }
+            
+            .form_sch .sch_box .sch_inp {
+                width: 100%;
+                padding: 9px 0 9px 14px;
+                border: 0
+            }
+            
+            .form_sch .sch_box .sch_btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 8px 14px 8px 10px
+            }
+            
+            .form_sch .sch_open {
+                display: none;
+                background: #fff
+            }
+            
+            .form_sch .sch_box.sch_round {
+                height: 36px;
+                border: 1px solid #e5e5e5;
+                border-radius: 18px;
+                padding: 0 50px 0 0;
+                position: relative
+            }
+            
+            .form_sch .sch_box.sch_round .sch_inp {
+                background: transparent
+            }
+            
+            .form_sch .sch_box.sch_round .sch_btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 10px 12px 10px 10px
+            }
+            
+            .acc_filter {
+                overflow: hidden;
+                margin: 30px 0 15px
+            }
+            
+            .acc_filter .category_area {
+                float: left;
+                text-transform: uppercase;
+                overflow: hidden
+            }
+            
+            .acc_filter .category_area .filter_tit {
+                display: block;
+                float: left;
+                font-size: 15px;
+                font-family: KiaB;
+                height: 40px;
+                line-height: 40px;
+                margin-right: 15px
+            }
+            
+            .acc_filter .category_area .input_box {
+                display: none;
+                width: auto
+            }
+            
+            .acc_filter .category_area ul {
+                float: left;
+                display: block;
+                border-radius: 19px;
+                border: 1px solid #e0e0e0;
+                padding: 3px;
+                background: #fff
+            }
+            
+            .acc_filter .category_area ul li {
+                float: left
+            }
+            
+            .acc_filter .category_area ul li a {
+                display: block;
+                font-family: KiaB;
+                color: #aaa;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 15px
+            }
+            
+            .acc_filter .category_area ul li a.on {
+                border-radius: 15px;
+                background: #7e8083;
+                color: #fff
+            }
+            
+            .acc_filter .category_area ul li a.on_r {
+                border-radius: 15px;
+                background: #bc162c;
+                color: #fff
+            }
+            
+            .acc_filter .search_area {
+                float: right
+            }
+            
+            .acc_filter .search_area .sch_box.sch_round {
+                position: relative;
+                height: 38px;
+                border: 1px solid #e5e5e5;
+                border-radius: 19px;
+                padding: 0 50px 0 0;
+                margin-top: 2px;
+                background: #fff
+            }
+            
+            .acc_filter .search_area .sch_box .sch_inp {
+                width: 100%;
+                padding: 10px 0 10px 14px;
+                border: 0;
+                color: #999
+            }
+            
+            .acc_filter .search_area .sch_box.sch_round .sch_inp {
+                background: transparent
+            }
+            
+            .acc_filter .search_area .sch_box.sch_round .sch_btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 10px 12px 10px 10px
+            }
+            
+            .con_tit {
+                font-size: 36px;
+                color: #000;
+                line-height: 30px;
+                text-transform: uppercase
+            }
+            
+            .con_tit:after {
+                content: '';
+                display: block;
+                width: 70px;
+                height: 2px;
+                background: #bb162b;
+                margin-top: 18px
+            }
+            
+            .con_stit {
+                font-size: 22px;
+                color: #333;
+                text-transform: uppercase;
+                margin-top: 12px
+            }
+            
+            .con_stit:before {
+                content: '';
+                display: block;
+                width: 33px;
+                height: 2px;
+                background: #d5172e;
+                position: relative;
+                top: -12px
+            }
+            
+            .bl_type1 {
+                padding-left: 13px;
+                font-size: 16px;
+                color: #333;
+                text-transform: uppercase
+            }
+            
+            .bl_type1:before {
+                content: '';
+                background-position: right 0;
+                width: 8px;
+                height: 10px;
+                margin: 5px 5px 0 -13px
+            }
+            
+            .bl_type2 {
+                padding-left: 10px;
+                font-family: kiaM;
+                font-size: 14px;
+                color: #000
+            }
+            
+            .bl_type2:before {
+                content: '';
+                background-position: right -11px;
+                width: 4px;
+                height: 4px;
+                margin: 8px 6px 0 -10px
+            }
+            
+            .bl_type3 {
+                padding-left: 10px;
+                font-family: kiaM;
+                color: #666
+            }
+            
+            .bl_type3:before {
+                content: '';
+                background-position: right -16px;
+                width: 4px;
+                height: 4px;
+                margin: 8px 6px 0 -10px
+            }
+            
+            .bl_type4 {
+                padding-left: 7px;
+                font-family: kiaM;
+                color: #767676
+            }
+            
+            .bl_type4:before {
+                content: '';
+                width: 3px;
+                height: 3px;
+                margin: 8px 4px 0 -7px;
+                background: #aeaeae
+            }
+            
+            .bl_type5 {
+                padding-left: 7px;
+                color: #000
+            }
+            
+            .bl_type5:before {
+                content: '';
+                background-position: right -61px;
+                width: 3px;
+                height: 5px;
+                margin: 8px 4px 0 -7px
+            }
+            
+            .bl_type_a {
+                display: inline-block;
+                padding-left: 10px;
+                text-decoration: underline;
+                font-size: 11px;
+                color: #333;
+                text-transform: uppercase
+            }
+            
+            .bl_type_a:before {
+                content: '';
+                background-position: right -21px;
+                width: 5px;
+                height: 7px;
+                margin: 6px 5px 0 -10px
+            }
+            
+            .bl_typeW_a {
+                display: inline-block;
+                padding-left: 10px;
+                text-decoration: underline;
+                font-size: 11px;
+                color: #fff;
+                text-transform: uppercase
+            }
+            
+            .bl_typeW_a:before {
+                content: '';
+                background-position: right -28px;
+                width: 5px;
+                height: 7px;
+                margin: 6px 5px 0 -10px
+            }
+            
+            .bl_typeR_a {
+                display: inline-block;
+                text-decoration: underline;
+                font-size: 12px;
+                color: #666;
+                text-transform: uppercase
+            }
+            
+            .bl_typeR_a:after {
+                content: '';
+                background-position: right -21px;
+                width: 5px;
+                height: 7px;
+                margin: 6px 0 0 6px
+            }
+            
+            .bl_type_note {
+                position: relative;
+                padding-left: 24px;
+                font-size: 12px;
+                margin-top: 5px;
+                text-align: left
+            }
+            
+            .bl_type_note:before {
+                content: '';
+                background-position: -61px -40px;
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 2px;
+                left: 0
+            }
+            
+            .bl_type_note .note_dt {
+                font-size: 13px;
+                color: #767676;
+                text-transform: uppercase
+            }
+            
+            .bl_type_note .note_dd {
+                color: #9c9c9c;
+                line-height: 16px;
+                margin: 3px 0 0 0
+            }
+            
+            .bl_type_note .note_p {
+                margin: 10px 0;
+                color: #666
+            }
+            
+            .note_area {
+                border-top: 1px solid #d7d7d7;
+                margin-top: 25px;
+                padding-top: 5px
+            }
+            
+            .array_area .array_a {
+                display: inline-block;
+                color: #999;
+                vertical-align: top
+            }
+            
+            .array_area .array_a.on {
+                color: #bb162b
+            }
+            
+            .array_area .array_a.on:after {
+                content: '';
+                display: block;
+                margin: 0 auto;
+                background-position: right -67px;
+                width: 7px;
+                height: 4px
+            }
+            
+            h3.bl_type1,
+            h4.bl_type1,
+            h5.bl_type1 {
+                margin: 20px 0 10px
+            }
+            
+            h3.bl_type1:first-child,
+            h4.bl_type1:first-child,
+            h5.bl_type1:first-child {
+                margin-top: 0
+            }
+            
+            strong.bl_type2 {
+                display: block;
+                margin: 10px 0
+            }
+            
+            .list_type1 {
+                margin: 10px 0
+            }
+            
+            .list_type1 li {
+                margin: 4px 0 4px 12px
+            }
+            
+            .h_type1 {
+                font-size: 24px;
+                line-height: 28px
+            }
+            
+            .txt_desc1 {
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 10px
+            }
+            
+            .txt_desc2 {
+                font-size: 13px;
+                color: #666
+            }
+            
+            .txt_desc3 {
+                font-size: 13px;
+                margin-bottom: 20px
+            }
+            
+            .txt_desc4 {
+                margin: 10px 0 10px 13px;
+                color: #666
+            }
+            
+            .accordion>li {
+                margin-top: 1px
+            }
+            
+            .accordion>li:first-child {
+                margin-top: 0
+            }
+            
+            .accordion .accordionTit {
+                display: block;
+                color: #fff;
+                font-family: KiaB;
+                font-size: 18px;
+                padding: 11px 0 11px 32px;
+                background: #424242 url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/icon_accordion.png) no-repeat;
+                background-position: right 15px
+            }
+            
+            .accordion .accordionTit.on {
+                background: #424242 url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/icon_accordion.png) no-repeat;
+                background-position: right -45px
+            }
+            
+            .accordion .accordionCont {
+                display: none;
+                background: #fff;
+                border: 1px solid #e3e3e3;
+                padding: 30px 30px 40px
+            }
+            
+            .accordion .accordionTit.on+.accordionCont {
+                display: block !important
+            }
+            
+            .tleft {
+                text-align: left !important
+            }
+            
+            .tright {
+                text-align: right !important
+            }
+            
+            .tcenter {
+                text-align: center !important
+            }
+            
+            .tableWrap {
+                position: relative;
+                margin-top: 15px;
+                border: 1px solid #7d7d7d;
+                border-top: 0
+            }
+            
+            .tableWrap .tableTit {
+                width: 100%
+            }
+            
+            .tableWrap .tableTit strong {
+                display: block;
+                padding: 15px 14px;
+                background: #424242;
+                font-size: 15px;
+                color: #fff;
+                text-transform: uppercase
+            }
+            
+            .tableWrap th {
+                padding: 12px 14px
+            }
+            
+            .tableWrap td {
+                padding: 12px 14px;
+                border-top: 1px solid #d6d6d6;
+                color: #666;
+                font-family: kiaM;
+                text-align: left;
+                font-size: 13px
+            }
+            
+            .tableWrap th[class*=tableTh] {
+                height: 18px;
+                background: #f8f8f8;
+                font-family: kiaB;
+                font-size: 14px;
+                color: #000;
+                text-align: left
+            }
+            
+            .tableWrap th.tableTh2 {
+                border-top: 1px solid #d6d6d6
+            }
+            
+            .tableWrap th.tableTh3 {
+                background: #fff;
+                font-size: 13px;
+                border-top: 1px solid #d6d6d6;
+                color: #333;
+                font-family: kiaM
+            }
+            
+            .tableWrap .tableFix {
+                position: relative;
+                float: left;
+                width: 212px;
+                z-index: 9
+            }
+            
+            .tableWrap .fixArea {
+                background: #fff
+            }
+            
+            .tableWrap .fixArea th,
+            .tableWrap .fixArea td {
+                border-right: 1px solid #d6d6d6;
+                width: 258px
+            }
+            
+            .tableWrap .tableScroll {
+                overflow: hidden;
+                overflow-x: scroll
+            }
+            
+            .tableWrap .scrollArea {
+                table-layout: fixed;
+                overflow: hidden;
+                background: #fff
+            }
+            
+            .tableWrap .scrollArea th {
+                border-left: 1px solid #d6d6d6;
+                font-family: kiaB;
+                font-size: 14px;
+                color: #000;
+                text-align: center
+            }
+            
+            .tableWrap .scrollArea th.tableTh2 {
+                border-bottom: 1px solid #d6d6d6;
+                border-top: 0
+            }
+            
+            .tableWrap .scrollArea th div {
+                position: relative;
+                margin: 0;
+                padding: 0
+            }
+            
+            .tableWrap .scrollArea th span.scrollTh {
+                position: absolute
+            }
+            
+            .tableWrap .scrollArea td {
+                border-left: 1px solid #d6d6d6;
+                color: #666;
+                text-align: center
+            }
+            
+            .tableWrap .scrollArea th:first-child,
+            .tableWrap .scrollArea td:first-child {
+                border-left: 0
+            }
+            
+            .table_type1 {
+                position: relative
+            }
+            
+            .table_type1:before {
+                content: '';
+                display: block;
+                background: #bb162b;
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                top: 0
+            }
+            
+            .table_type1:after {
+                content: '';
+                display: block;
+                background: #7d7d7d;
+                width: 100%;
+                height: 2px;
+                position: absolute
+            }
+            
+            .table_type1 th {
+                background: #f5f5f5;
+                padding: 8px 18px
+            }
+            
+            .table_type1 td {
+                padding: 12px 18px;
+                color: #666;
+                line-height: 20px;
+                text-align: center
+            }
+            
+            .table_type1 th,
+            .table_type1 td {
+                border-left: 1px solid #d6d6d6
+            }
+            
+            .table_type1 th:first-child,
+            .table_type1 td:first-child {
+                border-left: 0
+            }
+            
+            .table_type1 tbody tr {
+                border-top: 1px solid #d6d6d6
+            }
+            
+            .table_type1 tbody tr:first-child {
+                border-top: 0
+            }
+            
+            .table_type2 {
+                border: 1px solid #e2e2e2
+            }
+            
+            .table_type2.tborder {
+                border-top: 2px solid #515151
+            }
+            
+            .table_type2 th,
+            .table_type2 td {
+                border: 1px solid #e2e2e2;
+                font-family: kiaM;
+                font-size: 12px;
+                padding: 8px 10px;
+                text-align: left
+            }
+            
+            .table_type2 th {
+                background: #f8f8f8;
+                border-bottom: 0;
+                vertical-align: top
+            }
+            
+            .table_type2 td {
+                color: #666;
+                word-break: break-all
+            }
+            
+            .table_type3 {
+                border-top: 2px solid #515151;
+                border-bottom: 2px solid #7d7d7d
+            }
+            
+            .table_type3 th,
+            .table_type3 td {
+                padding: 8px 10px;
+                text-align: center;
+                border-left: 1px solid #d6d6d6
+            }
+            
+            .table_type3 th:first-child,
+            .table_type3 td:first-child {
+                border-left: 0
+            }
+            
+            .table_type3 thead th {
+                background: #f5f5f5;
+                font-size: 14px
+            }
+            
+            .table_type3 tbody th {
+                border-top: 1px solid #d6d6d6
+            }
+            
+            .table_type3 td {
+                border-top: 1px solid #d6d6d6;
+                color: #666;
+                font-size: 12px
+            }
+            
+            .table_type4 {
+                border: 1px solid #e8e8e8;
+                border-top: 0;
+                font-size: 13px
+            }
+            
+            .table_type4 .tbl_tr {
+                display: table;
+                width: 100%;
+                border-top: 1px solid #e8e8e8
+            }
+            
+            .table_type4 .tbl_th {
+                display: table-cell;
+                width: 20%;
+                font-family: kiaM;
+                padding: 8px 20px;
+                border-right: 1px solid #e8e8e8;
+                background: #f8f8f8;
+                vertical-align: middle;
+                color: #333
+            }
+            
+            .table_type4 .tbl_td {
+                display: table-cell;
+                padding: 8px 20px;
+                color: #666
+            }
+            
+            .nodata {
+                clear: both;
+                float: none;
+                width: 100%;
+                padding: 205px 0 !important;
+                text-align: center
+            }
+            
+            .nodata span {
+                display: inline-block;
+                padding-left: 45px;
+                color: #999;
+                font-size: 20px;
+                font-family: kiaB;
+                line-height: 30px;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/shopping-tools/bg_nodata_w.gif) no-repeat
+            }
+            
+            .no_result {
+                padding: 100px 0 !important;
+                text-align: center;
+                color: #999
+            }
+            
+            .no_result .spr_warn:before {
+                vertical-align: middle;
+                margin-right: 8px
+            }
+            
+            .no_result_box {
+                margin-top: 15px;
+                padding: 200px 30px;
+                border: 1px solid #d0d0d0;
+                background: #e9e9e9;
+                text-align: center;
+                text-transform: uppercase
+            }
+            
+            .no_result_box .no_txt {
+                margin-bottom: 20px;
+                font-size: 20px;
+                font-family: kiaB;
+                line-height: 26px
+            }
+            
+            .bbs_edit {
+                height: 38px;
+                margin-bottom: 25px;
+                position: relative
+            }
+            
+            .bbs_edit .bbs_count {
+                padding: 10px 0
+            }
+            
+            .bbs_edit .bbs_sch {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 200px
+            }
+            
+            .bbs_order {
+                margin-bottom: 10px;
+                float: right;
+                font-size: 15px
+            }
+            
+            .bbs_order .cmm_tspr {
+                display: inline-block;
+                color: #666
+            }
+            
+            .bbs_order .cmm_tspr:before {
+                content: '';
+                width: 1px;
+                height: 12px;
+                background: #ccc;
+                vertical-align: middle;
+                margin: 0 8px 0 4px
+            }
+            
+            .bbs_order .cmm_tspr:first-child:before {
+                display: none
+            }
+            
+            .bbs_order .order_on {
+                color: #bb162b;
+                font-family: kiaB
+            }
+            
+            .bbs_order .order_on:after {
+                content: '';
+                width: 8px;
+                height: 6px;
+                background-position: right -37px;
+                vertical-align: middle;
+                margin-left: 5px
+            }
+            
+            .bbs_write {
+                text-align: right;
+                margin: -25px 0
+            }
+            
+            .end_event {
+                background: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 8
+            }
+            
+            .end_event .note {
+                display: block;
+                position: absolute;
+                top: 20%;
+                left: 0;
+                width: 100%;
+                padding-top: 130px;
+                text-align: center;
+                font-size: 30px;
+                line-height: 42px;
+                color: #fff
+            }
+            
+            .end_event .note:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 282px;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/bg_note_box.png) center 0 no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0
+            }
+            
+            [class*=bbs_type] {
+                clear: both;
+                margin-bottom: 40px;
+                position: relative;
+                z-index: 8
+            }
+            
+            [class*=bbs_type] .bbs_info .h:after {
+                content: "|";
+                color: #ccc;
+                display: inline-block;
+                margin: 0 3px 0 5px
+            }
+            
+            [class*=bbs_type] .bbs_info .file_a {
+                color: #bb162b;
+                text-decoration: underline;
+                margin-right: 5px
+            }
+            
+            [class*=bbs_type] .bbs_sort,
+            [class*=bbs_type] .bbs_date,
+            [class*=bbs_type] .bbs_file,
+            [class*=bbs_type] .bbs_txt {
+                font-size: 13px;
+                display: inline-block;
+                margin-top: 5px;
+                color: #999
+            }
+            
+            [class*=bbs_type] .bbs_body {
+                display: none;
+                clear: both;
+                line-height: 24px;
+                color: #666
+            }
+            
+            .bbs_type1 {
+                border-top: 2px solid #7d7d7d;
+                background: #fff
+            }
+            
+            .bbs_type1 .no_result_box {
+                margin-top: 0;
+                border-top: 0
+            }
+            
+            .bbs_type1 .bbs_li {
+                border: 1px solid #e3e3e3;
+                border-top: 0
+            }
+            
+            .bbs_type1 .bbs_head {
+                padding: 26px 28px;
+                overflow: hidden;
+                position: relative
+            }
+            
+            .bbs_type1 .bbs_head:hover {
+                background: #fcfcfc
+            }
+            
+            .bbs_type1 .bbs_info {
+                padding-right: 120px;
+                overflow: hidden
+            }
+            
+            .bbs_type1 .bbs_tit {
+                font-size: 16px;
+                line-height: 18px;
+                display: block;
+                margin-top: 5px
+            }
+            
+            .bbs_type1 .bbs_date,
+            .bbs_type1 .bbs_txt {
+                margin-right: 30px
+            }
+            
+            .bbs_type1 .bbs_hit {
+                position: absolute;
+                top: 26px;
+                right: 28px;
+                border-left: 1px solid #e3e3e3;
+                padding: 8px 0 8px 35px;
+                text-align: center;
+                color: #999;
+                font-size: 13px
+            }
+            
+            .bbs_type1 .bbs_hit .h {
+                display: block;
+                margin-bottom: 2px
+            }
+            
+            .bbs_type1 [class*=bbs_pro] {
+                display: inline-block;
+                position: absolute;
+                top: 30px;
+                right: 0;
+                width: 116px;
+                height: 20px;
+                border-left: 1px solid #e3e3e3;
+                padding: 12px 0;
+                text-align: center
+            }
+            
+            .bbs_type1 .bbs_pro1 {
+                color: #1a619e
+            }
+            
+            .bbs_type1 .bbs_pro2 {
+                color: #bb162b
+            }
+            
+            .bbs_type1 .bbs_body {
+                padding: 34px 48px;
+                background: #fcfcfc;
+                border-top: 1px solid #e3e3e3;
+                position: relative
+            }
+            
+            .bbs_type1 .bbs_body:before {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 12px;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/bg_open_con.png) 0 0 no-repeat;
+                position: absolute;
+                top: -1px;
+                left: 50%;
+                margin-left: -12px
+            }
+            
+            .bbs_type1 .bbs_li.bbs_open .bbs_body {
+                display: block
+            }
+            
+            .bbs_type2 {
+                margin: -20px -10px 40px
+            }
+            
+            .bbs_type2 .moreBtn {
+                position: absolute;
+                right: 0;
+                bottom: 0
+            }
+            
+            .bbs_type2 .closeBtn {
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 9
+            }
+            
+            .bbs_type2 .bbs_li {
+                float: left;
+                width: 33.3%;
+                margin-top: 20px
+            }
+            
+            .bbs_type2 .bbs_wrp {
+                margin: 0 10px;
+                padding-top: 3px;
+                overflow: hidden;
+                position: relative
+            }
+            
+            .bbs_type2 .bbs_body {
+                background: #fff;
+                padding: 0 30px 30px
+            }
+            
+            .bbs_type2 .bbs_info {
+                display: block;
+                background: #fff;
+                padding: 20px 15px;
+                position: relative
+            }
+            
+            .bbs_type2 .bbs_img {
+                height: 240px;
+                margin: 0 -100%;
+                position: relative;
+                text-align: center
+            }
+            
+            .bbs_type2 .bbs_img img {
+                height: 100%
+            }
+            
+            .bbs_type2 .bbs_img .thumb {
+                height: 100%
+            }
+            
+            .bbs_type2 .bbs_img .viewer {
+                display: none
+            }
+            
+            .bbs_type2 .bbs_img .bbsPlay {
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 99;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/pip/img_pip_play.png) no-repeat 0 0;
+                text-indent: -9999px;
+                width: 57px;
+                height: 57px;
+                margin: -28px 0 0 -28px
+            }
+            
+            .bbs_type2 .bbs_tit {
+                display: -webkit-box;
+                height: 38px;
+                margin-bottom: 10px;
+                overflow: hidden;
+                font-size: 15px;
+                font-family: kiaM;
+                font-weight: bold;
+                overflow: hidden;
+                word-wrap: break-word;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical
+            }
+            
+            .bbs_type2 .bbs_body {
+                display: block;
+                padding: 0;
+                height: 80px;
+                margin-bottom: 10px
+            }
+            
+            .bbs_type2 .bbs_body p {
+                display: -webkit-box;
+                height: 80px;
+                overflow: hidden;
+                font-size: 14px;
+                line-height: 20px;
+                font-family: kiaM;
+                overflow: hidden;
+                word-wrap: break-word;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical
+            }
+            
+            .bbs_type2 .bbs_etc {
+                padding-top: 7px;
+                border-top: 1px solid silver
+            }
+            
+            .bbs_type2 .bbs_cnt {
+                display: inline-block;
+                vertical-align: top
+            }
+            
+            .bbs_type2 .bbs_cnt span {
+                position: relative;
+                display: inline-block;
+                padding-left: 20px;
+                margin-left: 10px;
+                line-height: 18px
+            }
+            
+            .bbs_type2 .bbs_cnt span:first-child {
+                margin-left: 0
+            }
+            
+            .bbs_type2 .bbs_cnt span.video::before {
+                background-position: -61px -40px;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 17px;
+                height: 16px;
+                background: url(https://www.kia.com/content/dam/kwcms/mx/es/images/util/globalmediacenter/common/icon_video_v02.png) no-repeat
+            }
+            
+            .bbs_type2 .bbs_cnt span.photo::before {
+                background-position: -78px -40px;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 17px;
+                height: 16px;
+                background: url(https://www.kia.com/content/dam/kwcms/mx/es/images/util/globalmediacenter/common/icon_camera.png) no-repeat
+            }
+            
+            .bbs_type2 .bbs_date span {
+                display: block
+            }
+            
+            .bbs_type2 .bbs_date {
+                display: inline-block;
+                float: right;
+                vertical-align: top;
+                margin-top: 0
+            }
+            
+            .bbs_type2 .endPromotion {
+                position: absolute;
+                top: -1px;
+                left: 10px;
+                z-index: 1006
+            }
+            
+            .bbs_view {
+                background: #fff;
+                position: relative
+            }
+            
+            .bbs_view .bbs_img img {
+                width: 100%;
+                height: 100%
+            }
+            
+            .bbs_view .bbs_info {
+                padding: 30px 30px 40px;
+                font-size: 13px;
+                color: #666
+            }
+            
+            .bbs_view .bbs_info .bbs_tit {
+                display: block;
+                font-size: 22px;
+                line-height: 25px;
+                color: #000
+            }
+            
+            .bbs_view .bbs_info .bbs_date {
+                display: block;
+                font-size: 12px;
+                margin: 8px 0 10px;
+                color: #999
+            }
+            
+            .bbs_view .bbs_info .con_share {
+                margin: 20px 0;
+                float: none
+            }
+            
+            .endTxt {
+                margin-top: 30px;
+                padding: 30px 0;
+                text-align: center;
+                font-size: 15px;
+                border: 1px solid #e5e5e5;
+                background: #f8f8f8
+            }
+            
+            .bbs_view .endPromotion {
+                position: absolute;
+                top: -5px;
+                left: 10px;
+                z-index: 1006
+            }
+            
+            .bbs_view .bbs_con_btn {
+                width: 100%
+            }
+            
+            .bbs_view .bbs_con_btn .btn_area:first-child {
+                margin-left: 20px
+            }
+            
+            .bbs_view .bbs_con_btn .btn_area {
+                display: inline-block;
+                margin: 30px 15px 10px 0
+            }
+            
+            @media screen and (max-width:767px) {
+                .bbs_view .bbs_con_btn .btn_area {
+                    width: 100%;
+                    margin: 15px 0 0 0
+                }
+                .bbs_view .bbs_con_btn .btn_area:last-child {
+                    margin-bottom: 20px
+                }
+                .bbs_view .bbs_con_btn .btn_area:first-child {
+                    margin-left: 0
+                }
+            }
+            
+            .bbs_navi {
+                margin-top: 15px
+            }
+            
+            .bbs_navi .navi_prev {
+                margin-bottom: 2px
+            }
+            
+            .bbs_navi .navi_prev,
+            .bbs_navi .navi_next {
+                display: table;
+                width: 100%
+            }
+            
+            .bbs_navi .navi_btn {
+                display: table-cell;
+                width: 100px;
+                background: #e9e9e9;
+                font-family: kiaB;
+                padding: 20px;
+                text-transform: uppercase;
+                vertical-align: middle
+            }
+            
+            .bbs_navi .navi_txt {
+                display: table-cell;
+                background: #fff;
+                padding: 20px
+            }
+            
+            .bbs_navi .navi_txt a .date {
+                float: right;
+                color: #666
+            }
+            
+            .spr_bbs_prev:before {
+                content: '';
+                background-position: -80px -30px;
+                width: 11px;
+                height: 9px;
+                vertical-align: middle;
+                margin: -4px 10px 0 0
+            }
+            
+            .spr_bbs_next:before {
+                content: '';
+                background-position: -92px -30px;
+                width: 11px;
+                height: 9px;
+                vertical-align: middle;
+                margin: 0 10px 0 0
+            }
+            
+            .pg_num_area {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 0;
+                vertical-align: top;
+                font-size: 12px
+            }
+            
+            .pg_num_area .pg_arrow {
+                display: inline-block;
+                width: 8px;
+                height: 13px;
+                vertical-align: top;
+                margin-top: 10px
+            }
+            
+            .pg_num_area .pg_prev {
+                width: 8px;
+                background-position: -80px -13px;
+                margin-right: 8px
+            }
+            
+            .pg_num_area .pg_next {
+                width: 8px;
+                background-position: -94px -13px;
+                margin-left: 8px
+            }
+            
+            .pg_num_area .pg_num {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid #e4e4e4;
+                background: #fff;
+                border-radius: 2px;
+                color: #464646;
+                text-align: center;
+                line-height: 30px;
+                margin: 0 5px
+            }
+            
+            .pg_num_area .pg_num_on {
+                background: #898989;
+                border: 1px solid #898989;
+                color: #fff
+            }
+            
+            .pg_btn_area {
+                text-align: center;
+                margin-top: 25px;
+                font-size: 0;
+                vertical-align: top
+            }
+            
+            .pg_btn_area .pg_btn {
+                display: inline-block;
+                background-position: -61px -61px;
+                width: 10px;
+                height: 10px;
+                margin: 0 2px
+            }
+            
+            .pg_btn_area.pg_btn_w .pg_btn {
+                background-position: -72px -61px
+            }
+            
+            .pg_btn_area .pg_btn.pg_btn_on {
+                background-position: -50px -61px
+            }
+            
+            .popup_wrap {
+                max-width: 740px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                min-width: 290px;
+                z-index: 1006;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%)
+            }
+            
+            .popup_wrap .con_share {
+                float: right
+            }
+            
+            .popup_wrap .closeBtn {
+                position: absolute;
+                top: 0;
+                right: 0
+            }
+            
+            .popup_wrap01 {
+                max-width: 740px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0 15px;
+                min-width: 290px;
+                z-index: 1006
+            }
+            
+            .popup_wrap01 .con_share {
+                float: right
+            }
+            
+            .popup_wrap01 .closeBtn {
+                position: absolute;
+                top: 0;
+                right: 0
+            }
+            
+            .popup .pop_tit {
+                font-size: 22px;
+                background: #bb162b;
+                padding: 16px 25px;
+                color: #fff
+            }
+            
+            .popup .pop_con {
+                padding: 25px;
+                background: #fff;
+                position: relative
+            }
+            
+            .popup .closeBtn {
+                padding: 18px
+            }
+            
+            .popup_viewer .viewer_img img {
+                width: 100%
+            }
+            
+            .popup_viewer .viewer_dsc {
+                background: #fff;
+                padding: 18px 30px
+            }
+            
+            .popup_viewer .viewer_dsc .tit {
+                font-size: 15px;
+                font-family: kiaM
+            }
+            
+            .popup_viewer .viewer_dsc .txt {
+                font-size: 13px;
+                color: #666;
+                margin-top: 10px
+            }
+            
+            .popup_note .note_con {
+                border-top: 5px solid #bb162b;
+                padding: 35px 50px;
+                background: #fff
+            }
+            
+            .popup_note .note_con .tit {
+                font-size: 20px;
+                color: #464646;
+                margin-bottom: 15px
+            }
+            
+            .popup_note .note_con .txt {
+                line-height: 22px
+            }
+            
+            .popup_tool .pop_tit {
+                background: #f7f7f7;
+                padding: 20px;
+                border-bottom: 1px solid #d6d6d6
+            }
+            
+            .popup_tool .pop_tit .tit {
+                font-size: 22px;
+                color: #666;
+                display: inline-block;
+                margin-right: 5px
+            }
+            
+            .popup_tool .pop_tit .by {
+                font-size: 12px;
+                color: #bb162b
+            }
+            
+            .popup_tool .pop_con {
+                background: #fff;
+                padding: 20px
+            }
+            
+            .popup_tool .pop_con label {
+                display: inline-block;
+                margin-bottom: 5px
+            }
+            
+            .popup_tool .pop_con .send_name {
+                float: left;
+                width: 48%
+            }
+            
+            .popup_tool .pop_con .send_mail {
+                float: right;
+                width: 48%
+            }
+            
+            .popup_tool .pop_con .send_con {
+                clear: both;
+                padding-top: 10px
+            }
+            
+            .popup_tool .closeBtn {
+                top: 10px;
+                right: 10px
+            }
+            
+            .pop_desc {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                margin-top: -12px
+            }
+            
+            .pop_desc .desc_con {
+                display: none;
+                width: 470px;
+                background: #fff;
+                border: 2px solid #979797;
+                padding: 18px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 9;
+                line-height: 20px
+            }
+            
+            .pop_desc .desc_con .tit {
+                display: block;
+                font-size: 22px;
+                color: #666;
+                margin-bottom: 18px
+            }
+            
+            .pop_desc .desc_con.pop_on {
+                display: block
+            }
+            
+            .pop_desc .closeBtn {
+                position: absolute;
+                top: 5px;
+                right: 5px
+            }
+            
+            #wrap,
+            #header,
+            .snb_wrap {
+                min-width: 980px;
+                margin: 0 auto;
+                position: relative
+            }
+            
+            #header,
+            #container,
+            #footer {
+                width: 100%;
+                position: relative
+            }
+            
+            .inner {
+                width: 940px;
+                margin: 0 auto;
+                position: relative
+            }
+            
+            .inner.noticias {
+                margin-bottom: 30px
+            }
+            
+            .dummy_header {
+                display: block;
+                width: 100%;
+                height: 86px;
+                background: rgba(255, 0, 0, 0.3) url(https://www.kia.com/content/dam/kwcms/gt/en/images/@header.png) center 0 no-repeat;
+                text-align: center;
+                color: #fff;
+                font-size: 40px;
+                font-family: kiaB;
+                line-height: 86px
+            }
+            
+            .dummy_footer {
+                display: block;
+                width: 100%;
+                height: 100px;
+                background: rgba(255, 0, 0, 0.3);
+                color: #fff;
+                text-align: center;
+                color: #fff;
+                font-size: 40px;
+                font-family: kiaB;
+                line-height: 100px
+            }
+            
+            .dummy_class {
+                background: rgba(255, 0, 0, 0.3)
+            }
+            
+            #header {
+                border-bottom: 4px solid #bc162c;
+                background: #fff;
+                position: relative;
+                top: 0;
+                z-index: 1004
+            }
+            
+            #header:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 31px;
+                background: #f9f9f9;
+                border-bottom: 1px solid #ebebeb;
+                position: absolute;
+                left: 0;
+                top: -32px
+            }
+            
+            #header .header_in {
+                width: 960px;
+                margin: 32px auto 0;
+                padding: 8px 0;
+                position: relative;
+                background-color: #fff;
+                zoom: 1
+            }
+            
+            #header .header_in:after {
+                content: '';
+                display: block;
+                clear: both
+            }
+            
+            #header .logo_h1 {
+                float: left;
+                margin-right: 30px
+            }
+            
+            #header .logo_h1 .lg_a {
+                position: relative;
+                display: inline-block;
+                width: 75px;
+                height: 38px
+            }
+            
+            #header .logo_h1 .lg_img {
+                display: none
+            }
+            
+            #header .logo_h1 .layer_lg_img {
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                max-width: 100%
+            }
+            
+            .util_area {
+                position: absolute;
+                top: -32px;
+                left: 0;
+                width: 100%;
+                height: 26px;
+                padding-top: 5px;
+                background: #f9f9f9;
+                border-bottom: 1px solid #ebebeb;
+                text-align: right
+            }
+            
+            .util_area .util_menu {
+                display: inline-block
+            }
+            
+            .util_area .util_menu .util_l {
+                display: inline-block;
+                background: 0;
+                font-size: 11px;
+                margin-left: 11px;
+                padding-left: 0 !important
+            }
+            
+            .util_area .util_menu .util_l:first-child {
+                background: 0;
+                margin-left: 0
+            }
+            
+            .util_area .util_menu .util_l .util_icon {
+                display: inline-block;
+                margin-right: 5px
+            }
+            
+            .util_area .util_menu .util_l .util_a {
+                color: #999;
+                font-family: kiaB
+            }
+            
+            .util_area .util_search {
+                position: relative;
+                display: inline-block;
+                margin-left: 14px
+            }
+            
+            .util_area .util_search .u_sch_box {
+                border: 1px solid #d1d1d1;
+                border-radius: 10px;
+                padding: 1px 11px;
+                background: #fff;
+                height: 18px
+            }
+            
+            .util_area .util_search .u_sch_box .sch_inp {
+                width: 102px;
+                background: #fff;
+                border: 0;
+                font-size: 12px
+            }
+            
+            .util_area .util_search .u_sch_box .spr_search {
+                background-position: -45px -17px;
+                width: 14px;
+                height: 14px
+            }
+            
+            .go_build {
+                position: absolute;
+                top: 12px;
+                right: 0;
+                font-family: kiaB;
+                font-size: 15px
+            }
+            
+            .gnb_dimmed {
+                display: none;
+                position: fixed;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                opacity: .5;
+                filter: alpha(opacity=50);
+                z-index: 1003
+            }
+            
+            .pip_wrap #header {
+                border-bottom: 0 !important
+            }
+            
+            .pip_wrap #container {
+                padding-top: 135px !important
+            }
+            
+            .snb_wrap {
+                width: 100%;
+                height: 49px;
+                background: #bb162b;
+                text-transform: uppercase;
+                position: fixed;
+                top: 90px;
+                margin-top: -4px;
+                z-index: 1002
+            }
+            
+            .snb_wrap .snb_tit {
+                float: left;
+                overflow: hidden;
+                height: 49px;
+                line-height: 49px;
+                color: #fff;
+                font-size: 25px
+            }
+            
+            .snb_wrap .snb_tit .lg_a {
+                display: block
+            }
+            
+            .snb_wrap .open_snb {
+                color: #fff
+            }
+            
+            .snb_wrap .snb_nav {
+                float: right;
+                display: inline-block;
+                overflow: hidden
+            }
+            
+            .snb_wrap .snb_nav .sdth1_l {
+                float: left;
+                font-size: 14px
+            }
+            
+            .snb_wrap .snb_nav .sdth1_a {
+                display: block;
+                padding: 0 25px;
+                line-height: 49px;
+                color: #dd8b95
+            }
+            
+            .snb_wrap .snb_nav .sdth1_a:focus {
+                text-decoration: none
+            }
+            
+            .snb_wrap .snb_nav .sdth1_l.sdth_on {
+                border-left-color: #821a27
+            }
+            
+            .snb_wrap .snb_nav .sdth1_l.sdth_on .sdth1_a {
+                font-family: kiaB;
+                color: #fff;
+                position: relative
+            }
+            
+            .snb_wrap .snb_nav .sdth1_l.sdth_on .sdth1_a:after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 4px;
+                background: #fff
+            }
+            
+            .snb_wrap.snb_pip .open_snb {
+                display: none
+            }
+            
+            .snb_wrap.snb_pip .snb_tit {
+                width: 238px;
+                margin-left: -10px
+            }
+            
+            .snb_wrap.snb_pip .snb_tit .lg_img {
+                height: 100%
+            }
+            
+            .snb_wrap.snb_pip .snb_nav {
+                float: left;
+                background: #bb162b
+            }
+            
+            .snb_wrap.snb_pip .snb_nav .sdth1_l {
+                margin-left: 28px
+            }
+            
+            .snb_wrap.snb_pip .snb_nav .sdth1_l:first-child {
+                margin-left: 0
+            }
+            
+            .snb_wrap.snb_pip .snb_nav .sdth1_a {
+                padding: 0 5px
+            }
+            
+            .sales_kit {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: -10px;
+                border-right: 1px solid #c22e41
+            }
+            
+            .sales_kit .kit {
+                display: block;
+                padding: 19px 22px 12px;
+                border-left: 1px solid #920510;
+                border-right: 1px solid #920510
+            }
+            
+            .sales_kit .kit .spr_basket {
+                background-position: 0 -34px;
+                width: 47px;
+                height: 12px
+            }
+            
+            .sales_kit .kit_menu {
+                display: none;
+                width: 185px;
+                position: absolute;
+                right: 0
+            }
+            
+            .sales_kit .kit_menu .kit_l {
+                background: #bb162b;
+                border-top: 1px solid #920510
+            }
+            
+            .sales_kit .kit_menu .kit_a {
+                display: block;
+                border-top: 1px solid #c22e41;
+                padding: 6px 13px;
+                color: #fff;
+                font-size: 12px
+            }
+            
+            .sales_kit .kit_menu .kit_tspr:before {
+                content: '';
+                width: 14px;
+                height: 14px;
+                margin: 2px 8px 0 0
+            }
+            
+            .sales_kit .kit_menu .spr_kit1:before {
+                background-position: 0 0
+            }
+            
+            .sales_kit .kit_menu .spr_kit2:before {
+                background-position: 0 -16px
+            }
+            
+            .sales_kit .kit_menu .spr_kit3:before {
+                background-position: -16px 0
+            }
+            
+            .sales_kit .kit_menu .spr_kit4:before {
+                background-position: -16px -16px
+            }
+            
+            .sales_kit.open .kit {
+                background: #74000f
+            }
+            
+            .sales_kit.open .kit .spr_basket {
+                background-position: 0 -48px
+            }
+            
+            .sales_kit.open .kit_menu {
+                display: block
+            }
+            
+            #container {
+                padding-top: 0;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/bg_container.png) repeat;
+                z-index: 1001
+            }
+            
+            #content.subContents {
+                padding: 50px 0 100px
+            }
+            
+            .content_title {
+                width: 940px;
+                margin: 0 auto;
+                zoom: 1
+            }
+            
+            .content_title:after {
+                content: '';
+                clear: both;
+                display: block
+            }
+            
+            .content_title .con_tit {
+                float: left;
+                font-family: "kiaB";
+                font-weight: bold
+            }
+            
+            .content_detail {
+                margin-top: 30px
+            }
+            
+            .con_box {
+                margin: -1px auto 0 auto;
+                padding: 20px 19px;
+                position: relative;
+                background: #fff;
+                border: 1px solid #e3e3e3
+            }
+            
+            .con_share {
+                float: right
+            }
+            
+            .con_share .share {
+                text-transform: uppercase;
+                font-size: 11px;
+                color: #666;
+                margin-right: 6px;
+                line-height: 22px;
+                font-family: kiaB
+            }
+            
+            .con_navi {
+                float: right;
+                text-transform: uppercase;
+                font-size: 11px
+            }
+            
+            .con_navi .spr_home {
+                background-position: -46px -32px;
+                width: 14px;
+                height: 14px;
+                margin: 2px 0 0 0
+            }
+            
+            .con_navi .spr_home2 {
+                width: 14px;
+                height: 14px;
+                margin: 2px 0 0 0
+            }
+            
+            .con_navi .depth {
+                color: #666;
+                display: inline-block
+            }
+            
+            .con_navi .depth.current {
+                color: #333
+            }
+            
+            .con_navi .gt {
+                color: #666;
+                display: inline-block;
+                margin: 0 5px
+            }
+            
+            .con_intro {
+                margin-bottom: 20px;
+                line-height: 20px
+            }
+            
+            .con_intro .desc1 {
+                font-size: 15px;
+                line-height: 20px;
+                margin: 5px 0
+            }
+            
+            .con_intro .desc2 {
+                font-size: 13px;
+                color: #666
+            }
+            
+            .con_intro .desc3 {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 5px;
+                text-transform: uppercase
+            }
+            
+            #footer {
+                padding-bottom: 35px
+            }
+            
+            .site_navi {
+                border-top: 1px solid #e2e2e2;
+                line-height: 14px;
+                font-size: 11px;
+                text-transform: uppercase
+            }
+            
+            .site_navi .spr_home:before {
+                content: '';
+                background-position: -46px -32px;
+                width: 14px;
+                height: 14px;
+                margin: 0 10px 0 0
+            }
+            
+            .site_navi .gt {
+                display: table-cell;
+                width: 21px;
+                height: 40px;
+                color: transparent;
+                text-indent: -999px;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/common/bg_footer_nav.gif) 0 0 no-repeat;
+                margin-left: -5px;
+                vertical-align: middle
+            }
+            
+            .site_navi .depth {
+                display: table-cell;
+                padding: 12px 10px;
+                color: #666;
+                position: relative
+            }
+            
+            .site_navi .depth:first-child {
+                padding-left: 0
+            }
+            
+            .site_navi .current {
+                color: #333
+            }
+            
+            .site_menu {
+                border-top: 1px solid #e2e2e2;
+                text-transform: uppercase;
+                overflow: hidden
+            }
+            
+            .site_menu .inner {
+                display: table;
+                max-width: 100%
+            }
+            
+            .site_menu .menu {
+                display: table-cell;
+                width: 22%;
+                border-right: 1px solid #eee
+            }
+            
+            .site_menu .menu:first-child {
+                width: auto;
+                border-left: 1px solid #eee
+            }
+            
+            .site_menu .menu .menu_in {
+                padding: 24px 26px
+            }
+            
+            .site_menu .menu .menu_name {
+                display: block;
+                margin-bottom: 10px
+            }
+            
+            .site_menu .menu .sort_wrp {
+                display: table;
+                width: 100%
+            }
+            
+            .site_menu .menu .sort_wrp .sort_li {
+                display: table-cell;
+                margin-bottom: 20px
+            }
+            
+            .site_menu .menu .sort_wrp .sort {
+                display: inline-block;
+                margin-top: 10px;
+                font-size: 11px;
+                font-family: kiaB
+            }
+            
+            .site_menu .menu .sort_wrp .sort:first-child {
+                margin-top: 0
+            }
+            
+            .site_menu .menu .depth li {
+                line-height: 12px;
+                margin: 6px 0
+            }
+            
+            .site_menu .menu .depth .depth_a {
+                display: inline-block;
+                font-size: 11px;
+                color: #666
+            }
+            
+            .site_info {
+                background: #e4e5e6;
+                border-top: 1px solid #c4c6c8;
+                box-shadow: inset 0 1px 0 #fff;
+                padding: 18px 0 0
+            }
+            
+            .site_info .f_logo {
+                display: block;
+                height: 65px;
+                position: absolute;
+                right: 0;
+                bottom: -52px
+            }
+            
+            .site_info .f_logo .lg_img {
+                height: 100%
+            }
+            
+            .site_info .info_policy {
+                display: inline-block;
+                font-size: 12px;
+                font-family: kiaB;
+                vertical-align: middle;
+                margin-right: 10px
+            }
+            
+            .site_info .info_policy div {
+                display: inline-block
+            }
+            
+            .site_info .info_policy .policy_a {
+                color: #333
+            }
+            
+            .site_info .info_policy .bar {
+                color: #a8a8a8;
+                margin: 0 8px 0 6px
+            }
+            
+            .site_info .info_sns {
+                display: inline-block
+            }
+            
+            .site_info .info_sns div {
+                display: inline-block
+            }
+            
+            .site_info .info_fms {
+                float: right;
+                position: relative
+            }
+            
+            .site_info .info_fms .fms_box {
+                display: block;
+                width: 160px;
+                padding: 5px 10px;
+                background: #e4e5e6;
+                border: 1px solid #c7c8c9;
+                color: #999;
+                position: relative;
+                font-size: 12px
+            }
+            
+            .site_info .info_fms .fms_box:after {
+                content: '';
+                background-position: right -47px;
+                width: 8px;
+                height: 5px;
+                position: absolute;
+                top: 12px;
+                right: 12px
+            }
+            
+            .site_info .info_fms .fms_wrp {
+                display: none;
+                position: absolute;
+                bottom: 29px;
+                left: 0;
+                width: 100%;
+                font-size: 12px
+            }
+            
+            .site_info .info_fms .fms_wrp .fms_lst {
+                background: #fff;
+                border: 1px solid #c7c8c9;
+                max-height: 200px;
+                padding: 6px;
+                overflow-y: auto
+            }
+            
+            .site_info .info_fms .fms_wrp .fms_lst .fms_a {
+                display: block;
+                padding: 3px 6px;
+                color: #333
+            }
+            
+            .site_info .info_fms .fms_wrp .fms_x {
+                position: absolute;
+                bottom: -29px;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 29px
+            }
+            
+            .site_info .info_fms .fms_wrp.fms_open {
+                display: block
+            }
+            
+            .site_info .cpr {
+                overflow: hidden;
+                line-height: 16px;
+                height: auto;
+                padding-bottom: 22px;
+                font-size: 11px;
+                text-transform: uppercase;
+                color: #999;
+                margin-top: 6px;
+                overflow: visible
+            }
+            
+            .site_info .cpr .br {
+                display: inline-block;
+                vertical-align: middle;
+                height: auto;
+                padding: 15px 0
+            }
+            
+            .site_info .info_top {
+                border-bottom: 1px solid #d1d1d1;
+                padding-bottom: 20px
+            }
+            
+            .site_info .cpr .ft_txt {
+                width: 80%;
+                font-size: 10px;
+                font-style: italic;
+                line-height: 10px;
+                padding-bottom: 20px
+            }
+            
+            @media all and (max-width:1024px) {
+                #wrap,
+                #header,
+                .snb_wrap {
+                    min-width: 320px
+                }
+                .inner {
+                    width: auto;
+                    margin: 0 15px
+                }
+                .dummy_header {
+                    background-position: center -90px
+                }
+                .tab_type3 ul {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed
+                }
+                .tab_type3 ul:after {
+                    display: none
+                }
+                .tab_type3 .tab_li {
+                    display: table-cell;
+                    min-width: inherit !important;
+                    float: none;
+                    padding-left: 1px;
+                    vertical-align: top
+                }
+                .tab_type3 .tab_li:first-child {
+                    padding-left: 0
+                }
+                .tableWrap .tableFix {
+                    width: 185px
+                }
+                .acc_filter {
+                    overflow: visible;
+                    margin: 30px 0 15px;
+                    position: relative;
+                    z-index: 10
+                }
+                .acc_filter .category_area {
+                    float: left;
+                    display: inline-block;
+                    width: 50%;
+                    overflow: visible
+                }
+                .acc_filter .category_area .filter_tit {
+                    display: none
+                }
+                .acc_filter .category_area .input_box {
+                    display: block;
+                    padding: 8px 0 9px;
+                    color: #fff;
+                    background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/showroom/icon_accesories.png) no-repeat right 15px;
+                    font-size: 12px
+                }
+                .acc_filter .category_area .filter_wrap {
+                    position: relative;
+                    background: #8f6f4d;
+                    padding: 0 15px
+                }
+                .acc_filter .category_area ul {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    left: 0;
+                    top: 35px;
+                    z-index: 10;
+                    border-radius: 0;
+                    border: 0;
+                    padding: 0;
+                    background: #8f6f4d
+                }
+                .acc_filter .category_area ul li {
+                    float: none
+                }
+                .acc_filter .category_area ul li a {
+                    display: block;
+                    font-family: KiaB;
+                    color: #fff;
+                    height: auto;
+                    padding: 0 15px;
+                    font-size: 12px;
+                    line-height: 26px
+                }
+                .acc_filter .category_area ul li a:hover {
+                    background: #83684c
+                }
+                .acc_filter .category_area ul li a.on,
+                .acc_filter .category_area ul li a.on_r {
+                    border-radius: 0;
+                    border: 0;
+                    background: #83684c
+                }
+                .acc_filter .search_area {
+                    float: none;
+                    display: inline-block;
+                    width: 50%
+                }
+                .acc_filter .search_area .sch_box.sch_round {
+                    position: relative;
+                    background: #58595b;
+                    height: 35px;
+                    border: 0;
+                    border-radius: 0;
+                    padding: 0 50px 0 0;
+                    margin-top: 0
+                }
+                .acc_filter .search_area .sch_box {
+                    color: #fff
+                }
+                .acc_filter .search_area .sch_box .sch_inp {
+                    width: 100%;
+                    padding: 8px 0 9px 14px;
+                    border: 0;
+                    color: #fff
+                }
+                .acc_filter .search_area .cmm_spr {
+                    background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/showroom/icon_search.png) no-repeat 0 0;
+                    background-size: 14px 14px
+                }
+                #header .header_in {
+                    width: auto;
+                    padding: 8px 15px
+                }
+                #header .logo_h1 {
+                    margin-right: 10px
+                }
+                .gnb_area .gnb_nav .dth1_l {
+                    margin-left: 15px
+                }
+                .gnb_area .gnb_nav .last .dth2_u {
+                    right: 0
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_l {
+                    width: 33.3%
+                }
+                .util_area .util_menu,
+                .util_area .util_search {
+                    margin-right: 15px
+                }
+                .util_area .util_search {
+                    width: 10%;
+                    vertical-align: top
+                }
+                .util_area .util_search .u_sch_box .sch_inp {
+                    width: 62%
+                }
+                .util_area .util_menu {
+                    margin-right: 0
+                }
+                .util_area .util_menu .util_l {
+                    margin-left: 3px;
+                    padding-left: 7px
+                }
+                .util_area .util_menu .util_l .util_icon {
+                    display: none
+                }
+                .go_build {
+                    right: 15px
+                }
+                .go_build .spr_build .desc {
+                    display: none
+                }
+                .go_build .spr_build:before {
+                    margin-right: 0
+                }
+                .snb_wrap .inner {
+                    margin: 0
+                }
+                .snb_wrap .snb_tit {
+                    width: auto;
+                    float: none;
+                    margin-left: 15px
+                }
+                .snb_wrap .open_snb {
+                    display: block;
+                    line-height: 49px;
+                    color: #fff;
+                    position: relative
+                }
+                .snb_wrap .open_snb .spr_snb:after {
+                    content: '';
+                    background-position: -38px 0;
+                    width: 13px;
+                    height: 6px;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -3px;
+                    right: 15px
+                }
+                .snb_wrap .snb_nav {
+                    display: none;
+                    float: none;
+                    padding: 8px 15px;
+                    border-left: 0;
+                    border-right: 0;
+                    background: #fafafa
+                }
+                .snb_wrap .snb_nav .sdth1_l {
+                    float: none;
+                    border: 0;
+                    border-top: 1px solid #c8c8c8
+                }
+                .snb_wrap .snb_nav .sdth1_l:first-child {
+                    border-top: 0
+                }
+                .snb_wrap .snb_nav .sdth1_a {
+                    display: block;
+                    color: #333;
+                    padding: 0 10px;
+                    font-family: kiaB
+                }
+                .snb_wrap .snb_nav .sdth1_l.sdth_on .sdth1_a {
+                    background: 0
+                }
+                .snb_wrap .snb_nav .sdth1_l.sdth_on .sdth1_a:after {
+                    display: none
+                }
+                .snb_wrap.snb_pip .snb_area {
+                    overflow: hidden;
+                    border-left: 1px solid #920510
+                }
+                .snb_wrap.snb_pip .snb_tit {
+                    width: auto;
+                    float: left;
+                    margin-left: 5px
+                }
+                .snb_wrap.snb_pip .open_snb {
+                    display: block;
+                    padding: 0 20px
+                }
+                .snb_wrap.snb_pip .snb_nav {
+                    width: 100%;
+                    padding: 0;
+                    border-left: 1px solid #c22e41
+                }
+                .snb_wrap.snb_pip .snb_nav .sdth1_l {
+                    margin: 0 15px;
+                    border-top: 1px solid #890207
+                }
+                .snb_wrap.snb_pip .snb_nav .sdth1_l:first-child {
+                    margin: 0 15px
+                }
+                .snb_wrap.snb_pip .snb_nav .sdth1_a {
+                    padding: 0 5px;
+                    color: #fff;
+                    font-family: kiaM
+                }
+                .snb_wrap .open_snb.open .spr_snb:after {
+                    background-position: -38px -8px
+                }
+                .snb_wrap .snb_nav.open {
+                    display: block
+                }
+                .sales_kit {
+                    display: none
+                }
+                .site_menu .menu {
+                    width: 20%;
+                    border-right: 0;
+                    border-left: 1px solid #eee
+                }
+                .site_menu .menu:first-child {
+                    border-left: 0
+                }
+                .site_menu .menu .menu_in {
+                    padding: 24px 15px
+                }
+                #content.subContents {
+                    padding: 50px 0 60px
+                }
+                .content_title {
+                    width: auto;
+                    margin: 0 15px
+                }
+            }
+            
+            @media all and (max-width:767px) {
+                .m_none {
+                    display: none !important
+                }
+                #printBtn {
+                    display: none
+                }
+                .con_tit {
+                    color: #000;
+                    font-size: 18px;
+                    line-height: 18px
+                }
+                .con_tit:after {
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    height: 2px;
+                    background: #bb162b;
+                    margin-top: 12px
+                }
+                [class*=btn_area].line {
+                    margin-top: 15px;
+                    padding-top: 15px
+                }
+                [class*=btn_area] .br {
+                    display: block;
+                    margin-top: 5px
+                }
+                .btn_area {
+                    text-align: center;
+                    margin-top: 15px
+                }
+                .btn_sideT {
+                    margin: 15px 0 -5px 0
+                }
+                .btnLarge {
+                    padding: 0 11px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    border-radius: 15px
+                }
+                .btnLarge .arrow_r:after {
+                    background-position: -25px -32px;
+                    width: 24px;
+                    height: 24px;
+                    margin: 3px 0 0 -3px;
+                    position: relative;
+                    right: -8px
+                }
+                .btnLarge .arrow_l:before {
+                    background-position: 0 -32px;
+                    width: 24px;
+                    height: 24px;
+                    margin: 3px -2px 0 0;
+                    position: relative;
+                    left: -8px
+                }
+                .btnLarge .arrow_b:after {
+                    background-position: -75px -32px;
+                    width: 24px;
+                    height: 24px;
+                    margin: 3px 0 0 -3px;
+                    position: relative;
+                    right: -8px
+                }
+                .col3 .tab_li {
+                    width: 33.3% !important
+                }
+                .col3 .tab_li:first-child {
+                    width: 33.4% !important
+                }
+                .col4 .tab_li {
+                    width: 25% !important
+                }
+                .tab_type2 .tab_li {
+                    width: 50%;
+                    min-width: inherit
+                }
+                .tab_type2 .tab_a {
+                    padding: 12px 0
+                }
+                .tab_type3 {
+                    position: relative;
+                    background: #bb162b;
+                    padding: 0 15px;
+                    margin-bottom: 10px
+                }
+                .tab_type3 .input_box {
+                    display: block;
+                    padding: 11px 0 12px;
+                    color: #fff;
+                    background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/showroom/icon_accesories.png) no-repeat right 17px;
+                    font-size: 15px
+                }
+                .tab_type3 ul {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    left: 0;
+                    top: 41px;
+                    z-index: 10;
+                    border-radius: 0;
+                    border: 0;
+                    padding: 0
+                }
+                .tab_type3 .tab_li {
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    float: none;
+                    text-align: left
+                }
+                .tab_type3 .tab_li br {
+                    display: none
+                }
+                .tab_type3 .tab_li .tab_a {
+                    display: block;
+                    font-family: KiaB;
+                    color: #fff;
+                    height: auto;
+                    padding: 5px 15px;
+                    font-size: 12px;
+                    line-height: 26px
+                }
+                .tab_type3 .tab_li .tab_a:hover {
+                    background: #bb162b
+                }
+                .tab_type3 .tab_tspr:before {
+                    display: none
+                }
+                .tab_type3 .tab_on {
+                    background: #bb162b
+                }
+                .form_sch .sch_open {
+                    display: block;
+                    border-radius: 19px;
+                    height: 38px;
+                    padding: 10px 10px;
+                    border: 1px solid #e5e5e5;
+                    float: right
+                }
+                .form_sch .sch_box.sch_round {
+                    display: none;
+                    margin-top: 5px
+                }
+                .form_sch .sch_box.sch_round.sch_on {
+                    display: block
+                }
+                .acc_filter {
+                    overflow: visible;
+                    margin: 12px 0 10px
+                }
+                .txt_desc1 {
+                    font-size: 14px;
+                    line-height: 18px
+                }
+                .txt_desc2 {
+                    font-size: 12px;
+                    line-height: 16px
+                }
+                .txt_desc3 {
+                    font-size: 12px;
+                    margin-bottom: 10px
+                }
+                .txt_desc4 {
+                    font-size: 13px
+                }
+                .accordion>li {
+                    margin-top: 1px
+                }
+                .accordion>li:first-child {
+                    margin-top: 0
+                }
+                .nodata {
+                    padding: 160px 0 !important;
+                    text-align: center !important
+                }
+                .nodata span {
+                    display: inline-block;
+                    margin: 0 auto;
+                    padding: 45px 0 0 0;
+                    font-size: 13px;
+                    line-height: 1;
+                    background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/shopping-tools/bg_nodata_m.png) no-repeat 50% 0;
+                    background-size: 36px
+                }
+                .no_result {
+                    padding: 50px 0 !important
+                }
+                .no_result_box {
+                    padding: 50px 15px;
+                    line-height: 18px
+                }
+                .no_result_box .no_txt {
+                    margin-bottom: 10px;
+                    font-size: 16px
+                }
+                .bbs_edit {
+                    margin-bottom: 12px
+                }
+                .bbs_edit .bl_type1 {
+                    margin-left: 1px
+                }
+                .bbs_edit .bbs_sch {
+                    width: auto
+                }
+                .bbs_order .cmm_tspr {
+                    font-size: 12px
+                }
+                .bbs_write {
+                    margin: 10px 0 0 0
+                }
+                .end_event .note {
+                    padding-top: 75px;
+                    font-size: 16px;
+                    line-height: 20px
+                }
+                .end_event .note:before {
+                    background-size: 150px 150px
+                }
+                [class*=bbs_type] {
+                    margin-bottom: 0
+                }
+                [class*=bbs_type] .bbs_body {
+                    line-height: 20px
+                }
+                .bbs_type1 {
+                    border-top: 3px solid #7d7d7d
+                }
+                .bbs_type1 .bbs_head {
+                    padding: 10px 15px
+                }
+                .bbs_type1 .bbs_info {
+                    padding-right: 0
+                }
+                .bbs_type1 .bbs_tit {
+                    font-size: 16px
+                }
+                .bbs_type1 .bbs_hit {
+                    display: none
+                }
+                .bbs_type1 [class*=bbs_pro] {
+                    position: relative;
+                    top: 0;
+                    width: auto;
+                    height: auto;
+                    border-left: 0;
+                    padding: 0;
+                    font-size: 12px;
+                    font-family: kiaB
+                }
+                .bbs_type1 .bbs_body {
+                    padding: 20px 15px
+                }
+                .bbs_type2 {
+                    margin-top: -12px
+                }
+                .bbs_type2 .bbs_li {
+                    width: 100%;
+                    margin-top: 15px
+                }
+                .bbs_type2 .bbs_img {
+                    margin: 0;
+                    height: auto
+                }
+                .bbs_type2 .bbs_img img {
+                    width: 100%;
+                    height: auto
+                }
+                .bbs_type2 .bbs_info a {
+                    padding: 10px
+                }
+                .bbs_type2 .bbs_tit {
+                    height: auto;
+                    font-size: 16px;
+                    line-height: 20px
+                }
+                .bbs_type2 .bbs_body {
+                    margin: 0;
+                    padding: 0 10px 20px
+                }
+                .bbs_view .bbs_info {
+                    padding: 10px 10px 20px
+                }
+                .bbs_view .bbs_info .bbs_tit {
+                    font-size: 16px;
+                    line-height: 20px
+                }
+                .bbs_view .bbs_info .bbs_date {
+                    font-size: 12px;
+                    margin: 5px 0 10px;
+                    color: #999
+                }
+                .bbs_navi {
+                    margin-top: 10px
+                }
+                .bbs_navi .navi_btn {
+                    width: 80px;
+                    padding: 10px 10px 10px 15px
+                }
+                .bbs_navi .navi_txt {
+                    padding: 10px
+                }
+                .bbs_navi .navi_txt a .date {
+                    display: none
+                }
+                .pg_num_area {
+                    margin-top: 15px
+                }
+                .tableWrap .tableFix {
+                    width: 75px
+                }
+                .table_type1 th {
+                    padding: 8px
+                }
+                .table_type1 td {
+                    padding: 8px
+                }
+                .table_type2 th,
+                .table_type2 td {
+                    padding: 5px
+                }
+                .table_type2 .bbs_txt .h:after {
+                    content: "|";
+                    color: #ccc;
+                    display: inline-block;
+                    margin: 0 3px 0 5px
+                }
+                .table_type2 .bbs_txt {
+                    display: inline-block;
+                    margin-top: 5px;
+                    color: #999
+                }
+                .table_type2 .bbs_txt a {
+                    color: #999
+                }
+                .table_type2 .bbs_txt {
+                    margin-right: 30px
+                }
+                .table_type4 {
+                    border: 1px solid #e8e8e8;
+                    border-top: 0
+                }
+                .table_type4 .tbl_tr {
+                    display: block;
+                    width: 100%;
+                    border-top: 1px solid #e8e8e8
+                }
+                .table_type4 .tbl_th {
+                    display: block;
+                    width: auto;
+                    padding: 10px;
+                    border-right: 0;
+                    border-bottom: 1px solid #e8e8e8
+                }
+                .table_type4 .tbl_td {
+                    display: block;
+                    padding: 10px
+                }
+                .popup .pop_tit {
+                    padding: 11px 12px;
+                    font-size: 16px
+                }
+                .popup .pop_con {
+                    padding: 20px 12px
+                }
+                .popup .closeBtn {
+                    padding: 13px
+                }
+                .popup_viewer .viewer_dsc {
+                    padding: 18px 20px
+                }
+                .popup_viewer .viewer_dsc .tit {
+                    font-size: 15px;
+                    font-family: kiaM
+                }
+                .popup_viewer .viewer_dsc .txt {
+                    font-size: 13px;
+                    color: #666;
+                    margin-top: 10px
+                }
+                .popup_note .note_con {
+                    padding: 35px 15px
+                }
+                .popup_tool .pop_tit {
+                    padding: 20px 15px 0 15px;
+                    border-bottom: 0;
+                    background: #fff
+                }
+                .popup_tool .pop_tit .tit {
+                    display: block;
+                    padding-bottom: 10px
+                }
+                .popup_tool .pop_con {
+                    padding: 0 15px 20px 15px
+                }
+                .popup_tool .pop_con label {
+                    display: inline-block;
+                    margin-bottom: 5px
+                }
+                .popup_tool .pop_con .send_name {
+                    float: none;
+                    width: 100%;
+                    padding-top: 10px
+                }
+                .popup_tool .pop_con .send_mail {
+                    float: none;
+                    width: 100%;
+                    padding-top: 10px
+                }
+                .popup_tool .closeBtn {
+                    right: 0
+                }
+                .dummy_header {
+                    background-position: center -90px;
+                    background-size: 700px 131px;
+                    height: 38px;
+                    font-size: 20px;
+                    line-height: 38px
+                }
+                #header {
+                    position: relative;
+                    border-bottom: 3px solid #bc162c
+                }
+                #header:before {
+                    display: none
+                }
+                #header .header_in {
+                    height: auto;
+                    margin-top: 0;
+                    padding: 6px 10px
+                }
+                #header .logo_h1 {
+                    float: none;
+                    height: 26px
+                }
+                #header .logo_h1 .lg_a {
+                    width: inherit;
+                    height: inherit
+                }
+                #header .logo_h1 .lg_a a {
+                    width: inherit;
+                    height: inherit
+                }
+                #header .logo_h1 .lg_img {
+                    width: 51px;
+                    height: 26px;
+                    display: block
+                }
+                #header .logo_h1 .layer_lg_img {
+                    display: none
+                }
+                .open_gnb {
+                    display: block;
+                    width: 46px;
+                    height: 14px;
+                    padding: 12px 0;
+                    background: #333;
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                    right: 0
+                }
+                .gnb_area {
+                    display: none;
+                    position: absolute;
+                    top: 41px;
+                    left: 0;
+                    width: 100%;
+                    z-index: 999;
+                    background: #fff
+                }
+                .gnb_area .gnb_nav {
+                    float: none;
+                    display: block;
+                    width: auto;
+                    font-family: kiaB;
+                    text-transform: uppercase;
+                    padding: 0;
+                    margin-left: 0
+                }
+                .gnb_area .gnb_nav .dth1_l {
+                    float: none;
+                    display: block;
+                    border-top: 1px solid #dbdbdb;
+                    background: #fff;
+                    margin-left: 0
+                }
+                .gnb_area .gnb_nav .dth1_l:first-child {
+                    border-top: 0
+                }
+                .gnb_area .gnb_nav .dth1_l .dth1_a {
+                    display: block;
+                    padding: 15px 10px;
+                    font-size: 16px;
+                    color: #333
+                }
+                .gnb_area .gnb_nav .dth1_l .dth1_a:after {
+                    content: '';
+                    float: right;
+                    vertical-align: middle;
+                    margin-top: -2px
+                }
+                .gnb_area .gnb_nav .dth2_u {
+                    width: auto;
+                    display: none;
+                    position: static;
+                    width: auto;
+                    background: #fafafa;
+                    padding: 0 10px
+                }
+                .gnb_area .gnb_nav .dth2_u.dth_pip {
+                    width: auto;
+                    padding: 0
+                }
+                .gnb_area .gnb_nav .dth_pip .car_tab {
+                    display: table;
+                    width: 100%;
+                    background: #fbfbfb;
+                    padding: 0;
+                    border-bottom: 0
+                }
+                .gnb_area .gnb_nav .dth_pip .car_tab .sort_a {
+                    display: table-cell;
+                    width: 25%;
+                    height: 32px;
+                    margin-right: 0;
+                    border-left: 1px solid #d9d9d9;
+                    border-bottom: 1px solid #d9d9d9;
+                    text-align: center;
+                    vertical-align: middle;
+                    font-family: kiaM;
+                    font-size: 14px;
+                    padding: 10px;
+                    line-height: 16px
+                }
+                .gnb_area .gnb_nav .dth_pip .car_tab .sort_a:first-child {
+                    border-left: 0
+                }
+                .gnb_area .gnb_nav .dth_pip .car_tab .sort_a .spr_sort:before {
+                    display: none
+                }
+                .gnb_area .gnb_nav .dth_pip .car_tab .sort_on {
+                    background: #fff;
+                    border-bottom: 1px solid #fff;
+                    font-family: kiaB
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_u {
+                    margin: 0;
+                    padding: 10px 0 20px 0;
+                    background: #fff
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_l {
+                    width: 50%
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_l:nth-child(odd) .grid_box {
+                    background: #fff
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_box {
+                    border: 0;
+                    padding: 10px 0
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_box .g_img {
+                    margin-top: 0
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_box .g_name {
+                    margin-top: 5px
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_box .g_btn .grid_a {
+                    background: #737373;
+                    color: #fff;
+                    line-height: 24px;
+                    border-radius: 12px
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_box .g_btn .grid_a:first-child {
+                    background-color: #9e9e9e
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_box:hover {
+                    background: #fff !important
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_box:hover .g_name {
+                    color: #333
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_box:hover .g_btn .grid_a {
+                    color: #fff;
+                    background: #737373
+                }
+                .gnb_area .gnb_nav .dth_pip .car_grid .grid_box:hover .g_btn .grid_a:first-child {
+                    background-color: #9e9e9e
+                }
+                .gnb_area .gnb_nav .dth2_l {
+                    border-top: 1px solid #d8d8d8
+                }
+                .gnb_area .gnb_nav .dth2_l:first-child {
+                    border-top: 0
+                }
+                .gnb_area .gnb_nav .dth2_l .dth2_a {
+                    display: block;
+                    padding: 8px 12px;
+                    color: #454545;
+                    font-size: 14px
+                }
+                .gnb_area .gnb_nav .dth_on .dth1_a {
+                    background: #bc162c;
+                    color: #fff
+                }
+                .gnb_area .gnb_nav .dth_on .dth1_a:after {
+                    background-position: 0 -23px
+                }
+                .gnb_area .gnb_nav .dth_on .dth2_u {
+                    display: block
+                }
+                .util_area {
+                    position: static;
+                    width: 100%;
+                    height: auto;
+                    background: 0;
+                    border: 0;
+                    text-align: left
+                }
+                .util_area .util_menu {
+                    display: block;
+                    background: #eaeaea;
+                    border-top: 1px solid #cfcfcf;
+                    margin: 0 0 0 -1px
+                }
+                .util_area .util_menu .util_l {
+                    display: block;
+                    border-bottom: 1px solid #cfcfcf;
+                    width: 50%;
+                    float: left;
+                    background: 0;
+                    margin: 0;
+                    padding: 0
+                }
+                .util_area .util_menu .util_w {
+                    width: 100%
+                }
+                .util_area .util_menu .util_a {
+                    display: block;
+                    border-top: 1px solid #f0f0f0;
+                    border-left: 1px solid #cfcfcf;
+                    padding: 10px;
+                    color: #676767;
+                    font-family: kiaB;
+                    font-size: 12px
+                }
+                .util_area .util_menu .util_a:before {
+                    content: '';
+                    margin: 6px 8px 0 0
+                }
+                .util_area .util_search {
+                    display: none
+                }
+                .util_area .util_search .u_sch_box {
+                    height: auto;
+                    border-radius: 0;
+                    border: 1px solid #d0d0d0;
+                    padding: 0 66px 0 0;
+                    position: relative
+                }
+                .util_area .util_search .u_sch_box .sch_inp {
+                    width: 100%;
+                    padding: 8px 13px;
+                    border: 0;
+                    font-size: 14px
+                }
+                .util_area .util_search .u_sch_box .sch_btn {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 7px 9px
+                }
+                .util_area .util_search .u_sch_box .spr_search {
+                    background-position: -25px -20px;
+                    width: 20px;
+                    height: 20px
+                }
+                .go_build {
+                    position: static;
+                    text-align: center;
+                    margin: 20px 0
+                }
+                .go_build .spr_build:before {
+                    margin-right: 5px
+                }
+                .go_build .spr_build .desc {
+                    display: inline
+                }
+                .gnb_area.open {
+                    display: block
+                }
+                .gnb_dimmed {
+                    position: absolute;
+                    top: 38px;
+                    border-top: 3px solid #bc162c
+                }
+                .pip_wrap #header {
+                    border-bottom: 3px solid #bb162b !important
+                }
+                .pip_wrap #container {
+                    padding-top: 0 !important
+                }
+                .snb_wrap {
+                    position: relative;
+                    top: 0;
+                    margin-top: -3px;
+                    height: 37px
+                }
+                .snb_wrap .snb_tit {
+                    margin-left: 10px;
+                    height: 37px;
+                    line-height: 37px;
+                    font-size: 16px
+                }
+                .snb_wrap .open_snb {
+                    line-height: 37px
+                }
+                .snb_wrap .snb_nav .sdth1_a {
+                    line-height: 37px
+                }
+                .snb_wrap.snb_pip .snb_tit {
+                    width: 137px;
+                    border-top-width: 3px
+                }
+                #container {
+                    padding-top: 0;
+                    margin-top: 0
+                }
+                #content.subContents {
+                    padding: 25px 0 40px
+                }
+                .content_detail {
+                    margin-top: 15px
+                }
+                .con_box {
+                    padding: 15px 10px;
+                    margin: 10px 0
+                }
+                .con_share .share {
+                    display: none
+                }
+                .con_navi {
+                    display: none
+                }
+                .con_intro {
+                    margin-bottom: 10px;
+                    font-size: 13px
+                }
+                .con_intro .desc1 {
+                    font-size: 14px;
+                    line-height: 18px
+                }
+                .con_intro .desc2 {
+                    font-size: 12px;
+                    line-height: 16px
+                }
+                #footer {
+                    padding-bottom: 45px
+                }
+                .site_navi,
+                .site_menu {
+                    display: none
+                }
+                .site_info .f_logo {
+                    height: 48px;
+                    bottom: -40px
+                }
+                .site_info .info_policy .bar {
+                    margin: 0 4px 0 2px
+                }
+                .site_info .info_sns {
+                    display: block;
+                    margin: 10px 0 0 0
+                }
+                .site_info .info_fms {
+                    position: absolute;
+                    top: 18px;
+                    right: 10px
+                }
+                .site_info .info_fms .fms_box {
+                    width: 100px
+                }
+                .site_info .cpr {
+                    clear: both;
+                    border-top: 1px solid #d5d5d5;
+                    margin-top: 15px;
+                    padding-top: 15px;
+                    padding-bottom: 30px;
+                    line-height: 16px;
+                    height: auto
+                }
+                .site_info .cpr .br {
+                    display: block;
+                    line-height: 1;
+                    height: auto;
+                    padding-top: 15px;
+                    margin-right: 15px;
+                    margin-bottom: 0
+                }
+                .gnb_area .gnb_nav .dth_pip .new_cars_type {
+                    padding: 0
+                }
+                .gnb_area .gnb_nav .dth_pip .new_cars_type ul li {
+                    width: 50%;
+                    border-bottom: 1px solid #d3d3d3;
+                    border-right: 1px solid #d3d3d3;
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin-bottom: -1px
+                }
+                .gnb_area .gnb_nav .dth_pip .new_cars_type ul li:nth-child(2n) {
+                    border-right: 0
+                }
+                .gnb_area .gnb_nav .dth_pip .new_cars_type ul li a {
+                    display: block;
+                    padding: 10px 10px 10px 20px
+                }
+            }
+            
+            @media print {
+                #header,
+                .snb_wrap {
+                    display: none
+                }
+                #container {
+                    padding-top: 0 !important
+                }
+                .noprint {
+                    display: none
+                }
+                .compareList.addon .selectCar .selectClose {
+                    display: none
+                }
+                .con_navi .spr_home {
+                    margin-top: -10px
+                }
+            }
+            
+            .spr_buzz {
+                width: 24px;
+                height: 24px;
+                background-position: -100px 0
+            }
+            
+            .info_country {
+                display: inline-block;
+                vertical-align: middle
+            }
+            
+            .info_country img {
+                vertical-align: top
+            }
+            
+            .info_widget {
+                display: inline-block;
+                margin-right: 10px
+            }
+            
+            .pip_build {
+                width: 100%;
+                text-align: center
+            }
+            
+            .pip_build .build_link {
+                background: #7a7a7a;
+                padding: 50px 15px 50px
+            }
+            
+            .pip_build .build_link .link_lst {
+                max-width: 960px;
+                margin: 0 auto
+            }
+            
+            .pip_build .build_link .link_li {
+                display: inline-block;
+                width: 19%;
+                vertical-align: top;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/showroom/icon_feature_buildlink.png) center 0 no-repeat
+            }
+            
+            .pip_build .build_link .link_li .bl_typeW_a {
+                display: block;
+                color: #fff;
+                font-size: 12px;
+                margin: 5px 0;
+                font-family: kiaB;
+                padding-top: 125px
+            }
+            
+            .pip_build .build_link .link_li.link1 {
+                background-position: center 0
+            }
+            
+            .pip_build .build_link .link_li.link2 {
+                background-position: center -200px
+            }
+            
+            .pip_build .build_link .link_li.link3 {
+                background-position: center -400px
+            }
+            
+            .pip_build .build_link .link_li.link4 {
+                background-position: center -600px
+            }
+            
+            .pip_build .build_link .link_li.link5 {
+                background-position: center -800px
+            }
+            
+            @media(max-width:767px) {
+                .pip_build .build_link {
+                    text-align: left;
+                    padding: 12px 10px 12px
+                }
+                .pip_build .build_link .link_li {
+                    display: block;
+                    width: auto;
+                    background: 0;
+                    padding-top: 0
+                }
+                .pip_build .build_link .link_li .bl_typeW_a {
+                    font-size: 15px;
+                    text-decoration: none;
+                    border-top: 1px solid #666;
+                    padding: 6px 4px 4px
+                }
+                .pip_build .build_link .link_li .bl_typeW_a:before {
+                    display: none
+                }
+                .pip_build .build_link .link_li:first-child .bl_typeW_a {
+                    border-top: 0
+                }
+            }
+            
+            .m_sch_area {
+                display: none
+            }
+            
+            @media screen and (max-width:767px) {
+                .m_sch_area {
+                    display: block
+                }
+                .m_sch_area .open_search .blind,
+                .m_sch_area .search_area .blind,
+                .m_sch_area .close_search .blind {
+                    overflow: hidden;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 1px;
+                    height: 1px;
+                    font-size: 0;
+                    line-height: 0
+                }
+                .m_sch_area .open_search {
+                    position: absolute;
+                    right: 46px;
+                    top: 0;
+                    display: block;
+                    width: 46px;
+                    height: 19px;
+                    margin: 9px 0;
+                    background: url('https://www.kia.com/content/dam/kwcms/gt/en/images/common/ico_m_sch.png')no-repeat;
+                    background-position: 50% 0
+                }
+                .m_sch_area .open_search.on {
+                    background-position: 50% 100%
+                }
+                .m_sch_area .search_area {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 42px;
+                    width: 88%;
+                    padding: 20px 18px;
+                    background: #fff;
+                    box-sizing: border-box;
+                    margin: 0 6%
+                }
+                .m_sch_area .search_area .search_txt {
+                    width: 100%;
+                    padding: 10px 37px 7px 10px;
+                    border: 1px solid #e2e2e2;
+                    box-sizing: border-box
+                }
+                .m_sch_area .search_area .search_btn {
+                    position: absolute;
+                    right: 22px;
+                    top: 24px;
+                    display: block;
+                    width: 17px;
+                    height: 16px;
+                    background: url('https://www.kia.com/content/dam/kwcms/gt/en/images/common/ico_m_sch_s.png')no-repeat 50% 50%;
+                    padding: 14px
+                }
+                .m_sch_area .close_search {
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 46px;
+                    height: 38px;
+                    background: #333 url('https://www.kia.com/content/dam/kwcms/gt/en/images/common/ico_m_close_sch.png')no-repeat 50% 50%;
+                    z-index: 999
+                }
+            }
+            
+            .info_td .survey_txt {
+                margin-bottom: 15px;
+                display: block
+            }
+            
+            .bbs_faq .bbs_type1 .bbs_li {
+                position: static !important;
+                width: 100% !important
+            }
+            
+            .bbs_faq .faq_view {
+                width: 100%;
+                box-sizing: border-box
+            }
+            
+            .bbs_faq .faq_view .title_box {
+                background: #fff;
+                margin-bottom: 40px
+            }
+            
+            .bbs_faq .faq_view .title_box h1 {
+                float: left;
+                width: 90%;
+                line-height: 1.2;
+                box-sizing: border-box
+            }
+            
+            .bbs_faq .faq_view .title_box:after {
+                display: block;
+                content: "";
+                clear: both
+            }
+            
+            .bbs_faq .faq_view .title_box .title {
+                float: left;
+                display: block;
+                width: 100%;
+                padding: 30px 15px 25px 15px;
+                box-sizing: border-box
+            }
+            
+            .bbs_faq .faq_view .title_box .tit {
+                padding-bottom: 8px;
+                word-break: break-word
+            }
+            
+            .bbs_faq .faq_view .title_box .sub {
+                font-size: 13px;
+                color: #999;
+                font-family: "kiaM";
+                box-sizing: border-box;
+                padding-left: 63px
+            }
+            
+            .bbs_faq .faq_view .title_box .sub span {
+                display: inline-block;
+                margin-right: 10px;
+                box-sizing: border-box
+            }
+            
+            .bbs_faq .faq_view .view_contents_box {
+                width: 100%;
+                padding: 40px 30px 30px 30px;
+                margin-bottom: 50px;
+                background: #fff;
+                box-sizing: border-box
+            }
+            
+            .bbs_faq .faq_view .view_contents_box em {
+                font-size: 26px;
+                color: #bb162b;
+                font-family: 'kiaB';
+                font-weight: bold
+            }
+            
+            .bbs_faq .faq_view .view_contents_box .answer {
+                padding: 20px 0;
+                font-size: 16px;
+                line-height: 1.6
+            }
+            
+            .bbs_faq .faq_view .bl_faq {
+                background: #bb162b
+            }
+            
+            .bbs_faq .faq_view .title_box .sub .cata {
+                position: relative
+            }
+            
+            .bbs_faq .faq_view .title_box .sub .cata:after {
+                display: block;
+                content: "";
+                position: absolute;
+                top: 2px;
+                right: -7px;
+                width: 1px;
+                height: 12px;
+                background: #b8b8b8
+            }
+            
+            @media all and (max-width:767px) {
+                .bbs_faq .faq_view .title_box h1 {
+                    width: 100%
+                }
+                .bbs_faq .faq_view .title_box .tit,
+                .bbs_faq .faq_view .view_contents_box em {
+                    font-size: 24px
+                }
+                .bbs_faq .faq_view .title_box .title {
+                    padding: 30px 15px 30px 15px
+                }
+                .bbs_faq .faq_view .view_contents_box {
+                    padding: 30px 15px 30px 15px
+                }
+                .bbs_faq .faq_view .view_contents_box .answer {
+                    font-size: 14px;
+                    padding: 15px 0
+                }
+                .bbs_faq .faq_view .title_box .sub {
+                    padding-left: 0
+                }
+            }
+            
+            #footer .info_map {
+                border-bottom: 1px solid #d1d1d1
+            }
+            
+            #footer .f_navi {
+                padding: 19px 0 45px;
+                text-align: center
+            }
+            
+            #footer .f_navi .inner {
+                max-width: 940px;
+                margin: 0 auto;
+                overflow: hidden
+            }
+            
+            #footer .f_navi .inner [class*=item] {
+                float: left;
+                width: 18%;
+                margin-left: 2.5%;
+                text-align: left
+            }
+            
+            #footer .f_navi .inner [class*=item]:first-child {
+                margin-left: 0
+            }
+            
+            #footer .f_navi .inner .item3 {
+                width: 13%
+            }
+            
+            #footer .f_navi .inner .item4 {
+                width: 23%
+            }
+            
+            #footer .f_navi .inner [class*=item] div {
+                margin-bottom: 18px;
+                font-family: kiaB;
+                font-size: 14px;
+                color: #333;
+                text-transform: uppercase
+            }
+            
+            #footer .f_navi .inner [class*=item] ul li {
+                margin-top: 4px;
+                line-height: 1em
+            }
+            
+            #footer .f_navi .inner [class*=item] ul li a {
+                font-size: 11px;
+                color: #666;
+                text-transform: uppercase
+            }
+            
+            @media(max-width:1024px) {
+                #footer .f_navi .inner {
+                    margin: 0 15px
+                }
+                #footer .info_map {
+                    display: none
+                }
+                #footer .f_navi .inner {
+                    margin: 0 15px
+                }
+                .site_info .cpr {
+                    border-top: 0;
+                    padding-top: 0;
+                    margin-top: 0
+                }
+                .site_info .cpr .inner {
+                    display: table;
+                    min-height: 48px;
+                    width: 100%;
+                    margin-left: 0;
+                    padding-left: 15px;
+                    box-sizing: border-box
+                }
+                .site_info .cpr .br {
+                    display: block
+                }
+                .site_info .f_logo {
+                    bottom: -52px
+                }
+            }
+            
+            @media(max-width:767px) {
+                #footer .f_navi {
+                    display: none
+                }
+            }
+            
+            #carlabs-root-element {
+                position: fixed;
+                z-index: 9999999
+            }
+            
+            @media(max-width:1024px) {
+                #carlabs-root-element {
+                    position: fixed;
+                    z-index: 9999999
+                }
+            }
+            
+            @media(max-width:767px) {
+                #carlabs-root-element {
+                    z-index: 9999999 !important;
+                    height: 400px !important;
+                    padding-top: 40px !important
+                }
+            }
+            
+            @media(max-width:576px) {
+                #carlabs-root-element {
+                    z-index: 9999999 !important;
+                    height: 400px !important;
+                    padding-top: 40px !important
+                }
+            }
+            
+            @charset "utf-8";
+            .main_wrap {
+                overflow: hidden;
+                max-width: 1920px;
+                margin: 0 auto
+            }
+            
+            .main_wrap img {
+                max-width: none
+            }
+            
+            .mobileImg {
+                display: none
+            }
+            
+            .contBoxWrap {
+                position: relative;
+                width: 100%;
+                height: 100%
+            }
+            
+            .mainPrev {
+                position: absolute;
+                left: 0;
+                top: 326px;
+                z-index: 1000
+            }
+            
+            .mainNext {
+                position: absolute;
+                right: 0;
+                top: 326px;
+                z-index: 1000
+            }
+            
+            .pagingNum {
+                position: absolute;
+                right: 85px;
+                top: 326px;
+                z-index: 98;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/main/bg_main_paging.png) repeat 0 0;
+                width: 84px;
+                height: 84px;
+                line-height: 120px;
+                font-size: 26px;
+                text-align: center;
+                color: #cfcfcf;
+                font-style: italic
+            }
+            
+            .pagingNum span {
+                color: #fff
+            }
+            
+            .playVisual {
+                position: absolute;
+                right: 85px;
+                top: 326px;
+                z-index: 100;
+                display: block;
+                width: 84px;
+                height: 84px;
+                text-indent: -99999px;
+                background: url(https://www.kia.com/content/dam/kwcms/kr/ko/images/main/play_btn01_off.png) 28px 15px no-repeat
+            }
+            
+            .playVisual.on {
+                z-index: 99;
+                background-image: url(https://www.kia.com/content/dam/kwcms/kr/ko/images/main/play_btn01_on.png)
+            }
+            
+            .stopVisual {
+                position: absolute;
+                right: 85px;
+                top: 326px;
+                z-index: 100;
+                display: block;
+                width: 84px;
+                height: 84px;
+                text-indent: -99999px;
+                background: url(https://www.kia.com/content/dam/kwcms/kr/ko/images/main/stop_btn01_off.png) 48px 15px no-repeat
+            }
+            
+            .stopVisual.on {
+                z-index: 99;
+                background-image: url(https://www.kia.com/content/dam/kwcms/kr/ko/images/main/stop_btn01_on.png)
+            }
+            
+            a:hover,
+            a:focus .txtArea {
+                text-decoration: underline
+            }
+            
+            .subTxt {
+                display: block;
+                font-size: 13px;
+                line-height: 20px
+            }
+            
+            .sales01_Wrap,
+            .sales02_Wrap,
+            .sales03_Wrap,
+            .carusp_Wrap,
+            .carusp01_Wrap,
+            .carusp02_Wrap,
+            .local_Wrap,
+            .global_Wrap {
+                position: absolute
+            }
+            
+            .sales01Icon {
+                background: red
+            }
+            
+            .sales01 strong,
+            .sales02 strong,
+            .sales03 strong,
+            .carusp strong,
+            .carusp01 strong,
+            .carusp02 strong {
+                display: block;
+                font-size: 19px;
+                text-transform: uppercase;
+                margin-bottom: 5px
+            }
+            
+            .sales01 a,
+            .sales02 a,
+            .sales03 a,
+            .carusp a,
+            .carusp01 a,
+            .carusp02 a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                max-height: 262px
+            }
+            
+            .sales01_Wrap,
+            .sales02_Wrap,
+            .sales03_Wrap {
+                overflow: hidden;
+                z-index: 10;
+                width: 16%;
+                text-align: center;
+                height: 262px
+            }
+            
+            .carusp_Wrap {
+                overflow: hidden;
+                height: 262px;
+                z-index: 10;
+                text-align: left
+            }
+            
+            .local_Wrap {
+                position: absolute;
+                z-index: 10;
+                width: 16%;
+                overflow: hidden;
+                text-align: left;
+                height: 524px
+            }
+            
+            .global_Wrap {
+                left: 84%;
+                top: 262px;
+                z-index: 10;
+                width: 16%;
+                overflow: hidden;
+                text-align: center;
+                height: 524px
+            }
+            
+            .carusp01_Wrap {
+                width: 36%;
+                z-index: 10;
+                overflow: hidden;
+                text-align: left;
+                height: 262px
+            }
+            
+            .carusp02_Wrap {
+                width: 16%;
+                z-index: 10;
+                overflow: hidden;
+                text-align: center;
+                height: 262px
+            }
+            
+            .sales01 .txtArea {
+                display: block;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 137px;
+                z-index: 10;
+                font-size: 13px;
+                margin-left: -50%
+            }
+            
+            .sales01 .imgArea {
+                display: block;
+                margin: 0 -100%;
+                text-align: center
+            }
+            
+            .sales03 .txtArea {
+                display: block;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 137px;
+                z-index: 10;
+                font-size: 13px;
+                margin-left: -50%
+            }
+            
+            .sales03 .imgArea {
+                display: block;
+                margin: 0 -100%;
+                text-align: center
+            }
+            
+            .carusp02 .listWrap {
+                position: relative;
+                width: 100%;
+                overflow: hidden
+            }
+            
+            .carusp02 a {
+                display: block;
+                text-decoration: none
+            }
+            
+            .carusp02 .txtArea {
+                display: block;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 137px;
+                z-index: 10;
+                font-size: 13px;
+                margin-left: -50%
+            }
+            
+            .carusp02 .imgArea {
+                display: block;
+                margin: 0 -100%;
+                text-align: center
+            }
+            
+            .carusp02 .paging {
+                z-index: 40
+            }
+            
+            .sales02 .txtArea {
+                display: block;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 137px;
+                z-index: 10;
+                font-size: 13px;
+                text-align: center;
+                margin-left: -50%
+            }
+            
+            .sales02 .imgArea {
+                display: block;
+                margin: 0 -100%;
+                text-align: center
+            }
+            
+            .carusp .listWrap {
+                position: relative;
+                width: 100%;
+                overflow: hidden
+            }
+            
+            .carusp a {
+                display: block;
+                text-decoration: none
+            }
+            
+            .carusp .txtArea {
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 25px;
+                z-index: 10;
+                font-size: 13px;
+                text-align: left;
+                margin-left: -50%;
+                padding-left: 20px
+            }
+            
+            .carusp .subTxt {
+                padding-right: 30px
+            }
+            
+            .carusp .imgArea {
+                display: block;
+                margin: 0 -100%;
+                text-align: center
+            }
+            
+            .carusp .paging {
+                z-index: 40
+            }
+            
+            .carusp01 .listWrap {
+                position: relative;
+                width: 100%;
+                overflow: hidden
+            }
+            
+            .carusp01 a {
+                display: block;
+                text-decoration: none
+            }
+            
+            .carusp01 .txtArea {
+                display: block;
+                position: absolute;
+                width: 100%;
+                left: 50%;
+                top: 25px;
+                z-index: 10;
+                font-size: 13px;
+                text-align: left;
+                margin-left: -50%;
+                padding-left: 20px
+            }
+            
+            .carusp01 .subTxt {
+                padding-right: 30px
+            }
+            
+            .carusp01 .imgArea {
+                display: block;
+                margin: 0 -100%;
+                text-align: center
+            }
+            
+            .carusp01 .paging {
+                z-index: 40
+            }
+            
+            .local_Wrap {
+                position: absolute;
+                left: 68%;
+                top: 262px;
+                z-index: 10;
+                width: 16%;
+                overflow: hidden;
+                text-align: left;
+                height: 524px
+            }
+            
+            .local .listWrap {
+                position: relative;
+                width: 100%;
+                height: 524px;
+                overflow: hidden
+            }
+            
+            .local a {
+                display: block;
+                color: #a0a9ae;
+                text-decoration: none
+            }
+            
+            .local .txtArea {
+                display: block;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 46px;
+                z-index: 10;
+                margin-left: -50%;
+                padding-left: 20px;
+                box-sizing: border-box;
+                line-height: 25px;
+                color: #333
+            }
+            
+            .local strong {
+                display: block;
+                font-size: 19px;
+                font-family: KiaB;
+                text-transform: uppercase;
+                margin: 0 auto 20px
+            }
+            
+            .local .subTxt {
+                padding-right: 30px
+            }
+            
+            .local .imgArea {
+                display: block;
+                margin: 0 -100%;
+                text-align: center
+            }
+            
+            .local .paging {
+                z-index: 40
+            }
+            
+            .global_Wrap {
+                position: absolute;
+                left: 84%;
+                top: 262px;
+                z-index: 10;
+                width: 16%;
+                overflow: hidden;
+                text-align: center;
+                height: 524px
+            }
+            
+            .global .listWrap {
+                position: relative;
+                width: 100%;
+                height: 524px;
+                overflow: hidden
+            }
+            
+            .global a {
+                display: block;
+                color: #a0a9ae;
+                text-decoration: none
+            }
+            
+            .global .txtArea {
+                display: block;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 46px;
+                z-index: 10;
+                font-size: 13px;
+                margin-left: -50%;
+                line-height: 25px;
+                color: #333
+            }
+            
+            .global strong {
+                display: block;
+                font-size: 19px;
+                line-height: 29px;
+                font-family: KiaB;
+                text-transform: uppercase;
+                margin: 0 auto 20px;
+                color: #143f6a
+            }
+            
+            .global .subTxt {
+                color: #143f6a
+            }
+            
+            .global .imgArea {
+                display: block;
+                margin: 0 -100%;
+                text-align: center
+            }
+            
+            .global .paging {
+                z-index: 40
+            }
+            
+            .main_wrap .paging {
+                position: absolute;
+                bottom: 15px;
+                width: 100%;
+                text-align: center
+            }
+            
+            .main_wrap .paging ul {
+                display: inline-block;
+                overflow: hidden;
+                margin: 0 auto
+            }
+            
+            .main_wrap .paging ul li {
+                float: left
+            }
+            
+            .main_wrap .paging ul li a {
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/showroom/btn_list_dot.png) no-repeat -28px 0;
+                display: block;
+                width: 10px;
+                height: 10px;
+                text-indent: 9999px;
+                overflow: hidden;
+                margin-right: 6px;
+                cursor: pointer
+            }
+            
+            .main_wrap .paging ul li.on a {
+                background-position: 0 0
+            }
+            
+            .mainType1 {
+                position: relative;
+                height: 786px;
+                background: #fff
+            }
+            
+            .mainType1 .mainCenterWrap {
+                position: relative;
+                width: 100%;
+                height: 100%
+            }
+            
+            .mainType1 .mainCenterWrap .mainCenter {
+                position: absolute;
+                left: 16%;
+                top: 0;
+                width: 52%;
+                height: 786px
+            }
+            
+            .mainType1 .mainCenterWrap .txtArea {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 30px;
+                z-index: 10;
+                max-width: 70%
+            }
+            
+            .mainType1 .mainCenterWrap h2 {
+                font-size: 70px;
+                line-height: normal;
+                color: #333;
+                text-transform: uppercase;
+                margin: 0 0 10px 37px
+            }
+            
+            .mainType1 .mainCenterWrap .subTxt1 {
+                font-size: 36px;
+                line-height: normal;
+                color: #000;
+                margin: 0 0 7px 37px
+            }
+            
+            .mainType1 .mainCenterWrap .subTxt2 {
+                font-size: 14px;
+                color: #666;
+                margin-left: 37px
+            }
+            
+            .mainType1 .mainCenterWrap .imgArea img {
+                position: absolute;
+                left: 50%;
+                top: -200px;
+                margin-left: -960px;
+                height: 1200px
+            }
+            
+            .mainType1 .mainCenterWrap .linkArea {
+                margin: 20px 0 0 37px
+            }
+            
+            .mainType1 .mainCenterWrap .linkArea a {
+                margin-right: 2px
+            }
+            
+            .mainType1 .mainCenterWrap .awardArea {
+                position: absolute;
+                left: 0;
+                top: 340px;
+                z-index: 20;
+                margin-left: 37px
+            }
+            
+            .mainType1 .mainCenterWrap .awardArea a {
+                margin-right: 2px
+            }
+            
+            .mainType1 .mainCenterWrap .paging {
+                z-index: 10
+            }
+            
+            .mainType1 .sales01_Wrap {
+                left: 0;
+                top: 0
+            }
+            
+            .mainType1 .sales01 .txtArea {
+                color: #444
+            }
+            
+            .mainType1 .sales02_Wrap {
+                left: 0;
+                top: 262px
+            }
+            
+            .mainType1 .sales02 .txtArea {
+                color: #444
+            }
+            
+            .mainType1 .sales03_Wrap {
+                left: 0;
+                top: 524px
+            }
+            
+            .mainType1 .sales03 .txtArea {
+                color: #fff
+            }
+            
+            .mainType1 .carusp_Wrap {
+                left: 68%;
+                top: 0;
+                width: 32%
+            }
+            
+            .mainType1 .carusp .txtArea {
+                color: #444
+            }
+            
+            .mainType2 {
+                position: relative;
+                height: 786px;
+                background: #fff
+            }
+            
+            .mainType2 .mainCenterWrap {
+                position: relative;
+                width: 100%;
+                height: 100%
+            }
+            
+            .mainType2 .mainCenterWrap .mainCenter {
+                position: relative;
+                left: 16%;
+                top: 0;
+                height: 786px;
+                width: 68%
+            }
+            
+            .mainType2 .mainCenterWrap .txtArea {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 30px;
+                z-index: 10;
+                max-width: 90%
+            }
+            
+            .mainType2 .mainCenterWrap .txtArea02 {
+                text-align: center
+            }
+            
+            .mainType2 .mainCenterWrap h2 {
+                font-size: 70px;
+                line-height: normal;
+                color: #fff;
+                text-transform: uppercase;
+                margin: 0 0 10px 37px
+            }
+            
+            .mainType2 .mainCenterWrap .subTxt1 {
+                font-size: 40px;
+                line-height: normal;
+                color: #fff;
+                margin: 0 0 7px 37px
+            }
+            
+            .mainType2 .mainCenterWrap .subTxt2 {
+                color: #fff;
+                margin-left: 37px
+            }
+            
+            .mainType2 .mainCenterWrap .imgArea img {
+                position: absolute;
+                left: 50%;
+                top: -200px;
+                margin-left: -960px;
+                height: 1200px
+            }
+            
+            .mainType2 .mainCenterWrap .linkArea {
+                margin: 20px 0 0 37px
+            }
+            
+            .mainType2 .mainCenterWrap .linkArea a {
+                margin-right: 2px
+            }
+            
+            .mainType2 .mainCenterWrap .paging {
+                z-index: 10
+            }
+            
+            .mainType2 .sales01_Wrap,
+            .mainType2 .sales01 {
+                left: 0;
+                top: 0
+            }
+            
+            .mainType2 .sales01 .txtArea {
+                color: #e7e6e6
+            }
+            
+            .mainType2 .sales02_Wrap {
+                left: 0;
+                top: 262px
+            }
+            
+            .mainType2 .sales02 .txtArea {
+                color: #fff
+            }
+            
+            .mainType2 .sales03_Wrap {
+                left: 0;
+                top: 524px
+            }
+            
+            .mainType2 .sales03 .txtArea {
+                color: #949392
+            }
+            
+            .mainType2 .carusp_Wrap {
+                left: 84%;
+                top: 0;
+                width: 16%
+            }
+            
+            .mainType2 .carusp .txtArea {
+                color: #fff
+            }
+            
+            .mainType3 {
+                position: relative;
+                height: 786px;
+                background: #fff
+            }
+            
+            .mainType3 .mainCenterWrap {
+                position: relative;
+                width: 100%;
+                height: 100%
+            }
+            
+            .mainType3 .mainCenterWrap .mainCenter {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 68%;
+                height: 786px
+            }
+            
+            .mainType3 .mainCenterWrap .txtArea {
+                display: block;
+                position: absolute;
+                left: 80px;
+                top: 30px;
+                z-index: 10;
+                max-width: 90%
+            }
+            
+            .mainType3 .mainCenterWrap h2 {
+                font-size: 70px;
+                line-height: normal;
+                color: #fff;
+                text-transform: uppercase;
+                margin: 0 0 10px 37px
+            }
+            
+            .mainType3 .mainCenterWrap .subTxt1 {
+                font-size: 36px;
+                line-height: normal;
+                color: #fff;
+                margin: 0 0 7px 37px
+            }
+            
+            .mainType3 .mainCenterWrap .subTxt2 {
+                font-size: 14px;
+                color: #fff;
+                margin-left: 37px
+            }
+            
+            .mainType3 .mainCenterWrap .imgArea img {
+                position: absolute;
+                left: 50%;
+                top: -200px;
+                margin-left: -960px;
+                height: 1200px
+            }
+            
+            .mainType3 .mainCenterWrap .linkArea {
+                margin: 20px 0 0 37px
+            }
+            
+            .mainType3 .mainCenterWrap .linkArea a {
+                margin-right: 2px
+            }
+            
+            .mainType3 .mainCenterWrap .paging {
+                z-index: 10
+            }
+            
+            .mainType3 .carusp_Wrap {
+                left: 68%;
+                top: 0;
+                width: 32%
+            }
+            
+            .mainType3 .carusp .txtArea {
+                color: #fff
+            }
+            
+            .mainType3 .sales01_Wrap {
+                left: 68%;
+                top: 262px
+            }
+            
+            .mainType3 .sales01 .txtArea {
+                color: #ebe9e7
+            }
+            
+            .mainType3 .sales03_Wrap {
+                left: 68%;
+                top: 524px
+            }
+            
+            .mainType3 .sales03 .txtArea {
+                color: #fff
+            }
+            
+            .mainType4 {
+                position: relative;
+                height: 786px;
+                background: #fff
+            }
+            
+            .mainType4 .mainCenterWrap {
+                position: relative;
+                width: 100%;
+                height: 100%
+            }
+            
+            .mainType4 .mainCenterWrap .mainCenter {
+                position: relative;
+                left: 0;
+                top: 0;
+                height: 786px;
+                width: 100%
+            }
+            
+            .mainType4 .mainCenterWrap .txtArea {
+                display: block;
+                position: absolute;
+                left: 10%;
+                top: 30px;
+                z-index: 10;
+                max-width: 90%;
+                text-align: left
+            }
+            
+            .mainType4 .mainCenterWrap h2 {
+                font-size: 70px;
+                line-height: normal;
+                color: #333;
+                text-transform: uppercase;
+                margin: 0 0 10px 37px
+            }
+            
+            .mainType4 .mainCenterWrap .subTxt1 {
+                font-size: 36px;
+                line-height: normal;
+                color: #000;
+                margin: 0 0 7px 37px
+            }
+            
+            .mainType4 .mainCenterWrap .subTxt2 {
+                font-size: 14px;
+                color: #666;
+                margin-left: 37px
+            }
+            
+            .mainType4 .mainCenterWrap .imgArea img {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                margin-top: -400px;
+                margin-left: -960px;
+                height: 1200px
+            }
+            
+            .mainType4 .mainCenterWrap .linkArea {
+                margin: 20px 0 0 37px
+            }
+            
+            .mainType4 .mainCenterWrap .linkArea a {
+                margin-right: 2px
+            }
+            
+            .mainType4 .mainCenterWrap .paging {
+                z-index: 10
+            }
+            
+            .mainType4 .carusp01_Wrap {
+                left: 0;
+                top: 524px
+            }
+            
+            .mainType4 .carusp01 .txtArea {
+                color: #fff
+            }
+            
+            .mainType4 .carusp02_Wrap {
+                left: 36%;
+                top: 524px
+            }
+            
+            .mainType4 .carusp02 .txtArea {
+                color: #fff
+            }
+            
+            .mainType4 .sales01_Wrap {
+                left: 52%;
+                top: 524px
+            }
+            
+            .mainType4 .sales01 .txtArea {
+                color: #333
+            }
+            
+            .mainType4 .sales02_Wrap {
+                left: 68%;
+                top: 524px
+            }
+            
+            .mainType4 .sales02 .txtArea {
+                color: #333
+            }
+            
+            .mainType4 .sales03_Wrap {
+                left: 84%;
+                top: 524px
+            }
+            
+            .mainType4 .sales03 .txtArea {
+                color: #333
+            }
+            
+            .mainType5 {
+                position: relative;
+                height: 786px;
+                background: #fff
+            }
+            
+            .mainType5 .mainCenterWrap {
+                position: relative;
+                width: 100%;
+                height: 100%
+            }
+            
+            .mainType5 .mainCenterWrap .mainCenter {
+                height: 100%
+            }
+            
+            .mainType5 .mainCenterWrap .mainCenter .imgArea {
+                display: block
+            }
+            
+            .mainType5 .mainCenterWrap .mainCenter .imgArea img {
+                position: absolute;
+                left: 50%;
+                top: -200px;
+                margin-left: -960px;
+                height: 1200px
+            }
+            
+            .mainType5 .mainCenterWrap .mainCenter .videoArea video {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                transform: translate(-50%, -50%)
+            }
+            
+            .main_wrap .share {
+                position: absolute;
+                right: 0;
+                bottom: 14px;
+                z-index: 30;
+                margin-right: 14px
+            }
+            
+            .main_wrap .share a.btnShare {
+                display: block;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/main/btn_share.png) no-repeat 0 0;
+                text-indent: -9999px;
+                width: 20px;
+                height: 20px
+            }
+            
+            .main_wrap .share .shareList {
+                position: absolute;
+                right: 18px;
+                bottom: -7px;
+                z-index: 30;
+                display: block;
+                background: url(https://www.kia.com/content/dam/kwcms/gt/en/images/main/icon_share_sns.png) no-repeat 0 0;
+                text-indent: -9999px;
+                width: 99px;
+                height: 34px
+            }
+            
+            .main_wrap .share .shareList a {
+                display: block;
+                position: absolute;
+                width: 23px;
+                height: 24px
+            }
+            
+            .main_wrap .share .shareList a.twitter {
+                left: 6px;
+                top: 4px
+            }
+            
+            .main_wrap .share .shareList a.facebook {
+                left: 32px;
+                top: 4px
+            }
+            
+            .main_wrap .share .shareList a.google {
+                left: 58px;
+                top: 4px
+            }
