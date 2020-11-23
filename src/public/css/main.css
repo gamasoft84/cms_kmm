@@ -1,10 +1,5 @@
 body {
-    background: #1488CC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FFFFFF;
 }
 
 .logo {
@@ -13,7 +8,7 @@ body {
 }
 
 .txt_cms {
-    color: #BD012A;
+    color: #BB162B;
     font: bold;
     font-size: 18px;
     margin-top: -40px;
@@ -30,8 +25,8 @@ body {
 }
 
 .txtFeature {
-    color: #BD012A;
-    border-top-color: #BD012A;
+    color: #BB162B;
+    border-top-color: #BB162B;
     font: bold;
 }
 
@@ -76,7 +71,7 @@ to violet when it is not checked*/
 }
 
 .custom-control-label {
-    color: #BD012A;
+    color: #BB162B;
     font-size: 14px;
     padding-right: 20px;
 }
@@ -89,7 +84,7 @@ to violet when it is not checked*/
 .go-up {
     display: none;
     padding: 20px;
-    background: #BD012A;
+    background: #BB162B;
     font-size: 20px;
     color: #fff;
     cursor: pointer;
@@ -104,10 +99,30 @@ to violet when it is not checked*/
 
 .card-footer {
     color: #fff;
-    border-color: #BD012A;
+    border-color: #BB162B;
 }
 
 
 .white{
     color:#fff;
+}
+
+
+.footer-cover{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-cover:hover{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    background-color: #BB162B;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: #BB162B !important;
 }
