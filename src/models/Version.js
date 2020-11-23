@@ -10,9 +10,11 @@ const VersionSchema = new Schema({
     trimNm: { type: String, requiered: true },
     tmName: { type: String, requiered: true },
     tmCd: { type: String, requiered: true },
+    modlCdTmCd: { type: String, requiered: true },
     desc: { type: String, requiered: true },
     year: { type: String, requiered: true },
-    version: { type: String, requiered: true }
+    version: { type: String, requiered: true },
+    localSalesCd: { type: String, requiered: true }
 })
 
 module.exports = mongoose.model('Versions', VersionSchema)

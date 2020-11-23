@@ -77,7 +77,7 @@
                                     <div class="d-flex justify-content-center">
                                         {{#each this.versions}}
                                             <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" disabled="true" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}}>
+                                                <input type="checkbox" class="custom-control-input" id="switch_{{this.code}}_{{../this._id}}" {{checked this.actv}} onchange="sendUpdateVersion('{{this.code}}','{{../this._id}}',this.checked)">
                                                 <label class="custom-control-label" for="switch_{{this.code}}_{{../this._id}}">{{desc}}</label>
                                             </div>
                                         {{/each}}   
@@ -94,3 +94,21 @@
 </div>
 {{/each}}    
 {{/if_equal}}
+
+
+
+<script>
+    function sendUpdateVersion(code, id,value){
+        let data = {code,value}
+        $.ajax({
+            type: 'PUT',
+            url: `/images/edit-versions_image/${id}`,
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+        }).done(function (resp) {   
+           console.log('SUCCESS' + resp);
+        }).fail(function (msg) {
+            alert('FAIL');
+        });
+    }
+</script>

@@ -6,6 +6,7 @@ const {Schema} = mongoose;
 const FeatureImageSchema = new Schema({
     year: {type: String, requiered: true},
     model: {type: String, requiered: true},
+    modelCd: { type: String, requiered: true },
     url: {type: String, requiered: true},
     name: {type: String},
     description: {type: String},

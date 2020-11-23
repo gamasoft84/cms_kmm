@@ -19,6 +19,7 @@ const saveImages = async function(respScrapi) {
     let allVersion = await Version.find();
     respScrapi.forEach(async(elementScrapi) => {
         const { name, description, url, category, year, model, isCover } = elementScrapi;
+        let modelCd = null;
         var versions = allVersion
             .filter((version) => version.modlNameHtml === model)
             .filter((version) => version.year === year)
@@ -64,7 +65,7 @@ const saveImages = async function(respScrapi) {
                 if (name.includes('THETA 2.4') && version.modlNameHtml.includes('sportage') && !(version.trimNm.includes('EX PACK') || version.trimNm.includes('SXL'))) {
                     actv = false;
                 }
-
+                modelCd = version.modlCd;
                 return {
                     code: version.tmCd,
                     desc: version.version,
@@ -72,7 +73,7 @@ const saveImages = async function(respScrapi) {
                 }
             });
         versions.sort(compare);
-        const image = new Image({ name, description, url, category, year, model, isCover, versions });
+        const image = new Image({ name, description, url, category, year, model, modelCd, isCover, versions });
         await image.save();
     });
 }
@@ -104,7 +105,9 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
     } else {
 
         let versions = await Version.find({ modlNameHtml: model, year });
+        let modelCd = null;
         versions = versions.map(function(version) {
+            modelCd = version.modlCd;
             return {
                 code: version.tmCd,
                 desc: version.version,
@@ -113,7 +116,7 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
         });
         versions.sort(compare);
 
-        const image = new Image({ name, description, url, category, year, model, versions });
+        const image = new Image({ name, description, url, category, year, model, modelCd, versions });
         image.user = req.user.id;
         await image.save();
         req.flash('success_msg', 'Image Add successfully !')
@@ -193,35 +196,15 @@ router.delete('/images/delete/:id/:model', isAuthenticated, async(req, res) => {
     res.redirect('/images/' + (req.params.model != null ? req.params.model : ''));
 });
 
-router.get('/images_delete_all', isAuthenticated, async(req, res) => {
-    await Image.deleteMany();
-    req.flash('success_msg', 'Images Deleted successfully!');
-    res.redirect('/images/covers');
-});
-
-
-
 router.put('/images/edit-versions_image/:id', isAuthenticated, async(req, res) => {
-    console.log(req.body) //particular
-    let { code, actv } = req.body;
-    if (!code) {
-        code = "E7";
-        actv = true;
-    }
-
+    let { code, value } = req.body;
     let image = await Image.findByIdAndUpdate(req.params.id);
     let versions = image.versions;
-
-    image.versions.forEach(function(v) {
+    versions.forEach(function(v) {
         if (v.code === code) {
-            v.actv = actv;
+            v.actv = value;
         }
     });
-
-    await Image.findByIdAndUpdate(req.params.id, { versions });
-    req.flash('success_msg', 'Image Updated successfully!');
-    res.send('OK');
-});
 
 
 router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, res) => {
@@ -307,6 +290,23 @@ router.post('/images/load-images', isAuthenticated, async(req, res) => {
     saveImages(scrapi);
     req.flash('success_msg', 'Load Images successfully !')
     res.redirect('/images/covers');    
+});
+
+router.get('/images_delete', isAuthenticated, async(req, res) => {
+    vehicleCatalog = await getVehicleCatalog();
+    res.render('images/delete-images', { vehicleCatalog});
+});
+
+router.post('/images/delete-images', isAuthenticated, async(req, res) => {
+    resp = req.body;
+    let vehicleCatalog = [];
+    for (const [key, value] of Object.entries(resp)) {
+        vehicleCatalog.push(key);
+    } 
+    console.log(vehicleCatalog);    
+    await Image.deleteMany({model:vehicleCatalog});
+    req.flash('success_msg', 'Images Deleted successfully!');
+    res.redirect('/images/covers');
 });
 
 module.exports = router;

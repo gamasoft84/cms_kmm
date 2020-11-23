@@ -72,7 +72,7 @@ async function getImagesPagePrincipal(model) {
 }
 
 function isAllow(image) {
-    let images = ["configura_tu_kia_forte_GT_auto_perfil.png"];
+    let images = ["configura_tu_kia_forte_GT_auto_perfil.png", "img_Soul_safety6_m.jpg"];
     var resp = false;
     for (var i in images) {
         if (image.includes(images[i])) {
@@ -89,7 +89,9 @@ function isNotAllow(image) {
         "2019/7_USP_desempeno/kia_sportage_auto_des_3_w.jpg",
         "Kia_ForteHb_Auto_Desempeno_1_w.jpg",
         "configura_tu_kia_forte_GT_auto_perfil.png",
-        "7_USP_desempeno/img_Soul_performance3_w.jpg"
+        "7_USP_desempeno/img_Soul_performance3_w.jpg",
+        "img_Soul_safety1_w.jpg",
+        "kia_forte_auto_desempeno_4_w.jpg"
     ];
     var resp = false;
     for (var i in images) {
@@ -141,8 +143,8 @@ function getCoverPrincipal(urlImage) {
         "img_RIO_SD_exterior1_w.jpg",
         "Img_ForteSd_Exterior1_w.jpg",
         "kia-showroom-key-visual-sportage-w.jpg",
-        "img_Soul_exterior1_w.jpg",
-        "bg_Pc_seltos_overview1_w.jpg "
+        "bg_Pc_seltos_overview1_w.jpg ",
+        "bg_Pc_soul_overview1_w.jpg"
     ];
     var resp = false;
     for (var i in covers) {
@@ -160,7 +162,9 @@ function getCoverSecondary(urlImage) {
         "bg_Pc_RioHB_overview1_w.jpg",
         "kia-showroom-key-visual-RioSedan_w.jpg",
         "kia-showroom-key-visual-forte-W.jpg",
-        "kia_showroom-big-image-sportage-3-w.jpg"
+        "kia_showroom-big-image-sportage-3-w.jpg",
+        "img_Soul_exterior1_w.jpg",
+
     ];
     var resp = false;
     for (var i in covers) {
