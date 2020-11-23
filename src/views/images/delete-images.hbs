@@ -1,18 +1,18 @@
-<form action="/images/load-images" method="POST">
+<form action="/images/delete-images" method="POST">
     <div class="custom-control custom-checkbox my-1 mr-sm-2 center-block">
         <input type="checkbox" class="custom-control-input" name="select_all" id="select_all">
-        <label class="custom-control-label white" for="select_all"><h5>All models</h5></label>
+        <label class="custom-control-label white" for="select_all form-white"><h5>All models</h5></label>
     </div>
     <br/>
     {{#each vehicleCatalog}}
     <div class="custom-control custom-checkbox my-1 mr-sm-2 center-block">
-        <input type="checkbox" class="custom-control-input form-white" name="{{this.codeHtml}}" id="{{this.codeHtml}}">
+        <input type="checkbox" class="custom-control-input" name="{{this.codeHtml}}" id="{{this.codeHtml}}">
         <label class="custom-control-label white" for="{{this.codeHtml}}">{{this.name}}</label>
     </div>
     {{/each}}
     </div>
     <br />  
-    <button type="submit" class="btn btn-primary my-1 ">Load Images</button>
+    <button type="submit" class="btn btn-primary my-1 ">Delete Images</button>
 </form>
 
 
@@ -26,7 +26,5 @@
     $(document).ready(function(){
         $('#select_all').click();
     });
-
-   
 
 </script>
