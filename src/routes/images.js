@@ -2,11 +2,9 @@ const express = require('express');
 const router = express.Router();
 const Image = require('../models/Image');
 const Version = require('../models/Version');
-var {getVehicleCatalog, yearCatalog, featureCategory, mapVersions} = require('../enum/catalog');
-
 const { isAuthenticated } = require('../helpers/auth');
+var {getVehicleCatalog, yearCatalog, featureCategory, mapVersions} = require('../enum/catalog');
 var scrapiKia = require('./../generatedModelsKia');
-const requestPromise = require('request-promise');
 var request = require('request');
 
 
@@ -159,19 +157,6 @@ router.get('/images/:model', isAuthenticated, async(req, res) => {
     res.render('images/all-images', { images, featureCategory, model, modelName });
 });
 
-function compare(a, b) {
-    let ad = mapVersions.get(a.desc);
-    let bd = mapVersions.get(b.desc);
-    if (ad < bd) {
-        return -1;
-    }
-    if (ad > bd) {
-        return 1;
-    }
-    return 0;
-}
-
-
 router.put('/images/edit-image/:id', isAuthenticated, async(req, res) => {
     const { name, description, url, category, year, model, versionsFront } = req.body;
     let image = await Image.findByIdAndUpdate(req.params.id);
@@ -204,7 +189,10 @@ router.put('/images/edit-versions_image/:id', isAuthenticated, async(req, res) =
         if (v.code === code) {
             v.actv = value;
         }
-    });
+    })
+    await Image.findByIdAndUpdate(req.params.id, { versions });
+    res.send('OK');
+})
 
 
 router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, res) => {
@@ -308,5 +296,18 @@ router.post('/images/delete-images', isAuthenticated, async(req, res) => {
     req.flash('success_msg', 'Images Deleted successfully!');
     res.redirect('/images/covers');
 });
+
+
+function compare(a, b) {
+    let ad = mapVersions.get(a.desc);
+    let bd = mapVersions.get(b.desc);
+    if (ad < bd) {
+        return -1;
+    }
+    if (ad > bd) {
+        return 1;
+    }
+    return 0;
+}
 
 module.exports = router;
