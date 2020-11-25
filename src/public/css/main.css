@@ -8,7 +8,7 @@ body {
 }
 
 .txt_cms {
-    color: #BB162B;
+    color: #bc162c;
     font: bold;
     font-size: 18px;
     margin-top: -40px;
@@ -25,8 +25,8 @@ body {
 }
 
 .txtFeature {
-    color: #BB162B;
-    border-top-color: #BB162B;
+    color: #bc162c;
+    border-top-color: #bc162c;
     font: bold;
 }
 
@@ -71,7 +71,7 @@ to violet when it is not checked*/
 }
 
 .custom-control-label {
-    color: #BB162B;
+    color: #bc162c;
     font-size: 14px;
     padding-right: 20px;
 }
@@ -84,7 +84,7 @@ to violet when it is not checked*/
 .go-up {
     display: none;
     padding: 20px;
-    background: #BB162B;
+    background: #bc162c;
     font-size: 20px;
     color: #fff;
     cursor: pointer;
@@ -99,7 +99,7 @@ to violet when it is not checked*/
 
 .card-footer {
     color: #fff;
-    border-color: #BB162B;
+    border-color: #bc162c;
 }
 
 .white {
@@ -117,12 +117,12 @@ to violet when it is not checked*/
     font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
-    background-color: #BB162B;
+    background-color: #bc162c;
     cursor: pointer;
 }
 
 .btn-primary {
-    background-color: #BB162B !important;
+    background-color: #bc162c !important;
 }
 
 .navbar {
@@ -134,4 +134,9 @@ to violet when it is not checked*/
 
 .jumbotron {
     background: #FFFFFF;
+}
+
+.navbar-toggler{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23bc162c' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
 }
