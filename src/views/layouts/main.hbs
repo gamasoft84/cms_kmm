@@ -48,7 +48,9 @@
         {{> errors}}
         {{{body}}}
     </main>
-    {{> footer}}
+    {{#if user}} 
+        {{> footer}}
+    {{/if}} 
 
 
  

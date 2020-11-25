@@ -1,48 +1,46 @@
 const Version = require("../models/Version");
 var HashMap = require("hashmap");
 
-const featureCategory = [
-  {
-    name: "Exterior",
-    abbreviation: "GFCFCEX",
-    code: "EX",
-  },
-  {
-    name: "Interior",
-    abbreviation: "GFCFCIN",
-    code: "IN",
-  },
-  {
-    name: "Technology",
-    abbreviation: "GFCFCTE",
-    code: "TE",
-  },
-  {
-    name: "Performance",
-    abbreviation: "GFCFCPE",
-    code: "PE",
-  },
-  {
-    name: "Safety",
-    abbreviation: "GFCFCSA",
-    code: "SA",
-  },
-  {
-    name: "MediaLink",
-    abbreviation: "GFCFCML",
-    code: "ML",
-  },
+const featureCategory = [{
+        name: "Exterior",
+        abbreviation: "GFCFCEX",
+        code: "EX",
+    },
+    {
+        name: "Interior",
+        abbreviation: "GFCFCIN",
+        code: "IN",
+    },
+    {
+        name: "Technology",
+        abbreviation: "GFCFCTE",
+        code: "TE",
+    },
+    {
+        name: "Performance",
+        abbreviation: "GFCFCPE",
+        code: "PE",
+    },
+    {
+        name: "Safety",
+        abbreviation: "GFCFCSA",
+        code: "SA",
+    },
+    {
+        name: "MediaLink",
+        abbreviation: "GFCFCML",
+        code: "ML",
+    },
 ];
 
-const yearCatalog = [
-  {
-    name: "2021",
-    codeHtml: "2021",
-  },
-  {
-    name: "2020",
-    codeHtml: "2020",
-  },
+const yearCatalog = [{
+        name: "2021",
+        codeHtml: "2021",
+    },
+    {
+        name: "2020",
+        codeHtml: "2020",
+    },
 ];
 
 const mapVersions = new HashMap();
@@ -73,35 +71,35 @@ mapVersions.set("SXL T/A", 24);
 mapVersions.set("SXL DCT", 25);
 
 getVehicleCatalog = async function getCatalogVersions() {
-  versions = await Version.aggregate([
-    { $match: { year: "2021" } },
-    {
-      $project: {
-        modlName: "$modlName",
-        modlNameHtml: "$modlNameHtml",
-        year: "$year",
-      },
-    },
-    {
-      $group: {
-        _id: { codeHtml: "$modlNameHtml", name: "$modlName", year: "$year" },
-      },
-    },
-    { $sort: { "_id.name": 1 } },
-  ]);
+    versions = await Version.aggregate([
+        { $match: { year: "2020" } },
+        {
+            $project: {
+                modlName: "$modlName",
+                modlNameHtml: "$modlNameHtml",
+                year: "$year",
+            },
+        },
+        {
+            $group: {
+                _id: { codeHtml: "$modlNameHtml", name: "$modlName", year: "$year" },
+            },
+        },
+        { $sort: { "_id.name": 1 } },
+    ]);
 
-  //console.log(versions);
+    //console.log(versions);
 
-  let catalog = [];
-  versions.forEach((e) => {
-    catalog.push(e._id);
-  });
-  return catalog;
+    let catalog = [];
+    versions.forEach((e) => {
+        catalog.push(e._id);
+    });
+    return catalog;
 };
 
 module.exports = {
-  featureCategory,
-  getVehicleCatalog,
-  yearCatalog,
-  mapVersions,
+    featureCategory,
+    getVehicleCatalog,
+    yearCatalog,
+    mapVersions,
 };

@@ -102,27 +102,36 @@ to violet when it is not checked*/
     border-color: #BB162B;
 }
 
-
-.white{
-    color:#fff;
+.white {
+    color: #fff;
 }
 
-
-.footer-cover{
+.footer-cover {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.footer-cover:hover{
+.footer-cover:hover {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    color:#FFFFFF;
+    color: #FFFFFF;
     background-color: #BB162B;
     cursor: pointer;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #BB162B !important;
+}
+
+.navbar {
+    border-width: 0px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background: #FFFFFF;
 }
