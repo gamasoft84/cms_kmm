@@ -3,14 +3,14 @@ const router = express.Router();
 const Image = require('../models/Image');
 const Version = require('../models/Version');
 const { isAuthenticated } = require('../helpers/auth');
-var {getVehicleCatalog, yearCatalog, featureCategory, mapVersions} = require('../enum/catalog');
+var { getVehicleCatalog, yearCatalog, featureCategory, mapVersions } = require('../enum/catalog');
 var scrapiKia = require('./../generatedModelsKia');
 var request = require('request');
 
 
 router.get('/images/add', isAuthenticated, async(req, res) => {
     vehicleCatalog = await getVehicleCatalog();
-    res.render('images/new-image', { featureCategory, yearCatalog,  vehicleCatalog});
+    res.render('images/new-image', { featureCategory, yearCatalog, vehicleCatalog });
 });
 
 const saveImages = async function(respScrapi) {
@@ -134,7 +134,7 @@ router.get('/images/edit/:id', isAuthenticated, async(req, res) => {
 router.get('/images/covers', isAuthenticated, async(req, res) => {
     const images = await Image.find({ isCover: true }).sort({ model: 1 });
     vehicleCatalog = await getVehicleCatalog();
-    res.render('images/cover-images', { images, vehicleCatalog});
+    res.render('images/cover-images', { images, yearCatalog, vehicleCatalog });
 });
 
 router.get('/images', isAuthenticated, async(req, res) => {
@@ -263,26 +263,26 @@ router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, 
 
 router.get('/images_load', isAuthenticated, async(req, res) => {
     vehicleCatalog = await getVehicleCatalog();
-    res.render('images/load-image', { vehicleCatalog});
+    res.render('images/load-image', { vehicleCatalog });
 });
 
 router.post('/images/load-images', isAuthenticated, async(req, res) => {
     resp = req.body;
     let vehicleCatalog = [];
     for (const [key, value] of Object.entries(resp)) {
-        vehicleCatalog.push({codeHtml:key});
-    }  
+        vehicleCatalog.push({ codeHtml: key });
+    }
     console.log(vehicleCatalog);
     let scrapi = await scrapiKia(vehicleCatalog);
     console.log('Total Images: ' + scrapi.length);
     saveImages(scrapi);
     req.flash('success_msg', 'Load Images successfully !')
-    res.redirect('/images/covers');    
+    res.redirect('/images/covers');
 });
 
 router.get('/images_delete', isAuthenticated, async(req, res) => {
     vehicleCatalog = await getVehicleCatalog();
-    res.render('images/delete-images', { vehicleCatalog});
+    res.render('images/delete-images', { vehicleCatalog });
 });
 
 router.post('/images/delete-images', isAuthenticated, async(req, res) => {
@@ -290,9 +290,9 @@ router.post('/images/delete-images', isAuthenticated, async(req, res) => {
     let vehicleCatalog = [];
     for (const [key, value] of Object.entries(resp)) {
         vehicleCatalog.push(key);
-    } 
-    console.log(vehicleCatalog);    
-    await Image.deleteMany({model:vehicleCatalog});
+    }
+    console.log(vehicleCatalog);
+    await Image.deleteMany({ model: vehicleCatalog });
     req.flash('success_msg', 'Images Deleted successfully!');
     res.redirect('/images/covers');
 });
