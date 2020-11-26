@@ -72,7 +72,7 @@ mapVersions.set("SXL DCT", 25);
 
 getVehicleCatalog = async function getCatalogVersions() {
     versions = await Version.aggregate([
-        { $match: { year: "2020" } },
+        // { $match: { year: "2020" } },
         {
             $project: {
                 modlName: "$modlName",
