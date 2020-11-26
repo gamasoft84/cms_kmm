@@ -2844,7 +2844,7 @@ strong.bl_type2 {
     background: rgba(255, 0, 0, 0.3)
 }
 
-#header {
+#header_tmp {
     border-bottom: 4px solid #bc162c;
     background: #fff;
     position: relative;
@@ -2852,7 +2852,7 @@ strong.bl_type2 {
     z-index: 1004
 }
 
-#header:before {
+#header_tmp:before {
     content: '';
     display: block;
     width: 100%;
@@ -2864,7 +2864,7 @@ strong.bl_type2 {
     top: -32px
 }
 
-#header .header_in {
+#header_tmp .header_in {
     width: 960px;
     margin: 32px auto 0;
     padding: 8px 0;
