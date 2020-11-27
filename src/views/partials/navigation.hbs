@@ -1,67 +1,75 @@
-{{#if user}}
-  <div id="header">
-    <div class="header_in">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="/about">CMS Kia</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/images/covers">Covers</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Autos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  {{#each vehicleCatalog}}
-                  <a class="dropdown-item" href="/images/{{this.codeHtml}}">{{this.name}}<a>
-                      {{/each}}
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/images">All</a>
-                </div>
-              </li>
+<div class="header">
 
-              {{#if_equal user.email "richardgama@yahoo.com.mx"}}
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Admon
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/images/add">Add Images</a>
-                  <a class="dropdown-item" href="/images_load">Load Images</a>
-                  <a class="dropdown-item" href="/images_delete">Delete Images</a>
-                </div>
-              </li>
-              {{/if_equal}}
+</div>
 
 
-              <li class="nav-item">
-                <a class="nav-link" href="/users/logout">Logout</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
 
-    <div class="contLogoKia">
-      <a href="/" title="KIA">
-        <img src="https://www.kia.com/content/dam/kwcms/mx/es/images/common/lg_kia.png" class="loadP">
+
+
+
+<div id="header">
+  <div class="header_in">
+    {{#if user}} 
+     <div class="logo_h1">
+      <a href="/mx/main.html" class="lg_a">
+        <img src="https://www.kia.com/content/dam/kwcms/mx/es/images/common/lg_kia.png" class="layer_lg_img" alt="KIA">
       </a>
     </div>
+    {{/if}}
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/about">CMS Kia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            {{#if user}}
+            <li class="nav-item">
+              <a class="nav-link" href="/images/covers">Covers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Autos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {{#each vehicleCatalog}}
+                <a class="dropdown-item" href="/images/{{this.codeHtml}}">{{this.name}}<a>
+                    {{/each}}
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/images">All</a>
+              </div>
+            </li>
 
-    <div class="contPlecWeb">
-      <div class="plecTrans loadP">
-        <img src="https://kia-ecatepec.com.mx/img/menu/Kia_Bg_Top_Menu2.png" class="loadP">
+            {{#if_equal user.email "richardgama@yahoo.com.mx"}}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Admon
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/images/add">Add Images</a>
+                <a class="dropdown-item" href="/images_load">Load Images</a>
+                <a class="dropdown-item" href="/images_delete">Delete Images</a>
+              </div>
+            </li>
+            {{/if_equal}}
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="/users/logout">Logout</a>
+            </li>
+            {{else}}
+            <li class="nav-item">
+              <a class="nav-link" href="/users/signin">Login</a>
+            </li>
+            {{/if}}
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   </div>
-{{/if}}
+</div>
