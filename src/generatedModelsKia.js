@@ -126,7 +126,7 @@ function getCategoria(urlImage, title) {
             category = "IN";
         } else if (urlImage.includes("safety") || urlImage.includes("seguridad")) {
             category = "SA";
-        } else if (urlImage.includes("performance") || urlImage.includes("desempenio")) {
+        } else if (urlImage.includes("performance") || urlImage.includes("desempenio") || urlImage.includes("desempeno") || urlImage.includes("cluster")) {
             category = "PE";
         } else {
             category = "S/C";
@@ -143,7 +143,12 @@ function getCoverPrincipal(urlImage) {
         "Img_ForteSd_Exterior1_w.jpg",
         "kia-showroom-key-visual-sportage-w.jpg",
         "bg_Pc_seltos_overview1_w.jpg ",
-        "bg_Pc_soul_overview1_w.jpg"
+        "bg_Pc_soul_overview1_w.jpg",
+        "kia-showroom-key-visual-sedona-w.jpg",
+        "kia_optima_auto_seguridad_1_wV2.jpg",
+        "kia-showroom-key-visual-w_v2.jpg",
+        "kia_sorento_auto_desempeno_1_w.jpg",
+        "bg_Pc_stinger_overview1_w.jpg"
     ];
     var resp = false;
     for (var i in covers) {
@@ -163,6 +168,8 @@ function getCoverSecondary(urlImage) {
         "kia-showroom-key-visual-forte-W.jpg",
         "kia_showroom-big-image-sportage-3-w.jpg",
         "img_Soul_exterior1_w.jpg",
+        "kia_sedona_auto_desempeno_1_w.jpg",
+        "kia-showroom-key-visual-optima-w.jpg"
 
     ];
     var resp = false;
