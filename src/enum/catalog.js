@@ -35,11 +35,11 @@ const featureCategory = [{
 
 const yearCatalog = [{
         name: "2021",
-        codeHtml: "2021",
+        codeYear: "2021",
     },
     {
         name: "2020",
-        codeHtml: "2020",
+        codeYear: "2020",
     },
 ];
 
@@ -72,7 +72,7 @@ mapVersions.set("SXL DCT", 25);
 
 getVehicleCatalog = async function getCatalogVersions() {
     versions = await Version.aggregate([
-        { $match: { year: "2020" } },
+        // { $match: { year: "2020" } },
         {
             $project: {
                 modlName: "$modlName",

@@ -5,25 +5,38 @@
         class="sync"><i class="fas fa-paper-plane" aria-hidden="true"></i></a>
 </div>
 
-<div class="col-md-12">
-    <div class="row">
-        {{#each images}}
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-            {{#each ../vehicleCatalog}}
-            {{#if_equal this.codeHtml ../this.model}}
-            <div class="card" style="width: 24rem;">
-                <a href="/images/{{this.codeHtml}}">
-                    <img class="card-img-top" src="{{../this.url}}" alt="Card image cap">
-                </a>
-                <div class="card-body footer-cover">
-                    <p class="card-title">{{this.name}}</p>
-                    <h5 class="card-text">{{../this.description}}<h5p>
-                    <a href="/images/{{this.codeHtml}}" class="btn btn-primary">+</a>
+        {{#each yearCatalog}}
+            <h1 class="txtFeature">{{this.codeYear}}</h1>
+            <br/>
+            <div class="col-md-12">
+                <div class="row">
+                    {{#each ../images}}
+                        {{#if_equal this.year ../this.codeYear}}
+                            {{#each ../../vehicleCatalog}}
+                                {{#if_equal this.year ../this.year}}
+                                    {{#if_equal this.codeHtml ../this.model}}
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                            <div class="card" style="width: 24rem;">
+                                                <a href="/images/{{this.codeHtml}}/{{this.year}}">
+                                                    <img class="card-img-top" src="{{../this.url}}" alt="Card image cap">
+                                                </a>
+                                                <div class="card-body footer-cover">
+                                                     <p class="card-title">{{this.name}}</p>
+                                                    <h5 class="card-text">{{../this.description}}</h5>
+                                                    <a href="/images/{{../this.model}}/{{this.year}}" class="btn btn-primary">Go</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{/if_equal}}
+                                {{/if_equal}}          
+                            {{/each}}  
+                        {{/if_equal}}                    
+                    {{/each}}
                 </div>
             </div>
-            {{/if_equal}}
-            {{/each}}
-        </div>
-        {{/each}}
-    </div>
-</div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        {{/each}} 
+

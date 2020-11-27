@@ -29,7 +29,7 @@
 {{#each featureCategory}}
 <div class="jumbotron">
     <div class="row justify-content-between">
-        <h1 class="display-6 txtFeature">{{this.name}} : {{../this.modelName}}</h1>
+        <h1 class="display-6 txtFeature">{{this.name}} : {{../this.modelName}} {{../this.year}}</h1>
         <div>
             <a href="/images/json/{{../this.model}}/{{this.code}}/true" title="Code images '{{this.name}}'" target="_blank"><i class="fas fa-code" aria-hidden="true"></i></a>
             &nbsp;
