@@ -7,7 +7,7 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const bodyParser = require('body-parser');
 const { log } = require("console");
-var {getVehicleCatalog} = require('./enum/catalog');
+var { getVehicleCatalog, yearCatalog } = require('./enum/catalog');
 
 //Inicializations
 const app = express();
@@ -62,13 +62,14 @@ app.use(passport.session());
 app.use(flash());
 
 //Global variables
-app.use(async (req, res, next) => {
+app.use(async(req, res, next) => {
     res.locals.success_msg = req.flash("success_msg");
     res.locals.error_msg = req.flash("error_msg");
     res.locals.error = req.flash("error");
     res.locals.user = req.user || null;
     vehicleCatalog = await getVehicleCatalog();
     res.locals.vehicleCatalog = vehicleCatalog;
+    res.locals.yearCatalog = yearCatalog;
     next();
 });
 

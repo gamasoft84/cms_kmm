@@ -144,17 +144,18 @@ router.get('/images', isAuthenticated, async(req, res) => {
 });
 
 
-router.get('/images/:model', isAuthenticated, async(req, res) => {
+router.get('/images/:model/:year', isAuthenticated, async(req, res) => {
     let model = req.params.model;
+    let year = req.params.year;
     let modelName = ""
-    const images = await Image.find({ model, isCover: false });
+    const images = await Image.find({ model, year, isCover: false });
     if (model != 'allmodels') {
         vehicleCatalog = await getVehicleCatalog();
         modelName = (vehicleCatalog.filter((v) => v.codeHtml === model))[0].name;
     } else {
         modelName = 'All KIA models'
     }
-    res.render('images/all-images', { images, featureCategory, model, modelName });
+    res.render('images/all-images', { images, featureCategory, model, modelName, year });
 });
 
 router.put('/images/edit-image/:id', isAuthenticated, async(req, res) => {
@@ -183,6 +184,7 @@ router.delete('/images/delete/:id/:model', isAuthenticated, async(req, res) => {
 
 router.put('/images/edit-versions_image/:id', isAuthenticated, async(req, res) => {
     let { code, value } = req.body;
+    //console.log(req.params.id);
     let image = await Image.findByIdAndUpdate(req.params.id);
     let versions = image.versions;
     versions.forEach(function(v) {
@@ -263,14 +265,19 @@ router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, 
 
 router.get('/images_load', isAuthenticated, async(req, res) => {
     vehicleCatalog = await getVehicleCatalog();
-    res.render('images/load-image', { vehicleCatalog });
+    res.render('images/load-image', { vehicleCatalog, yearCatalog });
 });
 
 router.post('/images/load-images', isAuthenticated, async(req, res) => {
     resp = req.body;
     let vehicleCatalog = [];
     for (const [key, value] of Object.entries(resp)) {
-        vehicleCatalog.push({ codeHtml: key });
+        let year = key.substring(key.indexOf("_") + 1, key.length);
+        let model = key.substring(0, key.indexOf("_"));
+        console.log(year, model);
+        if (model != 'select') {
+            vehicleCatalog.push({ codeHtml: model, year });
+        }
     }
     console.log(vehicleCatalog);
     let scrapi = await scrapiKia(vehicleCatalog);
@@ -282,17 +289,17 @@ router.post('/images/load-images', isAuthenticated, async(req, res) => {
 
 router.get('/images_delete', isAuthenticated, async(req, res) => {
     vehicleCatalog = await getVehicleCatalog();
-    res.render('images/delete-images', { vehicleCatalog });
+    res.render('images/delete-images', { vehicleCatalog, yearCatalog });
 });
 
 router.post('/images/delete-images', isAuthenticated, async(req, res) => {
     resp = req.body;
-    let vehicleCatalog = [];
     for (const [key, value] of Object.entries(resp)) {
-        vehicleCatalog.push(key);
+        let year = key.substring(key.indexOf("_") + 1, key.length);
+        let model = key.substring(0, key.indexOf("_"));
+        console.log(year, model);
+        await Image.deleteMany({ model, year });
     }
-    console.log(vehicleCatalog);
-    await Image.deleteMany({ model: vehicleCatalog });
     req.flash('success_msg', 'Images Deleted successfully!');
     res.redirect('/images/covers');
 });

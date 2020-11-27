@@ -36,9 +36,14 @@
                 Autos
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                {{#each vehicleCatalog}}
-                <a class="dropdown-item" href="/images/{{this.codeHtml}}">{{this.name}}<a>
-                    {{/each}}
+                {{#each yearCatalog}} 
+                  {{this.codeYear}}              
+                  {{#each ../vehicleCatalog}}
+                    {{#if_equal this.year ../this.codeYear}}
+                      <a class="dropdown-item" href="/images/{{this.codeHtml}}/{{this.year}}/">{{this.name}}<a>
+                    {{/if_equal}}
+                  {{/each}}
+                {{/each}}
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/images">All</a>
               </div>

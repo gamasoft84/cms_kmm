@@ -12,10 +12,10 @@ scrapiKia = async function scrapiKIA(vehicleCatalog) {
     structurByModel = [];
     mapImages = new HashMap();
     await Promise.all(
-        vehicleCatalog.map(async model => 
-            await getImagesPagePrincipal(model.codeHtml)
+        vehicleCatalog.map(async model =>
+            await getImagesPagePrincipal(model.codeHtml, model.year)
         )
-    ); 
+    );
     return structurByModel;
 };
 
@@ -23,7 +23,7 @@ scrapiKia = async function scrapiKIA(vehicleCatalog) {
  * Genera una estructura de imagenes para la pagina pricipal
  * @param {modelo del vehiculo} model
  */
-async function getImagesPagePrincipal(model) {
+async function getImagesPagePrincipal(model, year) {
     try {
         const $ = await request({
             uri: `https://www.kia.com/mx/showroom/${model}.html`,
@@ -46,7 +46,6 @@ async function getImagesPagePrincipal(model) {
                 let description = findDescriptionImage($(el));
                 let category = getCategoria(url.toLowerCase(), name.toLowerCase());
                 let isCover = getCoverPrincipal(url);
-                const year = "2021";
                 if (!mapImages.get(url)) {
                     structurByModel.push({
                         model,
@@ -263,13 +262,13 @@ function findDescriptionImage(elem) {
 }
 
 var vehicleCatalog = [
-    {codeHtml: "soul"},
-    {codeHtml: "rio-hatchback"},
-    {codeHtml: "rio-sedan"},
-    {codeHtml: "forte-sedan"},
-    {codeHtml: "sportage"},
-    {codeHtml: "forte-hatchback"},
-    {codeHtml: "seltos"}
+    { codeHtml: "soul" },
+    { codeHtml: "rio-hatchback" },
+    { codeHtml: "rio-sedan" },
+    { codeHtml: "forte-sedan" },
+    { codeHtml: "sportage" },
+    { codeHtml: "forte-hatchback" },
+    { codeHtml: "seltos" }
 ];
 
 //scrapiKia(vehicleCatalog);
