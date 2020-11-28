@@ -38,7 +38,7 @@ async function getImagesPagePrincipal(model, year) {
             }
             let url = `https://www.kia.com${data}`;
 
-            let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg/;
+            let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg|[-]t[\w]*.jpg/;
 
             if ((regex.test(data.toLowerCase()) || isAllow(data)) && !isNotAllow(data) && !getCoverSecondary(data)) {
                 let name = findNameImage($(el));
