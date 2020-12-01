@@ -72,13 +72,13 @@ async function getImagesPagePrincipal(model, year) {
 
 function isAllow(image) {
     let images = ["configura_tu_kia_forte_GT_auto_perfil.png", "img_Soul_safety6_m.jpg",
-    "kia-stinger-sh-portada-seguridad-rigidez-carroceria-t.gif",
-    "Usp-performance-",
-    "Usp-Drive-",
-    "Usp-Confort-",
-    "Usp-Interior-acabados-metalicos.jpg"
+        "kia-stinger-sh-portada-seguridad-rigidez-carroceria-t.gif",
+        "Usp-performance-",
+        "Usp-Drive-",
+        "Usp-Confort-",
+        "Usp-Interior-acabados-metalicos.jpg"
 
-];
+    ];
     var resp = false;
     for (var i in images) {
         if (image.includes(images[i])) {
@@ -98,7 +98,8 @@ function isNotAllow(image) {
         "7_USP_desempeno/img_Soul_performance3_w.jpg",
         "img_Soul_safety1_w.jpg",
         "kia_forte_auto_desempeno_4_w.jpg",
-        "kia-stinger-highlights-thum-01-t.jpg"
+        "kia-stinger-highlights-thum-01-t.jpg",
+        "img_Seltos_safety6_m.jpg"
     ];
     var resp = false;
     for (var i in images) {
