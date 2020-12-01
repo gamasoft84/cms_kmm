@@ -119,7 +119,7 @@ function getCategoria(urlImage, title) {
 
     if (title.includes("modos de manejo") || title.includes("cargador") || title.includes("pantalla") || title.includes("paleta") || title.includes("aire acond") ||
         title.includes("navegaci") || title.includes("punto ciego") || title.includes("sensores") || title.includes("cajuela intell") || title.includes("camara") ||
-        title.includes("de encendido") || title.includes("controles al volante")) {
+        title.includes("de encendido") || title.includes("controles al volante") || title.includes("360")) {
         category = "TE";
     }
 
