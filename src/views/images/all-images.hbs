@@ -1,6 +1,6 @@
 <div class="row justify-content-end">
-    <a href="/images/json/{{this.model}}/allcategory/true" title="Code images '{{this.modelName}}'" class="sync" target="_blank"><i class="fas fa-code" aria-hidden="true"></i></a>
-    <a href="/images/json/{{this.model}}/allcategory/false" title="Sent images '{{this.modelName}}' to MySales" class="sync"><i class="fas fa-paper-plane" aria-hidden="true"></i></a>
+    <a href="/images/json/{{this.model}}/allcategory/{{this.year}}/true" title="Code images '{{this.modelName}}'" class="sync" target="_blank"><i class="fas fa-code" aria-hidden="true"></i></a>
+    <a href="/images/json/{{this.model}}/allcategory/{{this.year}}/false" title="Sent images '{{this.modelName}}' to MySales" class="sync"><i class="fas fa-paper-plane" aria-hidden="true"></i></a>
 </div>
 
 {{#if_equal this.model 'allmodels'}}
@@ -31,9 +31,9 @@
     <div class="row justify-content-between">
         <h1 class="display-6 txtFeature">{{this.name}} : {{../this.modelName}} {{../this.year}}</h1>
         <div>
-            <a href="/images/json/{{../this.model}}/{{this.code}}/true" title="Code images '{{this.name}}'" target="_blank"><i class="fas fa-code" aria-hidden="true"></i></a>
+            <a href="/images/json/{{../this.model}}/{{this.code}}/{{../this.year}}/true" title="Code images '{{this.name}}'" target="_blank"><i class="fas fa-code" aria-hidden="true"></i></a>
             &nbsp;
-            <a href="/images/json/{{../this.model}}/{{this.code}}"  title="Sent images '{{this.name}}' to MySales"><i class="far fa-paper-plane"></i></a>
+            <a href="/images/json/{{../this.model}}/{{this.code}}/{{../this.year}}/false"  title="Sent images '{{this.name}}' to MySales"><i class="far fa-paper-plane"></i></a>
         </div>        
     </div>
 

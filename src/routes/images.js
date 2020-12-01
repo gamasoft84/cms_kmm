@@ -197,26 +197,27 @@ router.put('/images/edit-versions_image/:id', isAuthenticated, async(req, res) =
 })
 
 
-router.get('/images/json/:model/:category/:iscode', isAuthenticated, async(req, res) => {
+router.get('/images/json/:model/:category/:year/:iscode', isAuthenticated, async(req, res) => {
     let model = req.params.model;
     let category = req.params.category;
     let iscode = req.params.iscode;
+    let year = req.params.year;
     let content = null;
 
     //all covers
     if (category === 'allcategory' && model === 'allcovers') {
-        content = await Image.find({ isCover: true });
+        content = await Image.find({ isCover: true, year });
     } else {
         //all models and all categorys
         if (category === 'allcategory' && model === 'allmodels') {
-            content = await Image.find();
+            content = await Image.find({ year });
         } else {
             if (category === 'allcategory') {
-                content = await Image.find({ model });
+                content = await Image.find({ model, year });
             } else if (model === 'allmodels') {
-                content = await Image.find({ category });
+                content = await Image.find({ category, year });
             } else {
-                content = await Image.find({ model, category });
+                content = await Image.find({ model, category, year });
             }
         }
     }
