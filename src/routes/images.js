@@ -118,7 +118,7 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
         image.user = req.user.id;
         await image.save();
         req.flash('success_msg', 'Image Add successfully !')
-        res.redirect('/images/' + model);
+        res.redirect('/images/' + model + '/' + year);
     }
 });
 
@@ -176,10 +176,10 @@ router.put('/images/edit-image/:id', isAuthenticated, async(req, res) => {
 });
 
 
-router.delete('/images/delete/:id/:model', isAuthenticated, async(req, res) => {
+router.delete('/images/delete/:id/:model/:year', isAuthenticated, async(req, res) => {
     await Image.findByIdAndDelete(req.params.id);
     req.flash('success_msg', 'Image Deleted successfully!');
-    res.redirect('/images/' + (req.params.model != null ? req.params.model : ''));
+    res.redirect('/images/' + (req.params.model != null ? req.params.model : '') + '/' + req.params.year);
 });
 
 router.put('/images/edit-versions_image/:id', isAuthenticated, async(req, res) => {
