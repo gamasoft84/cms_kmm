@@ -172,7 +172,7 @@ router.put('/images/edit-image/:id', isAuthenticated, async(req, res) => {
     });
     await Image.findByIdAndUpdate(req.params.id, { name, description, url, category, year, model, versions });
     req.flash('success_msg', 'Image Updated successfully!');
-    res.redirect('/images/' + model);
+    res.redirect('/images/' + model + '/' + year);
 });
 
 
