@@ -157,7 +157,8 @@ function getCoverPrincipal(urlImage) {
         "kia_optima_auto_seguridad_1_wV2.jpg",
         "kia-showroom-key-visual-w_v2.jpg",
         "kia_sorento_auto_desempeno_1_w.jpg",
-        "bg_Pc_stinger_overview1_w.jpg"
+        "bg_Pc_stinger_overview1_w.jpg",
+        "kia_showroom-big-image-niro-1-w.jpg"
     ];
     var resp = false;
     for (var i in covers) {
