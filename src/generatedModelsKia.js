@@ -120,26 +120,40 @@ function getCategoria(urlImage, title) {
     let category = "";
 
     if (title.includes("modos de manejo") || title.includes("cargador") || title.includes("pantalla") || title.includes("paleta") || title.includes("aire acond") ||
-        title.includes("navegaci") || title.includes("punto ciego") || title.includes("sensores") || title.includes("cajuela intell") || title.includes("camara") ||
-        title.includes("de encendido") || title.includes("controles al volante") || title.includes("360")) {
+        title.includes("navegaci") || title.includes("punto ciego") || title.includes("sensores") || title.includes("cajuela intel") || title.includes("camara") ||
+        title.includes("de encendido") || title.includes("controles al volante") || title.includes("360") || title.includes("carril") || title.includes("crucero") ||
+         title.includes("frenado")) {
         category = "TE";
     }
 
     if (title.includes("motor") || title.includes("transmisi")) {
         category = "PE";
     }
+    
+    if (title.includes("bolsa") || title.includes("ahls")) {
+        category = "SA";
+    }
+
+    if (title.includes("caliper") || title.includes("rin") || title.includes("parrilla") || title.includes("escape") ) {
+        category = "EX";
+    }
+
+    if (title.includes("ims") || title.includes("estribo interior")  || title.includes("harman")  || title.includes("calefacci") || title.includes("freno de estacionamiento")) {
+        category = "IN";
+    }
 
     if (!category) {
-        if (urlImage.includes("exterior")) {
+        if (urlImage.includes("exterior")  || urlImage.includes("espejo")) {
             category = "EX";
-        } else if (urlImage.includes("interior")) {
+        } else if (urlImage.includes("interior") || urlImage.includes("rejilla-ventilacion")) {
             category = "IN";
         } else if (urlImage.includes("safety") || urlImage.includes("seguridad")) {
             category = "SA";
-        } else if (urlImage.includes("performance") || urlImage.includes("desempenio") || urlImage.includes("desempeno") || urlImage.includes("cluster")) {
+        } else if (urlImage.includes("performance") || urlImage.includes("desempenio") || urlImage.includes("desempeno") || urlImage.includes("cluster") || 
+                   urlImage.includes("suspension") || urlImage.includes("difusor") || urlImage.includes("aleron") || urlImage.includes("toma-aire")) {
             category = "PE";
         } else {
-            category = "S/C";
+            category = "S/C"; 
         }
     }
     return category;
