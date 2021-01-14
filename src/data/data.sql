@@ -41,17 +41,19 @@ CREATE VIEW view_versions
                 WHEN 'Niro' THEN 'Niro'
                 WHEN 'Stinger' THEN 'Stinger'
                 ELSE 'No such modlName'END as modlName,
-            A.MODL_CD+A.BODY_TYPE_CD as modlCd,
+            A.MODL_CD+A.BODY_TYPE_CD as modlCd,            
             A.TRIM_NM as trimNm,
             A.TM_NM as tmName,
             A.TRIM_CD+A.TM_CD as tmCd,           
-            VHCL_DESC as 'desc',
-            A.VHCL_YY as year,
+            VHCL_DESC as 'desc',            
             TRIM(REPLACE(
                  REPLACE(
                     REPLACE( CONCAT( A.TRIM_NM,  ' ' , A.TM_NM),'7 VELOCIDADES FWD', ''),
                     '8 VELOCIDADES 2WD', '')
-                        ,'6 VELOCIDADES FWD', '')) as version
+                        ,'6 VELOCIDADES FWD', '')) as version,
+            A.VHCL_YY as year,
+            A.MODL_CD as modlCdSap,
+            A.BODY_TYPE_CD +  A.TM_CD + A.TRIM_CD as versionCdSap
         FROM GLB_PRD_VHCL_M A
           INNER JOIN GLB_PRD_MODL_BODYTYPE_C B
           ON A.MODL_CD = B.MODL_CD AND A.BODY_TYPE_CD = B.BODY_TYPE_CD AND B.ACTV = 'Y' AND A.ACTV = 'Y'

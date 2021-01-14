@@ -73,12 +73,13 @@ async function getImagesPagePrincipal(model, year) {
 function isAllow(image) {
     let images = ["configura_tu_kia_forte_GT_auto_perfil.png", "img_Soul_safety6_m.jpg",
         "kia-stinger-sh-portada-seguridad-rigidez-carroceria-t.gif",
-        "Usp-performance-",
-        "Usp-Drive-",
-        "Usp-Confort-",
+        "Usp-performance",
+        "Usp-Drive",
+        "Usp-Confort",
         "Usp-Interior-acabados-metalicos.jpg"
 
     ];
+   
     var resp = false;
     for (var i in images) {
         if (image.includes(images[i])) {
@@ -158,7 +159,8 @@ function getCoverPrincipal(urlImage) {
         "kia-showroom-key-visual-w_v2.jpg",
         "kia_sorento_auto_desempeno_1_w.jpg",
         "bg_Pc_stinger_overview1_w.jpg",
-        "kia_showroom-big-image-niro-1-w.jpg"
+        "kia_showroom-big-image-niro-1-w.jpg",
+        "Portada-stinger_W.jpg"
     ];
     var resp = false;
     for (var i in covers) {
@@ -285,7 +287,8 @@ var vehicleCatalog = [
     { codeHtml: "forte-sedan" },
     { codeHtml: "sportage" },
     { codeHtml: "forte-hatchback" },
-    { codeHtml: "seltos" }
+    { codeHtml: "seltos" },
+    { codeHtml: "Stinger" },
 ];
 
 //scrapiKia(vehicleCatalog);
