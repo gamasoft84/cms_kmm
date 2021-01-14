@@ -41,11 +41,14 @@ async function getImagesPagePrincipal(model, year) {
             let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg|[-]t[\w]*.jpg/;
 
             if ((regex.test(data.toLowerCase()) || isAllow(data)) && !isNotAllow(data) && !getCoverSecondary(data)) {
-                let name = findNameImage($(el));
                 //console.log(name);
                 let description = findDescriptionImage($(el));
+                let name = findNameImage($(el), description);
                 let category = getCategoria(url.toLowerCase(), name.toLowerCase());
                 let isCover = getCoverPrincipal(url);
+                if(isCover && model === "Stinger"){
+                    description = 'Stinger va mucho más allá de un auto deportivo, su elegancia y estilo te harán destacar en cualquier parte. Manéjalo y desmuestra tu gran personalidad.'
+                }
                 if (!mapImages.get(url)) {
                     structurByModel.push({
                         model,
@@ -209,7 +212,8 @@ function getCoverSecondary(urlImage) {
 }
 
 
-function findNameImage(elem) {
+function findNameImage(elem, description) {
+
     let name = elem.parent().parent().find(".imgListTit").text();
 
     if (!name) {
@@ -225,8 +229,20 @@ function findNameImage(elem) {
         name = elem.parent().parent().parent().parent().find(".shadowBlack").first().text();
     }
     if (!name) {
-        name = elem.parent().parent().parent().parent().find(".subTxt").text();
+        name = elem.parent().parent().parent().parent().find("h3").text();
+        if(name === description){//Asigna titulo si y solo si en nombre es distinto a la description. Stinger 'ESPECTACULAR POR DONDE LO MIRES'
+            name = null;
+        }
     }
+    if (!name) {
+        name = elem.parent().parent().parent().parent().parent().find("h3").text();
+        if(name === description){//Asigna titulo si y solo si en nombre es distinto a la description. Stinger 'EQUIPAMIENTO DE UN NIVEL SUPERIOR'
+            name = null;
+        }
+    }
+    if (!name) {
+        name = elem.parent().parent().parent().parent().find(".subTxt").text();
+    }   
     if (!name) {
         name = elem.parent().parent().parent().parent().find("videoTit").first().text();
     }
