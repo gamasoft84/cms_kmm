@@ -22,6 +22,8 @@ CREATE VIEW view_versions
                 WHEN 'Sedona (8 Pasajeros)' THEN 'kia-sedona'
                 WHEN 'Kia Optima' THEN 'kia-optima'
                 WHEN 'Sorento' THEN 'sorento'
+                WHEN 'New Sorento (6 Pasajeros)' THEN 'sorento'
+                WHEN 'New Sorento (7 Pasajeros)' THEN 'sorento'
                 WHEN 'Niro' THEN 'niro'
                 WHEN 'Stinger' THEN 'Stinger'
                 ELSE 'No such modlNameHtml'END as modlNameHtml,
@@ -37,6 +39,8 @@ CREATE VIEW view_versions
                 WHEN 'Sedona (7 Pasajeros)' THEN 'Sedona'
                 WHEN 'Sedona (8 Pasajeros)' THEN 'Sedona'
                 WHEN 'Kia Optima' THEN 'Optima'
+                WHEN 'New Sorento (6 Pasajeros)' THEN 'New sorento'
+                WHEN 'New Sorento (7 Pasajeros)' THEN 'New sorento'
                 WHEN 'Sorento' THEN 'Sorento'
                 WHEN 'Niro' THEN 'Niro'
                 WHEN 'Stinger' THEN 'Stinger'
