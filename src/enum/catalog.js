@@ -61,15 +61,16 @@ mapVersions.set("S PACK T/A", 14);
 mapVersions.set("GT-line T/M", 15);
 mapVersions.set("GT-line CVT", 16);
 mapVersions.set("GT-line DCT", 17);
-mapVersions.set("GT T/M", 18);
-mapVersions.set("GT DCT", 19);
-mapVersions.set("SX T/M", 20);
-mapVersions.set("SX T/A", 21);
-mapVersions.set("SX CVT", 22);
-mapVersions.set("SX DCT", 23);
-mapVersions.set("SXL T/M", 24);
-mapVersions.set("SXL T/A", 25);
-mapVersions.set("SXL DCT", 26);
+mapVersions.set("GT T/A", 18);
+mapVersions.set("GT T/M", 19);
+mapVersions.set("GT DCT", 20);
+mapVersions.set("SX T/M", 21);
+mapVersions.set("SX T/A", 22);
+mapVersions.set("SX CVT", 23);
+mapVersions.set("SX DCT", 24);
+mapVersions.set("SXL T/M", 25);
+mapVersions.set("SXL T/A", 26);
+mapVersions.set("SXL DCT", 27);
 
 getVehicleCatalog = async function getCatalogVersions() {
     versions = await Version.aggregate([
