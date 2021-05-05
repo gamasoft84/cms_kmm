@@ -1,5 +1,16 @@
-{ 
-    "_id" : ObjectId("6005a59409d19631701ad486"), 
+/*
+
+File only for information of versions.
+
+Import using view_versions to versions Mongo DB. 
+
+Total 96 registers
+
+**/
+
+
+[{ 
+    "_id" : ObjectId("6092bbb4f49c9e223218c40e"), 
     "modlNameHtml" : "sportage", 
     "modlName" : "Sportage", 
     "modlCd" : "F1W5", 
@@ -13,7 +24,7 @@
     "versionCdSap" : "W5FE"
 }
 { 
-    "_id" : ObjectId("6005a59409d19631701ad487"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c40f"), 
     "modlNameHtml" : "sportage", 
     "modlName" : "Sportage", 
     "modlCd" : "F1W5", 
@@ -27,7 +38,7 @@
     "versionCdSap" : "W5FL"
 }
 { 
-    "_id" : ObjectId("6005a59409d19631701ad488"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c410"), 
     "modlNameHtml" : "sportage", 
     "modlName" : "Sportage", 
     "modlCd" : "F1W5", 
@@ -41,7 +52,7 @@
     "versionCdSap" : "W5FP"
 }
 { 
-    "_id" : ObjectId("6005a59409d19631701ad489"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c411"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -55,7 +66,7 @@
     "versionCdSap" : "S47B"
 }
 { 
-    "_id" : ObjectId("6005a59409d19631701ad48a"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c412"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -69,7 +80,7 @@
     "versionCdSap" : "S47L"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad48b"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c413"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -83,7 +94,7 @@
     "versionCdSap" : "S4VB"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad48c"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c414"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -97,7 +108,7 @@
     "versionCdSap" : "S4VE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad48d"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c415"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -111,7 +122,7 @@
     "versionCdSap" : "S4VL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad48e"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c416"), 
     "modlNameHtml" : "soul", 
     "modlName" : "Soul", 
     "modlCd" : "SKW5", 
@@ -125,7 +136,7 @@
     "versionCdSap" : "W57L"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad48f"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c417"), 
     "modlNameHtml" : "soul", 
     "modlName" : "Soul", 
     "modlCd" : "SKW5", 
@@ -139,7 +150,7 @@
     "versionCdSap" : "W5FL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad490"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c418"), 
     "modlNameHtml" : "soul", 
     "modlName" : "Soul", 
     "modlCd" : "SKW5", 
@@ -153,7 +164,7 @@
     "versionCdSap" : "W5VE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad491"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c419"), 
     "modlNameHtml" : "soul", 
     "modlName" : "Soul", 
     "modlCd" : "SKW5", 
@@ -167,7 +178,7 @@
     "versionCdSap" : "W5VP"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad492"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c41a"), 
     "modlNameHtml" : "sportage", 
     "modlName" : "Sportage", 
     "modlCd" : "D9W5", 
@@ -181,7 +192,7 @@
     "versionCdSap" : "W5FS"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad493"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c41b"), 
     "modlNameHtml" : "sportage", 
     "modlName" : "Sportage", 
     "modlCd" : "D9W5", 
@@ -195,7 +206,7 @@
     "versionCdSap" : "W5FX"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad494"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c41c"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -209,7 +220,7 @@
     "versionCdSap" : "S47B"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad495"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c41d"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -223,7 +234,7 @@
     "versionCdSap" : "S47L"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad496"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c41e"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -237,7 +248,7 @@
     "versionCdSap" : "S4FB"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad497"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c41f"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -251,7 +262,7 @@
     "versionCdSap" : "S4FE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad498"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c420"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -265,7 +276,7 @@
     "versionCdSap" : "S4FL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad499"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c421"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -279,7 +290,7 @@
     "versionCdSap" : "S67E"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad49a"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c422"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -293,7 +304,7 @@
     "versionCdSap" : "S67L"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad49b"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c423"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -307,7 +318,7 @@
     "versionCdSap" : "S6FE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad49c"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c424"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -321,7 +332,7 @@
     "versionCdSap" : "S6FL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad49d"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c425"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -335,7 +346,7 @@
     "versionCdSap" : "S6FP"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad49e"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c426"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
@@ -349,7 +360,7 @@
     "versionCdSap" : "S67E"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad49f"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c427"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
@@ -363,7 +374,7 @@
     "versionCdSap" : "S6UX"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a0"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c428"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -377,7 +388,7 @@
     "versionCdSap" : "S4VS"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a1"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c429"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -391,7 +402,7 @@
     "versionCdSap" : "S4UX"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a2"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c42a"), 
     "modlNameHtml" : "Stinger", 
     "modlName" : "Stinger", 
     "modlCd" : "J5S6", 
@@ -405,7 +416,7 @@
     "versionCdSap" : "S6JE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a3"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c42b"), 
     "modlNameHtml" : "Stinger", 
     "modlName" : "Stinger", 
     "modlCd" : "J5S6", 
@@ -419,7 +430,7 @@
     "versionCdSap" : "S6JS"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a4"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c42c"), 
     "modlNameHtml" : "kia-optima", 
     "modlName" : "Optima", 
     "modlCd" : "D5S4", 
@@ -433,7 +444,7 @@
     "versionCdSap" : "S4FX"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a5"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c42d"), 
     "modlNameHtml" : "kia-sedona", 
     "modlName" : "Sedona", 
     "modlCd" : "A9B8", 
@@ -447,7 +458,7 @@
     "versionCdSap" : "B8FP"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a6"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c42e"), 
     "modlNameHtml" : "kia-sedona", 
     "modlName" : "Sedona", 
     "modlCd" : "A9B8", 
@@ -461,7 +472,7 @@
     "versionCdSap" : "B8FL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a7"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c42f"), 
     "modlNameHtml" : "kia-sedona", 
     "modlName" : "Sedona", 
     "modlCd" : "A9B8", 
@@ -475,7 +486,7 @@
     "versionCdSap" : "B8FE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a8"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c430"), 
     "modlNameHtml" : "kia-sedona", 
     "modlName" : "Sedona", 
     "modlCd" : "A9B7", 
@@ -489,7 +500,7 @@
     "versionCdSap" : "B7FX"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4a9"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c431"), 
     "modlNameHtml" : "sorento", 
     "modlName" : "Sorento", 
     "modlCd" : "C6W7", 
@@ -503,7 +514,7 @@
     "versionCdSap" : "W7FP"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4aa"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c432"), 
     "modlNameHtml" : "sorento", 
     "modlName" : "Sorento", 
     "modlCd" : "C6W7", 
@@ -517,7 +528,7 @@
     "versionCdSap" : "W7FL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4ab"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c433"), 
     "modlNameHtml" : "sorento", 
     "modlName" : "Sorento", 
     "modlCd" : "C6W7", 
@@ -531,7 +542,7 @@
     "versionCdSap" : "W7FE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4ac"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c434"), 
     "modlNameHtml" : "sorento", 
     "modlName" : "Sorento", 
     "modlCd" : "C6W7", 
@@ -545,7 +556,7 @@
     "versionCdSap" : "W7JS"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4ad"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c435"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
@@ -559,7 +570,7 @@
     "versionCdSap" : "S6VE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4ae"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c436"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
@@ -573,7 +584,7 @@
     "versionCdSap" : "S67S"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4af"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c437"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
@@ -587,7 +598,7 @@
     "versionCdSap" : "S6VS"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b0"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c438"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
@@ -601,7 +612,7 @@
     "versionCdSap" : "S67X"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b1"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c439"), 
     "modlNameHtml" : "niro", 
     "modlName" : "Niro", 
     "modlCd" : "G5W5", 
@@ -615,7 +626,7 @@
     "versionCdSap" : "W5TE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b2"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c43a"), 
     "modlNameHtml" : "seltos", 
     "modlName" : "Seltos", 
     "modlCd" : "TIW5", 
@@ -629,7 +640,7 @@
     "versionCdSap" : "W57E"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b3"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c43b"), 
     "modlNameHtml" : "seltos", 
     "modlName" : "Seltos", 
     "modlCd" : "TIW5", 
@@ -643,7 +654,7 @@
     "versionCdSap" : "W5FE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b4"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c43c"), 
     "modlNameHtml" : "seltos", 
     "modlName" : "Seltos", 
     "modlCd" : "TIW5", 
@@ -657,7 +668,7 @@
     "versionCdSap" : "W5FP"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b5"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c43d"), 
     "modlNameHtml" : "seltos", 
     "modlName" : "Seltos", 
     "modlCd" : "TIW5", 
@@ -671,7 +682,7 @@
     "versionCdSap" : "W5US"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b6"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c43e"), 
     "modlNameHtml" : "sportage", 
     "modlName" : "Sportage", 
     "modlCd" : "F1W5", 
@@ -685,7 +696,7 @@
     "versionCdSap" : "W5FL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b7"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c43f"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -699,7 +710,7 @@
     "versionCdSap" : "S47B"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b8"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c440"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -713,7 +724,7 @@
     "versionCdSap" : "S4VB"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4b9"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c441"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -727,7 +738,7 @@
     "versionCdSap" : "S47L"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4ba"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c442"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -741,7 +752,7 @@
     "versionCdSap" : "S4VL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4bb"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c443"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -755,7 +766,7 @@
     "versionCdSap" : "S4VE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4bc"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c444"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -769,7 +780,7 @@
     "versionCdSap" : "S4VS"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4bd"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c445"), 
     "modlNameHtml" : "forte-sedan", 
     "modlName" : "Forte Sedan", 
     "modlCd" : "DLS4", 
@@ -783,21 +794,49 @@
     "versionCdSap" : "S4UX"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4be"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c446"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "GT-line", 
+    "tmName" : "CVT", 
+    "tmCd" : "IV", 
+    "desc" : "New Forte 2.0L GT-line IVT Sedan", 
+    "version" : "GT-line CVT", 
+    "year" : "2021", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4VI"
+}
+{ 
+    "_id" : ObjectId("6092bbb4f49c9e223218c447"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "GT", 
+    "tmName" : "DCT 7 VELOCIDADES FWD", 
+    "tmCd" : "GU", 
+    "desc" : "New Forte 1.6L Turbo GT DCT Sedan", 
+    "version" : "GT DCT", 
+    "year" : "2021", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4UG"
+}
+{ 
+    "_id" : ObjectId("6092bbb4f49c9e223218c448"), 
     "modlNameHtml" : "seltos", 
     "modlName" : "Seltos", 
     "modlCd" : "TIW5", 
     "trimNm" : "GT-line", 
     "tmName" : "DCT 7 VELOCIDADES FWD", 
     "tmCd" : "IU", 
-    "desc" : "Seltos 1.4L Turbo GT-line DCT 2021", 
+    "desc" : "Seltos 1.4L Turbo GT-line DCT", 
     "version" : "GT-line DCT", 
     "year" : "2021", 
     "modlCdSap" : "TI", 
     "versionCdSap" : "W5UI"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4bf"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c449"), 
     "modlNameHtml" : "Stinger", 
     "modlName" : "Stinger", 
     "modlCd" : "J5S6", 
@@ -811,7 +850,7 @@
     "versionCdSap" : "S6JG"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c0"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c44a"), 
     "modlNameHtml" : "Stinger", 
     "modlName" : "Stinger", 
     "modlCd" : "J5S6", 
@@ -825,7 +864,7 @@
     "versionCdSap" : "S6JE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c1"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c44b"), 
     "modlNameHtml" : "soul", 
     "modlName" : "Soul", 
     "modlCd" : "SKW5", 
@@ -839,7 +878,7 @@
     "versionCdSap" : "W5VE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c2"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c44c"), 
     "modlNameHtml" : "soul", 
     "modlName" : "Soul", 
     "modlCd" : "SKW5", 
@@ -853,7 +892,7 @@
     "versionCdSap" : "W57L"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c3"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c44d"), 
     "modlNameHtml" : "soul", 
     "modlName" : "Soul", 
     "modlCd" : "SKW5", 
@@ -867,7 +906,7 @@
     "versionCdSap" : "W5FL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c4"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c44e"), 
     "modlNameHtml" : "sportage", 
     "modlName" : "Sportage", 
     "modlCd" : "F1W5", 
@@ -881,7 +920,7 @@
     "versionCdSap" : "W5FE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c5"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c44f"), 
     "modlNameHtml" : "seltos", 
     "modlName" : "Seltos", 
     "modlCd" : "TIW5", 
@@ -895,7 +934,7 @@
     "versionCdSap" : "W57E"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c6"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c450"), 
     "modlNameHtml" : "seltos", 
     "modlName" : "Seltos", 
     "modlCd" : "TIW5", 
@@ -909,7 +948,7 @@
     "versionCdSap" : "W5FE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c7"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c451"), 
     "modlNameHtml" : "sportage", 
     "modlName" : "Sportage", 
     "modlCd" : "D9W5", 
@@ -923,7 +962,7 @@
     "versionCdSap" : "W5FP"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c8"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c452"), 
     "modlNameHtml" : "sportage", 
     "modlName" : "Sportage", 
     "modlCd" : "D9W5", 
@@ -937,7 +976,7 @@
     "versionCdSap" : "W5FX"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4c9"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c453"), 
     "modlNameHtml" : "niro", 
     "modlName" : "Niro", 
     "modlCd" : "G5W5", 
@@ -951,7 +990,7 @@
     "versionCdSap" : "W5TE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4ca"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c454"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
@@ -965,7 +1004,7 @@
     "versionCdSap" : "S67E"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4cb"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c455"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
@@ -979,63 +1018,63 @@
     "versionCdSap" : "S6VE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4cc"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c456"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
     "trimNm" : "GT-line", 
     "tmName" : "T/M 6 VELOCIDADES FWD", 
     "tmCd" : "I7", 
-    "desc" : "New Forte 2.0L GT-line M/T HB 2021", 
+    "desc" : "New Forte 2.0L GT-line M/T HB", 
     "version" : "GT-line T/M", 
     "year" : "2021", 
     "modlCdSap" : "DJ", 
     "versionCdSap" : "S67I"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4cd"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c457"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
     "trimNm" : "GT-line", 
     "tmName" : "CVT", 
     "tmCd" : "IV", 
-    "desc" : "New Forte 2.0L GT-line IVT HB 2021", 
+    "desc" : "New Forte 2.0L GT-line IVT HB", 
     "version" : "GT-line CVT", 
     "year" : "2021", 
     "modlCdSap" : "DJ", 
     "versionCdSap" : "S6VI"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4ce"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c458"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
     "trimNm" : "GT", 
     "tmName" : "T/M 6 VELOCIDADES FWD", 
     "tmCd" : "G7", 
-    "desc" : "New Forte 1.6L Turbo GT M/T HB 2021", 
+    "desc" : "New Forte 1.6L Turbo GT M/T HB", 
     "version" : "GT T/M", 
     "year" : "2021", 
     "modlCdSap" : "DJ", 
     "versionCdSap" : "S67G"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4cf"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c459"), 
     "modlNameHtml" : "forte-hatchback", 
     "modlName" : "Forte Hatchback", 
     "modlCd" : "DJS6", 
     "trimNm" : "GT", 
     "tmName" : "DCT 7 VELOCIDADES FWD", 
     "tmCd" : "GU", 
-    "desc" : "New Forte 1.6L Turbo GT DCT HB 2021", 
+    "desc" : "New Forte 1.6L Turbo GT DCT HB", 
     "version" : "GT DCT", 
     "year" : "2021", 
     "modlCdSap" : "DJ", 
     "versionCdSap" : "S6UG"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d0"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c45a"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -1049,7 +1088,7 @@
     "versionCdSap" : "S47L"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d1"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c45b"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -1063,7 +1102,7 @@
     "versionCdSap" : "S4FE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d2"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c45c"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -1077,7 +1116,7 @@
     "versionCdSap" : "S4FL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d3"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c45d"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -1091,7 +1130,7 @@
     "versionCdSap" : "S67L"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d4"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c45e"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -1105,7 +1144,7 @@
     "versionCdSap" : "S6FL"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d5"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c45f"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -1119,7 +1158,7 @@
     "versionCdSap" : "S67E"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d6"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c460"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -1133,7 +1172,7 @@
     "versionCdSap" : "S6FE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d7"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c461"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -1147,7 +1186,7 @@
     "versionCdSap" : "S6FP"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d8"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c462"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -1161,7 +1200,7 @@
     "versionCdSap" : "S47B"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4d9"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c463"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -1175,7 +1214,7 @@
     "versionCdSap" : "S4FB"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4da"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c464"), 
     "modlNameHtml" : "rio-sedan", 
     "modlName" : "Rio Sedan", 
     "modlCd" : "H9S4", 
@@ -1189,7 +1228,7 @@
     "versionCdSap" : "S4F5"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4db"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c465"), 
     "modlNameHtml" : "rio-hatchback", 
     "modlName" : "Rio Hatchback", 
     "modlCd" : "H9S6", 
@@ -1203,7 +1242,7 @@
     "versionCdSap" : "S675"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4dc"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c466"), 
     "modlNameHtml" : "seltos", 
     "modlName" : "Seltos", 
     "modlCd" : "TIW5", 
@@ -1217,7 +1256,7 @@
     "versionCdSap" : "W5FP"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4dd"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c467"), 
     "modlNameHtml" : "seltos", 
     "modlName" : "Seltos", 
     "modlCd" : "TIW5", 
@@ -1231,7 +1270,7 @@
     "versionCdSap" : "W5FS"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4de"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c468"), 
     "modlNameHtml" : "sorento", 
     "modlName" : "New sorento", 
     "modlCd" : "HYW6", 
@@ -1245,7 +1284,7 @@
     "versionCdSap" : "W6JS"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4df"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c469"), 
     "modlNameHtml" : "sorento", 
     "modlName" : "New sorento", 
     "modlCd" : "HYW7", 
@@ -1259,7 +1298,7 @@
     "versionCdSap" : "W7JP"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4e0"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c46a"), 
     "modlNameHtml" : "sorento", 
     "modlName" : "New sorento", 
     "modlCd" : "HYW7", 
@@ -1273,7 +1312,7 @@
     "versionCdSap" : "W7JE"
 }
 { 
-    "_id" : ObjectId("6005a59509d19631701ad4e1"), 
+    "_id" : ObjectId("6092bbb4f49c9e223218c46b"), 
     "modlNameHtml" : "sorento", 
     "modlName" : "New sorento", 
     "modlCd" : "HYW7", 
@@ -1286,3 +1325,31 @@
     "modlCdSap" : "HY", 
     "versionCdSap" : "W7JL"
 }
+{ 
+    "_id" : ObjectId("6092bbb4f49c9e223218c46c"), 
+    "modlNameHtml" : "Stinger", 
+    "modlName" : "Stinger", 
+    "modlCd" : "J5S6", 
+    "trimNm" : "GT-line", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "IJ", 
+    "desc" : "KIA Stinger PE 2.5L Turbo GT-line A/T", 
+    "version" : "GT-line T/A", 
+    "year" : "2022", 
+    "modlCdSap" : "J5", 
+    "versionCdSap" : "S6JI"
+}
+{ 
+    "_id" : ObjectId("6092bbb4f49c9e223218c46d"), 
+    "modlNameHtml" : "Stinger", 
+    "modlName" : "Stinger", 
+    "modlCd" : "J5S6", 
+    "trimNm" : "GT", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "GJ", 
+    "desc" : "KIA Stinger PE 3.3L Turbo GT A/T", 
+    "version" : "GT T/A", 
+    "year" : "2022", 
+    "modlCdSap" : "J5", 
+    "versionCdSap" : "S6JG"
+}]
