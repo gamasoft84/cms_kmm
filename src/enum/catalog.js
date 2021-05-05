@@ -34,6 +34,10 @@ const featureCategory = [{
 ];
 
 const yearCatalog = [{
+    name: "2022",
+    codeYear: "2022",
+    },
+    {
         name: "2021",
         codeYear: "2021",
     },
@@ -59,18 +63,19 @@ mapVersions.set("EX PACK CVT", 12);
 mapVersions.set("S PACK T/M", 13);
 mapVersions.set("S PACK T/A", 14);
 mapVersions.set("GT-line T/M", 15);
-mapVersions.set("GT-line CVT", 16);
-mapVersions.set("GT-line DCT", 17);
-mapVersions.set("GT T/A", 18);
-mapVersions.set("GT T/M", 19);
-mapVersions.set("GT DCT", 20);
-mapVersions.set("SX T/M", 21);
-mapVersions.set("SX T/A", 22);
-mapVersions.set("SX CVT", 23);
-mapVersions.set("SX DCT", 24);
-mapVersions.set("SXL T/M", 25);
-mapVersions.set("SXL T/A", 26);
-mapVersions.set("SXL DCT", 27);
+mapVersions.set("GT-line T/A", 16);
+mapVersions.set("GT-line CVT", 17);
+mapVersions.set("GT-line DCT", 18);
+mapVersions.set("GT T/A", 19);
+mapVersions.set("GT T/M", 20);
+mapVersions.set("GT DCT", 21);
+mapVersions.set("SX T/M", 22);
+mapVersions.set("SX T/A", 23);
+mapVersions.set("SX CVT", 24);
+mapVersions.set("SX DCT", 25);
+mapVersions.set("SXL T/M", 26);
+mapVersions.set("SXL T/A", 27);
+mapVersions.set("SXL DCT", 28);
 
 getVehicleCatalog = async function getCatalogVersions() {
     versions = await Version.aggregate([

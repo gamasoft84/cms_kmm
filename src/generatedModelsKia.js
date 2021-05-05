@@ -29,6 +29,14 @@ async function getImagesPagePrincipal(model, year) {
             uri: `https://www.kia.com/mx/showroom/${model}.html`,
             transform: (body) => cheerio.load(body),
         });
+
+        let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg|[-]t[\w]*.jpg/;
+        if(model === 'Stinger' && year ==='2022'){
+            // Usp-DriveWise-1-m.jpg 
+            regex = /[-]t[\w]*.jpg/; // For stinger 2022                
+            console.log(model,regex);
+        }
+
         $("picture source").each((i, el) => {
             let data = "";
             if ($(el).attr("srcset")) {
@@ -38,8 +46,6 @@ async function getImagesPagePrincipal(model, year) {
             }
             let url = `https://www.kia.com${data}`;
 
-            let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg|[-]t[\w]*.jpg/;
-
             if ((regex.test(data.toLowerCase()) || isAllow(data)) && !isNotAllow(data) && !getCoverSecondary(data)) {
                 //console.log(name);
                 let description = findDescriptionImage($(el));
@@ -47,7 +53,7 @@ async function getImagesPagePrincipal(model, year) {
                 let category = getCategoria(url.toLowerCase(), name.toLowerCase());
                 let isCover = getCoverPrincipal(url);
                 if(isCover && model === "Stinger"){
-                    description = 'Stinger va mucho más allá de un auto deportivo, su elegancia y estilo te harán destacar en cualquier parte. Manéjalo y desmuestra tu gran personalidad.'
+                    description = 'Con el nuevo Kia Stinger, nunca dejarás de descubrir nuevas cosas. La elegancia y el estilo de este auto deportivo resaltará tu personalidad en cualquier lugar y en cualquier momento.'
                 }
                 if (!mapImages.get(url)) {
                     structurByModel.push({
@@ -74,19 +80,25 @@ async function getImagesPagePrincipal(model, year) {
 }
 
 function isAllow(image) {
-    let images = ["configura_tu_kia_forte_GT_auto_perfil.png", "img_Soul_safety6_m.jpg",
+    let images = [
+        "configura_tu_kia_forte_GT_auto_perfil.png", 
+        "img_Soul_safety6_m.jpg",
         "kia-stinger-sh-portada-seguridad-rigidez-carroceria-t.gif",
         "Usp-performance",
         "Usp-Drive",
+        "Drive-wise",
         "Usp-Confort",
-        "Usp-Interior-acabados-metalicos.jpg"
-
+        "Usp-Interior-acabados-metalicos.jpg",
+        "bg_Pc_stinger_overview1_t.jpg"
     ];
    
     var resp = false;
     for (var i in images) {
         if (image.includes(images[i])) {
             resp = true;
+            if(!(image.includes("new-stinger-2022") && image.includes("t.jpg"))){
+                resp = false;
+            }
             break;
         }
     }
@@ -175,7 +187,7 @@ function getCoverPrincipal(urlImage) {
         "kia_optima_auto_seguridad_1_wV2.jpg",
         "kia-showroom-key-visual-w_v2.jpg",
         "kia_sorento_auto_desempeno_1_w.jpg",
-        "bg_Pc_stinger_overview1_w.jpg",
+        "bg_Pc_stinger_overview1_t.jpg",
         "kia_showroom-big-image-niro-1-w.jpg",
         "Portada-stinger_W.jpg"
     ];
@@ -311,14 +323,14 @@ function findDescriptionImage(elem) {
 }
 
 var vehicleCatalog = [
-    { codeHtml: "soul" },
-    { codeHtml: "rio-hatchback" },
-    { codeHtml: "rio-sedan" },
-    { codeHtml: "forte-sedan" },
-    { codeHtml: "sportage" },
-    { codeHtml: "forte-hatchback" },
-    { codeHtml: "seltos" },
-    { codeHtml: "Stinger" },
+    { codeHtml: "soul", year: "2021" },
+    { codeHtml: "rio-hatchback", year: "2021" },
+    { codeHtml: "rio-sedan", year: "2021" },
+    { codeHtml: "forte-sedan", year: "2021" },
+    { codeHtml: "sportage", year: "2021" },
+    { codeHtml: "forte-hatchback", year: "2021" },
+    { codeHtml: "seltos", year: "2021" },
+    { codeHtml: "Stinger", year: "2022"},
 ];
 
 //scrapiKia(vehicleCatalog);
