@@ -1,0 +1,1288 @@
+{ 
+    "_id" : ObjectId("6005a59409d19631701ad486"), 
+    "modlNameHtml" : "sportage", 
+    "modlName" : "Sportage", 
+    "modlCd" : "F1W5", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "New Sportage PE 2.0L EX A/T", 
+    "version" : "EX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "F1", 
+    "versionCdSap" : "W5FE"
+}
+{ 
+    "_id" : ObjectId("6005a59409d19631701ad487"), 
+    "modlNameHtml" : "sportage", 
+    "modlName" : "Sportage", 
+    "modlCd" : "F1W5", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "New Sportage PE 2.0L LX A/T", 
+    "version" : "LX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "F1", 
+    "versionCdSap" : "W5FL"
+}
+{ 
+    "_id" : ObjectId("6005a59409d19631701ad488"), 
+    "modlNameHtml" : "sportage", 
+    "modlName" : "Sportage", 
+    "modlCd" : "F1W5", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "PF", 
+    "desc" : "New Sportage PE 2.0L EX PACK A/T 2020", 
+    "version" : "EX PACK T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "F1", 
+    "versionCdSap" : "W5FP"
+}
+{ 
+    "_id" : ObjectId("6005a59409d19631701ad489"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "L", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "B7", 
+    "desc" : "New Forte 2.0L L M/T Sedan", 
+    "version" : "L T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S47B"
+}
+{ 
+    "_id" : ObjectId("6005a59409d19631701ad48a"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "LX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "L7", 
+    "desc" : "New Forte 2.0L LX M/T Sedan", 
+    "version" : "LX T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S47L"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad48b"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "L", 
+    "tmName" : "CVT", 
+    "tmCd" : "BV", 
+    "desc" : "New Forte 2.0L L IVT Sedan", 
+    "version" : "L CVT", 
+    "year" : "2020", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4VB"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad48c"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "EX", 
+    "tmName" : "CVT", 
+    "tmCd" : "EV", 
+    "desc" : "New Forte 2.0L EX IVT Sedan", 
+    "version" : "EX CVT", 
+    "year" : "2020", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4VE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad48d"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "LX", 
+    "tmName" : "CVT", 
+    "tmCd" : "LV", 
+    "desc" : "New Forte 2.0L LX IVT Sedan", 
+    "version" : "LX CVT", 
+    "year" : "2020", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4VL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad48e"), 
+    "modlNameHtml" : "soul", 
+    "modlName" : "Soul", 
+    "modlCd" : "SKW5", 
+    "trimNm" : "LX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "L7", 
+    "desc" : "New Soul 1.6L LX M/T", 
+    "version" : "LX T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "SK", 
+    "versionCdSap" : "W57L"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad48f"), 
+    "modlNameHtml" : "soul", 
+    "modlName" : "Soul", 
+    "modlCd" : "SKW5", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "New Soul 1.6L LX A/T", 
+    "version" : "LX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "SK", 
+    "versionCdSap" : "W5FL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad490"), 
+    "modlNameHtml" : "soul", 
+    "modlName" : "Soul", 
+    "modlCd" : "SKW5", 
+    "trimNm" : "EX", 
+    "tmName" : "CVT", 
+    "tmCd" : "EV", 
+    "desc" : "New Soul 2.0L EX IVT", 
+    "version" : "EX CVT", 
+    "year" : "2020", 
+    "modlCdSap" : "SK", 
+    "versionCdSap" : "W5VE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad491"), 
+    "modlNameHtml" : "soul", 
+    "modlName" : "Soul", 
+    "modlCd" : "SKW5", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "CVT", 
+    "tmCd" : "PV", 
+    "desc" : "New Soul 2.0L EX PACK IVT 2020", 
+    "version" : "EX PACK CVT", 
+    "year" : "2020", 
+    "modlCdSap" : "SK", 
+    "versionCdSap" : "W5VP"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad492"), 
+    "modlNameHtml" : "sportage", 
+    "modlName" : "Sportage", 
+    "modlCd" : "D9W5", 
+    "trimNm" : "SX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "SF", 
+    "desc" : "New Sportage PE 2.4L SX A/T&#40;Beige&#41; 2020", 
+    "version" : "SX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "D9", 
+    "versionCdSap" : "W5FS"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad493"), 
+    "modlNameHtml" : "sportage", 
+    "modlName" : "Sportage", 
+    "modlCd" : "D9W5", 
+    "trimNm" : "SXL", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "XF", 
+    "desc" : "New Sportage PE 2.4L SXL A/T&#40;Beige&#41;", 
+    "version" : "SXL T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "D9", 
+    "versionCdSap" : "W5FX"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad494"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "L", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "B7", 
+    "desc" : "New KIA Rio 1.6L L M/T Sedan", 
+    "version" : "L T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S47B"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad495"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "LX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "L7", 
+    "desc" : "New KIA Rio 1.6L LX M/T Sedan", 
+    "version" : "LX T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S47L"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad496"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "L", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "BF", 
+    "desc" : "New KIA Rio 1.6L L A/T Sedan", 
+    "version" : "L T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S4FB"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad497"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "New KIA Rio 1.6L EX A/T Sedan(Red)", 
+    "version" : "EX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S4FE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad498"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "New KIA Rio 1.6L LX A/T Sedan", 
+    "version" : "LX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S4FL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad499"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "EX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "E7", 
+    "desc" : "New KIA Rio 1.6L EX M/T HB", 
+    "version" : "EX T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S67E"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad49a"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "LX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "L7", 
+    "desc" : "New KIA Rio 1.6L LX M/T HB", 
+    "version" : "LX T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S67L"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad49b"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "New KIA Rio 1.6L EX A/T HB", 
+    "version" : "EX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S6FE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad49c"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "New KIA Rio 1.6L LX A/T HB", 
+    "version" : "LX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S6FL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad49d"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "PF", 
+    "desc" : "New KIA Rio 1.6L EX PACK A/T HB", 
+    "version" : "EX PACK T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S6FP"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad49e"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "EX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "E7", 
+    "desc" : "New Forte 2.0L EX M/T HB", 
+    "version" : "EX T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S67E"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad49f"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "SXL", 
+    "tmName" : "DCT 7 VELOCIDADES FWD", 
+    "tmCd" : "XU", 
+    "desc" : "New Forte 1.6L Turbo GT DCT HB 2020", 
+    "version" : "SXL DCT", 
+    "year" : "2020", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S6UX"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a0"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "SX", 
+    "tmName" : "CVT", 
+    "tmCd" : "SV", 
+    "desc" : "New Forte 2.0L GT-line IVT Sedan", 
+    "version" : "SX CVT", 
+    "year" : "2020", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4VS"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a1"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "SXL", 
+    "tmName" : "DCT 7 VELOCIDADES FWD", 
+    "tmCd" : "XU", 
+    "desc" : "New Forte 1.6L Turbo GT DCT Sedan", 
+    "version" : "SXL DCT", 
+    "year" : "2020", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4UX"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a2"), 
+    "modlNameHtml" : "Stinger", 
+    "modlName" : "Stinger", 
+    "modlCd" : "J5S6", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "EJ", 
+    "desc" : "KIA Stinger 2.0L Turbo EX A/T", 
+    "version" : "EX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "J5", 
+    "versionCdSap" : "S6JE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a3"), 
+    "modlNameHtml" : "Stinger", 
+    "modlName" : "Stinger", 
+    "modlCd" : "J5S6", 
+    "trimNm" : "SX", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "SJ", 
+    "desc" : "KIA Stinger 3.3L Turbo GT A/T&#40;Black&#41; 2020", 
+    "version" : "SX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "J5", 
+    "versionCdSap" : "S6JS"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a4"), 
+    "modlNameHtml" : "kia-optima", 
+    "modlName" : "Optima", 
+    "modlCd" : "D5S4", 
+    "trimNm" : "SXL", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "XF", 
+    "desc" : "KIA Optima PE 2.0L Turbo SXL A/T", 
+    "version" : "SXL T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "D5", 
+    "versionCdSap" : "S4FX"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a5"), 
+    "modlNameHtml" : "kia-sedona", 
+    "modlName" : "Sedona", 
+    "modlCd" : "A9B8", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "PF", 
+    "desc" : "Sedona PE 3.3L EX PACK A/T - 8P", 
+    "version" : "EX PACK T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "A9", 
+    "versionCdSap" : "B8FP"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a6"), 
+    "modlNameHtml" : "kia-sedona", 
+    "modlName" : "Sedona", 
+    "modlCd" : "A9B8", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "Sedona PE 3.3L LX A/T - 8P", 
+    "version" : "LX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "A9", 
+    "versionCdSap" : "B8FL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a7"), 
+    "modlNameHtml" : "kia-sedona", 
+    "modlName" : "Sedona", 
+    "modlCd" : "A9B8", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "Sedona PE 3.3L EX A/T - 8P", 
+    "version" : "EX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "A9", 
+    "versionCdSap" : "B8FE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a8"), 
+    "modlNameHtml" : "kia-sedona", 
+    "modlName" : "Sedona", 
+    "modlCd" : "A9B7", 
+    "trimNm" : "SXL", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "XF", 
+    "desc" : "Sedona PE 3.3L SXL A/T - 7P", 
+    "version" : "SXL T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "A9", 
+    "versionCdSap" : "B7FX"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4a9"), 
+    "modlNameHtml" : "sorento", 
+    "modlName" : "Sorento", 
+    "modlCd" : "C6W7", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "PF", 
+    "desc" : "Sorento PE 2.4L EX PACK A/T - 7P", 
+    "version" : "EX PACK T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "C6", 
+    "versionCdSap" : "W7FP"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4aa"), 
+    "modlNameHtml" : "sorento", 
+    "modlName" : "Sorento", 
+    "modlCd" : "C6W7", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "Sorento PE 2.4L LX A/T - 7P", 
+    "version" : "LX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "C6", 
+    "versionCdSap" : "W7FL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4ab"), 
+    "modlNameHtml" : "sorento", 
+    "modlName" : "Sorento", 
+    "modlCd" : "C6W7", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "Sorento PE 2.4L EX A/T - 7P", 
+    "version" : "EX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "C6", 
+    "versionCdSap" : "W7FE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4ac"), 
+    "modlNameHtml" : "sorento", 
+    "modlName" : "Sorento", 
+    "modlCd" : "C6W7", 
+    "trimNm" : "SX", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "SJ", 
+    "desc" : "Sorento PE 3.3L SX A/T - 7P", 
+    "version" : "SX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "C6", 
+    "versionCdSap" : "W7JS"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4ad"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "EX", 
+    "tmName" : "CVT", 
+    "tmCd" : "EV", 
+    "desc" : "New Forte 2.0L EX IVT HB", 
+    "version" : "EX CVT", 
+    "year" : "2020", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S6VE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4ae"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "SX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "S7", 
+    "desc" : "New Forte 2.0L GT-line M/T HB 2020", 
+    "version" : "SX T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S67S"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4af"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "SX", 
+    "tmName" : "CVT", 
+    "tmCd" : "SV", 
+    "desc" : "New Forte 2.0L GT-line IVT HB 2020", 
+    "version" : "SX CVT", 
+    "year" : "2020", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S6VS"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b0"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "SXL", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "X7", 
+    "desc" : "New Forte 1.6L Turbo GT M/T HB 2020", 
+    "version" : "SXL T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S67X"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b1"), 
+    "modlNameHtml" : "niro", 
+    "modlName" : "Niro", 
+    "modlCd" : "G5W5", 
+    "trimNm" : "EX", 
+    "tmName" : "DCT 6 VELOCIDADES FWD", 
+    "tmCd" : "ET", 
+    "desc" : "Niro PE 1.6L EX DCT Hybrid", 
+    "version" : "EX DCT", 
+    "year" : "2020", 
+    "modlCdSap" : "G5", 
+    "versionCdSap" : "W5TE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b2"), 
+    "modlNameHtml" : "seltos", 
+    "modlName" : "Seltos", 
+    "modlCd" : "TIW5", 
+    "trimNm" : "EX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "E7", 
+    "desc" : "Seltos 1.6L EX M/T", 
+    "version" : "EX T/M", 
+    "year" : "2020", 
+    "modlCdSap" : "TI", 
+    "versionCdSap" : "W57E"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b3"), 
+    "modlNameHtml" : "seltos", 
+    "modlName" : "Seltos", 
+    "modlCd" : "TIW5", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "Seltos 1.6L EX A/T", 
+    "version" : "EX T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "TI", 
+    "versionCdSap" : "W5FE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b4"), 
+    "modlNameHtml" : "seltos", 
+    "modlName" : "Seltos", 
+    "modlCd" : "TIW5", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "PF", 
+    "desc" : "Seltos 1.6L EX PACK A/T", 
+    "version" : "EX PACK T/A", 
+    "year" : "2020", 
+    "modlCdSap" : "TI", 
+    "versionCdSap" : "W5FP"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b5"), 
+    "modlNameHtml" : "seltos", 
+    "modlName" : "Seltos", 
+    "modlCd" : "TIW5", 
+    "trimNm" : "SX", 
+    "tmName" : "DCT 7 VELOCIDADES FWD", 
+    "tmCd" : "SU", 
+    "desc" : "Seltos 1.4L Turbo GT-line DCT", 
+    "version" : "SX DCT", 
+    "year" : "2020", 
+    "modlCdSap" : "TI", 
+    "versionCdSap" : "W5US"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b6"), 
+    "modlNameHtml" : "sportage", 
+    "modlName" : "Sportage", 
+    "modlCd" : "F1W5", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "New Sportage PE 2.0L LX A/T", 
+    "version" : "LX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "F1", 
+    "versionCdSap" : "W5FL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b7"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "L", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "B7", 
+    "desc" : "New Forte 2.0L L M/T Sedan", 
+    "version" : "L T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S47B"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b8"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "L", 
+    "tmName" : "CVT", 
+    "tmCd" : "BV", 
+    "desc" : "New Forte 2.0L L IVT Sedan", 
+    "version" : "L CVT", 
+    "year" : "2021", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4VB"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4b9"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "LX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "L7", 
+    "desc" : "New Forte 2.0L LX M/T Sedan", 
+    "version" : "LX T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S47L"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4ba"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "LX", 
+    "tmName" : "CVT", 
+    "tmCd" : "LV", 
+    "desc" : "New Forte 2.0L LX IVT Sedan", 
+    "version" : "LX CVT", 
+    "year" : "2021", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4VL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4bb"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "EX", 
+    "tmName" : "CVT", 
+    "tmCd" : "EV", 
+    "desc" : "New Forte 2.0L EX IVT Sedan", 
+    "version" : "EX CVT", 
+    "year" : "2021", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4VE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4bc"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "SX", 
+    "tmName" : "CVT", 
+    "tmCd" : "SV", 
+    "desc" : "New Forte 2.0L GT-line IVT Sedan", 
+    "version" : "SX CVT", 
+    "year" : "2021", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4VS"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4bd"), 
+    "modlNameHtml" : "forte-sedan", 
+    "modlName" : "Forte Sedan", 
+    "modlCd" : "DLS4", 
+    "trimNm" : "SXL", 
+    "tmName" : "DCT 7 VELOCIDADES FWD", 
+    "tmCd" : "XU", 
+    "desc" : "New Forte 1.6L Turbo GT DCT Sedan", 
+    "version" : "SXL DCT", 
+    "year" : "2021", 
+    "modlCdSap" : "DL", 
+    "versionCdSap" : "S4UX"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4be"), 
+    "modlNameHtml" : "seltos", 
+    "modlName" : "Seltos", 
+    "modlCd" : "TIW5", 
+    "trimNm" : "GT-line", 
+    "tmName" : "DCT 7 VELOCIDADES FWD", 
+    "tmCd" : "IU", 
+    "desc" : "Seltos 1.4L Turbo GT-line DCT 2021", 
+    "version" : "GT-line DCT", 
+    "year" : "2021", 
+    "modlCdSap" : "TI", 
+    "versionCdSap" : "W5UI"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4bf"), 
+    "modlNameHtml" : "Stinger", 
+    "modlName" : "Stinger", 
+    "modlCd" : "J5S6", 
+    "trimNm" : "GT", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "GJ", 
+    "desc" : "KIA Stinger 3.3L Turbo GT A/T&#40;Black&#41; 2021", 
+    "version" : "GT T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "J5", 
+    "versionCdSap" : "S6JG"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c0"), 
+    "modlNameHtml" : "Stinger", 
+    "modlName" : "Stinger", 
+    "modlCd" : "J5S6", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "EJ", 
+    "desc" : "KIA Stinger 2.0L Turbo EX A/T", 
+    "version" : "EX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "J5", 
+    "versionCdSap" : "S6JE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c1"), 
+    "modlNameHtml" : "soul", 
+    "modlName" : "Soul", 
+    "modlCd" : "SKW5", 
+    "trimNm" : "EX", 
+    "tmName" : "CVT", 
+    "tmCd" : "EV", 
+    "desc" : "New Soul 2.0L EX IVT", 
+    "version" : "EX CVT", 
+    "year" : "2021", 
+    "modlCdSap" : "SK", 
+    "versionCdSap" : "W5VE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c2"), 
+    "modlNameHtml" : "soul", 
+    "modlName" : "Soul", 
+    "modlCd" : "SKW5", 
+    "trimNm" : "LX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "L7", 
+    "desc" : "New Soul 1.6L LX M/T", 
+    "version" : "LX T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "SK", 
+    "versionCdSap" : "W57L"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c3"), 
+    "modlNameHtml" : "soul", 
+    "modlName" : "Soul", 
+    "modlCd" : "SKW5", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "New Soul 1.6L LX A/T", 
+    "version" : "LX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "SK", 
+    "versionCdSap" : "W5FL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c4"), 
+    "modlNameHtml" : "sportage", 
+    "modlName" : "Sportage", 
+    "modlCd" : "F1W5", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "New Sportage PE 2.0L EX A/T", 
+    "version" : "EX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "F1", 
+    "versionCdSap" : "W5FE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c5"), 
+    "modlNameHtml" : "seltos", 
+    "modlName" : "Seltos", 
+    "modlCd" : "TIW5", 
+    "trimNm" : "EX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "E7", 
+    "desc" : "Seltos 1.6L EX M/T", 
+    "version" : "EX T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "TI", 
+    "versionCdSap" : "W57E"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c6"), 
+    "modlNameHtml" : "seltos", 
+    "modlName" : "Seltos", 
+    "modlCd" : "TIW5", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "Seltos 1.6L EX A/T", 
+    "version" : "EX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "TI", 
+    "versionCdSap" : "W5FE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c7"), 
+    "modlNameHtml" : "sportage", 
+    "modlName" : "Sportage", 
+    "modlCd" : "D9W5", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "PF", 
+    "desc" : "New Sportage PE 2.4L EX PACK A/T(Beige)", 
+    "version" : "EX PACK T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "D9", 
+    "versionCdSap" : "W5FP"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c8"), 
+    "modlNameHtml" : "sportage", 
+    "modlName" : "Sportage", 
+    "modlCd" : "D9W5", 
+    "trimNm" : "SXL", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "XF", 
+    "desc" : "New Sportage PE 2.4L SXL A/T(Beige)", 
+    "version" : "SXL T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "D9", 
+    "versionCdSap" : "W5FX"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4c9"), 
+    "modlNameHtml" : "niro", 
+    "modlName" : "Niro", 
+    "modlCd" : "G5W5", 
+    "trimNm" : "EX", 
+    "tmName" : "DCT 6 VELOCIDADES FWD", 
+    "tmCd" : "ET", 
+    "desc" : "Niro PE 1.6L EX DCT Hybrid", 
+    "version" : "EX DCT", 
+    "year" : "2021", 
+    "modlCdSap" : "G5", 
+    "versionCdSap" : "W5TE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4ca"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "EX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "E7", 
+    "desc" : "New Forte 2.0L EX M/T HB", 
+    "version" : "EX T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S67E"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4cb"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "EX", 
+    "tmName" : "CVT", 
+    "tmCd" : "EV", 
+    "desc" : "New Forte 2.0L EX IVT HB", 
+    "version" : "EX CVT", 
+    "year" : "2021", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S6VE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4cc"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "GT-line", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "I7", 
+    "desc" : "New Forte 2.0L GT-line M/T HB 2021", 
+    "version" : "GT-line T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S67I"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4cd"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "GT-line", 
+    "tmName" : "CVT", 
+    "tmCd" : "IV", 
+    "desc" : "New Forte 2.0L GT-line IVT HB 2021", 
+    "version" : "GT-line CVT", 
+    "year" : "2021", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S6VI"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4ce"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "GT", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "G7", 
+    "desc" : "New Forte 1.6L Turbo GT M/T HB 2021", 
+    "version" : "GT T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S67G"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4cf"), 
+    "modlNameHtml" : "forte-hatchback", 
+    "modlName" : "Forte Hatchback", 
+    "modlCd" : "DJS6", 
+    "trimNm" : "GT", 
+    "tmName" : "DCT 7 VELOCIDADES FWD", 
+    "tmCd" : "GU", 
+    "desc" : "New Forte 1.6L Turbo GT DCT HB 2021", 
+    "version" : "GT DCT", 
+    "year" : "2021", 
+    "modlCdSap" : "DJ", 
+    "versionCdSap" : "S6UG"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d0"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "LX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "L7", 
+    "desc" : "New KIA Rio PE 1.6L LX M/T Sedan", 
+    "version" : "LX T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S47L"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d1"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "New KIA Rio PE 1.6L EX A/T Sedan", 
+    "version" : "EX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S4FE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d2"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "New KIA Rio PE 1.6L LX A/T Sedan", 
+    "version" : "LX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S4FL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d3"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "LX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "L7", 
+    "desc" : "New KIA Rio PE 1.6L LX M/T HB", 
+    "version" : "LX T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S67L"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d4"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "LF", 
+    "desc" : "New KIA Rio PE 1.6L LX A/T HB", 
+    "version" : "LX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S6FL"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d5"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "EX", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "E7", 
+    "desc" : "New KIA Rio PE 1.6L EX M/T HB", 
+    "version" : "EX T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S67E"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d6"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "EF", 
+    "desc" : "New KIA Rio PE 1.6L EX A/T HB", 
+    "version" : "EX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S6FE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d7"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "PF", 
+    "desc" : "New KIA Rio PE 1.6L EX PACK A/T HB", 
+    "version" : "EX PACK T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S6FP"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d8"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "L", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "B7", 
+    "desc" : "New KIA Rio PE 1.6L L M/T Sedan", 
+    "version" : "L T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S47B"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4d9"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "L", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "BF", 
+    "desc" : "New KIA Rio PE 1.6L L A/T Sedan", 
+    "version" : "L T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S4FB"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4da"), 
+    "modlNameHtml" : "rio-sedan", 
+    "modlName" : "Rio Sedan", 
+    "modlCd" : "H9S4", 
+    "trimNm" : "S PACK", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "5F", 
+    "desc" : "New KIA Rio PE 1.6L S PACK A/T Sedan", 
+    "version" : "S PACK T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S4F5"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4db"), 
+    "modlNameHtml" : "rio-hatchback", 
+    "modlName" : "Rio Hatchback", 
+    "modlCd" : "H9S6", 
+    "trimNm" : "S PACK", 
+    "tmName" : "T/M 6 VELOCIDADES FWD", 
+    "tmCd" : "57", 
+    "desc" : "New KIA Rio PE 1.6L S PACK M/T HB", 
+    "version" : "S PACK T/M", 
+    "year" : "2021", 
+    "modlCdSap" : "H9", 
+    "versionCdSap" : "S675"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4dc"), 
+    "modlNameHtml" : "seltos", 
+    "modlName" : "Seltos", 
+    "modlCd" : "TIW5", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "PF", 
+    "desc" : "Seltos 1.6L EX PACK A/T", 
+    "version" : "EX PACK T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "TI", 
+    "versionCdSap" : "W5FP"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4dd"), 
+    "modlNameHtml" : "seltos", 
+    "modlName" : "Seltos", 
+    "modlCd" : "TIW5", 
+    "trimNm" : "SX", 
+    "tmName" : "T/A 6 VELOCIDADES FWD", 
+    "tmCd" : "SF", 
+    "desc" : "Seltos 1.6L SX A/T", 
+    "version" : "SX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "TI", 
+    "versionCdSap" : "W5FS"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4de"), 
+    "modlNameHtml" : "sorento", 
+    "modlName" : "New sorento", 
+    "modlCd" : "HYW6", 
+    "trimNm" : "SX", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "SJ", 
+    "desc" : "New Sorento 2.5L SX A/T - 6P", 
+    "version" : "SX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "HY", 
+    "versionCdSap" : "W6JS"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4df"), 
+    "modlNameHtml" : "sorento", 
+    "modlName" : "New sorento", 
+    "modlCd" : "HYW7", 
+    "trimNm" : "EX PACK", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "PJ", 
+    "desc" : "New Sorento 2.5L EX PACK A/T - 7P", 
+    "version" : "EX PACK T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "HY", 
+    "versionCdSap" : "W7JP"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4e0"), 
+    "modlNameHtml" : "sorento", 
+    "modlName" : "New sorento", 
+    "modlCd" : "HYW7", 
+    "trimNm" : "EX", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "EJ", 
+    "desc" : "New Sorento 2.5L EX A/T - 7P", 
+    "version" : "EX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "HY", 
+    "versionCdSap" : "W7JE"
+}
+{ 
+    "_id" : ObjectId("6005a59509d19631701ad4e1"), 
+    "modlNameHtml" : "sorento", 
+    "modlName" : "New sorento", 
+    "modlCd" : "HYW7", 
+    "trimNm" : "LX", 
+    "tmName" : "T/A 8 VELOCIDADES 2WD", 
+    "tmCd" : "LJ", 
+    "desc" : "New Sorento 2.5L LX A/T - 7P", 
+    "version" : "LX T/A", 
+    "year" : "2021", 
+    "modlCdSap" : "HY", 
+    "versionCdSap" : "W7JL"
+}
