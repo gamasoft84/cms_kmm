@@ -2887,8 +2887,8 @@ strong.bl_type2 {
 #header .logo_h1 .lg_a {
     position: relative;
     display: inline-block;
-    width: 75px;
-    height: 38px
+    width: 65%;
+    height: 65%;
 }
 
 #header .logo_h1 .lg_img {
