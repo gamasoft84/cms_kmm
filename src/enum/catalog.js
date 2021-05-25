@@ -104,9 +104,37 @@ getVehicleCatalog = async function getCatalogVersions() {
     return catalog;
 };
 
+getVehicleCatalogByYear = async function getCatalogVersions(year) {
+    versions = await Version.aggregate([
+        { $match: { year: year } },
+        {
+            $project: {
+                modlName: "$modlName",
+                modlNameHtml: "$modlNameHtml",
+                year: "$year",
+            },
+        },
+        {
+            $group: {
+                _id: { codeHtml: "$modlNameHtml", name: "$modlName", year: "$year" },
+            },
+        },
+        { $sort: { "_id.name": 1 } },
+    ]);
+
+    //console.log(versions);
+
+    let catalog = [];
+    versions.forEach((e) => {
+        catalog.push(e._id);
+    });
+    return catalog;
+};
+
 module.exports = {
     featureCategory,
     getVehicleCatalog,
+    getVehicleCatalogByYear,
     yearCatalog,
     mapVersions,
 };

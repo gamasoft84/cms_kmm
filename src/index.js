@@ -79,6 +79,7 @@ app.use(async(req, res, next) => {
 app.use(require("./routes/index"));
 app.use(require("./routes/users"));
 app.use(require("./routes/images"));
+app.use(require("./routes/vehicles"));
 
 //Static Files
 app.use(express.static(path.join(__dirname, "public")));

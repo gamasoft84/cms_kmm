@@ -29,7 +29,7 @@
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="category">Year</label>
                         </div>
-                       <select class="custom-select" name="year">
+                       <select class="custom-select" name="year" id="year">
                             {{#each yearCatalog}}
                                      <option value="{{this.codeYear}}">{{this.name}}</option>
                             {{/each}}
@@ -41,17 +41,47 @@
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="category">Model</label>
                         </div>
-                       <select class="custom-select" name="model">
-                            {{#each vehicleCatalog}}
-                                     <option value="{{this.codeHtml}}" {{isSelected this.codeHtml ../image.model}}   >{{this.name}}</option>
-                            {{/each}}
-                        </select>
+                       <select class="custom-select" name="model" id="model"></select>
                     </div>
-                </div>     
+                </div>
                 <div class="form-group">
                     <button class="btn btn-primary btn-block" type="submit">Save</button>
-                </div>                
+                </div>      
             </form>
         </div>
     </div>
 </div>
+
+
+<script>    
+
+    function loadModelsByYear(year){
+        let data = {year}
+        $.ajax({
+            type: 'GET',
+            url: `/vehicles/${year}`,
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+        }).done(function (data) { 
+            $("#model").empty();
+            $.each(data,function(key, v) {
+                $("#model").append('<option value='+ v.codeHtml+'>'+ v.name+'</option>');
+            });  
+        }).fail(function (msg) {
+            alert('FAIL');
+        });
+    }
+
+    $('#year').change(function() {
+        loadModelsByYear($(this).val());
+    });
+
+    
+    $(document).ready(function(){
+         let year = $("#year").val();
+         loadModelsByYear(year);
+    });
+
+   
+
+</script>
