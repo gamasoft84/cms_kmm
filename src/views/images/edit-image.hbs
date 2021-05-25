@@ -34,7 +34,7 @@
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="category">Year</label>
                         </div>
-                        <select class="custom-select" name="year">
+                        <select class="custom-select" name="year" id="year">
                             {{#each yearCatalog}}
                             <option value="{{this.codeYear}}" {{isSelected this.codeYear ../image.year}}>{{this.name}}
                             </option>
@@ -46,12 +46,13 @@
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="category">Model</label>
-                        </div>
-                        <select class="custom-select" name="model">
+                        </div> 
+                        <select class="custom-select" name="model"  id="model"></select>
                             {{#each vehicleCatalog}}
-                            <option value="{{this.codeHtml}}" {{isSelected this.codeHtml ../image.model}}>{{this.name}}
-                            </option>
-                            {{/each}}
+                                {{#if_equal this.year ../image.year}}
+                                    <option value="{{this.codeHtml}}" {{isSelected this.codeHtml ../image.model}}>{{this.name}}</option>
+                                {{/if_equal}}
+                            {{/each}}                               
                         </select>
                     </div>
                 </div>

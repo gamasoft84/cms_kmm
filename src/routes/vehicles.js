@@ -8,7 +8,6 @@ router.get('/vehicles/:year', isAuthenticated, async(req, res) => {
     let year = req.params.year;
     let modelName = ""
     const vehicleCatalog = await getVehicleCatalogByYear(year); 
-    console.log('vehicleCatalog')
     res.json(vehicleCatalog);
 });
 
