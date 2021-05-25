@@ -4,7 +4,10 @@
             <h3>Edit Image</h3>
         </div>
         <div class="card-body">
-            <form action="/images/edit-image/{{image._id}}?_method=PUT" method="POST">
+            <form
+             onsubmit="enabledValues()" 
+             action="/images/edit-image/{{image._id}}?_method=PUT"
+             method="POST">
                 <input type="hidden" name="_method" value="PUT">
                 <div class="form-group">
                     <input type="text" name="name" value="{{image.name}}" placeholder="Name" class="form-control">
@@ -34,7 +37,7 @@
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="category">Year</label>
                         </div>
-                        <select class="custom-select" name="year" id="year">
+                        <select class="custom-select" name="year" id="year" disabled>
                             {{#each yearCatalog}}
                             <option value="{{this.codeYear}}" {{isSelected this.codeYear ../image.year}}>{{this.name}}
                             </option>
@@ -47,7 +50,7 @@
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="category">Model</label>
                         </div> 
-                        <select class="custom-select" name="model"  id="model"></select>
+                        <select class="custom-select" name="model" id="model" disabled>
                             {{#each vehicleCatalog}}
                                 {{#if_equal this.year ../image.year}}
                                     <option value="{{this.codeHtml}}" {{isSelected this.codeHtml ../image.model}}>{{this.name}}</option>
@@ -78,3 +81,14 @@
         </div>
     </div>
 </div>
+
+
+
+<script>    
+
+    function enabledValues(){
+        $("#year").removeAttr("disabled");
+        $("#model").removeAttr("disabled");
+    }
+
+</script>
