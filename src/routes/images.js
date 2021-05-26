@@ -343,7 +343,7 @@ router.get('/data/images/:model/:year', isTokenPresent, async(req, res) => {
     images = images.map(function(i) {
         return{
             id: i.id,
-            url: i.url.trim, 
+            url: i.url, 
             category: i.category,
             name: i.name,
             description: i.description
