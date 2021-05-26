@@ -6,7 +6,6 @@ var { getVehicleCatalogByYear } = require('../enum/catalog');
 
 router.get('/vehicles/:year', isAuthenticated, async(req, res) => {
     let year = req.params.year;
-    let modelName = ""
     const vehicleCatalog = await getVehicleCatalogByYear(year); 
     res.json(vehicleCatalog);
 });

@@ -8,4 +8,13 @@ helpers.isAuthenticated = (req, res, next) => {
   res.redirect('/users/signin');
 };
 
+helpers.isTokenPresent = (req, res, next) => {
+  let apiKey = req.header('API-Key');
+  if (apiKey === 'x5QycR82&') {
+    return next();
+  }
+  res.json({'error_msg': 'Not Authorized.'});
+};
+
+
 module.exports = helpers;

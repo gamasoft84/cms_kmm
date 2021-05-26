@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const Image = require('../models/Image');
 const Version = require('../models/Version');
-const { isAuthenticated } = require('../helpers/auth');
-var { getVehicleCatalog, yearCatalog, featureCategory, mapVersions } = require('../enum/catalog');
+const { isAuthenticated, isTokenPresent } = require('../helpers/auth');
+var { getVehicleCatalog, featureCategory, mapVersions } = require('../enum/catalog');
 var scrapiKia = require('./../generatedModelsKia');
 var request = require('request');
 
@@ -318,7 +318,7 @@ function compare(a, b) {
     return 0;
 }
 
-router.get('/data/images/covers', isAuthenticated, async(req, res) => {
+router.get('/data/images/covers', isTokenPresent, async(req, res) => {
     let images = await Image.find({ isCover: true }).sort({ model: 1 });
     images = images.map(function(i) {
         const {id,url,name,description,year,model,modelCd} = i;
@@ -329,7 +329,7 @@ router.get('/data/images/covers', isAuthenticated, async(req, res) => {
     res.json(images);
 });
 
-router.get('/data/images/:model/:year', isAuthenticated, async(req, res) => {
+router.get('/data/images/:model/:year', isTokenPresent, async(req, res) => {
     let model = req.params.model;
     let year = req.params.year;
     let modelName = ""
