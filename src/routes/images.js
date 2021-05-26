@@ -318,4 +318,41 @@ function compare(a, b) {
     return 0;
 }
 
+router.get('/data/images/covers', isAuthenticated, async(req, res) => {
+    let images = await Image.find({ isCover: true }).sort({ model: 1 });
+    images = images.map(function(i) {
+        return{
+            id: i.id,
+            url: i.url,            
+            name: i.name,
+            description: i.description
+        }
+    });
+    res.json(images);
+});
+
+router.get('/data/images/:model/:year', isAuthenticated, async(req, res) => {
+    let model = req.params.model;
+    let year = req.params.year;
+    let modelName = ""
+    let images = await Image.find({ model, year, isCover: false });
+    if (model != 'allmodels') {
+        vehicleCatalog = await getVehicleCatalog();
+        modelName = (vehicleCatalog.filter((v) => v.codeHtml === model))[0].name;
+    } else {
+        modelName = 'All KIA models'
+    }
+    images = images.map(function(i) {
+        return{
+            id: i.id,
+            url: i.url, 
+            category: i.category,
+            name: i.name,
+            description: i.description
+        }
+    });
+    res.json(images);
+});
+
+
 module.exports = router;
