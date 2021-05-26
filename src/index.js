@@ -6,11 +6,13 @@ const session = require("cookie-session");
 const flash = require("connect-flash");
 const passport = require("passport");
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const { log } = require("console");
 var { getVehicleCatalog, yearCatalog } = require('./enum/catalog');
 
 //Inicializations
 const app = express();
+app.use(cors());
 require("./database");
 require("./config/passport");
 
