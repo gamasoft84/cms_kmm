@@ -321,11 +321,9 @@ function compare(a, b) {
 router.get('/data/images/covers', isAuthenticated, async(req, res) => {
     let images = await Image.find({ isCover: true }).sort({ model: 1 });
     images = images.map(function(i) {
+        const {id,url,name,description,year,model,modelCd} = i;
         return{
-            id: i.id,
-            url: i.url,            
-            name: i.name,
-            description: i.description
+            id,url,name,description,year,model,modelCd
         }
     });
     res.json(images);
@@ -345,7 +343,7 @@ router.get('/data/images/:model/:year', isAuthenticated, async(req, res) => {
     images = images.map(function(i) {
         return{
             id: i.id,
-            url: i.url, 
+            url: i.url.trim, 
             category: i.category,
             name: i.name,
             description: i.description
