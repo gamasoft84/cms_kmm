@@ -3,7 +3,7 @@ const router = express.Router();
 const Image = require('../models/Image');
 const Version = require('../models/Version');
 const { isAuthenticated, isTokenPresent } = require('../helpers/auth');
-var { getVehicleCatalog, featureCategory, mapVersions } = require('../enum/catalog');
+var { getVehicleCatalog, featureCategory, mapVersions, yearCatalog } = require('../enum/catalog');
 var scrapiKia = require('./../generatedModelsKia');
 var request = require('request');
 
