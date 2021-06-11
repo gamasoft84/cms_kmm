@@ -1,5 +1,9 @@
 "# cms_kmm" 
 
+
+npm run dev
+
+
 Review model in particular 
 node .\src\generatedModelsKia.js
 
@@ -10,7 +14,7 @@ context-datasource
 Postman:
 Azure/submitImageToAzure
 
-Valiar nombre
+Validar nombre
 VHCL_DESC
 
 Configuracion de la potencia.
