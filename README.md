@@ -7,12 +7,7 @@ npm run dev
 Review model in particular 
 node .\src\generatedModelsKia.js
 
-Config Ambient:
-context-properties
-context-datasource
 
-Postman:
-Azure/submitImageToAzure
 
 Validar nombre
 VHCL_DESC
@@ -21,7 +16,7 @@ Configuracion de la potencia.
 
 ADD MODEL
 ---------
-Config in DB MySales with price.
+Config in DB MySales with price. ({{HOST}}/BNP/SubmitVehicleInfo .> MYSALES_PROD)
 Activated models
 cmsKMM-> version
     clean 
@@ -33,3 +28,12 @@ C:\KIA\cms_kmm>
               Config and Descomment line 329 scrapiKia(vehicleCatalog);
               node .\src\generatedModelsKia.js
               C:\KIA\cms_kmm\2021.csv (output)
+
+ADD TO MYSALES PORTAL
+---------------------
+Config Ambient:
+context-properties
+context-datasource
+
+Postman:
+Azure/submitImageToAzure
