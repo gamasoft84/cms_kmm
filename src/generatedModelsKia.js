@@ -30,11 +30,19 @@ async function getImagesPagePrincipal(model, year) {
             transform: (body) => cheerio.load(body),
         });
 
+
+        
         let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg|[-]t[\w]*.jpg/;
-        if(model === 'Stinger' && year ==='2022'){
-            // Usp-DriveWise-1-m.jpg 
-            regex = /[-]t[\w]*.jpg/; // For stinger 2022                
-            console.log(model,regex);
+        if(year ==='2022'){
+
+            if(model === 'Stinger'){
+                // Usp-DriveWise-1-m.jpg 
+                regex = /[-]t[\w]*.jpg/;               
+                console.log(model,regex);
+            }
+            if(model === 'forte-hatchback'){
+                regex = /[\w]*-t.jpg|[\w_-]*_t.jpg|[\w]*_t.png|kia_forteSD_auto_seguridad_mobile_[\d]*.jpg/;  
+            }
         }
 
         $("picture source").each((i, el) => {
@@ -46,7 +54,7 @@ async function getImagesPagePrincipal(model, year) {
             }
             let url = `https://www.kia.com${data}`;
 
-            if ((regex.test(data.toLowerCase()) || isAllow(data)) && !isNotAllow(data) && !getCoverSecondary(data)) {
+            if ((regex.test(data) || isAllow(data)) && !isNotAllow(data) && !getCoverSecondary(data)) {
                 //console.log(name);
                 let description = findDescriptionImage($(el));
                 let name = findNameImage($(el), description);
@@ -72,9 +80,11 @@ async function getImagesPagePrincipal(model, year) {
                 writeStream.write(
                     `                                              Descartado --> ${url}\n`
                 );
-                if(url.includes("img_Soul_performance3_t.jpg")){
-                    console.log('regex.test(data.toLowerCase()) || isAllow(data)', (regex.test(data.toLowerCase()) || isAllow(data)));
-                    console.log('regex.test(data.toLowerCase()))', regex.test(data.toLowerCase()));
+                if(url.includes("kia_forteSD_auto_seguridad_mobile_1.jpg")){
+                    console.log(url);
+                    console.log('Regex',regex);
+                    console.log('regex.test(data)) || isAllow(data)', (regex.test(data) || isAllow(data)));
+                    console.log('regex.test(data))', regex.test(data));
                     console.log('isAllow(data)', isAllow(data));
                     console.log('!isNotAllow(data)', !isNotAllow(data));
                     console.log('!getCoverSecondary(data)',!getCoverSecondary(data));
@@ -97,7 +107,9 @@ function isAllow(image) {
         "Usp-Interior-acabados-metalicos.jpg",
         "bg_Pc_stinger_overview1_t.jpg",
         "img_Soul_safety6_m.jpg",
-        "img_Soul_performance3_t.jpg"
+        "img_Soul_performance3_t.jpg",
+        "2022/forte-hb/usps-seguridad/kia_forteSD_auto_seguridad_3.jpg",
+        "2022/forte-hb/usps-seguridad/kia_forteSD_auto_seguridad_6.jpg"
     ];
    
     var resp = false;
@@ -119,7 +131,8 @@ function isNotAllow(image) {
         "7_USP_desempeno/img_Soul_performance3_w.jpg",
         "kia_forte_auto_desempeno_4_w.jpg",
         "kia-stinger-highlights-thum-01-t.jpg",
-        "img_Seltos_safety6_m.jpg"
+        "img_Seltos_safety6_m.jpg",
+        "2022/forte-hb/home/kia-showroom-key-visual-"
     ];
     var resp = false;
     for (var i in images) {
@@ -181,6 +194,7 @@ function getCategoria(urlImage, title) {
 function getCoverPrincipal(urlImage) {
     let covers = [
         "Forte-HB/2-exterior/kia_showroom-big-image-forte-3-w-02.jpg",
+        "2022/forte-hb/kia-showroom-key-visual-ForteHb-t.jpg",
         "img_RioHB_exterior1_w.jpg",
         "img_RIO_SD_exterior1_w.jpg",
         "Img_ForteSd_Exterior1_w.jpg",
