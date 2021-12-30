@@ -8,7 +8,7 @@ body {
 }
 
 .txt_cms {
-    color: #bc162c;
+    color: #000000;
     font: bold;
     font-size: 18px;
     margin-top: -40px;
@@ -25,8 +25,8 @@ body {
 }
 
 .txtFeature {
-    color: #bc162c;
-    border-top-color: #bc162c;
+    color: #000000;
+    border-top-color: #000000;
     font: bold;
 }
 
@@ -71,7 +71,7 @@ to violet when it is not checked*/
 }
 
 .custom-control-label {
-    color: #bc162c;
+    color: #000000;
     font-size: 14px;
     padding-right: 20px;
 }
@@ -84,7 +84,7 @@ to violet when it is not checked*/
 .go-up {
     display: none;
     padding: 20px;
-    background: #bc162c;
+    background: #000000;
     font-size: 20px;
     color: #fff;
     cursor: pointer;
@@ -117,12 +117,12 @@ to violet when it is not checked*/
     font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
-    background-color: #bc162c;
+    background-color: #000000;
     cursor: pointer;
 }
 
 .btn-primary {
-    background-color: #bc162c !important;
+    background-color: #000000 !important;
 }
 
 .navbar {
