@@ -33,9 +33,14 @@ const featureCategory = [{
     },
 ];
 
-const yearCatalog = [{
-    name: "2022",
-    codeYear: "2022",
+const yearCatalog = [
+    {
+        name: "2023",
+        codeYear: "2023",
+    },
+    {
+        name: "2022",
+        codeYear: "2022",
     },
     {
         name: "2021",
