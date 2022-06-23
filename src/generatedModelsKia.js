@@ -2,7 +2,7 @@ const request = require("request-promise");
 const cheerio = require("cheerio");
 const fs = require("fs");
 var HashMap = require("hashmap");
-const writeStream = fs.createWriteStream("2021.csv");
+const writeStream = fs.createWriteStream("2023.csv");
 
 
 let structurByModel = [];
@@ -31,8 +31,10 @@ async function getImagesPagePrincipal(model, year) {
         });
 
 
-        
-        let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg|[-]t[\w]*.jpg/;
+    
+        //let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg|[-]t[\w]*.jpg/;
+        let regex = /mobile[\w_-]*.jpg|[-_]w[\w_-]*.jpg/;
+
         if(year ==='2022'){
 
             if(model === 'Stinger'){
@@ -341,6 +343,7 @@ function findDescriptionImage(elem) {
 }
 
 var vehicleCatalog = [
+    { codeHtml: "niro", year: "2023" },
     { codeHtml: "soul", year: "2021" },
     { codeHtml: "rio-hatchback", year: "2021" },
     { codeHtml: "rio-sedan", year: "2021" },
