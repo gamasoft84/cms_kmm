@@ -7,7 +7,14 @@ passport.use(new LocalStrategy({
   usernameField: 'email'
 }, async (email, password, done) => {
   // Match Email's User
+  console.log('email__' + email)
+  console.log('password' + password)
   const user = await User.findOne({email: email});
+  //const user = await User.find({});
+
+
+  console.log('user___:<' + user + '>') 
+
   if (!user) {
     return done(null, false, { message: 'Not User found.' });
   } else {

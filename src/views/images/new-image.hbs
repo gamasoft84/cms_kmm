@@ -44,6 +44,20 @@
                        <select class="custom-select" name="model" id="model"></select>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="switch_cover">Is Cover:</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            &nbsp;&nbsp;
+                            <input type="checkbox" class="custom-control-input" name= "isCover" id="switch_cover" {{checked this.actv}}>
+                            <label class="custom-control-label" for="switch_cover"></label>
+                        </div> 
+                    </div>  
+                </div>    
+
                 <div class="form-group">
                     <button class="btn btn-primary btn-block" type="submit">Save</button>
                 </div>      

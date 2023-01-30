@@ -80,6 +80,7 @@ const saveImages = async function(respScrapi) {
 router.post('/images/new-image', isAuthenticated, async(req, res) => {
     console.log(req.body);
     const { name, description, url, category, year, model } = req.body;
+    var { isCover } = req.body;
     const errors = [];
 
     if (!name) {
@@ -114,7 +115,13 @@ router.post('/images/new-image', isAuthenticated, async(req, res) => {
         });
         versions.sort(compare);
 
-        const image = new Image({ name, description, url, category, year, model, modelCd, versions });
+        if(isCover != undefined){
+            isCover = true;
+        }else{
+            isCover = false;
+        }
+
+        const image = new Image({ name, description, url, category, year, model, modelCd, versions, isCover });
         image.user = req.user.id;
         await image.save();
         req.flash('success_msg', 'Image Add successfully !')
@@ -160,8 +167,17 @@ router.get('/images/:model/:year', isAuthenticated, async(req, res) => {
 
 router.put('/images/edit-image/:id', isAuthenticated, async(req, res) => {
     const { name, description, url, category, year, model, versionsFront } = req.body;
+    var { isCover } = req.body;
+
     let image = await Image.findByIdAndUpdate(req.params.id);
     let versions = image.versions;
+
+    if(isCover != undefined){
+        isCover = true;
+    }else{
+        isCover = false;
+    }
+
     image.versions.forEach(function(v) {
 
         if (versionsFront.includes(v.code)) {
@@ -170,7 +186,7 @@ router.put('/images/edit-image/:id', isAuthenticated, async(req, res) => {
             v.actv = false;
         }
     });
-    await Image.findByIdAndUpdate(req.params.id, { name, description, url, category, year, model, versions });
+    await Image.findByIdAndUpdate(req.params.id, { name, description, url, category, year, model, versions, isCover});
     req.flash('success_msg', 'Image Updated successfully!');
     res.redirect('/images/' + model + '/' + year);
 });
