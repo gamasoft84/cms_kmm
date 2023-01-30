@@ -37,3 +37,13 @@ context-datasource
 
 Postman:
 Azure/submitImageToAzure
+
+usuarios:
+{ 
+    "_id" : ObjectId("63bd83f063f8b3c6cbbc5cec"), 
+    "name" : "Richard Gama", 
+    "email" : "richardgama@yahoo.com.mx", 
+    "password" : "$2a$10$Xneg2t/2jWMe1iM/5fVHUeY.kFdGN6P3cJ.FwIIs34dBFca3I0vkW", 
+    "date" : ISODate("2023-01-10T15:27:44.018+0000"), 
+    "__v" : NumberInt(0)
+}
